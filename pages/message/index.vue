@@ -1,17 +1,22 @@
 <template>
   <div class="container">
     <div>
-      <logo />
-      <h1 class="title">
-        代表メッセージ
-      </h1>
+      <div class="title-area">
+        <h1 class="title">
+          代表メッセージ
+        </h1>
+      </div>
 
-      <profimg />
-      <msgtxt />
+      <div class="container-main">
+        <div class="profimg">
+          <prof-img />
+        </div>
+        <div class="msgtxt">
+          <msg-txt />
+        </div>
+      </div>
 
-      <h2 class="subtitle">
-        My terrific Nuxt.js project
-      </h2>
+
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">
           Documentation
@@ -40,7 +45,38 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.title-area {
+  padding: 5em 0 5em 0;
+}
+
+.title {
+  font-size: 3em !important;
+  color: #1f55a5 !important;
+}
+
+/* タブレット＆PC */
+@media screen and (min-width: 768px) {
+  .container-main {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 2.5em !important;
+  }
+}
+
+.profimg {
+  width: 40%;
+}
+
+.msgtxt {
+  margin: 0 1.5em 1.5em 1.5em;
+  text-align: left;
+}
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -50,6 +86,10 @@ export default {
   text-align: center;
 }
 
+/* タグレット対応 */
+/* @media screen and (min-width:481px) and (max-width:780px){} */
+
+/*
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -71,4 +111,5 @@ export default {
 .links {
   padding-top: 15px;
 }
+*/
 </style>
