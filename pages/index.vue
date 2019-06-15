@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        corporate
+        corporate-hp
       </h1>
       <h2 class="subtitle">
         My terrific Nuxt.js project
