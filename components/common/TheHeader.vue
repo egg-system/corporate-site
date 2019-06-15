@@ -1,6 +1,6 @@
 <template>
   <header class="egg-common-header">
-    <h1><i class="fas fa-egg-fried"></i>EGG SYSTEM</h1>
+    <h1>EGG SYSTEM</h1>
     <div class="header-link">
       <a href="https://eggsystem.co.jp/company-data/" target="_blank" class="button--green">会社情報</a>
       <a href="https://eggsystem.co.jp/homepage-web/" target="_blank" class="button--green">サービス</a>

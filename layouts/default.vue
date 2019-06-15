@@ -7,22 +7,22 @@
 </template>
 
 <script>
-import Header from "../components/common/TheHeader";
-import Footer from "../components/common/TheFooter";
+import Header from '../components/common/TheHeader'
+import Footer from '../components/common/TheFooter'
 
 export default {
   components: {
     Header,
     Footer
   }
-};
+}
 </script>
 
 
-<style>
+<style scoped>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
