@@ -1,23 +1,29 @@
 <template>
-  <header class="egg-common-header">
-    <h1>EGG SYSTEM</h1>
-    <div class="header-link">
-      <a href="https://eggsystem.co.jp/company-data/" target="_blank" class="button--green">会社情報</a>
-      <a href="https://eggsystem.co.jp/homepage-web/" target="_blank" class="button--green">サービス</a>
-      <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">事例</a>
-      <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">メンバー紹介</a>
-      <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">ニュース</a>
-      <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">コラム</a>
-      <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">採用情報</a>
-      <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">お問い合わせ</a>
-    </div>
-  </header>
+  <v-app-bar :hide-on-scroll="hideOnScroll"
+             scroll-target="container">
+    <v-app-bar-nav-icon/>
+    <v-toolbar-title class="blue-grey--text font-weight-bold display-1">EGG SYSTEM</v-toolbar-title>
+
+    <v-spacer/>
+
+    <the-menu-list/>
+  </v-app-bar>
 </template>
+
+<script>
+import TheMenuList from '~/components/common/TheMenuList.vue'
+
+export default {
+  components: {
+    TheMenuList
+  }
+}
+</script>
 
 <style scoped>
 .egg-common-header {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
   border-bottom: 1px solid #e3e3e3;
   padding-top: 10px;
   padding-bottom: 10px;
