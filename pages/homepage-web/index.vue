@@ -1,81 +1,94 @@
 <template>
-  <v-layout row>
-    <v-flex xs12 sm6 offset-sm3>
-      <v-card>
-        <v-toolbar flat>
-          <v-btn icon>
-            <v-icon>arrow_back</v-icon>
-          </v-btn>
-          <v-toolbar-title>Albums</v-toolbar-title>
-          <v-spacer/>
-          <v-btn icon>
-            <v-icon>search</v-icon>
-          </v-btn>
-        </v-toolbar>
-        <v-subheader>May</v-subheader>
-        <v-container fluid grid-list-sm>
-          <v-layout row wrap>
-            <v-flex v-for="i in 6" :key="i" xs4>
-              <img :src="`https://randomuser.me/api/portraits/men/${i + 20}.jpg`" class="image" alt="lorem"
-                   width="100%"
-                   height="100%">
-            </v-flex>            
-          </v-layout>
-        </v-container>
-        <v-subheader>June</v-subheader>
-        <v-container fluid grid-list-sm>
-          <v-layout row wrap>
-            <v-flex v-for="i in 6" :key="i" xs4>
-              <img :src="`https://randomuser.me/api/portraits/women/${i + 5}.jpg`" class="image" alt="lorem"
-                   width="100%"
-                   height="100%">
-            </v-flex>
-          </v-layout>
-        </v-container>
-        <v-footer class="mt-5"/>
-      </v-card>
-    </v-flex>
-  </v-layout>
-</template>
-<script>
-import Logo from '~/components/Logo.vue'
+  <v-container grid-list-md text-xs-center>
+    <v-layout row wrap>
+      <v-flex xs12>
+        <v-card-text class="px-0">ホームページ・Webシステム開発</v-card-text>
+      </v-flex>
 
-export default {
-  components: {
-    Logo
-  }
-}
+      <v-flex xs6>
+        画像
+      </v-flex>
+      <v-flex xs6>
+        画像
+      </v-flex>
+
+      <v-flex xs12>
+        <v-card-text class="px-0">ホームページ制作　高品質なホームページを制作します。</v-card-text>
+      </v-flex>
+
+      <v-flex xs12>
+        <v-card-text class="px-0">promise</v-card-text>
+      </v-flex>
+
+      <v-flex xs4>
+        <v-card-text class="px-0">画像と説明</v-card-text>
+      </v-flex>
+      <v-flex xs4>
+        <v-card-text class="px-0">画像と説明</v-card-text>
+      </v-flex>
+      <v-flex xs4>
+        <v-card-text class="px-0">画像と説明</v-card-text>
+      </v-flex>
+
+      <v-flex xs4>
+        <v-card-text class="px-0">画像と説明</v-card-text>
+      </v-flex>
+      <v-flex xs4>
+        <v-card-text class="px-0">画像と説明</v-card-text>
+      </v-flex>
+      <v-flex xs4>
+        <v-card-text class="px-0">画像と説明</v-card-text>
+      </v-flex>
+
+      <v-flex xs12>
+        <v-card-text class="px-0">事例はこちら</v-card-text>
+      </v-flex>
+
+      <v-flex xs12>
+        <v-card-text class="px-0">サービス</v-card-text>
+      </v-flex>
+      <v-flex xs12>
+        <v-card-text class="px-0">テーブルで表示</v-card-text>
+      </v-flex>
+
+      <v-flex xs12>
+        <v-card-text class="px-0">Webシステム</v-card-text>
+        <v-card-text class="px-0">
+          システム開発することが目的ではないため、検討した結果、
+          「システム開発は行わずに簡易的な無料ツールを使いましょう」
+          というご提案ができることが当社の強みです。
+        </v-card-text>
+      </v-flex>
+
+
+      <v-flex xs12>
+        <v-card-text class="px-0">Not Doing 当社がやらないこと</v-card-text>
+      </v-flex>
+
+      <v-flex xs4>
+        <v-card-text class="px-0">画像と説明</v-card-text>
+      </v-flex>
+      <v-flex xs4>
+        <v-card-text class="px-0">画像と説明</v-card-text>
+      </v-flex>
+      <v-flex xs4>
+        <v-card-text class="px-0">画像と説明</v-card-text>
+      </v-flex>
+
+      <v-flex xs12>
+        <v-card-text class="px-0">サービス</v-card-text>
+      </v-flex>
+      <v-flex xs12>
+        <v-card-text class="px-0">テーブルで表示</v-card-text>
+      </v-flex>
+
+    </v-layout>
+  </v-container>
+</template>
+
+<script>
+export default {}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
