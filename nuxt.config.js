@@ -26,7 +26,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "#fff" },
+  loading: { color: '#fff' },
   /*
    ** Global CSS
    */
@@ -38,7 +38,19 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxtjs/vuetify'],
+
+  /*
+   ** Vuetifyのテーマ
+   */
+  vuetify: {
+    theme: {
+      primary: '#3f51b5',
+      secondary: '#b0bec5',
+      accent: '#8c9eff',
+      error: '#b71c1c'
+    }
+  },
   /*
    ** Build configuration
    */
@@ -46,6 +58,21 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {
+      // Run ESLint on save
+      if (ctx.isDev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
+      config.module.rules.push({
+        test: /\.json5$/,
+        loader: 'json5-loader',
+        exclude: /(node_modules)/
+      })
+    }
   }
 };

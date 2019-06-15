@@ -1,12 +1,33 @@
 <template>
   <div class="container">
     <div>
+<<<<<<< HEAD
       <logo/>
       <h1 class="title">EGG SYSTEM</h1>
       <h2 class="subtitle">中小企業に向けたシステムコンサルティング</h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Document</a>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">Github</a>
+=======
+      <logo />
+      <h1 class="title">
+        corporate-hp
+      </h1>
+      <h2 class="subtitle">
+        My terrific Nuxt.js project
+      </h2>
+      <div class="links">
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
+          Documentation
+        </a>
+        <a
+          href="https://github.com/nuxt/nuxt.js"
+          target="_blank"
+          class="button--grey"
+        >
+          GitHub
+        </a>
+>>>>>>> b41ccfb6ceb5ef8a779e4a28027ef930b6eed28a
       </div>
     </div>
   </div>
