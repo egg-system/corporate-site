@@ -1,20 +1,26 @@
 <template>
   <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
-      <v-flex xs12>
-        <v-card-text class="px-0">ホームページ・Webシステム開発</v-card-text>
-      </v-flex>
+      <main-title />
 
-      <v-flex xs6>
-        画像
-      </v-flex>
-      <v-flex xs6>
-        画像
-      </v-flex>
+      <main-img
+        link-url="/"
+        img-url="https://eggsystem.co.jp/image/btn_homepage.jpg"
+        img-title="ホームページ制作"
+        img-sub-title="Home Page"
+      />
+      <main-img
+        link-url="/"
+        img-url="https://eggsystem.co.jp/image/btn_websystem.jpg"
+        img-title="Webシステム開発"
+        img-sub-title="Web system development"
+      />
 
-      <v-flex xs12>
-        <v-card-text class="px-0">ホームページ制作　高品質なホームページを制作します。</v-card-text>
-      </v-flex>
+      <div class="sub">
+        <sub-title main="ホームページ制作 HOME PAGE" sub="高品質なホームページを制作します。"/>
+      </div>
+
+      <promise-txt />
 
       <v-flex xs12>
         <v-card-text class="px-0">promise</v-card-text>
@@ -87,8 +93,25 @@
 </template>
 
 <script>
-export default {}
+import MainTitle from '~/components/pages/homepage-web/MainTitle.vue'
+import MainImg from '~/components/pages/homepage-web/MainImg.vue'
+import SubTitle from '~/components/pages/homepage-web/SubTitle.vue'
+import PromiseTxt from '~/components/pages/homepage-web/PromiseTxt.vue'
+
+export default {
+  components: {
+    MainTitle,
+    MainImg,
+    SubTitle,
+    PromiseTxt
+  }
+}
 </script>
 
-<style>
+<style scoped>
+.sub {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #1f55a5;
+}
 </style>
