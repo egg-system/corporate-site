@@ -5,14 +5,8 @@
       <h1 class="title">EGG SYSTEM</h1>
       <h2 class="subtitle">中小企業に向けたシステムコンサルティング</h2>
       <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">会社情報</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">サービス</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">事例</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">メンバー紹介</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">ニュース</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">コラム</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">採用情報</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">お問い合わせ</a>
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Document</a>
+        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--green">Github</a>
       </div>
     </div>
   </div>
@@ -46,8 +40,7 @@ export default {
   display: block;
   font-weight: 300;
   font-size: 100px;
-  /* color: #35495e; */
-  color: white;
+  color: #35495e;
   letter-spacing: 1px;
 }
 
