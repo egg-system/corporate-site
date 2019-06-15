@@ -31,7 +31,10 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/vuetify'],
+  modules: [['@nuxtjs/axios', {
+    host: 'ec2-52-198-14-57.ap-northeast-1.compute.amazonaws.com',
+    port: 80
+  }], '@nuxtjs/vuetify'],
 
   /*
    ** Vuetifyのテーマ
