@@ -1,7 +1,6 @@
 <template>
   <v-app-bar :hide-on-scroll="hideOnScroll"
              scroll-target="container">
-    <v-app-bar-nav-icon/>
     <v-toolbar-title class="blue-grey--text font-weight-bold display-1">EGG SYSTEM</v-toolbar-title>
 
     <v-spacer/>
