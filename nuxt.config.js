@@ -15,6 +15,7 @@ export default {
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    // script:[src: ],
   },
   /*
    ** Customize the progress-bar color
@@ -23,7 +24,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ["@/assets/css/style.css"],
+  css: ["@/assets/css/layout.css", "@/assets/css/index.css"],
   /*
    ** Plugins to load before mounting the App
    */
