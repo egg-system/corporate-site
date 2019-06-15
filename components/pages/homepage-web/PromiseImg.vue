@@ -1,24 +1,23 @@
 <template>
-  <v-flex>
-    <v-layout align-center justify-center row fill-height>
-      <v-flex xs3>
-        <v-card-text class="main">{{ main }}</v-card-text>
-      </v-flex>
-      <v-flex xs9>
-        <v-card-text class="sub">{{ sub }}</v-card-text>
-      </v-flex>
-    </v-layout>
+  <v-flex xs4>
+    <v-card-text class="px-0">{{ title }}</v-card-text>
+    <v-img :src="img" class="iconImg" />
+    <v-card-text class="px-0">{{ description }}</v-card-text>
   </v-flex>
 </template>
 
 <script>
 export default {
   props: {
-    main: {
+    img: {
       type: String,
       default: ''
     },
-    sub: {
+    title: {
+      type: String,
+      default: ''
+    },
+    description: {
       type: String,
       default: ''
     }
@@ -28,12 +27,8 @@ export default {
 
 
 <style scoped>
-.main {
-  font-size: 20px;
-  color: white;
-}
-.sub {
-  font-size: 15px;
-  color: white;
+.iconImg {
+  width: 100px;
+  margin: 0 auto;
 }
 </style>

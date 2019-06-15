@@ -29,6 +29,7 @@ export default {
   font-size: 30px;
 }
 .sub {
+  margin-top: -20px;
   font-size: 15px;
 }
 </style>
