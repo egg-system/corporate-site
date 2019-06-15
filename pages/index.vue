@@ -1,13 +1,14 @@
 <template>
   <div class="container">
     <div>
-      <logo />
+      <test-logo v-if="show" />
       <h1 class="title">
-        corporate-hp
+        corporate-hp2
       </h1>
       <h2 class="subtitle">
         My terrific Nuxt.js project
       </h2>
+      <span @click="show_test">{{ test }}</span>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">
           Documentation
@@ -29,7 +30,18 @@ import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
-    Logo
+    TestLogo: Logo
+  },
+  data() {
+    return {
+      test: 'テストですよ',
+      show: false
+    }
+  },
+  methods: {
+    show_test() {
+      this.show = !this.show
+    }
   }
 }
 </script>
