@@ -14,8 +14,8 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
-    // script:[src: ],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    script: [{ src: "/assets/js/main.js" }]
   },
   /*
    ** Customize the progress-bar color
@@ -24,7 +24,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ["@/assets/css/layout.css", "@/assets/css/index.css"],
+  css: ["@/assets/css/common.css"],
   /*
    ** Plugins to load before mounting the App
    */
