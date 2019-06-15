@@ -14,7 +14,7 @@
   </header>
 </template>
 
-<style>
+<style scoped>
 .egg-common-header {
   display: flex;
   justify-content: space-around;
@@ -27,19 +27,17 @@
   background: #fff;
   width: 100%;
 }
-.egg-common-header *,
-.egg-common-header *:before,
-.egg-common-header *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
 }
 
-.egg-common-header h1 {
+h1 {
   color: #35495e;
 }
-.egg-common-header .header-link {
-}
-.egg-common-header .header-link .button--green {
+.header-link .button--green {
   display: inline-block;
   border-radius: 4px;
   border: 1px solid #3b8070;
@@ -48,12 +46,12 @@
   padding: 10px 30px;
 }
 
-.egg-common-header .header-link .button--green:hover {
+.header-link .button--green:hover {
   color: #fff;
   background-color: #3b8070;
 }
 
-.egg-common-header .header-link .button--grey {
+.header-link .button--grey {
   display: inline-block;
   border-radius: 4px;
   border: 1px solid #35495e;
@@ -63,7 +61,7 @@
   margin-left: 15px;
 }
 
-.egg-common-header .header-link .button--grey:hover {
+.header-link .button--grey:hover {
   color: #fff;
   background-color: #35495e;
 }

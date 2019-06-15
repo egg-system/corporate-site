@@ -12,7 +12,7 @@
   </footer>
 </template>
 
-<style>
+<style scoped>
 .egg-common-footer {
   display: flex;
   flex-direction: column;
