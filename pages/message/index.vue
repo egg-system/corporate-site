@@ -3,8 +3,12 @@
     <div>
       <logo />
       <h1 class="title">
-        corporate
+        代表メッセージ
       </h1>
+
+      <profimg />
+      <msgtxt />
+
       <h2 class="subtitle">
         My terrific Nuxt.js project
       </h2>
@@ -25,11 +29,13 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import MsgTxt from '~/components/message/MsgTxt.vue'
+import ProfImg from '~/components/message/ProfImg.vue'
 
 export default {
   components: {
-    Logo
+    MsgTxt,
+    ProfImg
   }
 }
 </script>
