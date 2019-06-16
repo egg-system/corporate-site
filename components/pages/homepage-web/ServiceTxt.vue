@@ -1,7 +1,7 @@
 <template>
   <v-flex xs12 class="promise">
-    <v-card-text class="main">Promise</v-card-text>
-    <v-card-text class="sub">お客さまとの６つの約束</v-card-text>
+    <v-card-text class="main">{{ main }}</v-card-text>
+    <v-card-text class="sub">{{ sub }}</v-card-text>
   </v-flex>
 </template>
 
@@ -23,13 +23,13 @@ export default {
 
 <style scoped>
 .promise {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .main {
-  font-size: 30px;
+  font-size: 50px;
 }
 .sub {
-  margin-top: -20px;
+  margin-top: -10px;
   font-size: 15px;
 }
 </style>
