@@ -11,6 +11,7 @@
       :items="desserts"
       class="elevation-1"
       hide-default-footer
+      hide-default-header
     >
       <template v-slot:body="{ items }">
         <tr v-for="item in items" :key="item.name" class="threepoint-tbl-tr">
@@ -55,5 +56,15 @@ export default {
 }
 .threepoint-tbl-tr:hover {
   background-color: #f5f5f5;
+}
+.msg-txt {
+  margin: 0 1.5em 1.5em 0;
+  text-align: left;
+}
+/* スマホ対応 */
+@media screen and (max-width: 767px) {
+  .msg-txt {
+    width: 100%;
+  }
 }
 </style>

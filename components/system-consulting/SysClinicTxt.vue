@@ -5,7 +5,7 @@
     </div>
     <br>
     <div class="title">
-      システム分析・診断サービス
+      システム分析・診断<br class="br-sp">サービス
     </div>
     <br>
     <div class="description">
@@ -44,10 +44,13 @@ export default {
   padding: 1.2em;
   background-color: #eeeeee;
 }
-/* タグレット・PC対応 */
-@media screen and (max-width: 1024px) {
+/* タブレット＆PC */
+@media screen and (min-width: 768px) {
   .img_3point {
     width: 300px;
+  }
+  .br-sp {
+    display: none;
   }
 }
 </style>

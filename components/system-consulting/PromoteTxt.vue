@@ -2,7 +2,7 @@
   <div class="main">
     <div class="title-img">
       <img src="~/assets/system-consulting/2-promote.png" alt="推進">
-      <h3 class="msg-title">業務改善コンサルティングサービス</h3>
+      <h3 class="msg-title">業務改善コンサルティング<br class="sp-br">サービス</h3>
       <br>
 
       <div class="plan-txt">
@@ -55,12 +55,27 @@ export default {
   max-width: 100% !important;
 }
 .v-card {
-  width: 270px;
+  width: 100%;
   font-weight: bold;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 .theme--light.v-card {
   margin: 10px !important;
+}
+/* タブレット＆PC */
+@media screen and (min-width: 768px) {
+  .br-sp {
+    display: none;
+  }
+}
+/* スマホ対応 */
+@media screen and (max-width: 767px) {
+  .flex.md3 {
+    display: inline;
+  }
+  .theme--light.v-card {
+    margin: 20px 0 20px 0 !important;
+  }
 }
 </style>

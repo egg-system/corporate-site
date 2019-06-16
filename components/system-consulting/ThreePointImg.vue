@@ -12,10 +12,11 @@
   height: auto;
 }
 
-/* タグレット・PC対応 */
-@media screen and (max-width: 1024px) {
+/* スマホ対応 */
+@media screen and (max-width: 767px) {
   .img_3point {
-    width: 300px;
+    width: 250px;
+    height: auto;
   }
 }
 </style>

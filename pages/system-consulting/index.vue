@@ -95,8 +95,8 @@ export default {
 }
 
 .msgtxt {
-  margin: 0 1.5em 1.5em 0;
-  text-align: left;
+  /*  margin: 0 1.5em 1.5em 0;
+  text-align: left;*/
 }
 
 .container {
@@ -115,28 +115,18 @@ export default {
 @media screen and (min-width: 768px) {
   .container-main {
     display: flex;
-    padding-left: 20px;
+    padding-left: 0;
   }
 }
 
 /* タブレット対応 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
-    /*    width: 1000px !important;*/
   }
   .msgtxt {
-    margin-left: 80px;
-  }
-  .container-client {
-    padding: 0 45px;
-  }
-  .container-clinic {
-    padding-left: 100px;
-    padding-right: 30px;
+    /*    margin-left: 80px;*/
   }
   .main {
-    width: 1100px;
-    margin-left: 60px;
   }
 }
 
@@ -148,30 +138,4 @@ export default {
   .main-content {
   }
 }
-/* タグレット対応 */
-/* @media screen and (min-width:481px) and (max-width:780px){} */
-
-/*
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-*/
 </style>

@@ -43,11 +43,10 @@
   padding: 1.2em;
   display: flex;
 }
-
-/* タグレット・PC対応 */
-@media screen and (max-width: 1024px) {
-  .img_3point {
-    width: 300px;
+/* スマホ対応 */
+@media screen and (max-width: 767px) {
+  .container-client {
+    display: inline;
   }
 }
 </style>

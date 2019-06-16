@@ -8,4 +8,11 @@
 .plan-img {
   height: 200px;
 }
+/* スマホ対応 */
+@media screen and (max-width: 767px) {
+  .plan-img {
+    width: 250px;
+    height: auto;
+  }
+}
 </style>
