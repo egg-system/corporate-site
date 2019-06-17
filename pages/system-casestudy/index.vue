@@ -58,7 +58,7 @@ export default {
 <style>
 .card {
   margin: 0 auto;
-  width: 96%;
+  width: 90%;
   box-shadow: none;
 }
 .container {
@@ -78,6 +78,7 @@ export default {
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .subtitle {
@@ -99,6 +100,7 @@ export default {
   color: #1f55aa !important;
   padding-top: 60px;
   line-height: 1.3;
+  text-align: center;
   padding-bottom: 60px;
   font-family: 'ヒラギノ角ゴ ProN W3', 'Meiryo, メイリオ', 'Lucida Grande';
 }
