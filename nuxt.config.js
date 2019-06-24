@@ -14,7 +14,14 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css'
+      }
+    ],
+    script: [{ src: '/assets/js/main.js' }]
   },
   /*
    ** Customize the progress-bar color
@@ -23,7 +30,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/css/common.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -31,7 +38,10 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/vuetify'],
+  modules: [['@nuxtjs/axios', {
+    host: 'ec2-52-198-14-57.ap-northeast-1.compute.amazonaws.com',
+    port: 80
+  }], '@nuxtjs/vuetify'],
 
   /*
    ** Vuetifyのテーマ
@@ -44,7 +54,6 @@ export default {
       error: '#b71c1c'
     }
   },
-
   /*
    ** Build configuration
    */
