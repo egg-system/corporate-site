@@ -5,14 +5,16 @@
 // Update blue
 $blue: #72d0eb;
 // Add pink and its invert
-$pink: #ffb3b3;
+$black: #0a0716;
+$gray: #f2f4ea;
 $pink-invert: #fff;
 // Add a serif family
 $family-serif: 'Alegreya Sans SC', sans-serif;
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
-$primary: $blue;
+$primary: $black;
+$info: $gray;
 $primary-invert: $pink-invert;
 // Use the existing orange as the danger color
 $danger: $orange;

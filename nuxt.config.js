@@ -37,7 +37,11 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [['@nuxtjs/axios']],
+  modules: ['@nuxtjs/axios', '@nuxtjs/style-resources'],
+
+  styleResources: {
+    scss: ['~/assets/common.scss']
+  },
 
   /*
    ** Build configuration
