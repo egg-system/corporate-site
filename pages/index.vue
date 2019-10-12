@@ -1,7 +1,16 @@
 <template>
-  <div>
-    <a href="https://eggsystem.co.jp" target="_blank" >Egg System</a>
-  </div>
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Egg System
+        </h1>
+        <h2 class="subtitle">
+          x-faCE
+        </h2>
+      </div>
+    </div>
+  </section>
 </template>
 
 
@@ -11,5 +20,5 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 </style>
