@@ -20,8 +20,7 @@ export default {
         rel: 'stylesheet',
         href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css'
       }
-    ],
-    script: [{ src: '/assets/js/main.js' }]
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -38,28 +37,8 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    [
-      '@nuxtjs/axios',
-      {
-        host: 'ec2-52-198-14-57.ap-northeast-1.compute.amazonaws.com',
-        port: 80
-      }
-    ],
-    '@nuxtjs/vuetify'
-  ],
+  modules: [['@nuxtjs/axios']],
 
-  /*
-   ** Vuetifyのテーマ
-   */
-  vuetify: {
-    theme: {
-      primary: '#1f55a5',
-      secondary: '#b0bec5',
-      accent: '#8c9eff',
-      error: '#b71c1c'
-    }
-  },
   /*
    ** Build configuration
    */

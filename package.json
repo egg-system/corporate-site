@@ -1,7 +1,7 @@
 {
-  "name": "corporate",
+  "name": "eggsystem",
   "version": "1.0.0",
-  "description": "My terrific Nuxt.js project",
+  "description": "eggsystem",
   "author": "eggsystem",
   "private": true,
   "scripts": {
@@ -13,13 +13,11 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.5.4",
-    "moment": "^2.24.0",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
-    "@nuxtjs/vuetify": "^1.0.0-beta.2",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^8.2.1",
