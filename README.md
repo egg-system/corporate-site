@@ -1,6 +1,4 @@
-# corporate
-
-> My terrific Nuxt.js project
+# Eggsystemコーポレートサイト
 
 ## Build Setup
 
@@ -19,4 +17,6 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## ドキュメント
+### cssフレームワーク
+* [Bulma](https://bulma.io/documentation/)
