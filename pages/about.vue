@@ -2,7 +2,7 @@
   <section class="hero is-primary">
     <div class="hero-body">
       <div class="container">
-        about
+        <main-text />
       </div>
     </div>
   </section>
@@ -10,8 +10,12 @@
 
 
 <script>
+import MainText from '~/components/pages/about/MainText.vue'
+
 export default {
-  components: {}
+  components: {
+    MainText
+  }
 }
 </script>
 
