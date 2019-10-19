@@ -37,10 +37,14 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/axios', '@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/google-analytics', '@nuxtjs/style-resources'],
 
   styleResources: {
     scss: ['~/assets/common.scss']
+  },
+
+  googleAnalytics: {
+    id: 'UA-118871797-1'
   },
 
   /*
