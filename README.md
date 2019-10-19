@@ -1,4 +1,4 @@
-# Eggsystemコーポレートサイト
+# Eggsystem Corporate Site
 
 ## Build Setup
 
@@ -17,6 +17,11 @@ $ npm start
 $ npm run generate
 ```
 
-## ドキュメント
-### cssフレームワーク
+## Document
+### UI
 * [Bulma](https://bulma.io/documentation/)
+* [SCSS](https://sass-lang.com/)
+
+### Lint/Formatter
+* [ESLint](https://eslint.org/)
+* [Prettier](https://prettier.io/)
