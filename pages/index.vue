@@ -8,6 +8,7 @@
         <h2 class="subtitle">
           x-faCE
         </h2>
+        エッグシステム
         <p><nuxt-link to="/about">about</nuxt-link></p>
       </div>
     </div>
