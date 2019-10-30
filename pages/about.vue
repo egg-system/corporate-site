@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-primary">
+  <section class="hero">
     <div class="hero-body">
       <div class="container">
         <main-text />
