@@ -3,13 +3,19 @@
 
 // 2. Set your own initial variables
 // Update blue
-$blue: #72d0eb;
+// $blue: #72d0eb;
+$blue: #1f55a5;
 // Add pink and its invert
 $black: #0a0716;
 $gray: #f2f4ea;
 $pink-invert: #fff;
 // Add a serif family
 $family-serif: 'Quicksand', sans-serif;
+
+// メニュー
+$navbar-tab-active-color: $blue;
+$navbar-dropdown-arrow: $black;
+$navbar-item-hover-color: $blue;
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
