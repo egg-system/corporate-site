@@ -1,13 +1,16 @@
 <template>
-  <section class="hero is-info">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="subtitle">
-          Footer
-        </h2>
-      </div>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        COPYRIGHT © 2019 システムコンサルティング・Webシステム開発｜中小企業、サロン開業者向け｜株式会社エッグシステム. All rights reserved.
+      </p>
+      <nuxt-link to="">
+        <p class="privacy">
+          プライバシーポリシー
+        </p>
+      </nuxt-link>
     </div>
-  </section>
+  </footer>
 </template>
 
 <script>
@@ -17,7 +20,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.subtitle {
-  color: $black !important;
+.privacy {
+  font-size: 10px;
 }
 </style>
