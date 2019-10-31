@@ -3,13 +3,22 @@
 
 // 2. Set your own initial variables
 // Update blue
-$blue: #72d0eb;
+// $blue: #72d0eb;
+$blue: #1f55a5;
 // Add pink and its invert
 $black: #0a0716;
 $gray: #f2f4ea;
 $pink-invert: #fff;
 // Add a serif family
-$family-serif: 'Alegreya Sans SC', sans-serif;
+$family-serif: 'Quicksand', sans-serif;
+
+// ヘッダーメニュー
+$navbar-tab-active-color: $blue;
+$navbar-dropdown-arrow: $black;
+$navbar-item-hover-color: $blue;
+
+// フッター
+// $footer-background-color: $scheme-main-bis;
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
