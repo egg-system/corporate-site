@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="">
+      <nuxt-link to="/" class="navbar-item">
         <img src="https://eggsystem.co.jp/wp-content/uploads/2018/06/logo-yoko.png" width="150" height="30">
-      </a>
+      </nuxt-link>
 
       <a :class="[isOpen ? 'is-active' : '']"
          class="navbar-burger burger"
