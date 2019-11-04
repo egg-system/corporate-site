@@ -1,6 +1,22 @@
 <template>
-  <div class="container has-text-white">
-    <div class="triangle-pattern08-2"/>
+  <div>
+    <div class="up"/>
+    <div class="mission">
+      <p class="main-message">
+        献身的な人のためにITシステムを活用する
+      </p>
+      <p>
+        株式会社エッグシステムでは、《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。
+      </p><br>
+      <p>
+        現代社会では「自分の保身のために行動する人」が評価され、「献身的に行動する人」が正しい評価を得られない現状があります。
+        しかし我々は、保身に走らず他人の利益のために献身的に行動することこそ、より良い社会を実現する一歩だと考えています。
+      </p><br>
+      <p>
+        目の前の人、顧客、家族が「喜ぶこと」を自分の喜びと感じ、献身的に頑張る人たちが、正しく報われる（＝成果を得る）ことをミッションとしています。
+      </p>
+    </div>
+    <div class="down"/>
   </div>
 </template>
 
@@ -8,52 +24,20 @@
 </script>
 
 <style lang="scss" scoped>
+.up {
+  border-bottom: 5rem solid transparent;
+  border-left: 23rem solid $blue;
+}
+.down {
+  border-top: 5rem solid transparent;
+  border-right: 23rem solid $blue;
+}
 .mission {
-  // background-color: $blue;
+  width: 80%;
+  margin: 0 auto;
 }
-.space {
-  background: $blue;
-  transform: skewY(-6deg);
-}
-section {
-  // position: relative;
-  box-sizing: border-box;
-  .inner {
-    position: relative;
-    padding: 20px;
-    max-width: 1024px;
-    margin: auto;
-  }
-}
-.slant-section {
-  margin: 15px auto;
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -50px;
-    z-index: -1;
-    width: 100%;
-    height: 150%;
-    background: $blue;
-    transform: skewY(-6deg);
-  }
-  + section {
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: -50px;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-      background: $blue;
-      transform: skewY(-12deg);
-    }
-  }
-}
-.triangle-pattern08-2 {
-  border-bottom: 150px solid transparent;
-  border-left: 350px solid $blue;
+.main-message {
+  font-weight: bold;
+  font-size: 3rem;
 }
 </style>
