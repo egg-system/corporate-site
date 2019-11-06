@@ -2,9 +2,9 @@
   <div>
     <div class="up"/>
     <div class="mission">
-      <p class="main-message">
+      <h1 class="title is-1">
         献身的な人のためにITシステムを活用する
-      </p>
+      </h1>
       <p>
         株式会社エッグシステムでは、《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。
       </p><br>
@@ -21,6 +21,7 @@
 </template>
 
 <script>
+export default {}
 </script>
 
 <style lang="scss" scoped>
@@ -35,9 +36,5 @@
 .mission {
   width: 80%;
   margin: 0 auto;
-}
-.main-message {
-  font-weight: bold;
-  font-size: 3rem;
 }
 </style>

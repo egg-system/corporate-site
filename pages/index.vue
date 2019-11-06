@@ -2,6 +2,7 @@
   <div>
     <hero-image />
     <section-mission />
+    <section-vision />
 
     <section class="hero">
       <div class="hero-body">
@@ -24,11 +25,13 @@
 <script>
 import HeroImage from '~/components/pages/top/HeroImage.vue'
 import SectionMission from '~/components/pages/top/SectionMission.vue'
+import SectionVision from '~/components/pages/top/SectionVision.vue'
 
 export default {
   components: {
     HeroImage,
-    SectionMission
+    SectionMission,
+    SectionVision
   }
 }
 </script>
