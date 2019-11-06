@@ -20,13 +20,26 @@
   background-attachment: fixed;
   background-position: center;
   width: 100%;
-  padding-top: 15%;
+  height: 400px;
+  position: relative;
+}
+.back:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /*半透明のフィルターをかける*/
 }
 .vision {
   width: 80%;
   margin: 0 auto;
   padding-bottom: 10%;
-  margin-top: -10%;
+  margin-top: 10%;
+  position: absolute;
+  padding-left: 10%;
+  color: $white;
 }
 .title {
   color: $white;
