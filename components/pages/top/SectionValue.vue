@@ -12,6 +12,7 @@
       <h3 class="title is-3">
         和衷協同
       </h3>
+      <button class="button is-primary">詳細をみる</button>
     </div>
     <triangle-down/>
   </div>
