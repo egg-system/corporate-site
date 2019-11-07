@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="up"/>
+    <triangle-up />
     <div class="mission">
       <p>mission</p>
       <h1 class="title is-1">
@@ -17,23 +17,23 @@
         目の前の人、顧客、家族が「喜ぶこと」を自分の喜びと感じ、献身的に頑張る人たちが、正しく報われる（＝成果を得る）ことをミッションとしています。
       </p>
     </div>
-    <div class="down"/>
+    <triangle-down/>
   </div>
 </template>
 
 <script>
-export default {}
+import TriangleUp from '~/components/pages/top/TriangleUp.vue'
+import TriangleDown from '~/components/pages/top/TriangleDown.vue'
+
+export default {
+  components: {
+    TriangleUp,
+    TriangleDown
+  }
+}
 </script>
 
 <style lang="scss" scoped>
-.up {
-  border-bottom: 5rem solid transparent;
-  border-left: 23rem solid $blue;
-}
-.down {
-  border-top: 5rem solid transparent;
-  border-right: 23rem solid $blue;
-}
 .mission {
   width: 80%;
   margin: 0 auto;
