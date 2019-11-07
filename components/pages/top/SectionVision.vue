@@ -1,10 +1,13 @@
 <template>
   <div class="back">
     <div class="vision">
-      vision
+      <p>
+        vision
+      </p>
       <h2 class="title is-2">
         100人の<br>コンサルティングエンジニア集団<br>x-faCEを作る
       </h2>
+      <button class="button is-primary">詳細をみる</button>
     </div>
   </div>
 </template>

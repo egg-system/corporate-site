@@ -22,7 +22,8 @@ $navbar-item-hover-color: $blue;
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
-$primary: $black;
+// $primary: $black;
+$primary: $blue;
 $info: $gray;
 $primary-invert: $pink-invert;
 // Use the existing orange as the danger color

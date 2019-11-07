@@ -2,6 +2,7 @@
   <div>
     <div class="up"/>
     <div class="mission">
+      <p>mission</p>
       <h1 class="title is-1">
         献身的な人のためにITシステムを活用する
       </h1>
