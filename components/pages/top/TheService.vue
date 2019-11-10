@@ -1,13 +1,21 @@
 <template>
-  <div class="back">
-    <div class="vision">
-      <p>
-        service
-      </p>
-      <div class="circle">サービス1</div>
-      <h2 class="title is-2">
-        100人の<br>コンサルティングエンジニア集団<br>x-faCEを作る
-      </h2>
+  <div class="service">
+    <p>
+      service
+    </p>
+    <div class="columns">
+      <div class="column is-one-quarter">
+        <div class="circle">システムコンサルティング</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="circle">システム開発</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="circle">サロン開業支援サービス</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="circle">オウンドメディア運営</div>
+      </div>
     </div>
   </div>
 </template>
@@ -16,35 +24,22 @@
 </script>
 
 <style lang="scss" scoped>
-.back {
-  background: url('https://eggsystem.co.jp/wp-content/uploads/2019/05/20190518-member01-1024x684.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  width: 100%;
-  height: 400px;
-  position: relative;
-}
-.back:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /*半透明のフィルターをかける*/
-}
-.vision {
+.service {
   width: 80%;
   margin: 0 auto;
-  padding-bottom: 10%;
   margin-top: 10%;
-  position: absolute;
-  padding-left: 10%;
-  color: $white;
+  margin-bottom: 10%;
 }
-.title {
+.circle {
+  width: 80%;
+  margin: 0 auto;
+  height: 200px;
+  background-color: $blue;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200px;
   color: $white;
+  font-size: 15px;
+  font-weight: bold;
 }
 </style>
