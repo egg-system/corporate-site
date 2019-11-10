@@ -1,6 +1,6 @@
 <template>
   <div>
-    <triangle-up />
+    <the-triangle-up />
     <div class="mission">
       <p>mission</p>
       <h1 class="title is-1">
@@ -17,18 +17,18 @@
         目の前の人、顧客、家族が「喜ぶこと」を自分の喜びと感じ、献身的に頑張る人たちが、正しく報われる（＝成果を得る）ことをミッションとしています。
       </p>
     </div>
-    <triangle-down/>
+    <the-triangle-down/>
   </div>
 </template>
 
 <script>
-import TriangleUp from '~/components/pages/top/TriangleUp.vue'
-import TriangleDown from '~/components/pages/top/TriangleDown.vue'
+import TheTriangleUp from '~/components/pages/top/TheTriangleUp.vue'
+import TheTriangleDown from '~/components/pages/top/TheTriangleDown.vue'
 
 export default {
   components: {
-    TriangleUp,
-    TriangleDown
+    TheTriangleUp,
+    TheTriangleDown
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <triangle-up />
+    <the-triangle-up />
     <div class="value">
       <p>value</p>
       <h3 class="title is-3">
@@ -14,18 +14,18 @@
       </h3>
       <button class="button is-primary">詳細をみる</button>
     </div>
-    <triangle-down/>
+    <the-triangle-down/>
   </div>
 </template>
 
 <script>
-import TriangleUp from '~/components/pages/top/TriangleUp.vue'
-import TriangleDown from '~/components/pages/top/TriangleDown.vue'
+import TheTriangleUp from '~/components/pages/top/TheTriangleUp.vue'
+import TheTriangleDown from '~/components/pages/top/TheTriangleDown.vue'
 
 export default {
   components: {
-    TriangleUp,
-    TriangleDown
+    TheTriangleUp,
+    TheTriangleDown
   }
 }
 </script>

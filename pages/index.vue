@@ -1,10 +1,10 @@
 <template>
   <div>
-    <hero-image />
-    <section-mission />
-    <section-vision />
-    <section-value />
-    <section-service />
+    <the-hero-image />
+    <the-mission />
+    <the-vision />
+    <the-value />
+    <the-service />
 
     <section class="hero">
       <div class="hero-body">
@@ -25,19 +25,19 @@
 
 
 <script>
-import HeroImage from '~/components/pages/top/HeroImage.vue'
-import SectionMission from '~/components/pages/top/SectionMission.vue'
-import SectionVision from '~/components/pages/top/SectionVision.vue'
-import SectionValue from '~/components/pages/top/SectionValue.vue'
-import SectionService from '~/components/pages/top/SectionService.vue'
+import TheHeroImage from '~/components/pages/top/TheHeroImage.vue'
+import TheMission from '~/components/pages/top/TheMission.vue'
+import TheVision from '~/components/pages/top/TheVision.vue'
+import TheValue from '~/components/pages/top/TheValue.vue'
+import TheService from '~/components/pages/top/TheService.vue'
 
 export default {
   components: {
-    HeroImage,
-    SectionMission,
-    SectionVision,
-    SectionValue,
-    SectionService
+    TheHeroImage,
+    TheMission,
+    TheVision,
+    TheValue,
+    TheService
   }
 }
 </script>
