@@ -34,11 +34,11 @@
   width: 80%;
   margin: 0 auto;
   height: 200px;
-  background-color: $blue;
+  background-color: $gray;
+  color: $black;
   border-radius: 50%;
   text-align: center;
   line-height: 200px;
-  color: $white;
   font-size: 15px;
   font-weight: bold;
 }
