@@ -4,12 +4,18 @@
       news
     </p>
     <div class="news-list">
-      <div v-for="(item, i) in items" :key="i" class="columns">
+      <div v-for="(item, i) in items" :key="i" class="columns is-gapless">
         <div class="column is-2">{{ item.date }}</div>
-        <div class="column is-2">{{ item.label }}</div>
-        <nuxt-link :to="item.url">
-          <div class="column">{{ item.title }}</div>
-        </nuxt-link>
+        <div class="column is-2">
+          <span class="tag is-warning">
+            {{ item.label }}
+          </span>
+        </div>
+        <div class="column is-8">
+          <nuxt-link :to="item.url">
+            {{ item.title }}
+          </nuxt-link>
+        </div>
         <hr v-if="(i + 1 !== Object.keys(items).length)" >
       </div>
     </div>
