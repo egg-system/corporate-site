@@ -5,6 +5,7 @@
     <the-vision />
     <the-value />
     <the-service />
+    <the-news-list />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import TheMission from '~/components/pages/top/TheMission.vue'
 import TheVision from '~/components/pages/top/TheVision.vue'
 import TheValue from '~/components/pages/top/TheValue.vue'
 import TheService from '~/components/pages/top/TheService.vue'
+import TheNewsList from '~/components/pages/top/TheNewsList.vue'
 
 export default {
   components: {
@@ -22,7 +24,8 @@ export default {
     TheMission,
     TheVision,
     TheValue,
-    TheService
+    TheService,
+    TheNewsList
   }
 }
 </script>
