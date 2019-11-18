@@ -19,6 +19,7 @@
         <hr v-if="(i + 1 !== Object.keys(items).length)" >
       </div>
     </div>
+    <button class="button is-fullwidth more">もっと見る</button>
   </div>
 </template>
 
@@ -58,5 +59,8 @@ export default {
 }
 .news p {
   margin-bottom: 30px;
+}
+.more {
+  margin-top: 30px;
 }
 </style>
