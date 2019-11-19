@@ -3,9 +3,6 @@
     <the-triangle-up />
     <div class="mission">
       <p>mission</p>
-      <h1 class="title is-1">
-        献身的な人のためにITシステムを活用する
-      </h1>
       <p>
         株式会社エッグシステムでは、《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。
       </p><br>
@@ -37,5 +34,6 @@ export default {
 .mission {
   width: 80%;
   margin: 0 auto;
+  font-weight: bold;
 }
 </style>
