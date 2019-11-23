@@ -11,7 +11,6 @@
   </div>
 </template>
 
-
 <script>
 import TheHeroImage from '~/components/pages/top/TheHeroImage.vue'
 import TheMission from '~/components/pages/top/TheMission.vue'

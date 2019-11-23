@@ -4,7 +4,7 @@
       <p>
         COPYRIGHT © 2019 システムコンサルティング・Webシステム開発｜中小企業、サロン開業者向け｜株式会社エッグシステム. All rights reserved.
       </p>
-      <nuxt-link to="">
+      <nuxt-link to="/privacy">
         <p class="privacy">
           プライバシーポリシー
         </p>
