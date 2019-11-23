@@ -19,57 +19,57 @@
       </a>
     </div>
 
-    <div id="navbarBasicExample" :class="[isOpen ? 'is-active' : '']" class="navbar-menu">
+    <div id="navbarBasicExample" :class="[isOpen ? 'is-active' : '']" class="navbar-menu" @click="menu()">
       <div class="navbar-end">
 
-        <a class="navbar-item">
+        <nuxt-link class="navbar-item" to="/company">
           会社情報
-        </a>
+        </nuxt-link>
 
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
+          <nuxt-link class="navbar-link" to="/service">
             サービス
-          </a>
+          </nuxt-link>
 
           <div class="navbar-dropdown">
-            <a class="navbar-item">
+            <nuxt-link class="navbar-item" to="/service/consulting">
               システムコンサルティング
-            </a>
-            <a class="navbar-item">
+            </nuxt-link>
+            <nuxt-link class="navbar-item" to="/service/development">
               システム開発
-            </a>
-            <a class="navbar-item">
+            </nuxt-link>
+            <nuxt-link class="navbar-item" to="/service/salon">
               サロン開業支援サービス
-            </a>
-            <a class="navbar-item">
+            </nuxt-link>
+            <nuxt-link class="navbar-item" to="/service/media">
               オウンドメディア運営
-            </a>
+            </nuxt-link>
           </div>
         </div>
 
-        <a class="navbar-item">
+        <nuxt-link class="navbar-item" to="/xface">
           x-faCE
-        </a>
+        </nuxt-link>
 
-        <a class="navbar-item">
+        <nuxt-link class="navbar-item" to="/member">
           メンバー
-        </a>
+        </nuxt-link>
 
-        <a class="navbar-item">
+        <nuxt-link class="navbar-item" to="/news">
           ニュース
-        </a>
+        </nuxt-link>
 
-        <a class="navbar-item">
+        <nuxt-link class="navbar-item" to="/column">
           コラム
-        </a>
+        </nuxt-link>
 
-        <a class="navbar-item">
+        <nuxt-link class="navbar-item" to="/recruit">
           採用情報
-        </a>
+        </nuxt-link>
 
-        <a class="navbar-item">
+        <nuxt-link class="navbar-item" to="contact">
           お問い合わせ
-        </a>
+        </nuxt-link>
 
       </div>
 
