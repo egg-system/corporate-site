@@ -1,11 +1,17 @@
 <template>
   <div>
-    サービス(ホームページ・web開発)
+    <the-hero-title main-text="サービス" sub-text="ホームページ・web開発" />
   </div>
 </template>
 
-
 <script>
+import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
+
+export default {
+  components: {
+    TheHeroTitle
+  }
+}
 </script>
 
 <style lang="scss" scoped>
