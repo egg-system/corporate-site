@@ -19,7 +19,7 @@
       </a>
     </div>
 
-    <div id="navbarBasicExample" :class="[isOpen ? 'is-active' : '']" class="navbar-menu">
+    <div id="navbarBasicExample" :class="[isOpen ? 'is-active' : '']" class="navbar-menu" @click="menu()">
       <div class="navbar-end">
 
         <nuxt-link class="navbar-item" to="/company">
