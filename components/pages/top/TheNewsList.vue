@@ -1,8 +1,6 @@
 <template>
   <div class="news">
-    <p>
-      news
-    </p>
+    <the-sub-header text="news" />
     <div class="news-list">
       <div v-for="(item, i) in items" :key="i" class="columns is-gapless">
         <div class="column is-2">{{ item.date }}</div>
@@ -24,7 +22,12 @@
 </template>
 
 <script>
+import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
+
 export default {
+  components: {
+    TheSubHeader
+  },
   data: () => ({
     items: [
       {

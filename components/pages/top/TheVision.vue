@@ -1,9 +1,7 @@
 <template>
   <div class="back">
     <div class="vision">
-      <p>
-        vision
-      </p>
+      <the-sub-header text="vision" />
       <h2 class="title is-2">
         100人の<br>コンサルティングエンジニア集団<br>x-faCEを作る
       </h2>
@@ -13,6 +11,13 @@
 </template>
 
 <script>
+import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
+
+export default {
+  components: {
+    TheSubHeader
+  }
+}
 </script>
 
 <style lang="scss" scoped>

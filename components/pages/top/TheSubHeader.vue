@@ -17,5 +17,8 @@ export default {
 .sub-header {
   display: inline-block;
   border-bottom: solid 3px #87cefa;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
 }
 </style>

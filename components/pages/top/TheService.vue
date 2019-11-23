@@ -1,8 +1,6 @@
 <template>
   <div class="service">
-    <p>
-      service
-    </p>
+    <the-sub-header text="service" />
     <div class="columns">
       <div class="column is-one-quarter">
         <div class="circle">システムコンサルティング</div>
@@ -21,6 +19,13 @@
 </template>
 
 <script>
+import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
+
+export default {
+  components: {
+    TheSubHeader
+  }
+}
 </script>
 
 <style lang="scss" scoped>

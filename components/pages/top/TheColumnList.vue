@@ -1,8 +1,6 @@
 <template>
   <div class="column-item">
-    <p>
-      column
-    </p>
+    <the-sub-header text="column" />
     <div class="columns is-1">
       <div v-for="(item, i) in items" :key="i" class="column">
         <nuxt-link :to="item.url">
@@ -28,7 +26,12 @@
 </template>
 
 <script>
+import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
+
 export default {
+  components: {
+    TheSubHeader
+  },
   data: () => ({
     items: [
       {

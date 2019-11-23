@@ -1,9 +1,7 @@
 <template>
   <div class="back">
     <div class="vision">
-      <p>
-        recruit
-      </p>
+      <the-sub-header text="recruit" />
       <h2 class="title is-2">
         コンサルティングエンジニア募集
       </h2>
@@ -13,6 +11,13 @@
 </template>
 
 <script>
+import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
+
+export default {
+  components: {
+    TheSubHeader
+  }
+}
 </script>
 
 <style lang="scss" scoped>

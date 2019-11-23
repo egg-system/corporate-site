@@ -2,7 +2,6 @@
   <div>
     <the-triangle-up />
     <div class="mission">
-      <p class="sub">mission</p>
       <the-sub-header text="mission" />
       <p>
         株式会社エッグシステムでは、《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。

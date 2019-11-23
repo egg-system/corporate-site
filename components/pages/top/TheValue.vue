@@ -2,7 +2,7 @@
   <div>
     <the-triangle-up />
     <div class="value">
-      <p>value</p>
+      <the-sub-header text="value" />
       <h3 class="title is-3">
         圧倒的当事者意識
       </h3>
@@ -21,11 +21,13 @@
 <script>
 import TheTriangleUp from '~/components/pages/top/TheTriangleUp.vue'
 import TheTriangleDown from '~/components/pages/top/TheTriangleDown.vue'
+import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
 
 export default {
   components: {
     TheTriangleUp,
-    TheTriangleDown
+    TheTriangleDown,
+    TheSubHeader
   }
 }
 </script>
