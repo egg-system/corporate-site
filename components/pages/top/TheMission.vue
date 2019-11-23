@@ -2,7 +2,8 @@
   <div>
     <the-triangle-up />
     <div class="mission">
-      <p>mission</p>
+      <p class="sub">mission</p>
+      <the-sub-header text="mission" />
       <p>
         株式会社エッグシステムでは、《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。
       </p><br>
@@ -21,11 +22,13 @@
 <script>
 import TheTriangleUp from '~/components/pages/top/TheTriangleUp.vue'
 import TheTriangleDown from '~/components/pages/top/TheTriangleDown.vue'
+import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
 
 export default {
   components: {
     TheTriangleUp,
-    TheTriangleDown
+    TheTriangleDown,
+    TheSubHeader
   }
 }
 </script>
@@ -35,5 +38,9 @@ export default {
   width: 80%;
   margin: 0 auto;
   font-weight: bold;
+}
+.sub {
+  display: inline-block;
+  border-bottom: solid 3px #87cefa;
 }
 </style>
