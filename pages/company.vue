@@ -56,6 +56,7 @@ export default {
 }
 .blank {
   margin-top: 100px;
+  margin-bottom: 30px;
 }
 .end {
   margin-bottom: 50px;
