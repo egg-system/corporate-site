@@ -16,7 +16,7 @@ export default {
 <style lang="scss" scoped>
 .sub-header {
   display: inline-block;
-  border-bottom: solid 3px #87cefa;
+  border-bottom: solid 3px $lightBlue;
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: bold;
