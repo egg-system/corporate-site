@@ -1,11 +1,15 @@
 <template>
-  <div class="back">
-    <div class="vision">
-      <the-sub-header text="recruit" />
-      <h2 class="title is-2">
-        コンサルティングエンジニア募集
-      </h2>
-      <button class="button is-primary">詳細をみる</button>
+  <div class="bg-image">
+    <div class="bg-mask">
+      <div class="bg-text">
+        <the-sub-header class="vision" text="recruit" />
+        <h1 class="title is-2">
+          <p class="vision-text">
+            100人の<br>コンサルティングエンジニア募集
+          </p>
+        </h1>
+        <button class="button is-primary">詳細をみる</button>
+      </div>
     </div>
   </div>
 </template>
@@ -21,35 +25,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.back {
+.bg-image {
   background: url('https://eggsystem.co.jp/wp-content/uploads/2019/05/20190518-member01-1024x684.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  object-fit: cover;
   width: 100%;
-  height: 400px;
-  position: relative;
+  height: 550px;
+  background-size: cover;
 }
-.back:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /*半透明のフィルターをかける*/
+.bg-mask {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.vision {
+.bg-text {
+  color: $white;
+  padding-top: 100px;
   width: 80%;
   margin: 0 auto;
-  padding-bottom: 10%;
-  margin-top: 10%;
-  position: absolute;
-  padding-left: 10%;
-  color: $white;
 }
-.title {
+.vision-text {
   color: $white;
 }
 </style>
