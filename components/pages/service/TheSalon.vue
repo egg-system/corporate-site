@@ -28,4 +28,11 @@ export default {
   background-image: url('https://storage.googleapis.com/prd-careers-asset/2019/05/8d4f1b0a-hero-pc.jpg');
   background-attachment: fixed;
 }
+/* スマホの場合は画像を変える */
+@media screen and (max-width: 400px) {
+  .hero-body {
+    background-image: url('https://storage.googleapis.com/prd-careers-asset/2019/05/83b474fd-hero-sp.jpg');
+    background-position: 50%;
+  }
+}
 </style>
