@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="table-container">
-      <table class="table">
+      <table class="table table-info">
         <tbody>
           <tr>
             <td>社名</td>
@@ -50,4 +50,8 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.table-info {
+  max-width: 700px;
+  margin: auto;
+}
 </style>
