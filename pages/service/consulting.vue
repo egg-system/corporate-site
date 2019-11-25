@@ -13,6 +13,10 @@
 
       <the-sub-header class="blank" text="事例紹介" />
       <the-case />
+
+      <div class="contact">
+        <button class="button is-large is-fullwidth" @click="go('/contact')">お問い合わせ</button>
+      </div>
     </div>
   </div>
 </template>
@@ -24,6 +28,7 @@ import TheOverview from '~/components/pages/service/consulting/TheOverview.vue'
 import TheCharacteristic from '~/components/pages/service/consulting/TheCharacteristic.vue'
 import TheTarget from '~/components/pages/service/consulting/TheTarget.vue'
 import TheCase from '~/components/pages/service/consulting/TheCase.vue'
+import method from '~/mixins/method'
 
 export default {
   components: {
@@ -33,7 +38,8 @@ export default {
     TheCharacteristic,
     TheTarget,
     TheCase
-  }
+  },
+  mixins: [method]
 }
 </script>
 
@@ -51,5 +57,11 @@ export default {
 }
 .blank {
   margin-top: 100px;
+}
+.contact {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 50%;
+  margin: auto;
 }
 </style>
