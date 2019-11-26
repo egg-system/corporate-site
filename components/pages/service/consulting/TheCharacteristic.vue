@@ -4,15 +4,10 @@
       <h3 class="is-5">①【計画】IT戦略・IT投資計画策定サービス</h3>
       効率よくシステム投資を行うためには計画が必要となります。 どういうシステムに、いつ、いくらの費用をかければよいか、というIT戦略を策定します。<br>
       ※3年先の中長期計画まで策定されていない企業様向け<br><br>
-      5W2H1Eを可視化します。<br>
-      ・Why<br>
-      ・What<br>
-      ・When<br>
-      ・Who<br>
-      ・Where<br>
-      ・How<br>
-      ・How much<br>
-      ・Effect<br><br><br>
+      <p class="image-text">5W2H1Eを可視化します。</p>
+      <figure class="image">
+        <img src="https://eggsystem.co.jp/wp-content/uploads/2019/01/5w2h1e.png">
+      </figure>
     </div>
     <div>
       <h3 class="is-5">②【推進】業務改善コンサルティングサービス</h3>
@@ -40,4 +35,10 @@
 </script>
 
 <style lang="scss" scoped>
+.image-text {
+  text-align: center;
+}
+.image {
+  margin-bottom: 30px;
+}
 </style>
