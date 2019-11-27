@@ -1,6 +1,6 @@
 <template>
   <div class="columns">
-    <div class="column">
+    <div class="column center">
       <p class="text">
         システム導入およびシステム導入後の運用における<br><b>「計画」「推進」「管理」</b>に沿ったコンサルティングサービスを提供します。
       </p>
@@ -20,7 +20,9 @@
 @media screen and (min-width: 769px) {
   .text {
     font-size: 20px;
-    margin-top: 50px;
   }
+}
+.center {
+  margin: auto;
 }
 </style>
