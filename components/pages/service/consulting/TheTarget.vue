@@ -23,7 +23,7 @@
   margin: 30px auto;
 }
 .box-center p {
-  margin: 0;
+  margin: 20px;
   padding: 0;
   font-size: 20px;
 }
