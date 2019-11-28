@@ -17,6 +17,7 @@
 </script>
 
 <style lang="scss" scoped>
+// PC版
 @media screen and (min-width: 769px) {
   .text {
     font-size: 20px;

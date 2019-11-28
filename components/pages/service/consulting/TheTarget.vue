@@ -19,11 +19,12 @@
   border-bottom: solid 6px $darksmoke;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
   border-radius: 9px;
-  max-width: 600px;
+  max-width: 800px;
   margin: 30px auto;
 }
 .box-center p {
   margin: 0;
   padding: 0;
+  font-size: 20px;
 }
 </style>
