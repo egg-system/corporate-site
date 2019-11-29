@@ -23,7 +23,7 @@
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
-import TheSubHeader from '~/components/pages/company/TheSubHeader.vue'
+import TheSubHeader from '~/components/pages/common/TheSubHeader.vue'
 import TheInfo from '~/components/pages/company/TheInfo.vue'
 import TheMap from '~/components/pages/company/TheMap.vue'
 import TheMission from '~/components/pages/company/TheMission.vue'
