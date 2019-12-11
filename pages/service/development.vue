@@ -57,6 +57,9 @@ export default {
     margin: 0 auto;
   }
 }
+.blank {
+  margin-top: 100px;
+}
 .contact {
   padding-top: 30px;
   padding-bottom: 30px;

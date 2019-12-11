@@ -69,17 +69,15 @@ export default {
           'https://eggsystem.co.jp/wp-content/uploads/2019/06/gokigen-boxing.png'
       },
       {
-        title: '明石悠佳（あかしゆか）さん座談会｜複業・働き方を考える',
-        url: 'https://yahoo.co.jp',
+        title: 'パーソナルトレーニングジム',
+        url: 'https://flowpersonal.go-kigen.jp/',
         img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/10/20190910-08-1024x683.jpg'
+          'https://eggsystem.co.jp/wp-content/uploads/2019/06/flow-personal-new.png'
       },
       {
-        title:
-          '複業メンバーによるシステム開発をやってみて【振り返りと今後の対策】',
-        url: 'https://yahoo.co.jp',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/08/20190622-DSC_3506-min-1024x684.jpg'
+        title: '出張マッサージ',
+        url: 'https://body-task.com/',
+        img: 'https://eggsystem.co.jp/wp-content/uploads/2018/12/body-task.png'
       }
     ]
   })
@@ -114,7 +112,7 @@ h4 {
   margin: auto;
 }
 .case-2 {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .home-page-title {
   text-align: center;

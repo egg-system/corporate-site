@@ -21,6 +21,30 @@
           きれいなデザインにすることは当たり前。あなたの会社やサービスの魅力を引き出し、本当に伝えたい事が伝わるデザインを提供します。<br>
         </p>
       </div>
+
+
+      <div class="columns is-multiline">
+        <div v-for="(item, i) in homePage" :key="i" class="column is-one-third">
+
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4 center-text">{{ item.title }}</p>
+                </div>
+              </div>
+              <div class="icon-image">
+                <i :class="item.icon" class="icon fa-5x"/>
+              </div>
+              <div class="content" v-html="item.content"/>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
     </div>
     <div>
       <h3 class="is-5 blank">②Webシステム開発</h3>
@@ -48,6 +72,42 @@
 </template>
 
 <script>
+export default {
+  data: () => ({
+    homePage: [
+      {
+        title: '目的に合わせる',
+        icon: 'fas fa-desktop',
+        content:
+          'ホームページを作ることが目的ではありません。<br>ホームページを作って何を実現したいのか丁寧にヒアリングさせて頂いた上で、目的に合わせたホームページを制作します。'
+      },
+      {
+        title: 'お客様の手間を最小限に',
+        icon: 'fas fa-desktop',
+        content:
+          '事業内容を詳しくヒアリングさせて頂き、お客様の会社・事業のことを十分理解した状態で制作することで、キャッチコピーや掲載する文章は当社で作成することが可能となります。'
+      },
+      {
+        title: '豊富な事例を紹介',
+        icon: 'fas fa-desktop',
+        content:
+          '他の会社ではこういうやり方をしていますよ、といった豊富な事例を紹介しながら、お客様の事業成長へ貢献できるホームページを制作します。'
+      },
+      {
+        title: 'コストパフォーマンス',
+        icon: 'fas fa-desktop',
+        content:
+          '大手制作会社の半分以下の費用で対応します。仕様書や打ち合わせは必要最低限に抑えるだけでなく、社内の間接費用を最小限に抑えているため、このコストパフォーマンスを実現できています。'
+      },
+      {
+        title: '魅力を伝えるデザイン',
+        icon: 'fas fa-desktop',
+        content:
+          'きれいなデザインにすることは当たり前。あなたの会社やサービスの魅力を引き出し、本当に伝えたい事が伝わるデザインを提供します。'
+      }
+    ]
+  })
+}
 </script>
 
 <style lang="scss" scoped>
@@ -77,5 +137,12 @@
 .box-left p {
   margin: 0;
   padding: 0;
+}
+.icon {
+  width: 100%;
+}
+.icon-image {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 </style>
