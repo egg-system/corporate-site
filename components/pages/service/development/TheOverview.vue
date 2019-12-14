@@ -1,16 +1,14 @@
 <template>
-  <div class="columns">
-    <div class="column center">
-      <p class="text">
-        作ることがゴールではなく<br><b>お客様のニーズにあったシステム開発を行います</b><br>
-        ①ホームページ制作<br>
-        ②Webシステム開発
-      </p>
-    </div>
-    <div class="column is-two-fifths">
-      <figure class="image">
-        <img src="https://eggsystem.co.jp/image/btn_homepage.jpg">
-      </figure>
+  <div>
+    <div class="bg-image">
+      <div class="bg-mask">
+        <h3 class="title is-4">
+          <p class="bg-text">
+            作ることがゴールではなく<br><b>お客様のニーズにあったシステム開発を行います</b><br>
+            ①ホームページ制作<br>
+            ②Webシステム開発</p>
+        </h3>
+      </div>
     </div>
   </div>
 </template>
@@ -19,13 +17,21 @@
 </script>
 
 <style lang="scss" scoped>
-// PC版
-@media screen and (min-width: 769px) {
-  .text {
-    font-size: 20px;
-  }
+.bg-image {
+  background: url('https://eggsystem.co.jp/image/btn_homepage.jpg');
+  width: 100%;
+  height: 300px;
+  background-size: cover;
 }
-.center {
-  margin: auto;
+.bg-mask {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-text {
+  color: $white;
+  line-height: 2.5rem;
+  padding-top: 60px;
+  width: 80%;
+  margin: 0 auto;
 }
 </style>

@@ -1,10 +1,12 @@
 <template>
   <div>
     <the-hero-title main-text="サービス" sub-text="ホームページ・web開発" />
-    <div class="content">
-      <the-sub-header text="サービス概要" />
+    <div class="overview">
+      <!-- <the-sub-header text="サービス概要" /> -->
       <the-overview />
+    </div>
 
+    <div class="content">
       <the-sub-header class="blank" text="サービスの特徴" />
       <the-characteristic />
 

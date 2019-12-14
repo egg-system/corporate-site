@@ -24,8 +24,6 @@
         </div>
       </div>
 
-
-
     </div>
     <div>
       <h3 class="is-5 blank center-text">②Webシステム開発</h3>
@@ -50,10 +48,6 @@
           </div>
         </div>
       </div>
-
-
-
-
 
     </div>
     <div/>
