@@ -87,6 +87,7 @@ export default {
 <style lang="scss" scoped>
 h4 {
   text-align: center;
+  color: $blue;
 }
 .image {
   margin: auto;
