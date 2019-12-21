@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <h3 class="is-5">①【計画】IT戦略・IT投資計画策定サービス</h3>
+      <h3 class="is-5 word">①【計画】IT戦略・IT投資計画策定サービス</h3>
       <p class="explanation">
         効率よくシステム投資を行うためには計画が必要となります。 どういうシステムに、いつ、いくらの費用をかければよいか、というIT戦略を策定します。<br>
       </p>
@@ -24,7 +24,7 @@
       </div>
     </div>
     <div>
-      <h3 class="is-5 blank">②【推進】業務改善コンサルティングサービス</h3>
+      <h3 class="is-5 blank word">②【推進】業務改善コンサルティングサービス</h3>
       <p class="explanation">
         現状業務の問題点を明らかにした上で、対策案を策定し、改善を行います。 必要に応じてシステム・ツールの導入を検討しながら、業務効率化を図ります。<br>
       </p>
@@ -37,7 +37,7 @@
       </div>
     </div>
     <div/>
-    <h3 class="is-5 blank">③【管理】プロジェクトマネジメントサービス</h3>
+    <h3 class="is-5 blank word">③【管理】プロジェクトマネジメントサービス</h3>
     <div class="columns">
       <div class="column">
         <p class="explanation">
@@ -109,5 +109,9 @@
 }
 .small-text {
   font-size: 10px;
+}
+.word {
+  text-align: center;
+  color: $blue;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <h3 class="is-5 blank center-text">①ホームページ制作</h3>
+      <h3 class="is-5 blank center-text word">①ホームページ制作</h3>
       <p class="explanation center-text">
         お客様の事業内容や目的に合わせたホームページを安く、早く、綺麗に作り上げます
       </p>
@@ -26,7 +26,7 @@
 
     </div>
     <div>
-      <h3 class="is-5 blank center-text">②Webシステム開発</h3>
+      <h3 class="is-5 blank center-text word">②Webシステム開発</h3>
       <p class="explanation">
         システム開発することが目的ではなく、お客さまの事業成長へ貢献することが目的なので、検討した結果「システム開発は行わずに簡易的な無料ツールを使いましょう」というご提案ができることが当社の強みです。
       </p>
@@ -150,5 +150,8 @@ export default {
 .icon-image {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.word {
+  color: $blue;
 }
 </style>
