@@ -8,7 +8,19 @@
 // Add pink and its invert
 $pink-invert: #fff;
 // Add a serif family
-$family-serif: 'Quicksand', sans-serif;
+// $family-serif: 'Quicksand', sans-serif;
+@font-face {
+  font-family: 'Ryumin';
+  src: local('font/A-OTF-RyuminPro-Bold.otf') format("opentype"),
+       local('font/A-OTF-RyuminPro-ExBold.otf') format("opentype"),
+       local('font/A-OTF-RyuminPro-ExHeavy.otf') format("opentype"),
+       local('font/A-OTF-RyuminPro-Heavy.otf') format("opentype"),
+       local('font/A-OTF-RyuminPro-Light.otf') format("opentype"),
+       local('font/A-OTF-RyuminPro-Medium.otf') format("opentype"),
+       local('font/A-OTF-RyuminPro-Regular.otf') format("opentype"),
+       local('font/A-OTF-RyuminPro-Ultra.otff') format("opentype");
+}
+$family-serif: 'Ryumin', sans-serif;
 
 // ヘッダーメニュー
 $navbar-tab-active-color: $blue;
