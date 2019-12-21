@@ -6,11 +6,11 @@
         顧客に合わせたメニュー・コンセプト作りから、ホームページの制作、集客方法の設計、予約や会計まで一貫したオペレーションを実現します。
       </p>
 
-      <p class="explanation center-text blank">
-        <b>「施術以外の不安をゼロ」にする７つのサービス</b>
+      <p class="explanation center-text blank main-text">
+        「施術以外の不安をゼロ」にする７つのサービス
       </p>
 
-      <div class="box-left">
+      <div class="box-center">
         <p>
           1.開業後に実現したい目標やお店について丁寧にヒアリング<br><br>
           2.来店して欲しい顧客に合わせたメニュー作り<br><br>
@@ -19,6 +19,7 @@
           5.集客方法の設計<br><br>
           6.予約から会計まで一貫したオペレーションの実現<br><br>
           7.豊富な他社事例のご提供<br>
+          ・主な業種：エステサロン、整体、接骨院、リラクゼーション、美容室、パーソナルトレーニング
         </p>
       </div>
 
@@ -31,29 +32,30 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-.box-left {
+.box-center {
   padding: 0.5em 1em;
+  margin: 2em 0;
   color: $black;
   background: $whitesmoke;
-  border-left: solid 10px $lightBlue;
-  width: 60%;
-  margin: auto;
+  border-bottom: solid 6px $darksmoke;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  max-width: 950px;
+  margin: 30px auto;
 }
-/* スマホの場合は幅を広くする */
-@media screen and (max-width: 400px) {
-  .box-left {
-    width: 100%;
-    margin: auto;
-  }
-}
-.box-left p {
-  margin: 0;
+.box-center p {
+  margin: 20px;
   padding: 0;
+  font-size: 20px;
 }
 .center-text {
   text-align: center;
 }
 .blank {
   margin-top: 30px;
+}
+.main-text {
+  font-weight: bold;
+  font-size: 20px;
 }
 </style>
