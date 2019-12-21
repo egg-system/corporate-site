@@ -2,7 +2,6 @@
   <div>
     <the-hero-title main-text="サービス" sub-text="ホームページ・web開発" />
     <div class="overview">
-      <!-- <the-sub-header text="サービス概要" /> -->
       <the-overview />
     </div>
 
