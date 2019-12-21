@@ -2,7 +2,6 @@
   <div>
     <the-hero-title main-text="サービス" sub-text="ホームページ・web開発" />
     <div class="overview">
-      <!-- <the-sub-header text="サービス概要" /> -->
       <the-overview />
     </div>
 
@@ -13,16 +12,7 @@
       <the-sub-header class="blank" text="事例紹介" />
       <the-case />
 
-      <div class="contact">
-        <p>
-          サービス内容や事例について等、お気軽にお問い合わせください。<br>
-          依頼するかどうかまだ決まっていない、問い合わせるべきかどうか迷っている、<br>
-          といった状態でもご相談を受け付けております。<br>
-        </p>
-        <div class="contact-button">
-          <button class="button is-large is-fullwidth" @click="go('/contact')">お問い合わせ</button>
-        </div>
-      </div>
+      <the-contact />
     </div>
   </div>
 </template>
@@ -33,7 +23,7 @@ import TheSubHeader from '~/components/pages/common/TheSubHeader.vue'
 import TheOverview from '~/components/pages/service/development/TheOverview.vue'
 import TheCharacteristic from '~/components/pages/service/development/TheCharacteristic.vue'
 import TheCase from '~/components/pages/service/development/TheCase.vue'
-import method from '~/mixins/method'
+import TheContact from '~/components/pages/common/TheContact.vue'
 
 export default {
   components: {
@@ -41,9 +31,9 @@ export default {
     TheSubHeader,
     TheOverview,
     TheCharacteristic,
-    TheCase
-  },
-  mixins: [method]
+    TheCase,
+    TheContact
+  }
 }
 </script>
 
@@ -61,14 +51,5 @@ export default {
 }
 .blank {
   margin-top: 100px;
-}
-.contact {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-}
-.contact-button {
-  width: 50%;
-  margin: auto;
 }
 </style>
