@@ -15,16 +15,7 @@
       <the-sub-header class="blank" text="お客様の声" />
       <the-voice />
 
-      <div class="contact">
-        <p>
-          サービス内容や事例について等、お気軽にお問い合わせください。<br>
-          依頼するかどうかまだ決まっていない、問い合わせるべきかどうか迷っている、<br>
-          といった状態でもご相談を受け付けております。<br>
-        </p>
-        <div class="contact-button">
-          <button class="button is-large is-fullwidth" @click="go('/contact')">お問い合わせ</button>
-        </div>
-      </div>
+      <the-contact />
     </div>
   </div>
 </template>
@@ -36,7 +27,7 @@ import TheOverview from '~/components/pages/service/salon/TheOverview.vue'
 import TheCharacteristic from '~/components/pages/service/salon/TheCharacteristic.vue'
 import TheTarget from '~/components/pages/service/salon/TheTarget.vue'
 import TheVoice from '~/components/pages/service/salon/TheVoice.vue'
-import method from '~/mixins/method'
+import TheContact from '~/components/pages/common/TheContact.vue'
 
 export default {
   components: {
@@ -45,9 +36,9 @@ export default {
     TheOverview,
     TheCharacteristic,
     TheTarget,
-    TheVoice
-  },
-  mixins: [method]
+    TheVoice,
+    TheContact
+  }
 }
 </script>
 
