@@ -12,6 +12,7 @@
       <the-value />
 
       <the-sub-header class="blank" text="活動内容" />
+      <the-activity />
 
       <the-sub-header class="blank" text="メンバー紹介" />
 
@@ -26,6 +27,7 @@ import TheSubHeader from '~/components/pages/common/TheSubHeader.vue'
 import TheOverview from '~/components/pages/service/xface/TheOverview.vue'
 import TheCharacteristic from '~/components/pages/service/xface/TheCharacteristic.vue'
 import TheValue from '~/components/pages/service/xface/TheValue.vue'
+import TheActivity from '~/components/pages/service/xface/TheActivity.vue'
 import TheContact from '~/components/pages/common/TheContact.vue'
 
 export default {
@@ -35,6 +37,7 @@ export default {
     TheOverview,
     TheCharacteristic,
     TheValue,
+    TheActivity,
     TheContact
   }
 }
