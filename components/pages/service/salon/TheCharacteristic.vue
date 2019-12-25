@@ -48,9 +48,6 @@ export default {}
   padding: 0;
   font-size: 20px;
 }
-.center-text {
-  text-align: center;
-}
 .blank {
   margin-top: 30px;
 }

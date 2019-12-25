@@ -141,9 +141,6 @@ export default {
 .blank {
   margin-top: 70px !important;
 }
-.center-text {
-  text-align: center;
-}
 .icon {
   width: 100%;
 }

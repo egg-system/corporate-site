@@ -108,9 +108,6 @@ h4 {
 .small {
   font-size: 14px;
 }
-.center-text {
-  text-align: center;
-}
 .youtube {
   text-align: center;
 }
