@@ -15,6 +15,7 @@
       <the-activity />
 
       <the-sub-header class="blank" text="メンバー紹介" />
+      <the-member />
 
       <the-contact />
     </div>
@@ -28,6 +29,7 @@ import TheOverview from '~/components/pages/service/xface/TheOverview.vue'
 import TheCharacteristic from '~/components/pages/service/xface/TheCharacteristic.vue'
 import TheValue from '~/components/pages/service/xface/TheValue.vue'
 import TheActivity from '~/components/pages/service/xface/TheActivity.vue'
+import TheMember from '~/components/pages/service/xface/TheMember.vue'
 import TheContact from '~/components/pages/common/TheContact.vue'
 
 export default {
@@ -38,6 +40,7 @@ export default {
     TheCharacteristic,
     TheValue,
     TheActivity,
+    TheMember,
     TheContact
   }
 }
