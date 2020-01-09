@@ -1,20 +1,14 @@
 <template>
-  <div class="columns is-multiline">
-    <div v-for="(member, i) in members" :key="i" class="column is-one-third">
-      <figure class="image">
-        <img :src="member.img" class="is-rounded">
-      </figure>
-      <div>
-        {{ member.role }}<br>
-        <b>{{ member.nameJP }}</b>  {{ member.nameEN }}<br>
-        {{ member.profile }}
-      </div>
-    </div>
-  </div>
+  <the-member :members="members"/>
 </template>
 
 <script>
+import TheMember from '~/components/pages/common/TheMember.vue'
+
 export default {
+  components: {
+    TheMember
+  },
   data: () => ({
     members: [
       {
