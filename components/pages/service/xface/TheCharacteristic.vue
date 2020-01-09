@@ -2,7 +2,7 @@
   <div class="columns">
     <div class="column is-two-fifths">
       <figure>
-        <img src="~assets/xface/logo.png">
+        <img src="/logo.png">
       </figure>
     </div>
     <div class="column">

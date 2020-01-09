@@ -17,7 +17,7 @@
 
 <style lang="scss" scoped>
 .bg-image {
-  background: url('~assets/xface/logo_image_small.png');
+  background: url('/logo_image_small.png');
   width: 100%;
   height: 500px;
   background-repeat: repeat;
