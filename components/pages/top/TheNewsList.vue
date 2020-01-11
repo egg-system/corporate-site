@@ -51,13 +51,6 @@ export default {
   margin-top: 5%;
   margin-bottom: 5%;
 }
-// PC版
-@media screen and (min-width: 769px) {
-  .news {
-    // width: 60%;
-    // margin: 0 auto;
-  }
-}
 .news p {
   margin-bottom: 30px;
 }
