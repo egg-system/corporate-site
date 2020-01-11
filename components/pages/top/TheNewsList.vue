@@ -1,35 +1,26 @@
 <template>
   <div class="news">
     <the-sub-header text="news" />
-    <div class="news-list">
-      <div v-for="(item, i) in items" :key="i" class="columns is-gapless">
-        <div class="column is-2">{{ item.date }}</div>
-        <div class="column is-2">
-          <span class="tag is-warning">
-            {{ item.label }}
-          </span>
-        </div>
-        <div class="column is-8">
-          <nuxt-link :to="item.url">
-            {{ item.title }}
-          </nuxt-link>
-        </div>
-        <hr v-if="(i + 1 !== Object.keys(items).length)" >
-      </div>
+    <the-news-list :news="news"/>
+    <div class="more-btn">
+      <button class="button is-fullwidth more" @click="go('/news')">もっと見る</button>
     </div>
-    <button class="button is-fullwidth more">もっと見る</button>
   </div>
 </template>
 
 <script>
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
+import TheNewsList from '~/components/pages/common/TheNewsList.vue'
+import method from '~/mixins/method'
 
 export default {
   components: {
-    TheSubHeader
+    TheSubHeader,
+    TheNewsList
   },
+  mixins: [method],
   data: () => ({
-    items: [
+    news: [
       {
         title: '本社移転のお知らせ',
         date: '2019/06/03',
@@ -57,13 +48,24 @@ export default {
 .news {
   width: 80%;
   margin: 0 auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+// PC版
+@media screen and (min-width: 769px) {
+  .news {
+    // width: 60%;
+    // margin: 0 auto;
+  }
 }
 .news p {
   margin-bottom: 30px;
 }
 .more {
   margin-top: 30px;
+}
+.more-btn {
+  width: 50%;
+  margin: auto;
 }
 </style>

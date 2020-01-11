@@ -18,6 +18,7 @@ import TheVision from '~/components/pages/top/TheVision.vue'
 import TheValue from '~/components/pages/top/TheValue.vue'
 import TheService from '~/components/pages/top/TheService.vue'
 import TheNewsList from '~/components/pages/top/TheNewsList.vue'
+import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
 import TheColumnList from '~/components/pages/top/TheColumnList.vue'
 import TheRecruit from '~/components/pages/top/TheRecruit.vue'
 
@@ -29,6 +30,7 @@ export default {
     TheValue,
     TheService,
     TheNewsList,
+    TheSubHeader,
     TheColumnList,
     TheRecruit
   }
