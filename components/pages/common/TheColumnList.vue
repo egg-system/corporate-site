@@ -1,7 +1,7 @@
 <template>
   <div class="column-item">
-    <div class="columns is-1">
-      <div v-for="(item, i) in columns" :key="i" class="column">
+    <div class="columns is-multiline">
+      <div v-for="(item, i) in columns" :key="i" class="column is-one-third">
         <nuxt-link :to="item.url">
           <div class="card">
             <div class="card-image">
