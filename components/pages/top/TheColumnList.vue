@@ -1,39 +1,26 @@
 <template>
-  <div class="column-item">
+  <div class="column-list">
     <the-sub-header text="column" />
-    <div class="columns is-1">
-      <div v-for="(item, i) in items" :key="i" class="column">
-        <nuxt-link :to="item.url">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image">
-                <img :src="item.img" :alt="item.title">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                {{ item.title }}
-                <br>
-                {{ item.date }}
-              </div>
-            </div>
-          </div>
-        </nuxt-link>
-      </div>
+    <the-column-list :columns="columns" />
+    <div class="more-btn">
+      <button class="button is-fullwidth more" @click="go('/column')">もっと見る</button>
     </div>
-    <button class="button is-fullwidth">もっと見る</button>
   </div>
 </template>
 
 <script>
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
+import TheColumnList from '~/components/pages/common/TheColumnList.vue'
+import method from '~/mixins/method'
 
 export default {
   components: {
-    TheSubHeader
+    TheSubHeader,
+    TheColumnList
   },
+  mixins: [method],
   data: () => ({
-    items: [
+    columns: [
       {
         title:
           'デジタルトランスフォーメーション（DX）とは？DXレポートから中小企業での活用方法まで解説（前編）',
@@ -66,13 +53,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.column-item {
+.column-list {
   width: 80%;
   margin: 0 auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
-.column-item p {
-  margin-bottom: 30px;
+.more {
+  margin-top: 30px;
+}
+.more-btn {
+  width: 50%;
+  margin: auto;
 }
 </style>
