@@ -36,7 +36,7 @@ export default {
         'デジタルトランスフォーメーション（DX）とは？DXレポートから中小企業での活用方法まで解説（前編）',
       date: '2019/11/03',
       label: 'info',
-      url: '/about',
+      url: '/column/aaa',
       img:
         'https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg',
       content: '<div>aaaa</div><div>bbbbb</div><div>ああああ</div>'
