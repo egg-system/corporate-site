@@ -1,18 +1,21 @@
 <template>
   <div>
-    <the-hero-title :main-text="news.title" />
-    <div class="news">
+    <the-hero-title :main-text="column.title" />
+    <div class="column-item">
+      <figure class="image">
+        <img :src="column.img">
+      </figure>
       <div class="sub">
-        <span class="date">{{ news.date }}</span>
+        <span class="date">{{ column.date }}</span>
         <span class="tag is-warning">
-          {{ news.label }}
+          {{ column.label }}
         </span>
       </div>
       <div class="main">
-        <div v-html="news.content" />
+        <div v-html="column.content" />
       </div>
       <p class="back">
-        <nuxt-link to="/news">
+        <nuxt-link to="/column">
           <i class="fas fa-caret-square-left"/>一覧に戻る
         </nuxt-link>
       </p>
@@ -28,10 +31,14 @@ export default {
     TheHeroTitle
   },
   data: () => ({
-    news: {
-      title: '本社移転のお知らせ',
-      date: '2019/06/03',
+    column: {
+      title:
+        'デジタルトランスフォーメーション（DX）とは？DXレポートから中小企業での活用方法まで解説（前編）',
+      date: '2019/11/03',
       label: 'info',
+      url: '/column/aaa',
+      img:
+        'https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg',
       content: '<div>aaaa</div><div>bbbbb</div><div>ああああ</div>'
     }
   }),
@@ -45,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.news {
+.column-item {
   width: 70%;
   margin: 0 auto;
   margin-top: 5%;
@@ -53,9 +60,12 @@ export default {
 }
 // スマホ版
 @media screen and (max-width: 400px) {
-  .news {
+  .column-item {
     width: 90%;
   }
+}
+.sub {
+  margin-top: 20px;
 }
 .date {
   font-size: 20px;

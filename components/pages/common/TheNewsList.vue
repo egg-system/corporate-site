@@ -26,12 +26,7 @@
 </template>
 
 <script>
-import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
-
 export default {
-  components: {
-    TheSubHeader
-  },
   props: {
     news: {
       type: Array,
