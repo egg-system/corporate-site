@@ -14,6 +14,11 @@
       <div class="main">
         <div v-html="column.content" />
       </div>
+      <p class="back">
+        <nuxt-link to="/column">
+          <i class="fas fa-caret-square-left"/>一覧に戻る
+        </nuxt-link>
+      </p>
     </div>
   </div>
 </template>
@@ -74,5 +79,11 @@ export default {
 .main {
   margin-top: 20px;
   font-size: 24px;
+}
+.back {
+  margin-top: 30px;
+}
+.back i {
+  margin-right: 5px;
 }
 </style>
