@@ -68,16 +68,28 @@
       <input type="checkbox">
       同意する
     </label>
+
+    <div class="btn">
+      <button class="button is-primary is-large is-fullwidth" @click="next()">送信</button>
+    </div>
+
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    next() {
+      console.log('next')
+      this.$router.push('/contact/complete')
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
 .contact-form {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 /* スマホの場合は幅を広くする */
@@ -94,5 +106,9 @@ export default {}
   text-align: center;
   margin: 0 auto;
   width: 100%;
+}
+.btn {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 </style>
