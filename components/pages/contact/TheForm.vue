@@ -100,6 +100,13 @@
 import axios from 'axios'
 
 export default {
+  head: {
+    script: [
+      {
+        src: 'https://code.jquery.com/jquery-3.4.1.min.js'
+      }
+    ]
+  },
   data: () => ({
     name: '',
     company: '',
@@ -111,6 +118,7 @@ export default {
   }),
   methods: {
     async next() {
+      // next() {
       console.log('next')
       console.log(this.name)
       console.log(this.company)
@@ -122,18 +130,31 @@ export default {
 
       const requestUrl =
         'https://docs.google.com/forms/u/2/d/e/1FAIpQLSchfU461dMhTDxk-EZs0G-ZM4HLsROZ8jY5rSM2dqIS0s6eYw/formResponse'
-      const result = await axios
-        .post(requestUrl, {
-          params: {
-            // Googleフォームから項目のinput nameを探す
-            'entry.1528476759': this.name
+      // axiosだとうまく行かなかったのでajaxを使っている
+      // ajaxだとCROXエラーは出るがアケート自体は送られる
+      // エラーハンドリングができないのが課題
+      $.ajax({
+        url: requestUrl,
+        // Googleフォームから項目のinput nameを探す
+        data: {
+          'entry.1528476759': this.name,
+          'entry.1104158312': this.company
+        },
+        type: 'POST',
+        dataType: 'xml',
+        async: false,
+        statusCode: {
+          0: function() {
+            //Success message
+            console.log('status 0')
           },
-          dataType: 'xml'
-        })
-        .catch(error => {
-          // TODO:エラーハンドリング
-          console.log('error')
-        })
+          200: function() {
+            //Success Message
+            console.log('status 200')
+          }
+        }
+      })
+      console.log('ok')
       this.$router.push('/contact/complete')
     }
   }
