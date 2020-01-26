@@ -125,8 +125,10 @@ export default {
       const result = await axios
         .post(requestUrl, {
           params: {
+            // Googleフォームから項目のinput nameを探す
             'entry.1528476759': this.name
-          }
+          },
+          dataType: 'xml'
         })
         .catch(error => {
           // TODO:エラーハンドリング
