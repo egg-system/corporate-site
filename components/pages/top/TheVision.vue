@@ -8,7 +8,7 @@
             100人の<br>コンサルティングエンジニア集団<br>x-faCEを作る
           </p>
         </h1>
-        <button class="button is-primary">詳細をみる</button>
+        <button class="button is-primary" @click="go('/xface')">詳細をみる</button>
       </div>
     </div>
   </div>
@@ -16,11 +16,13 @@
 
 <script>
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
+import method from '~/mixins/method'
 
 export default {
   components: {
     TheSubHeader
-  }
+  },
+  mixins: [method]
 }
 </script>
 

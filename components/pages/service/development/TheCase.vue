@@ -3,14 +3,14 @@
     <h4 class="is-6">①ホームページ制作</h4>
     <div class="columns is-1">
       <div v-for="(item, i) in homePage" :key="i" class="column">
-        <nuxt-link :to="item.url">
+        <a :href="item.url" target="_blank">
           <div class="card-image">
             <figure class="image">
               <img :src="item.img" :alt="item.title">
             </figure>
           </div>
           <p class="home-page-title">{{ item.title }}</p>
-        </nuxt-link>
+        </a>
       </div>
     </div>
     <div class="more-button">

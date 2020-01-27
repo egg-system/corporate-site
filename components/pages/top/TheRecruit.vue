@@ -8,7 +8,7 @@
             100人の<br>コンサルティングエンジニア募集
           </p>
         </h1>
-        <button class="button is-primary">詳細をみる</button>
+        <button class="button is-primary" @click="go('/recruit')">詳細をみる</button>
       </div>
     </div>
   </div>
@@ -16,11 +16,13 @@
 
 <script>
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
+import method from '~/mixins/method'
 
 export default {
   components: {
     TheSubHeader
-  }
+  },
+  mixins: [method]
 }
 </script>
 
