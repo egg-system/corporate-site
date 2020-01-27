@@ -12,7 +12,7 @@
       <h3 class="title is-3">
         和衷協同
       </h3>
-      <button class="button is-primary">詳細をみる</button>
+      <button class="button is-primary" @click="go('/xface')">詳細をみる</button>
     </div>
     <the-triangle-down/>
   </div>
@@ -22,13 +22,15 @@
 import TheTriangleUp from '~/components/pages/top/TheTriangleUp.vue'
 import TheTriangleDown from '~/components/pages/top/TheTriangleDown.vue'
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
+import method from '~/mixins/method'
 
 export default {
   components: {
     TheTriangleUp,
     TheTriangleDown,
     TheSubHeader
-  }
+  },
+  mixins: [method]
 }
 </script>
 
