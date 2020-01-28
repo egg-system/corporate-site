@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "dev": "PORT=50000 nuxt",
+    "dev": "nuxt",
+    "dev:port": "PORT=50000 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
