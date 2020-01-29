@@ -1,7 +1,7 @@
 <template>
   <div>
     <the-hero-title :main-text="news.title" />
-    <div class="news">
+    <div class="news page-content">
       <div class="sub">
         <span class="date">{{ news.date }}</span>
         <span class="tag is-warning">
@@ -46,16 +46,8 @@ export default {
 
 <style lang="scss" scoped>
 .news {
-  width: 70%;
-  margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 5%;
-}
-// スマホ版
-@media screen and (max-width: 400px) {
-  .news {
-    width: 90%;
-  }
 }
 .date {
   font-size: 20px;

@@ -1,7 +1,7 @@
 <template>
   <div>
     <the-hero-title main-text="サービス" sub-text="システムコンサルティング" />
-    <div class="content">
+    <div class="content page-content">
       <the-sub-header text="サービス概要" />
       <the-overview />
 
@@ -42,17 +42,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content {
-  width: 80%;
-  margin: 0 auto;
-}
-/* スマホの場合は幅を広くする */
-@media screen and (max-width: 400px) {
-  .content {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
 .blank {
   margin-top: 100px;
 }

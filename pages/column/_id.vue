@@ -1,7 +1,7 @@
 <template>
   <div>
     <the-hero-title :main-text="column.title" />
-    <div class="column-item">
+    <div class="column-item page-content">
       <figure class="image">
         <img :src="column.img">
       </figure>
@@ -53,16 +53,8 @@ export default {
 
 <style lang="scss" scoped>
 .column-item {
-  width: 70%;
-  margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 5%;
-}
-// スマホ版
-@media screen and (max-width: 400px) {
-  .column-item {
-    width: 90%;
-  }
 }
 .sub {
   margin-top: 20px;

@@ -2,7 +2,7 @@
   <div>
     <the-hero-title main-text="採用情報" />
     <the-main-image />
-    <div class="content">
+    <div class="content page-content">
       <the-main-message />
       <div class="btn">
         <a href="https://www.find-job.net/fj/showjob.cgi?id=125695" target="_blank">
@@ -31,17 +31,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content {
-  width: 80%;
-  margin: 0 auto;
-}
-/* スマホの場合は幅を広くする */
-@media screen and (max-width: 400px) {
-  .content {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
 .btn {
   width: 50%;
   margin: 30px auto 30px;

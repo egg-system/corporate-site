@@ -1,7 +1,7 @@
 <template>
   <div>
     <the-hero-title main-text="コラム" />
-    <div class="column-list">
+    <div class="column-list page-content">
       <the-column-list :columns="columns" />
     </div>
   </div>
@@ -102,15 +102,7 @@ export default {
 
 <style lang="scss" scoped>
 .column-list {
-  width: 80%;
-  margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 5%;
-}
-// スマホ版
-@media screen and (max-width: 400px) {
-  .column-list {
-    width: 90%;
-  }
 }
 </style>

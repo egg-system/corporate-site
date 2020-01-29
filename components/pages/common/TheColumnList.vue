@@ -10,7 +10,7 @@
               </figure>
             </div>
             <div class="card-content">
-              <div class="content">
+              <div>
                 {{ item.title }}
                 <br>
                 {{ item.date }}

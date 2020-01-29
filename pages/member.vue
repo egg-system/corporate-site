@@ -2,7 +2,7 @@
   <div>
     <the-hero-title main-text="メンバー" />
 
-    <div class="content">
+    <div class="content page-content">
       <the-member :members="members" class="member"/>
     </div>
   </div>
@@ -90,17 +90,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content {
-  width: 80%;
-  margin: 0 auto;
-}
-/* スマホの場合は幅を広くする */
-@media screen and (max-width: 400px) {
-  .content {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
 .member {
   margin-top: 20px;
   margin-bottom: 20px;

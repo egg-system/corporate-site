@@ -5,7 +5,7 @@
       <the-overview />
     </div>
 
-    <div class="content">
+    <div class="content page-content">
       <the-sub-header class="blank" text="サービスの特徴" />
       <the-characteristic />
 
@@ -43,17 +43,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content {
-  width: 80%;
-  margin: 0 auto;
-}
-/* スマホの場合は幅を広くする */
-@media screen and (max-width: 400px) {
-  .content {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
 .blank {
   margin-top: 100px;
 }

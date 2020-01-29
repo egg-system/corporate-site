@@ -1,7 +1,7 @@
 <template>
   <div>
     <the-hero-title main-text="ニュース" />
-    <div class="news">
+    <div class="news page-content">
       <the-news-list :news="news"/>
     </div>
   </div>
@@ -82,15 +82,7 @@ export default {
 
 <style lang="scss" scoped>
 .news {
-  width: 70%;
-  margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 5%;
-}
-// スマホ版
-@media screen and (max-width: 400px) {
-  .news {
-    width: 90%;
-  }
 }
 </style>

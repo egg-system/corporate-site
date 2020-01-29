@@ -1,7 +1,7 @@
 <template>
   <div>
     <the-hero-title main-text="プライバシー" />
-    <div class="content">
+    <div class="content page-content">
       <p class="sub">１．個人情報の管理</p>
       <p>株式会社 エッグシステム（EGG SYSTEM, Inc.）では、お客さまからお預かりした個人情報は、株式会社 エッグシステム（EGG SYSTEM, Inc.）からのご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用いたします。</p>
 
@@ -46,17 +46,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content {
-  width: 80%;
-  margin: 0 auto;
-}
-/* スマホの場合は幅を広くする */
-@media screen and (max-width: 400px) {
-  .content {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
 .sub {
   font-size: 20px;
   font-weight: bold;
