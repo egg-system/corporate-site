@@ -1,0 +1,20 @@
+$black: #0a0716;
+$gray: #f2f4ea;
+$whitesmoke: #f5f5f5;
+$darksmoke: #b2b2b2;
+$blue: #1f55a5;
+$lightBlue: #87cefa;
+$white: #ffffff;
+
+// ページの横幅
+.page-content {
+  width: 80%;
+  margin: 0 auto;
+}
+/* スマホの場合は幅を広くする */
+@media screen and (max-width: 400px) {
+  .page-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
