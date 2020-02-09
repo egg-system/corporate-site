@@ -19,7 +19,10 @@
             <the-message />
           </tr>
           <tr>
+            <the-sub-header :is-line="true" text="最近の活動・コラム" />
+            <a href="/column" class="link">一覧を見る</a>
             <the-column />
+            <p class="tmp">(Coming soon)</p>
           </tr>
         </tbody>
       </table>
@@ -34,7 +37,7 @@ import TheAbout from '~/components/pages/request/TheAbout.vue'
 import TheFlow from '~/components/pages/request/TheFlow.vue'
 import TheService from '~/components/pages/request/TheService.vue'
 import TheMessage from '~/components/pages/request/TheMessage.vue'
-import TheColumn from '~/components/pages/common/TheColumntest.vue'
+import TheColumn from '~/components/pages/request/TheColumn.vue'
 
 export default {
   components: {
@@ -118,6 +121,9 @@ export default {
   vertical-align: top;
   border-bottom: 1px solid #dbdbdb;
 }
+.link {
+  text-align: right;
+}
 /* スマホの場合は幅を広くする */
 @media screen and (max-width: 400px) {
   .content {
@@ -131,5 +137,9 @@ export default {
 }
 .end {
   margin-bottom: 50px;
+}
+.tmp {
+  text-align: center;
+  padding-bottom: 50px;
 }
 </style>
