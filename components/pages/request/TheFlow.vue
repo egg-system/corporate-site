@@ -8,6 +8,7 @@
           <p>Step3&nbsp;&nbsp;&nbsp;初回お打ち合わせ</p>
           <p>Step4&nbsp;&nbsp;&nbsp;ご提案書およびお見積書のご提示</p>
           <p>Step5&nbsp;&nbsp;&nbsp;ご契約</p>
+          <p class="note">※ご契約確定前（Step4まで）は費用は発生しません。</p>
         </div>
       </div>
       <div class="column">
@@ -16,7 +17,6 @@
         </figure>
       </div>
     </div>
-    <p class="note">※ご契約確定前（Step4まで）は費用は発生しません。</p>
   </div>
 </template>
 
@@ -29,4 +29,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.note {
+  margin-left: 20px;
+}
 </style>

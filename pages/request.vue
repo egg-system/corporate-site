@@ -29,7 +29,7 @@
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
-import TheSubHeader from '~/components/pages/common/TheSubHeader.vue'
+import TheSubHeader from '~/components/pages/request/TheSubHeader.vue'
 import TheAbout from '~/components/pages/request/TheAbout.vue'
 import TheFlow from '~/components/pages/request/TheFlow.vue'
 import TheService from '~/components/pages/request/TheService.vue'

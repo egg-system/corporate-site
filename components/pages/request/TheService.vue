@@ -35,4 +35,7 @@ b {
 .description {
   border-bottom: 1px solid #dbdbdb;
 }
+.columns {
+  padding: 40px;
+}
 </style>
