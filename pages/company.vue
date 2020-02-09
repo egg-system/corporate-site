@@ -41,4 +41,9 @@ export default {
 .end {
   margin: 0 40px 50px;
 }
+@media screen and (max-width: 600px) {
+  .end {
+    margin: 0;
+  }
+}
 </style>
