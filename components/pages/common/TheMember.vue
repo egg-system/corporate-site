@@ -1,13 +1,13 @@
 <template>
   <div class="columns is-multiline">
-    <div v-for="(member, i) in members" :key="i" class="column is-one-third">
-      <figure class="image">
-        <img :src="member.img" class="is-rounded">
+    <div v-for="(member, i) in members" :key="i" class="column is-one-quater">
+      <figure class="image is-marginless">
+        <img :src="member.img">
       </figure>
-      <div>
+      <div class="has-text-centered">
         {{ member.role }}<br>
-        <b>{{ member.nameJP }}</b>  {{ member.nameEN }}<br>
-        {{ member.profile }}
+        {{ member.nameJP }}<br>
+        {{ member.nameEN }}<br>
       </div>
     </div>
   </div>
@@ -25,11 +25,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-b {
-  font-size: 22px;
-}
 .image {
-  margin: auto;
   width: 200px;
 }
 </style>

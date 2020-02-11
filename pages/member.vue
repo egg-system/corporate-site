@@ -1,6 +1,6 @@
 <template>
   <div>
-    <the-hero-title main-text="メンバー" />
+    <the-hero-title main-text="メンバー紹介" />
 
     <div class="content page-content">
       <the-member :members="members" class="member"/>
@@ -20,69 +20,116 @@ export default {
   data: () => ({
     members: [
       {
-        role: '代表取締役　CEO',
+        role: '代表取締役',
         nameJP: '高橋 翼',
-        nameEN: 'TSUBASA TAKAHASHI',
-        profile:
-          '「献身的な人のためにITシステムを活用する」という理念を元に、株式会社エッグシステムを創業。強みは真面目さだけ。',
+        nameEN: 'Tsubasa Takahashi',
         img:
           'https://eggsystem.co.jp/wp-content/uploads/2019/05/201905-tsubasa02-1024x1024.jpg'
       },
       {
-        role: 'CTO',
+        role: '',
         nameJP: '高橋 光',
-        nameEN: 'HIKARU TAKAHASHI',
-        profile:
-          'エッグシステム社員。ITエンジニア／マネージャー。複業社員としてWebサイト開発やセミナー講師などを行う。',
+        nameEN: 'Hikaru Takahashi',
         img:
           'https://eggsystem.co.jp/wp-content/uploads/2019/05/hikaru01-min-1024x1024.jpg'
       },
       {
-        role: 'コンサルティングエンジニア',
+        role: '',
         nameJP: '布村 武大',
-        nameEN: 'TAKEHIRO NUNOMURA',
-        profile: 'エッグシステム社員。さすらいのシステムエンジニア。',
+        nameEN: 'Takehiro Nunomura',
         img:
           'https://eggsystem.co.jp/wp-content/uploads/2019/05/nunomura01-min-1024x1024.jpg'
       },
       {
-        role: 'スペシャルコーダー',
-        nameJP: 'O',
-        nameEN: 'O',
-        profile:
-          '「生涯サラリーマン」と思い込んでいた普通の人。本業では分野的に出来ない事でも、ここは、やってみようの精神で挑戦出来る素敵なところ！自分の市場価値を高めながら、どう生きていくかを考え中。',
+        role: '',
+        nameJP: '山田 太郎',
+        nameEN: 'Tarou Yamada',
         img:
           'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
       },
       {
-        role: 'システムエンジニア',
-        nameJP: 'Q',
-        nameEN: 'QOOMEN',
-        profile: 'システムエンジニアとしてエッグシステムへ参画中。',
-        img: 'https://eggsystem.co.jp/wp-content/uploads/2019/04/qoomen.png'
-      },
-      {
-        role: 'システムエンジニア',
-        nameJP: 'K',
-        nameEN: 'KATO',
-        profile: 'システムエンジニアとしてエッグシステムへ参画中。',
-        img: 'https://eggsystem.co.jp/wp-content/uploads/2019/04/kato.png'
-      },
-      {
-        role: 'ディレクター／システムエンジニア',
-        nameJP: 'Ｊ',
-        nameEN: 'J',
-        profile:
-          'web系サービスのマネージャー職を経て、エッグシステムに参画。デザイン、コーディング、ディレクションまで幅広い視点で仕事を担当。好きな言葉は論理と愛。',
+        role: '',
+        nameJP: '山田 太郎',
+        nameEN: 'Tarou Yamada',
         img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/04/zack-768x960.png'
+          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
       },
       {
-        role: 'システムエンジニア',
-        nameJP: 'K',
-        nameEN: 'KYOU',
-        profile: 'システムエンジニアとしてエッグシステムへ参画中。',
-        img: 'https://eggsystem.co.jp/wp-content/uploads/2019/04/kyo-chan.png'
+        role: '',
+        nameJP: '山田 太郎',
+        nameEN: 'Tarou Yamada',
+        img:
+          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
+      },
+      {
+        role: '',
+        nameJP: '山田 太郎',
+        nameEN: 'Tarou Yamada',
+        img:
+          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
+      },
+      {
+        role: '',
+        nameJP: '山田 太郎',
+        nameEN: 'Tarou Yamada',
+        img:
+          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
+      },
+      {
+        role: '',
+        nameJP: '山田 太郎',
+        nameEN: 'Tarou Yamada',
+        img:
+          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
+      },
+      {
+        role: '',
+        nameJP: '山田 太郎',
+        nameEN: 'Tarou Yamada',
+        img:
+          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
+      },
+      {
+        role: '',
+        nameJP: '山田 太郎',
+        nameEN: 'Tarou Yamada',
+        img:
+          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
+      },
+      {
+        role: '',
+        nameJP: '山田 太郎',
+        nameEN: 'Tarou Yamada',
+        img:
+          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
+      },
+      {
+        role: '',
+        nameJP: '山田 太郎',
+        nameEN: 'Tarou Yamada',
+        img:
+          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
+      },
+      {
+        role: '',
+        nameJP: '山田 太郎',
+        nameEN: 'Tarou Yamada',
+        img:
+          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
+      },
+      {
+        role: '',
+        nameJP: '山田 太郎',
+        nameEN: 'Tarou Yamada',
+        img:
+          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
+      },
+      {
+        role: '',
+        nameJP: '山田 太郎',
+        nameEN: 'Tarou Yamada',
+        img:
+          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
       }
     ]
   })
