@@ -2,7 +2,7 @@
   <div>
     <the-hero-title main-text="メンバー紹介" />
 
-    <div class="content page-content">
+    <div class="page-content">
       <the-member :members="members" class="member"/>
     </div>
   </div>

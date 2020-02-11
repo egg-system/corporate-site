@@ -1,7 +1,7 @@
 <template>
   <div class="columns is-multiline">
-    <div v-for="(member, i) in members" :key="i" class="column is-one-quater">
-      <figure class="image is-marginless">
+    <div v-for="(member, i) in members" :key="i" class="column">
+      <figure class="image">
         <img :src="member.img">
       </figure>
       <div class="has-text-centered">
@@ -27,5 +27,6 @@ export default {
 <style lang="scss" scoped>
 .image {
   width: 200px;
+  margin: 0 auto;
 }
 </style>
