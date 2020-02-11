@@ -26,6 +26,7 @@ export default {
   text-align: center;
 }
 .sub-header {
+  font-weight: normal;
   margin-top: 30px;
   text-align: left;
 }
