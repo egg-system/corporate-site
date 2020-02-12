@@ -4,18 +4,18 @@
     <div class="content">
       <table class="table">
         <tbody>
-          <tr>
+          <tr class="darksmoke-underline">
             <the-about />
           </tr>
-          <tr>
+          <tr class="darksmoke-underline">
             <the-sub-header :is-line="true" text="ご依頼の流れ" />
             <the-flow />
           </tr>
-          <tr>
+          <tr class="darksmoke-underline">
             <the-sub-header :is-line="true" text="当社サービスについて" />
             <the-service :services="services" class="service"/>
           </tr>
-          <tr>
+          <tr class="darksmoke-underline">
             <the-message />
           </tr>
           <tr>
@@ -38,6 +38,7 @@ import TheFlow from '~/components/pages/request/TheFlow.vue'
 import TheService from '~/components/pages/request/TheService.vue'
 import TheMessage from '~/components/pages/request/TheMessage.vue'
 import TheColumn from '~/components/pages/request/TheColumn.vue'
+import services from '~/components/pages/request/assets/services.json'
 
 export default {
   components: {
@@ -50,64 +51,7 @@ export default {
     TheColumn
   },
   data: () => ({
-    services: [
-      {
-        title: '代表取締役　CEO',
-        description:
-          '「献身的な人のためにITシステムを活用する」という理念を元に、株式会社エッグシステムを創業。強みは真面目さだけ。',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/05/201905-tsubasa02-1024x1024.jpg'
-      },
-      {
-        title: '代表取締役　CEO',
-        description:
-          '「献身的な人のためにITシステムを活用する」という理念を元に、株式会社エッグシステムを創業。強みは真面目さだけ。',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/05/201905-tsubasa02-1024x1024.jpg'
-      },
-      {
-        title: '代表取締役　CEO',
-        description:
-          '「献身的な人のためにITシステムを活用する」という理念を元に、株式会社エッグシステムを創業。強みは真面目さだけ。',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/05/201905-tsubasa02-1024x1024.jpg'
-      },
-      {
-        title: '代表取締役　CEO',
-        description:
-          '「献身的な人のためにITシステムを活用する」という理念を元に、株式会社エッグシステムを創業。強みは真面目さだけ。',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/05/201905-tsubasa02-1024x1024.jpg'
-      },
-      {
-        title: '代表取締役　CEO',
-        description:
-          '「献身的な人のためにITシステムを活用する」という理念を元に、株式会社エッグシステムを創業。強みは真面目さだけ。',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/05/201905-tsubasa02-1024x1024.jpg'
-      },
-      {
-        title: '代表取締役　CEO',
-        description:
-          '「献身的な人のためにITシステムを活用する」という理念を元に、株式会社エッグシステムを創業。強みは真面目さだけ。',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/05/201905-tsubasa02-1024x1024.jpg'
-      },
-      {
-        title: '代表取締役　CEO',
-        description:
-          '「献身的な人のためにITシステムを活用する」という理念を元に、株式会社エッグシステムを創業。強みは真面目さだけ。',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/05/201905-tsubasa02-1024x1024.jpg'
-      },
-      {
-        title: '代表取締役　CEO',
-        description:
-          '「献身的な人のためにITシステムを活用する」という理念を元に、株式会社エッグシステムを創業。強みは真面目さだけ。',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/05/201905-tsubasa02-1024x1024.jpg'
-      }
-    ]
+    services: services
   })
 }
 </script>
@@ -116,10 +60,6 @@ export default {
 .content {
   width: 80%;
   margin: 0 auto;
-}
-.table tr {
-  vertical-align: top;
-  border-bottom: 1px solid #dbdbdb;
 }
 .link {
   text-align: right;

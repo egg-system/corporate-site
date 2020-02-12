@@ -4,7 +4,7 @@
       <figure class="image">
         <img :src="service.img" class="is-square">
       </figure>
-      <div class="description">
+      <div class="center-text">
         {{ service.title }}<br>
         {{ service.description }}
       </div>
@@ -32,13 +32,7 @@ b {
   width: 200px;
 }
 
-.description {
-  border-bottom: 1px solid #dbdbdb;
-}
 .columns {
   padding: 40px;
-}
-.description {
-  text-align: center;
 }
 </style>
