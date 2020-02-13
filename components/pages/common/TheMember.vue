@@ -1,6 +1,6 @@
 <template>
   <div class="columns is-multiline">
-    <div v-for="(member, i) in members" :key="i" class="column">
+    <div v-for="(member, i) in members" :key="i" class="column is-3">
       <figure class="image">
         <img :src="member.img">
       </figure>

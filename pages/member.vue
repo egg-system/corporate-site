@@ -11,6 +11,7 @@
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheMember from '~/components/pages/common/TheMember.vue'
+import members from '~/assets/member.json'
 
 export default {
   components: {
@@ -18,120 +19,7 @@ export default {
     TheMember
   },
   data: () => ({
-    members: [
-      {
-        role: '代表取締役',
-        nameJP: '高橋 翼',
-        nameEN: 'Tsubasa Takahashi',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/05/201905-tsubasa02-1024x1024.jpg'
-      },
-      {
-        role: '',
-        nameJP: '高橋 光',
-        nameEN: 'Hikaru Takahashi',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/05/hikaru01-min-1024x1024.jpg'
-      },
-      {
-        role: '',
-        nameJP: '布村 武大',
-        nameEN: 'Takehiro Nunomura',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/05/nunomura01-min-1024x1024.jpg'
-      },
-      {
-        role: '',
-        nameJP: '山田 太郎',
-        nameEN: 'Tarou Yamada',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
-      },
-      {
-        role: '',
-        nameJP: '山田 太郎',
-        nameEN: 'Tarou Yamada',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
-      },
-      {
-        role: '',
-        nameJP: '山田 太郎',
-        nameEN: 'Tarou Yamada',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
-      },
-      {
-        role: '',
-        nameJP: '山田 太郎',
-        nameEN: 'Tarou Yamada',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
-      },
-      {
-        role: '',
-        nameJP: '山田 太郎',
-        nameEN: 'Tarou Yamada',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
-      },
-      {
-        role: '',
-        nameJP: '山田 太郎',
-        nameEN: 'Tarou Yamada',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
-      },
-      {
-        role: '',
-        nameJP: '山田 太郎',
-        nameEN: 'Tarou Yamada',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
-      },
-      {
-        role: '',
-        nameJP: '山田 太郎',
-        nameEN: 'Tarou Yamada',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
-      },
-      {
-        role: '',
-        nameJP: '山田 太郎',
-        nameEN: 'Tarou Yamada',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
-      },
-      {
-        role: '',
-        nameJP: '山田 太郎',
-        nameEN: 'Tarou Yamada',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
-      },
-      {
-        role: '',
-        nameJP: '山田 太郎',
-        nameEN: 'Tarou Yamada',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
-      },
-      {
-        role: '',
-        nameJP: '山田 太郎',
-        nameEN: 'Tarou Yamada',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
-      },
-      {
-        role: '',
-        nameJP: '山田 太郎',
-        nameEN: 'Tarou Yamada',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/04/papa02-768x768.jpg'
-      }
-    ]
+    members: members
   })
 }
 </script>
