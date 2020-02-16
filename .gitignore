@@ -86,3 +86,6 @@ sw.*
 
 # Mac OSX
 .DS_Store
+
+#.historyファイル除外
+.history

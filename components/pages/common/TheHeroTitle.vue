@@ -29,3 +29,9 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.hero {
+  border-top: 2px solid $whitesmoke;
+  text-align: left;
+}
+</style>
