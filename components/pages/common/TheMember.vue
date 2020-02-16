@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import tsubasa from '~/assets/members/tsubasa02.jpg'
-import hikaru from '~/assets/members/hikaru01.jpg'
-import nunomura from '~/assets/members/nunomura01.jpg'
-import papa from '~/assets/members/papa02.jpg'
+import '~/assets/members/tsubasa02.jpg'
+import '~/assets/members/hikaru01.jpg'
+import '~/assets/members/nunomura01.jpg'
+import '~/assets/members/papa02.jpg'
 export default {
   props: {
     members: {
