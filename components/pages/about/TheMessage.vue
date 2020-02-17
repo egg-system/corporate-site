@@ -140,7 +140,7 @@ export default {}
   line-height: 1.2;
 }
 .about {
-  border-bottom: 2px solid #f5f5f5;
+  border-bottom: 2px solid $whitesmoke;
   padding-bottom: 80px;
 }
 .column-container {

@@ -50,7 +50,7 @@ export default {}
 
 <style lang="scss" scoped>
 .about {
-  border-bottom: 2px solid #f5f5f5;
+  border-bottom: 2px solid $whitesmoke;
   padding-bottom: 80px;
 }
 .value-container {
@@ -59,7 +59,7 @@ export default {}
 }
 .value-inner {
   width: 25%;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid $whitesmoke;
   padding-bottom: 15px;
 }
 .image {

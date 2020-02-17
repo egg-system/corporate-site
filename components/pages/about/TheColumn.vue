@@ -43,7 +43,7 @@ export default {}
 
 <style lang="scss" scoped>
 .about {
-  border-bottom: 2px solid #f5f5f5;
+  border-bottom: 2px solid $whitesmoke;
   padding-bottom: 80px;
 }
 .column-link {
@@ -54,7 +54,7 @@ export default {}
 .column-link a {
   display: inline-block;
   font-size: 12px;
-  color: #000;
+  color: $black;
 }
 .column-page {
   margin-right: 0;
@@ -65,7 +65,7 @@ export default {}
 }
 .column-inner {
   width: 25%;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid $whitesmoke;
   padding-bottom: 15px;
 }
 .image {
@@ -73,8 +73,8 @@ export default {}
 }
 .column-message {
   font-size: 12px;
-  color: #808080;
-  font-family: 'PT Sans', sans-serif;
+  color: $darksmoke;
+  $family-serif: 'Ryumin', sans-serif;
 }
 .column-inner:first-child .column-message {
   font-size: 10px;
