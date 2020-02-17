@@ -74,7 +74,6 @@ export default {}
 .column-message {
   font-size: 12px;
   color: $darksmoke;
-  $family-serif: 'Ryumin', sans-serif;
 }
 .column-inner:first-child .column-message {
   font-size: 10px;
