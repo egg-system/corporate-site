@@ -89,5 +89,3 @@ sw.*
 
 #.historyファイル除外
 .history
-
-package.json
