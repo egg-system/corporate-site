@@ -11,7 +11,7 @@
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheMember from '~/components/pages/common/TheMember.vue'
-import members from '~/assets/member.json'
+import members from '~/assets/js/member.js'
 
 export default {
   components: {
@@ -19,7 +19,7 @@ export default {
     TheMember
   },
   data: () => ({
-    members: members
+    members: members.members
   })
 }
 </script>

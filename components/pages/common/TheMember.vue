@@ -14,10 +14,6 @@
 </template>
 
 <script>
-import '~/assets/members/tsubasa02.jpg'
-import '~/assets/members/hikaru01.jpg'
-import '~/assets/members/nunomura01.jpg'
-import '~/assets/members/papa02.jpg'
 export default {
   props: {
     members: {
