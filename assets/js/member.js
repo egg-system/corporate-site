@@ -2,7 +2,7 @@ import tsubasa from '~/assets/members/tsubasa02.jpg'
 import hikaru from '~/assets/members/hikaru01.jpg'
 import nunomura from '~/assets/members/nunomura01.jpg'
 import papa from '~/assets/members/papa02.jpg'
-var members = [
+const members = [
   {
     role: '代表取締役',
     nameJP: '高橋 翼',
