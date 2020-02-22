@@ -1,20 +1,8 @@
 <template>
   <div>
-    <the-hero-title main-text="会社概要" />
     <div class="content page-content">
-      <the-sub-header :is-line="true" text="mission" />
-      <the-mission />
-
-      <the-sub-header :is-line="true" text="vision" />
-      <the-vision />
-
-      <the-sub-header :is-line="true" text="value" />
-      <the-value />
-
       <the-sub-header class="blank" text="会社概要" />
       <the-info />
-      <the-map />
-
       <the-sub-header class="blank" text="代表メッセージ" />
       <the-message class="end" />
     </div>
@@ -51,6 +39,11 @@ export default {
   margin-bottom: 30px;
 }
 .end {
-  margin-bottom: 50px;
+  margin: 0 40px 50px;
+}
+@media screen and (max-width: 600px) {
+  .end {
+    margin: 0;
+  }
 }
 </style>
