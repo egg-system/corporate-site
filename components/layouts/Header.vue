@@ -21,7 +21,9 @@
 
     <div id="navbarBasicExample" :class="[isOpen ? 'is-active' : '']" class="navbar-menu" @click="menu()">
       <div class="navbar-end">
-
+        <nuxt-link class="navbar-item" to="/about">
+          わたしたちについて
+        </nuxt-link>
         <nuxt-link class="navbar-item" to="/company">
           会社情報
         </nuxt-link>

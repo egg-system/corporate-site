@@ -47,7 +47,7 @@ export default {}
 
 <style lang="scss" scoped>
 .table-info {
-  border-top: 1px solid #dbdbdb;
+  border-top: 1px solid $lightgray;
   max-width: 700px;
   margin: auto;
 }
