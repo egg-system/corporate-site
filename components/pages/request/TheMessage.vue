@@ -18,9 +18,9 @@ export default {}
   margin-top: 30px;
   margin-bottom: 16px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: $white;
   .message .button {
-    color: #000000;
+    color: $black;
   }
 }
 </style>

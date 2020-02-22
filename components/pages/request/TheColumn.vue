@@ -29,7 +29,7 @@ export default {
   width: 200px;
 }
 .description {
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid $darksmoke;
 }
 .columns {
   padding: 40px;

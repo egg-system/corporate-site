@@ -38,7 +38,7 @@ import TheFlow from '~/components/pages/request/TheFlow.vue'
 import TheService from '~/components/pages/request/TheService.vue'
 import TheMessage from '~/components/pages/request/TheMessage.vue'
 import TheColumn from '~/components/pages/request/TheColumn.vue'
-import services from '~/assets/json/services.js'
+import services from '~/assets/js/services.js'
 
 export default {
   components: {
@@ -54,7 +54,6 @@ export default {
     services: services.services
   })
 }
-console.log(services.services)
 </script>
 
 <style lang="scss" scoped>
