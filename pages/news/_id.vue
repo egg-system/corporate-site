@@ -1,15 +1,15 @@
 <template>
   <div>
-    <the-hero-title :main-text="news.title" />
+    <the-hero-title :main-text="item.title" />
     <div class="news page-content">
       <div class="sub">
-        <span class="date">{{ news.date }}</span>
+        <span class="date">{{ item.createdAt | moment }}</span>
         <span class="tag is-warning">
-          {{ news.label }}
+          {{ item.label.label }}
         </span>
       </div>
       <div class="main">
-        <div v-html="news.content" />
+        <div v-html="item.content" />
       </div>
       <p class="back">
         <nuxt-link to="/news">
@@ -22,23 +22,34 @@
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
+import axios from 'axios'
+const PAGE_NAME = 'news'
+const API_VERSION = 'v1'
+const microCmsUrl = [
+  process.env.eggSystemApiDomain,
+  API_VERSION,
+  PAGE_NAME
+].join('/')
 
 export default {
   components: {
     TheHeroTitle
   },
-  data: () => ({
-    news: {
-      title: '本社移転のお知らせ',
-      date: '2019/06/03',
-      label: 'info',
-      content: '<div>aaaa</div><div>bbbbb</div><div>ああああ</div>'
-    }
-  }),
-  async asyncData({ params }) {
-    // idからデータを取得
+  data() {
     return {
-      id: params.id
+      item: ''
+    }
+  },
+  async asyncData({ params }) {
+    const { data } = await axios
+      .get(`${microCmsUrl}/${params.id}`, {
+        headers: { 'X-API-kEY': process.env.microCmsApiKey }
+      })
+      .catch(err => {
+        return err.response
+      })
+    return {
+      item: data
     }
   }
 }
