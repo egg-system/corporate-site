@@ -1,9 +1,10 @@
 require("dotenv").config();
-const { API_KEY } = process.env;
+const { microCmsApiKey, eggSystemApiDomain } = process.env;
 
 export default {
   env: {
-    API_KEY
+    microCmsApiKey,
+    eggSystemApiDomain
   },
   
   mode: 'universal',
