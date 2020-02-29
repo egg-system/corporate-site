@@ -5,17 +5,17 @@
 
         <div class="column is-4">
           <div class="columns is-mobile">
-            <div class="column is-4-mobile">{{ item.date }}</div>
+            <div class="column is-4-mobile">{{ item.createdAt | moment }}</div>
             <div class="column is-4-mobile">
-              <span class="tag is-warning">
-                {{ item.label }}
+              <span class="tag is-primary">
+                {{ item.label.label }}
               </span>
             </div>
           </div>
         </div>
 
         <div class="column is-8">
-          <nuxt-link :to="item.url">
+          <nuxt-link :to="'news/' + item.id">
             {{ item.title }}
           </nuxt-link>
         </div>
