@@ -36,9 +36,7 @@ export default {
     TheHeroTitle
   },
   data() {
-    return {
-      item: ''
-    }
+    return {}
   },
   async asyncData({ params }) {
     const { data } = await axios
