@@ -3,12 +3,12 @@
     <the-hero-title :main-text="column.title" />
     <div class="column-item page-content">
       <figure class="image">
-        <img :src="column.img">
+        <img :src="column.img.url">
       </figure>
       <div class="sub">
-        <span class="date">{{ column.date }}</span>
+        <span class="date">{{ column.createdAt | moment }}</span>
         <span class="tag is-warning">
-          {{ column.label }}
+          {{ column.label.label }}
         </span>
       </div>
       <div class="main">
@@ -25,27 +25,32 @@
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
+import axios from 'axios'
+const PAGE_NAME = 'column'
+const API_VERSION = 'v1'
+const microCmsUrl = [
+  process.env.eggSystemApiDomain,
+  API_VERSION,
+  PAGE_NAME
+].join('/')
 
 export default {
   components: {
     TheHeroTitle
   },
-  data: () => ({
-    column: {
-      title:
-        'デジタルトランスフォーメーション（DX）とは？DXレポートから中小企業での活用方法まで解説（前編）',
-      date: '2019/11/03',
-      label: 'info',
-      url: '/column/aaa',
-      img:
-        'https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg',
-      content: '<div>aaaa</div><div>bbbbb</div><div>ああああ</div>'
-    }
-  }),
+  data() {
+    return {}
+  },
   async asyncData({ params }) {
-    // idからデータを取得
+    const { data } = await axios
+      .get(`${microCmsUrl}/${params.id}`, {
+        headers: { 'X-API-kEY': process.env.microCmsApiKey }
+      })
+      .catch(err => {
+        return err.response
+      })
     return {
-      id: params.id
+      column: data
     }
   }
 }
