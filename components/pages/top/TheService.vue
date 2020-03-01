@@ -1,50 +1,52 @@
 <template>
   <div class="service">
-    <the-sub-header text="service" />
-    <div class="columns">
-      <div class="column is-one-quarter">
-        <div class="circle">システムコンサルティング</div>
+    <div class="service-columns">
+      <div class="service-column">
+        <a href="/service" target="_brunk">(仮)x-faCEのサービス(リンクになっています)</a>
       </div>
-      <div class="column is-one-quarter">
-        <div class="circle">システム開発</div>
-      </div>
-      <div class="column is-one-quarter">
-        <div class="circle">サロン開業支援サービス</div>
-      </div>
-      <div class="column is-one-quarter">
-        <div class="circle">オウンドメディア運営</div>
+      <div class="service-column">
+        (仮)ご利用の流れ
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
-
-export default {
-  components: {
-    TheSubHeader
-  }
-}
 </script>
 
 <style lang="scss" scoped>
 .service {
   width: 80%;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 8%;
   margin-bottom: 10%;
+  background: $white;
 }
-.circle {
-  width: 80%;
-  margin: 0 auto;
+.service-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.service-column {
+  padding: 0;
+  width: 45%;
   height: 200px;
-  background-color: $gray;
+  border: 2px solid $gray;
   color: $black;
-  border-radius: 50%;
   text-align: center;
   line-height: 200px;
   font-size: 15px;
   font-weight: bold;
+}
+.service-column a {
+  color: $black;
+}
+@media screen and (max-width: 600px) {
+  .service-columns {
+    display: block;
+  }
+  .service-column {
+    width: 100%;
+    margin: 10px auto;
+  }
 }
 </style>

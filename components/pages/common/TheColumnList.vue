@@ -10,11 +10,8 @@
               </figure>
             </div>
             <div class="card-content">
-              <div>
-                {{ item.title }}
-                <br>
-                {{ item.date }}
-              </div>
+              <p class="card-title">{{ item.title }}</p>
+              <p class="card-store">{{ item.store }}</p>
             </div>
           </div>
         </nuxt-link>
@@ -35,4 +32,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.card-content {
+  padding: 10px 5px;
+}
+.card-title {
+  font-size: 14px;
+  height: 40px;
+}
+.card-store {
+  font-size: 14px;
+  color: $darksmoke;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 </style>

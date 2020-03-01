@@ -1,38 +1,34 @@
 <template>
   <div>
     <the-hero-image />
-    <the-mission />
-    <the-vision />
-    <the-value />
-    <the-service />
-    <the-news-list />
+    <the-sub-header text="最近の活動・コラム" />
     <the-column-list />
-    <the-recruit />
+    <the-service />
+    <the-about />
+    <the-member />
+    <slick />
+    <the-news-list />
   </div>
 </template>
 
 <script>
 import TheHeroImage from '~/components/pages/top/TheHeroImage.vue'
-import TheMission from '~/components/pages/top/TheMission.vue'
-import TheVision from '~/components/pages/top/TheVision.vue'
-import TheValue from '~/components/pages/top/TheValue.vue'
-import TheService from '~/components/pages/top/TheService.vue'
-import TheNewsList from '~/components/pages/top/TheNewsList.vue'
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
 import TheColumnList from '~/components/pages/top/TheColumnList.vue'
-import TheRecruit from '~/components/pages/top/TheRecruit.vue'
+import TheService from '~/components/pages/top/TheService.vue'
+import TheAbout from '~/components/pages/top/TheAbout.vue'
+import TheMember from '~/components/pages/top/TheMember.vue'
+import TheNewsList from '~/components/pages/top/TheNewsList.vue'
 
 export default {
   components: {
     TheHeroImage,
-    TheMission,
-    TheVision,
-    TheValue,
-    TheService,
-    TheNewsList,
     TheSubHeader,
     TheColumnList,
-    TheRecruit
+    TheService,
+    TheAbout,
+    TheMember,
+    TheNewsList
   }
 }
 </script>

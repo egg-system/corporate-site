@@ -1,10 +1,8 @@
 <template>
   <div class="bg-image">
-    <div class="bg-mask">
-      <h1 class="title is-2">
-        <p class="bg-text">献身的な人のためにITシステムを活用する</p>
-      </h1>
-    </div>
+    <h2 class="title is-2">
+      <p class="bg-text">x-faCEは、<br class="sp">コンサルティング集団です。</p>
+    </h2>
   </div>
 </template>
 
@@ -13,21 +11,32 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.title {
+  padding-top: 60px;
+}
 .bg-image {
   background: url('https://storage.googleapis.com/prd-careers-asset/2019/05/7b516167-design_thum-768x400.jpg');
   width: 100%;
   height: 500px;
   background-size: cover;
 }
-.bg-mask {
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
 .bg-text {
-  color: $white;
+  color: $black;
   line-height: 3.5rem;
   padding-top: 100px;
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
+}
+.sp {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .bg-text {
+    width: 90%;
+    font-size: 36px;
+  }
+  .sp {
+    display: block;
+  }
 }
 </style>
