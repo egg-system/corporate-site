@@ -2,18 +2,22 @@
   <div class="column-item">
     <div class="columns is-multiline">
       <div v-for="(item, i) in columns" :key="i" class="column is-one-third">
-        <nuxt-link :to="item.url">
+        <nuxt-link :to="'column/' + item.id">
           <div class="card">
             <div class="card-image">
               <figure class="image">
-                <img :src="item.img" :alt="item.title">
+                <img :src="item.img.url" :alt="item.title">
               </figure>
             </div>
             <div class="card-content">
               <div>
                 {{ item.title }}
                 <br>
-                {{ item.date }}
+                {{ item.createdAt | moment }}
+                <br>
+                <span class="tag is-primary">
+                  {{ item.label.label }}
+                </span>
               </div>
             </div>
           </div>
