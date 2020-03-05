@@ -20,7 +20,6 @@
           </tr>
           <tr>
             <the-sub-header :is-line="true" text="最近の活動・コラム" />
-            <a href="/column" class="link">一覧を見る</a>
             <the-column />
           </tr>
         </tbody>
