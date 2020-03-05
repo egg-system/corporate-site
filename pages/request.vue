@@ -22,7 +22,6 @@
             <the-sub-header :is-line="true" text="最近の活動・コラム" />
             <a href="/column" class="link">一覧を見る</a>
             <the-column />
-            <p class="tmp">(Coming soon)</p>
           </tr>
         </tbody>
       </table>
@@ -77,9 +76,5 @@ export default {
 }
 .end {
   margin-bottom: 50px;
-}
-.tmp {
-  text-align: center;
-  padding-bottom: 50px;
 }
 </style>
