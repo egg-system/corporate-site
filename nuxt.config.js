@@ -1,12 +1,11 @@
-require("dotenv").config();
-const { microCmsApiKey, eggSystemApiDomain } = process.env;
+require('dotenv').config()
+const { microCmsApiKey, eggSystemApiDomain } = process.env
 
 export default {
   env: {
     microCmsApiKey,
     eggSystemApiDomain
   },
-  
   mode: 'universal',
   /*
    ** Headers of the page
@@ -45,9 +44,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [ 
-    '~/plugins/filters.js'
-  ],
+  plugins: ['~/plugins/filters.js'],
   /*
    ** Nuxt.js modules
    */
