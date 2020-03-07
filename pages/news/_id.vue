@@ -26,7 +26,7 @@ import axios from 'axios'
 const PAGE_NAME = 'news'
 const API_VERSION = 'v1'
 const microCmsUrl = [
-  process.env.eggSystemApiDomain,
+  process.env.microCmsApiDomain,
   API_VERSION,
   PAGE_NAME
 ].join('/')
