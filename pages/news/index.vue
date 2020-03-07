@@ -13,11 +13,9 @@ import TheNewsList from '~/components/pages/common/TheNewsList.vue'
 import axios from 'axios'
 const PAGE_NAME = 'news'
 const API_VERSION = 'v1'
-const microCmsUrl = [
-  process.env.microCmsApiDomain,
-  API_VERSION,
-  PAGE_NAME
-].join('/')
+const microCmsUrl = `${
+  process.env.microCmsApiDomain
+}/${API_VERSION}/${PAGE_NAME}`
 
 export default {
   components: {
