@@ -2,7 +2,8 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <nuxt-link to="/" class="navbar-item">
-        <img src="https://eggsystem.co.jp/wp-content/uploads/2018/06/logo-yoko.png" width="150" height="30">
+        <img src="logo_image_small.png">
+        <p class="logo">EGG SYSTEM</p>
       </nuxt-link>
 
       <a :class="[isOpen ? 'is-active' : '']"
@@ -13,9 +14,9 @@
          data-target="navbarBasicExample"
          @click="menu()"
       >
-        <span aria-hidden="true"/>
-        <span aria-hidden="true"/>
-        <span aria-hidden="true"/>
+        <span class="test" aria-hidden="true"/>
+        <span class="test" aria-hidden="true"/>
+        <span class="test" aria-hidden="true"/>
       </a>
     </div>
 
@@ -24,49 +25,25 @@
         <nuxt-link class="navbar-item" to="/about">
           わたしたちについて
         </nuxt-link>
-        <nuxt-link class="navbar-item" to="/company">
-          会社情報
-        </nuxt-link>
 
-        <div class="navbar-item has-dropdown is-hoverable">
-          <nuxt-link class="navbar-link" to="/service">
-            サービス
-          </nuxt-link>
-
-          <div class="navbar-dropdown">
-            <nuxt-link class="navbar-item" to="/service/consulting">
-              システムコンサルティング
-            </nuxt-link>
-            <nuxt-link class="navbar-item" to="/service/development">
-              システム開発
-            </nuxt-link>
-            <nuxt-link class="navbar-item" to="/service/salon">
-              サロン開業支援サービス
-            </nuxt-link>
-            <nuxt-link class="navbar-item" to="/service/media">
-              オウンドメディア運営
-            </nuxt-link>
-          </div>
-        </div>
-
-        <nuxt-link class="navbar-item" to="/xface">
-          x-faCE
+        <nuxt-link class="navbar-item" to="/service">
+          サービス
         </nuxt-link>
 
         <nuxt-link class="navbar-item" to="/member">
           メンバー
         </nuxt-link>
 
-        <nuxt-link class="navbar-item" to="/news">
-          ニュース
+        <nuxt-link class="navbar-item" to="/company">
+          会社概要
         </nuxt-link>
 
         <nuxt-link class="navbar-item" to="/column">
-          コラム
+          最近の活動・コラム
         </nuxt-link>
 
         <nuxt-link class="navbar-item" to="/recruit">
-          採用情報
+          採用
         </nuxt-link>
 
         <nuxt-link class="navbar-item" to="contact">
@@ -94,7 +71,53 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.subtitle {
-  color: $black !important;
+.navbar {
+  border-bottom: solid 0.5px $darksmoke;
+}
+.navbar-brand {
+  margin-left: 7.5%;
+  .navbar-item {
+    height: 5rem;
+    img {
+      max-height: 3rem;
+    }
+  }
+}
+.navbar-end {
+  padding-right: 6%;
+  .navbar-item {
+    border-right: solid 0.5px $black;
+    height: 35%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: auto;
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+.is-active .navbar-end .navbar-item {
+  border-right: none;
+}
+.logo {
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+}
+.navbar-burger {
+  width: 5rem;
+  height: 5rem;
+}
+.test {
+  width: 40%;
+  left: calc(50% - 1rem);
+  &:nth-child(1) {
+    top: 44.75%;
+  }
+  &:nth-child(2) {
+    top: 51%;
+  }
+  &:nth-child(3) {
+    top: 57.25%;
+  }
 }
 </style>
