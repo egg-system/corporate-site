@@ -14,9 +14,9 @@
          data-target="navbarBasicExample"
          @click="menu()"
       >
-        <span class="test" aria-hidden="true"/>
-        <span class="test" aria-hidden="true"/>
-        <span class="test" aria-hidden="true"/>
+        <span class="large-burger" aria-hidden="true"/>
+        <span class="large-burger" aria-hidden="true"/>
+        <span class="large-burger" aria-hidden="true"/>
       </a>
     </div>
 
@@ -107,7 +107,7 @@ export default {
   width: 5rem;
   height: 5rem;
 }
-.test {
+.large-burger {
   width: 40%;
   left: calc(50% - 1rem);
   &:nth-child(1) {
