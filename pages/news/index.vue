@@ -11,7 +11,7 @@
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheNewsList from '~/components/pages/common/TheNewsList.vue'
 import axios from 'axios'
-import { fetchListData } from '~/lib/cms'
+import { fetchCmsListData } from '~/lib/cms'
 
 export default {
   components: {
@@ -28,7 +28,7 @@ export default {
   },
 
   asyncData() {
-    return fetchListData('news')
+    return fetchCmsListData('news')
   }
 }
 </script>
