@@ -22,9 +22,6 @@ export default {
     TheHeroTitle,
     TheColumnList
   },
-  data() {
-    return {}
-  },
   async asyncData() {
     const { data } = await axios
       .get(microCmsUrl, {

@@ -33,9 +33,6 @@ export default {
   components: {
     TheHeroTitle
   },
-  data() {
-    return {}
-  },
   async asyncData({ params }) {
     const { data } = await axios
       .get(`${microCmsUrl}/${params.id}`, {
