@@ -2,7 +2,7 @@
   <div>
     <the-hero-title main-text="コラム" />
     <div class="column-list page-content">
-      <the-column-list :columns="columns" />
+      <the-column-list :columns="listData" />
     </div>
   </div>
 </template>
@@ -11,28 +11,16 @@
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheColumnList from '~/components/pages/common/TheColumnList.vue'
 import axios from 'axios'
-const PAGE_NAME = 'column'
-const API_VERSION = 'v1'
-const microCmsUrl = `${
-  process.env.microCmsApiDomain
-}/${API_VERSION}/${PAGE_NAME}`
+import { fetchListData } from '~/lib/cms'
 
 export default {
   components: {
     TheHeroTitle,
     TheColumnList
   },
-  async asyncData() {
-    const { data } = await axios
-      .get(microCmsUrl, {
-        headers: { 'X-API-kEY': process.env.microCmsApiKey }
-      })
-      .catch(err => {
-        return err.response
-      })
-    return {
-      columns: data.contents
-    }
+
+  asyncData() {
+    return fetchListData('column')
   }
 }
 </script>

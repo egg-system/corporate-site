@@ -2,7 +2,7 @@
   <div>
     <the-hero-title main-text="ニュース" />
     <div class="news page-content">
-      <the-news-list :news="news"/>
+      <the-news-list :news="listData"/>
     </div>
   </div>
 </template>
@@ -11,11 +11,7 @@
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheNewsList from '~/components/pages/common/TheNewsList.vue'
 import axios from 'axios'
-const PAGE_NAME = 'news'
-const API_VERSION = 'v1'
-const microCmsUrl = `${
-  process.env.microCmsApiDomain
-}/${API_VERSION}/${PAGE_NAME}`
+import { fetchListData } from '~/lib/cms'
 
 export default {
   components: {
@@ -30,17 +26,9 @@ export default {
   head: {
     script: []
   },
-  async asyncData() {
-    const { data } = await axios
-      .get(microCmsUrl, {
-        headers: { 'X-API-kEY': process.env.microCmsApiKey }
-      })
-      .catch(err => {
-        return err.response
-      })
-    return {
-      news: data.contents
-    }
+
+  asyncData() {
+    return fetchListData('news')
   }
 }
 </script>
