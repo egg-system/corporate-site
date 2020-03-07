@@ -1,18 +1,18 @@
 <template>
   <div>
-    <the-hero-title :main-text="column.title" />
+    <the-hero-title :main-text="data.title" />
     <div class="column-item page-content">
       <figure class="image">
-        <img :src="column.img.url">
+        <img :src="data.img.url">
       </figure>
       <div class="sub">
-        <span class="date">{{ column.createdAt | moment }}</span>
+        <span class="date">{{ data.createdAt | moment }}</span>
         <span class="tag is-warning">
-          {{ column.label.label }}
+          {{ data.label.label }}
         </span>
       </div>
       <div class="main">
-        <div v-html="column.content" />
+        <div v-html="data.content" />
       </div>
       <p class="back">
         <nuxt-link to="/column">
@@ -25,28 +25,15 @@
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
-import axios from 'axios'
+import { fetchCmsData } from '~/lib/cms'
 const PAGE_NAME = 'column'
-const API_VERSION = 'v1'
-const microCmsUrl = `${
-  process.env.microCmsApiDomain
-}/${API_VERSION}/${PAGE_NAME}`
 
 export default {
   components: {
     TheHeroTitle
   },
-  async asyncData({ params }) {
-    const { data } = await axios
-      .get(`${microCmsUrl}/${params.id}`, {
-        headers: { 'X-API-kEY': process.env.microCmsApiKey }
-      })
-      .catch(err => {
-        return err.response
-      })
-    return {
-      column: data
-    }
+  asyncData({ params }) {
+    return fetchCmsData(PAGE_NAME, params.id)
   }
 }
 </script>
