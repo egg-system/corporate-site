@@ -2,182 +2,11 @@
   <div class="member">
     <the-sub-header text="メンバー" />
     <slick ref="slick" :options="slickOptions">
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
+      <div v-for="(value, index) in photos" :key="index" class="member-list"> 
+        <div class="member-image">
+          <img :src="getImage(index)">
         </div>
       </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="member-list">
-          <div class="member-image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg">
-          </div>
-          <div class="member-message">
-            <p>コピーライターの気持ち</p>
-            <p class="department">第1制作室／コピーディレクター</p>
-          </div>
-        </div>
-      </div> 
     </slick>
     <div class="btn-area">
       <div class="more-btn">
@@ -194,12 +23,14 @@ import Slick from 'vue-slick'
 import '../../../node_modules/slick-carousel/slick/slick-theme.css'
 import '../../../node_modules/slick-carousel/slick/slick.css'
 export default {
+  name: 'Member',
   components: {
     TheSubHeader,
     Slick
   },
   data() {
     return {
+      photos: ['2019-09-06.jpg', '2019-09-06.jpg', '2019-09-06.jpg'],
       slickOptions: {
         autoplay: true,
         arrows: false,
@@ -219,6 +50,12 @@ export default {
         ]
       }
     }
+  },
+  methods: {
+    // 画像取得
+    getImage: function(id) {
+      return require('@/assets/' + this.photos[id])
+    }
   }
 }
 </script>
@@ -232,11 +69,17 @@ export default {
 }
 .member-list {
   cursor: pointer;
+  opacity: 0;
+}
+.member-list.show {
+  opacity: 1;
 }
 .member-image {
   position: relative;
   display: inline-block;
   overflow: hidden;
+  width: 300px;
+  height: 200px;
 }
 .member-image::before {
   content: '';
@@ -258,7 +101,6 @@ export default {
     z-index: 1;
   }
 }
-
 .member-message {
   font-size: 14px;
   padding: 5px 0;
