@@ -1,4 +1,5 @@
 require('dotenv').config()
+import { routing } from './lib/cms'
 const { microCmsApiKey, microCmsApiDomain } = process.env
 
 export default {
@@ -32,6 +33,14 @@ export default {
         href: 'https://fonts.googleapis.com/css?family=Quicksand'
       }
     ]
+  },
+  /*
+  ** generateオプション
+  */
+  generate: {
+    async routes() {
+      return routing()
+    }
   },
   /*
    ** Customize the progress-bar color
