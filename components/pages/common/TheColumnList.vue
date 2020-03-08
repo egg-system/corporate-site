@@ -13,7 +13,7 @@
               <div>
                 {{ item.title }}
                 <br>
-                {{ item.createdAt | moment }}
+                {{ item.createdAt | dayjs }}
                 <br>
                 <span class="tag is-primary">
                   {{ item.label.label }}

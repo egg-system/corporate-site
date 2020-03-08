@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import moment from 'moment'
+import dayjs from 'dayjs'
 
-Vue.filter('moment', function(date) {
-  return moment(date).format('YYYY/MM/DD')
+Vue.filter('dayjs', function(date) {
+  return dayjs(date).format('YYYY/MM/DD')
 })

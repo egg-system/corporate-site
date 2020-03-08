@@ -5,7 +5,7 @@
 
         <div class="column is-4">
           <div class="columns is-mobile">
-            <div class="column is-4-mobile">{{ item.createdAt | moment }}</div>
+            <div class="column is-4-mobile">{{ item.createdAt | dayjs }}</div>
             <div class="column is-4-mobile">
               <span class="tag is-primary">
                 {{ item.label.label }}

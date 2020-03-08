@@ -6,7 +6,7 @@
         <img :src="data.img.url">
       </figure>
       <div class="sub">
-        <span class="date">{{ data.createdAt | moment }}</span>
+        <span class="date">{{ data.createdAt | dayjs }}</span>
         <span class="tag is-warning">
           {{ data.label.label }}
         </span>

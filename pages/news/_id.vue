@@ -3,7 +3,7 @@
     <the-hero-title :main-text="data.title" />
     <div class="news page-content">
       <div class="sub">
-        <span class="date">{{ data.createdAt | moment }}</span>
+        <span class="date">{{ data.createdAt | dayjs }}</span>
         <span class="tag is-warning">
           {{ data.label.label }}
         </span>
