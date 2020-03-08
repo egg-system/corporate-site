@@ -25,15 +25,14 @@
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
-import { fetchCmsData } from '~/lib/cms'
-const PAGE_NAME = 'column'
+import { fetchCmsDataColumn } from '~/lib/cms'
 
 export default {
   components: {
     TheHeroTitle
   },
   asyncData({ params }) {
-    return fetchCmsData(PAGE_NAME, params.id)
+    return fetchCmsDataColumn(params.id)
   }
 }
 </script>
