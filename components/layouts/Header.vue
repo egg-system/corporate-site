@@ -76,12 +76,6 @@ export default {
 }
 .navbar-brand {
   margin-left: 7.5%;
-  .navbar-item {
-    height: 5rem;
-    img {
-      max-height: 3rem;
-    }
-  }
 }
 .navbar-end {
   padding-right: 6%;
@@ -96,28 +90,17 @@ export default {
     }
   }
 }
-.is-active .navbar-end .navbar-item {
-  border-right: none;
+@media screen and (max-width: $navbar-breakpoint) {
+  .navbar-end .navbar-item {
+    border-right: none;
+  }
 }
 .logo {
   padding-left: 0.5rem;
   font-size: 1.2rem;
 }
-.navbar-burger {
-  width: 5rem;
-  height: 5rem;
-}
 .large-burger {
-  width: 40%;
-  left: calc(50% - 1rem);
-  &:nth-child(1) {
-    top: 44.75%;
-  }
-  &:nth-child(2) {
-    top: 51%;
-  }
-  &:nth-child(3) {
-    top: 57.25%;
-  }
+  width: 32px;
+  left: calc(50% - 16px);
 }
 </style>
