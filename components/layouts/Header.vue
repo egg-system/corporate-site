@@ -2,7 +2,7 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <nuxt-link to="/" class="navbar-item">
-        <img src="logo_image_small.png">
+        <img src="/logo_image_small.png">
         <p class="logo">EGG SYSTEM</p>
       </nuxt-link>
 
@@ -93,6 +93,9 @@ export default {
 @media screen and (max-width: $navbar-breakpoint) {
   .navbar-end .navbar-item {
     border-right: none;
+  }
+  .navbar-brand {
+    margin-left: 0%;
   }
 }
 .logo {
