@@ -2,7 +2,7 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <nuxt-link to="/" class="navbar-item">
-        <img src="logo_image_small.png">
+        <img src="/logo_image_small.png">
         <p class="logo">EGG SYSTEM</p>
       </nuxt-link>
 
