@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar darksmoke-underline" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <nuxt-link to="/" class="navbar-item">
         <img src="/logo_image_small.png">
@@ -71,39 +71,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.navbar {
-  border-bottom: solid 0.5px $darksmoke;
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
 }
-.navbar-brand {
-  margin-left: 7.5%;
-}
-.navbar-end {
-  padding-right: 6%;
-  .navbar-item {
-    border-right: solid 0.5px $black;
-    height: 35%;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin: auto;
-    &:last-child {
-      border-right: none;
-    }
-  }
-}
-@media screen and (max-width: $navbar-breakpoint) {
-  .navbar-end .navbar-item {
-    border-right: none;
-  }
-  .navbar-brand {
-    margin-left: 0%;
-  }
+.large-burger {
+  width: 24px;
+  left: calc(50% - 12px);
 }
 .logo {
   padding-left: 0.5rem;
   font-size: 1.2rem;
 }
-.large-burger {
-  width: 32px;
-  left: calc(50% - 16px);
+@media screen and (max-width: $navbar-breakpoint) {
+  .navbar-end .navbar-item {
+    border-right: none;
+    margin: 0.3rem;
+  }
+}
+@media screen and (min-width: $navbar-breakpoint) {
+  .navbar-brand {
+    margin-left: 7.5%;
+  }
+  .navbar-end {
+    padding-right: 6%;
+    .navbar-item {
+      border-right: solid 0.5px;
+      height: 35%;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin: auto;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
 }
 </style>
