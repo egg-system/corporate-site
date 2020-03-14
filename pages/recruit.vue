@@ -14,9 +14,11 @@
       <the-contact />
     </div>
     <the-about-us />
-    <the-study />
-    <the-sub-header class="blank" text="最近の活動・コラム" />
-    <the-column class="end" />
+    <div class="content page-content">
+      <the-study />
+      <the-sub-header class="blank" text="最近の活動・コラム" />
+      <the-column class="end" />
+    </div>
   </div>
 </template>
 
