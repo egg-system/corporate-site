@@ -1,9 +1,9 @@
 import tsubasa from '~/assets/members/tsubasa.jpg'
 import hikaru from '~/assets/members/hikaru.jpg'
-import nuno from '~/assets/members/nuno.jpg'
-import shun from '~/assets/members/shun.jpg'
-import shingo from '~/assets/members/shingo.jpg'
-import unknown from '~/assets/members/unknown.jpg'
+import nuno from '~/assets/members/nuno.JPG'
+import shun from '~/assets/members/shun.JPG'
+import shingo from '~/assets/members/shingo.JPG'
+import unknown from '~/assets/members/unknown.JPG'
 const members = [
   {
     nameJP: '高橋 翼',
