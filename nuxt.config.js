@@ -37,7 +37,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    // Nuxt.js 2.4 以降、ssr:falseではなくmode: 'client'になる
+    { src: '~plugins/slick-slide.js', ssr: false }
+  ],
   /*
    ** Nuxt.js modules
    */

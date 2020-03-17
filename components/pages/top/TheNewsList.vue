@@ -1,10 +1,10 @@
 <template>
   <div class="news">
-    <the-sub-header text="news" />
-    <the-news-list :news="news"/>
-    <div class="more-btn">
-      <button class="button is-fullwidth more" @click="go('/news')">もっと見る</button>
+    <the-sub-header text="お知らせ" />
+    <div class="news-link">
+      <a href="/news" target="_brunk">一覧をみる　　　></a>
     </div>
+    <the-news-list :news="news"/>
   </div>
 </template>
 
@@ -22,20 +22,20 @@ export default {
   data: () => ({
     news: [
       {
-        title: '本社移転のお知らせ',
-        date: '2019/06/03',
+        title: 'Soup Stock Tokyo ルクア大阪店 改装に伴う一時休業のお知らせ',
+        date: '2020.1.6',
         label: 'info',
         url: '/news/aaa'
       },
       {
-        title: 'H30年度（2019年度） IT導入支援事業者として登録されました',
-        date: '2019/04/26',
+        title: 'Soup Stock Tokyo ホワイティうめだ店、12月5日(木)11:00オープン',
+        date: '2019.11.26',
         label: 'info',
         url: '/news/aaa'
       },
       {
-        title: '近代中小企業（KinChu）2019年4月号 掲載のお知らせ',
-        date: '2019/04/03',
+        title: 'Soup Stock Tokyo Echika池袋店 12/1(日)リニューアルオープン',
+        date: '2019.11.15',
         label: 'info',
         url: '/news/aaa'
       }
@@ -51,8 +51,15 @@ export default {
   margin-top: 5%;
   margin-bottom: 5%;
 }
-.news p {
-  margin-bottom: 30px;
+.news-link {
+  width: auto;
+  margin: 30px auto;
+  text-align: right;
+}
+.news-link a {
+  display: inline-block;
+  font-size: 16px;
+  color: $black;
 }
 .more {
   margin-top: 30px;
@@ -60,5 +67,13 @@ export default {
 .more-btn {
   width: 50%;
   margin: auto;
+}
+.border {
+  border-right: 1px solid $lightgray;
+}
+@media screen and (max-width: 600px) {
+  .news-link {
+    margin: 15px auto;
+  }
 }
 </style>
