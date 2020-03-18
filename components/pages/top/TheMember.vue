@@ -26,6 +26,12 @@
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
 import '../../../node_modules/slick-carousel/slick/slick-theme.css'
 import '../../../node_modules/slick-carousel/slick/slick.css'
+import Tsubasa from '~/assets/top/tsubasa.jpg'
+import Hikaru from '~/assets/top/hikaru.jpg'
+import Nuno from '~/assets/top/nuno.JPG'
+import Shun from '~/assets/top/shun.JPG'
+import Shingo from '~/assets/top/shingo.JPG'
+
 export default {
   name: 'Member',
   components: {
@@ -35,52 +41,44 @@ export default {
     return {
       members: [
         {
-          image:
-            'https://storage.googleapis.com/prd-careers-asset/2019/05/7b516167-design_thum-768x400.jpg',
-          name: '髙橋 翼',
+          image: Tsubasa,
+          name: '高橋 翼',
           romajiName: 'Tsubasa Takahashi'
         },
         {
-          image:
-            'https://storage.googleapis.com/prd-careers-asset/2019/05/7b516167-design_thum-768x400.jpg',
-          name: '髙橋 光',
+          image: Hikaru,
+          name: '高橋 光',
           romajiName: 'Hikaru Takahashi'
         },
         {
-          image:
-            'https://storage.googleapis.com/prd-careers-asset/2019/05/7b516167-design_thum-768x400.jpg',
+          image: Nuno,
           name: '布村 武大',
           romajiName: 'Takehiro Nonomura'
         },
         {
-          image:
-            'https://storage.googleapis.com/prd-careers-asset/2019/05/7b516167-design_thum-768x400.jpg',
+          image: Shun,
           name: '横田 峻',
           romajiName: 'Shun Yokota'
         },
         {
-          image:
-            'https://storage.googleapis.com/prd-careers-asset/2019/05/7b516167-design_thum-768x400.jpg',
-          name: '髙橋 翼',
-          romajiName: 'Tsubasa Takahashi'
+          image: Shingo,
+          name: '廣海 真吾',
+          romajiName: 'Shingo Hiromi'
         },
         {
-          image:
-            'https://storage.googleapis.com/prd-careers-asset/2019/05/7b516167-design_thum-768x400.jpg',
-          name: '髙橋 光',
-          romajiName: 'Hikaru Takahashi'
+          image: Shingo,
+          name: '小川',
+          romajiName: 'Ogawa'
         },
         {
-          image:
-            'https://storage.googleapis.com/prd-careers-asset/2019/05/7b516167-design_thum-768x400.jpg',
-          name: '布村 武大',
-          romajiName: 'Takehiro Nonomura'
+          image: Shingo,
+          name: '加藤',
+          romajiName: 'Kato'
         },
         {
-          image:
-            'https://storage.googleapis.com/prd-careers-asset/2019/05/7b516167-design_thum-768x400.jpg',
-          name: '横田 峻',
-          romajiName: 'Shun Yokota'
+          image: Shingo,
+          name: '坂',
+          romajiName: 'Zaka'
         }
       ],
       slickOptions: {

@@ -39,7 +39,7 @@ export default {
    */
   plugins: [
     // Nuxt.js 2.4 以降、ssr:falseではなくmode: 'client'になる
-    { src: '~plugins/slick-slide.js', ssr: false }
+    { src: '~plugins/slick-slide.js', mode: 'client' }
   ],
   /*
    ** Nuxt.js modules

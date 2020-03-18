@@ -14,14 +14,45 @@
           </a>
         </div>
       </div>
-      <div class="about-column">
-        <img :src="images">
+      <div class="about-column second">
+        <img :src="img">
+      </div>
+    </div>
+    <the-sub-header text="わたしたちについて" class="about-header-sp" />
+    <div class="about-columns-sp">
+      <div class="about-column first">
+        <img :src="img">
+      </div>
+      <div class="about-column second">
+        <p class="about-column-content">
+          株式会社エッグシステムでは、<br class="sp">「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会<br class="sp">の実現のために、ITシステムを活用します。
+        </p>
+        <div class="about-btn-area">
+          <a href="/about" target="_brunk">
+            <div class="btn-area">
+              <p>詳しくみる<span>></span></p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import aboutImage from '~/assets/top/about.jpeg'
+import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
+
+export default {
+  components: {
+    TheSubHeader
+  },
+  data() {
+    return {
+      img: aboutImage
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -41,14 +72,17 @@
 }
 .about-column {
   padding-top: 10px;
-  width: 45%;
   height: 250px;
   color: $black;
   font-size: 15px;
   font-weight: bold;
 }
 .first {
+  width: 55%;
   padding: 5px;
+}
+.second {
+  width: 35%;
 }
 .about-column-title {
   font-size: 24px;
@@ -100,13 +134,35 @@
   width: 100%;
   height: 100%;
 }
+.about-header-sp {
+  display: none;
+}
+.about-columns-sp {
+  display: none;
+}
 @media screen and (max-width: 600px) {
+  .about {
+    background: $white;
+  }
   .about-columns {
+    display: none;
+  }
+  .about-header-sp {
     display: block;
+  }
+  .about-columns-sp {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
   }
   .about-column {
     width: 100%;
     margin: 0 auto;
+    height: auto;
+  }
+  .about-btn-area {
+    width: 100%;
+    float: none;
   }
   .sp {
     display: none;
