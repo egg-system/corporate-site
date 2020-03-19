@@ -15,7 +15,7 @@ export default {}
   padding-top: 30px;
 }
 .bg-image {
-  background: url('../../../assets/1syLBXLA.jpeg');
+  background: url('../../../assets/top/top.jpeg');
   width: 100%;
   height: 860px;
   background-size: cover;

@@ -1,16 +1,16 @@
 <template>
   <div class="service">
     <div class="service-columns">
-      <a href="/service" target="_brunk">
+      <nuxt-link to="/service" target="_brunk">
         <div class="service-column">
           <p>x-faCEのサービスへ<span>></span></p>
         </div>
-      </a>
-      <a href="/service" target="_brunk">
+      </nuxt-link>
+      <nuxt-link to="/service" target="_brunk">
         <div class="service-column">
           <p>ご依頼の流れ<span>></span></p>
         </div>
-      </a>
+      </nuxt-link>
     </div>
   </div>
 </template>

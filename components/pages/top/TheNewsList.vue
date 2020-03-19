@@ -2,7 +2,7 @@
   <div class="news">
     <the-sub-header text="お知らせ" />
     <div class="news-link">
-      <a href="/news" target="_brunk">一覧をみる　　　></a>
+      <nuxt-link to="/news" target="_brunk">一覧をみる　　　></nuxt-link>
     </div>
     <the-news-list :news="news"/>
   </div>

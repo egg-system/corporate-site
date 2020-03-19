@@ -6,11 +6,11 @@
       <p>といった方もお気軽にご相談ください。</p>
     </div>
     <div class="contact-btn-area">
-      <a href="/contact" target="_brunk">
+      <nuxt-link to="/contact" target="_brunk">
         <div class="btn-area">
           <p>お問い合わせ・ご相談はこちらから<span>></span></p>
         </div>
-      </a>
+      </nuxt-link>
     </div>
   </div>
 </template>

@@ -7,11 +7,11 @@
           株式会社エッグシステムでは、<br class="sp">「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会<br class="sp">の実現のために、ITシステムを活用します。
         </p>
         <div class="about-btn-area">
-          <a href="/about" target="_brunk">
+          <nuxt-link to="/about" target="_brunk">
             <div class="btn-area">
               <p>詳しくみる<span>></span></p>
             </div>
-          </a>
+          </nuxt-link>
         </div>
       </div>
       <div class="about-column second">
@@ -28,11 +28,11 @@
           株式会社エッグシステムでは、<br class="sp">「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会<br class="sp">の実現のために、ITシステムを活用します。
         </p>
         <div class="about-btn-area">
-          <a href="/about" target="_brunk">
+          <nuxt-link to="/about" target="_brunk">
             <div class="btn-area">
               <p>詳しくみる<span>></span></p>
             </div>
-          </a>
+          </nuxt-link>
         </div>
       </div>
     </div>

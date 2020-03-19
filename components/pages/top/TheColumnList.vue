@@ -3,8 +3,8 @@
     <the-column-list :columns="columns" />
     <div class="btn-area">
       <div class="more-btn">
-        <a class="column-button" href="/column">詳しくみる　　　<p class="column-arrow">></p>
-        </a>
+        <nuxt-link class="column-button" to="/column">詳しくみる　　　<p class="column-arrow">></p>
+        </nuxt-link>
       </div>
     </div>
   </div>
