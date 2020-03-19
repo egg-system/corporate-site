@@ -1,8 +1,7 @@
 <template>
   <div class="contact">
     <div class="contact-button">
-      <button class="button has-text-white has-background-black is-large is-fullwidth" @click="go('/contact')">採用について質問する&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</button>
+      <button class="button has-text-white has-background-black is-large is-fullwidth" @click="go('/contact')">採用について質問する<span class="right_arrow">＞</span></button>
     </div>
   </div>
 </template>
@@ -24,5 +23,11 @@ export default {
 .contact-button {
   width: 50%;
   margin: auto;
+}
+// PC版
+@media screen and (min-width: 769px) {
+  .right_arrow {
+    margin-left: 250px;
+  }
 }
 </style>
