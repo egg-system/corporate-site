@@ -11,6 +11,11 @@
 </template>
 
 <script>
+import method from '~/mixins/method'
+
+export default {
+  mixins: [method]
+}
 </script>
 
 <style lang="scss" scoped>
