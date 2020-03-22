@@ -1,127 +1,49 @@
-import tsubasa from '~/assets/members/tsubasa02.jpg'
-import hikaru from '~/assets/members/hikaru01.jpg'
-import nunomura from '~/assets/members/nunomura01.jpg'
-import papa from '~/assets/members/papa02.jpg'
+import tsubasa from '~/assets/members/tsubasa.jpg'
+import hikaru from '~/assets/members/hikaru.jpg'
+import nuno from '~/assets/members/nuno.JPG'
+import shun from '~/assets/members/shun.JPG'
+import shingo from '~/assets/members/shingo.JPG'
+import unknown from '~/assets/members/unknown.JPG'
 const members = [
   {
-    role: '代表取締役',
     nameJP: '高橋 翼',
     nameEN: 'Tsubasa Takahashi',
     img: tsubasa
   },
   {
-    role: '',
     nameJP: '高橋 光',
     nameEN: 'Hikaru Takahashi',
     img: hikaru
   },
   {
-    role: '',
     nameJP: '布村 武大',
     nameEN: 'Takehiro Nunomura',
-    img: nunomura
+    img: nuno
   },
   {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
+    nameJP: '横田 峻',
+    nameEN: 'Shun Yokota',
+    img: shun
   },
   {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
+    nameJP: '廣海 真吾',
+    nameEN: 'Shingo Hiromi',
+    img: shingo
   },
   {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
+    nameJP: '小川',
+    nameEN: 'Ogawa',
+    img: unknown
   },
   {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
+    nameJP: '加藤',
+    nameEN: 'Kato',
+    img: unknown
   },
   {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
-  },
-  {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
-  },
-  {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
-  },
-  {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
-  },
-  {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
-  },
-  {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
-  },
-  {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
-  },
-  {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
-  },
-  {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
-  },
-  {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
-  },
-  {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
-  },
-  {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
-  },
-  {
-    role: '',
-    nameJP: '山田 太郎',
-    nameEN: 'Tarou Yamada',
-    img: papa
+    nameJP: ' 坂',
+    nameEN: 'Zaka',
+    img: unknown
   }
 ]
 export default { members }

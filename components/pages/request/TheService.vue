@@ -4,8 +4,8 @@
       <figure class="image">
         <img :src="service.img" class="is-square">
       </figure>
-      <div class="center-text">
-        {{ service.title }}<br>
+      <div class="center-text darksmoke-underline">
+        {{ service.title }}<br><br>
         {{ service.description }}
       </div>
     </div>
@@ -28,7 +28,9 @@ b {
   font-size: 22px;
 }
 .image {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
   width: 200px;
   img {
     object-fit: cover;
@@ -39,5 +41,10 @@ b {
 
 .columns {
   padding: 40px;
+}
+.center-text {
+  height: 150px;
+  width: 80%;
+  margin: auto;
 }
 </style>
