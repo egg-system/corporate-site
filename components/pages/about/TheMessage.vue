@@ -144,7 +144,7 @@ export default {
   margin-top: 0;
 }
 .text {
-  line-height: 26px;
+  line-height: 32px;
 }
 .sub-title {
   font-size: 24px;

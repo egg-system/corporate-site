@@ -8,10 +8,10 @@
           </figure>
         </div>
         <div class="value-message">
-          <p>システム導入・開発を<br class="sp">ゴールにしない</p>
+          <p>実現可能性を重視</p>
         </div>
-        <p>
-          お客様にとってはシステム導入・開発が<br class="sp">ゴールではなく、導入後にシステムを活<br class="sp">用することが重要です。そのため、企<br class="sp">画・戦略の策定から開発や運用まで一貫<br class="sp">して対応します。
+        <p class="text">
+          弊社メンバーは「コンサルティングエンジニア集団」で、全員がシステム設計・開発の経験があります。そのため、コンサルティングだけでなくの観点だけでなく、システム設計の観点から、計画が実現可能かどうかを見極めることができます。策定した計画が絵に描いた餅にならず、実現可能な「ToBe（あるべき姿）」「CanBe（現実的な解）」を策定します。
         </p>
       </div>
       <div class="value-inner">
@@ -21,10 +21,10 @@
           </figure>
         </div>
         <div class="value-message">
-          <p>圧倒的なコストパフォーマンスを<br class="sp">ご提供する</p>
+          <p>圧倒的なコストパフォーマンス</p>
         </div>
-        <p>
-          弊社では営業担当がおらず間接費用を抑<br class="sp">えているため、圧倒的なコストパフォー<br class="sp">マンスの提供が可能です。大手コンサル<br class="sp">ティング会社や大手システム開発会社の<br class="sp">約半分という報酬額でサービスを提供し<br class="sp">ます。
+        <p class="text">
+          間接部門や営業部門がなく、全員がプレイヤーとして動くことで間接費用を抑えています。<br>大手コンサルティング会社や大手システム開発会社の約半分という報酬額で、圧倒的なコストパフォーマンスをご提供することが可能です。
         </p>
       </div>
       <div class="value-inner">
@@ -34,10 +34,10 @@
           </figure>
         </div>
         <div class="value-message">
-          <p>技術力や他社事例により<br class="sp">計画を具現化する</p>
+          <p>中立的な立場</p>
         </div>
-        <p>
-          コンサルティングだけでなく技術力も兼<br class="sp">ね備えているため、「絵に描いた餅」で<br class="sp">終わることなく、計画を実現させるとこ<br class="sp">ろまで責任を持って対応します。<br class="sp">豊富な他社事例のご紹介もしながら、実<br class="sp">現に向けて推進します。
+        <p class="text">
+          弊社は大手企業や特定の製品・サービスを有する企業と資本関係がなく、独立した組織です。また、代理店ビジネスはやっておりませんので、特定の製品・サービスに依存せず、中立的な立場からシステムコンサルティングやシステム開発を行います。
         </p>
       </div>
     </div>
@@ -80,6 +80,9 @@ export default {
 .value-message p {
   font-size: 18px;
   text-align: center;
+}
+.text {
+  line-height: 32px;
 }
 @media screen and (max-width: 600px) {
   .value-container {
