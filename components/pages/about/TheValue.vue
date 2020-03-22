@@ -4,7 +4,7 @@
       <div class="value-inner">
         <div class="value-image">
           <figure class="image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2018/04/ceo-1-1200x900.jpg">
+            <img :src="image1">
           </figure>
         </div>
         <div class="value-message">
@@ -17,7 +17,7 @@
       <div class="value-inner">
         <div class="value-image">
           <figure class="image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2018/04/ceo-1-1200x900.jpg">
+            <img :src="image2">
           </figure>
         </div>
         <div class="value-message">
@@ -30,7 +30,7 @@
       <div class="value-inner">
         <div class="value-image">
           <figure class="image">
-            <img src="https://eggsystem.co.jp/wp-content/uploads/2018/04/ceo-1-1200x900.jpg">
+            <img :src="image3">
           </figure>
         </div>
         <div class="value-message">
@@ -45,7 +45,16 @@
 </template>
 
 <script>
-export default {}
+import strongImages from '~/assets/js/about-value.js'
+export default {
+  data() {
+    return {
+      image1: strongImages.strongImage1,
+      image2: strongImages.strongImage2,
+      image3: strongImages.strongImage3
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
