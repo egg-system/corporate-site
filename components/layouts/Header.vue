@@ -3,9 +3,7 @@
     <div class="navbar-brand">
       <nuxt-link to="/" class="navbar-item">
         <img src="/logo_image_small.png">
-        <p class="logo">EGG SYSTEM</p>
       </nuxt-link>
-
       <a :class="[isOpen ? 'is-active' : '']"
          class="navbar-burger burger"
          role="button"
@@ -76,15 +74,23 @@ a:hover,
 a:active {
   color: inherit;
 }
+.navbar-brand {
+  a {
+    padding: 0px;
+  }
+  img {
+    max-height: 2.5rem;
+    height: 2.5rem;
+  }
+}
 .large-burger {
   width: 24px;
   left: calc(50% - 12px);
 }
-.logo {
-  padding-left: 0.5rem;
-  font-size: 1.2rem;
-}
 @media screen and (max-width: $navbar-breakpoint) {
+  .navbar-brand {
+    margin-left: 2%;
+  }
   .navbar-end .navbar-item {
     border-right: none;
     margin: 0.3rem;
