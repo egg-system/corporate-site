@@ -19,7 +19,7 @@ export default {}
 
 <style lang="scss" scoped>
 .top-message {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-size: 32px;
   margin-top: 30px;

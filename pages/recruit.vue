@@ -4,16 +4,10 @@
     <div class="content page-content">
       <the-main-image />
       <the-main-message />
-      <div class="btn">
-        <a href="https://www.find-job.net/fj/showjob.cgi?id=125695" target="_blank">
-          <button class="button is-primary has-text-white has-background-black is-large">エントリーする
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</button>
-        </a>
-      </div>
+      <the-entry />
       <the-contact />
     </div>
-    <the-about-us />
+    <the-about />
     <div class="content page-content">
       <the-study />
       <the-sub-header class="blank" text="最近の活動・コラム" />
@@ -28,8 +22,9 @@ import TheSubHeader from '~/components/pages/common/TheSubHeader.vue'
 import TheContact from '~/components/pages/common/TheContact.vue'
 import TheMainImage from '~/components/pages/recruit/TheMainImage.vue'
 import TheMainMessage from '~/components/pages/recruit/TheMainMessage.vue'
-import TheAboutUs from '~/components/pages/recruit/TheAboutUs.vue'
+import TheAbout from '~/components/pages/recruit/TheAbout.vue'
 import TheStudy from '~/components/pages/recruit/TheStudy.vue'
+import TheEntry from '~/components/pages/recruit/TheEntry.vue'
 import TheColumn from '~/components/pages/about/TheColumn.vue'
 
 export default {
@@ -39,9 +34,10 @@ export default {
     TheContact,
     TheMainImage,
     TheMainMessage,
-    TheColumn,
+    TheAbout,
     TheStudy,
-    TheAboutUs
+    TheEntry,
+    TheColumn
   }
 }
 </script>
