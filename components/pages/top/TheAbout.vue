@@ -58,6 +58,7 @@ export default {
 <style lang="scss" scoped>
 .about {
   width: 100%;
+  height: 350px;
   margin-top: 8%;
   margin-bottom: 10%;
   background: $whitesmoke;
@@ -66,6 +67,7 @@ export default {
 }
 .about-columns {
   width: 90%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -93,12 +95,12 @@ export default {
 .about-column-content {
   font-size: 16px;
   font-weight: normal;
-  margin-top: 15px;
-  line-height: 28px;
+  margin-top: 35px;
+  line-height: 32px;
 }
 .about-btn-area {
   width: 40%;
-  margin-top: 30px;
+  margin-top: 55px;
   float: right;
 }
 .btn-area {
@@ -130,10 +132,6 @@ export default {
   line-height: 17px;
   vertical-align: 2px;
 }
-.about-column img {
-  width: 100%;
-  height: 100%;
-}
 .about-header-sp {
   display: none;
 }
@@ -143,6 +141,7 @@ export default {
 @media screen and (max-width: 600px) {
   .about {
     background: $white;
+    height: auto;
   }
   .about-columns {
     display: none;
@@ -160,9 +159,13 @@ export default {
     margin: 0 auto;
     height: auto;
   }
+  .about-column-content {
+    margin-top: 10px;
+  }
   .about-btn-area {
     width: 100%;
     float: none;
+    margin-top: 20px;
   }
   .sp {
     display: none;

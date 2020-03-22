@@ -67,7 +67,6 @@ export default {
   margin-bottom: 5%;
 }
 .member-list {
-  cursor: pointer;
   opacity: 1;
   margin: 0 10px;
 }

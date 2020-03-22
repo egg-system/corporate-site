@@ -3,6 +3,7 @@ import Hikaru from '~/assets/top/hikaru.jpg'
 import Nuno from '~/assets/top/nuno.jpeg'
 import Shun from '~/assets/top/shun.jpeg'
 import Shingo from '~/assets/top/shingo.jpeg'
+import unknown from '~/assets/top/unknown.jpeg'
 
 const members = [
   {
@@ -18,7 +19,7 @@ const members = [
   {
     image: Nuno,
     name: '布村 武大',
-    romajiName: 'Takehiro Nonomura'
+    romajiName: 'Takehiro Nunomura'
   },
   {
     image: Shun,
@@ -31,17 +32,17 @@ const members = [
     romajiName: 'Shingo Hiromi'
   },
   {
-    image: Shingo,
+    image: unknown,
     name: '小川',
     romajiName: 'Ogawa'
   },
   {
-    image: Shingo,
+    image: unknown,
     name: '加藤',
     romajiName: 'Kato'
   },
   {
-    image: Shingo,
+    image: unknown,
     name: '坂',
     romajiName: 'Zaka'
   }

@@ -35,7 +35,7 @@ export default {
 }
 .strength-content {
   padding: 10px 5px;
-  height: 250px;
+  height: 300px;
 }
 .strength-title {
   font-size: 20px;
@@ -46,10 +46,11 @@ export default {
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 20px;
+  line-height: 32px;
 }
 @media screen and (max-width: 600px) {
   .strength-content {
-    height: 200px;
+    height: 300px;
   }
 }
 </style>
