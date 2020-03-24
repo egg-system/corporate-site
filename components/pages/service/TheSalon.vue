@@ -3,12 +3,13 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          システムコンサルティング
+          サロン開業支援サービス
         </h1>
         <h2 class="subtitle is-6">
-          システム導入およびシステム導入後の運用における「計画」「推進」「管理」に沿ったコンサルティングサービスを提供します。
+          施術以外の不安をゼロにし、自分の力で集客して店舗経営するサロンオーナーの「欲しい」を形にした「サロン特化開業支援サービス」<br>
+          顧客に合わせたメニュー・コンセプト作りから、ホームページの制作、集客方法の設計、予約や会計まで一貫したオペレーションを実現します
         </h2>
-        <button class="button" @click="go('/service/consulting')">詳細をみる</button>
+        <button class="button" @click="go('/service/salon')">詳細をみる</button>
       </div>
     </div>
   </section>

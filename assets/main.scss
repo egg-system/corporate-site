@@ -66,16 +66,14 @@ $colors: map-merge($colors, $addColors);
   text-align: center;
 }
 .darksmoke-underline{
-  border-bottom: 1px solid $darksmoke;
-}
-.lightgray-underline{
   border-bottom: 1px solid $lightgray;
 }
 
 .link {
+  text-align: center;
   a.button {
     width: 100%;
-    .link-message {
+    .message {
       margin-right: auto;
       margin-bottom: auto;
     }

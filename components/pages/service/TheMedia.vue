@@ -3,12 +3,12 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          システム開発
+          オウンドメディア運営
         </h1>
         <h2 class="subtitle is-6">
-          ホームページ制作、Webシステム開発を行います
+          あなたが進む「サロン開業」への道のりをそっと支え、共に歩んでいく。開業支援の「EGG」
         </h2>
-        <button class="button is-primary" @click="go('/service/development')">詳細をみる</button>
+        <button class="button is-primary" @click="go('/service/media')">詳細をみる</button>
       </div>
     </div>
   </section>
