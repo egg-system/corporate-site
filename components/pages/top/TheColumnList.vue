@@ -91,6 +91,14 @@ export default {
   vertical-align: 2px;
 }
 @media screen and (max-width: 600px) {
+  .column-button {
+    position: relative;
+  }
+  .column-arrow {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+  }
   .more-btn {
     padding-top: 20px;
     padding-bottom: 10px;

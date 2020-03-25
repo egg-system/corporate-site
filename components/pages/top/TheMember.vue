@@ -136,6 +136,20 @@ export default {
   vertical-align: 2px;
 }
 @media screen and (max-width: 600px) {
+  .member-name {
+    font-size: 12px;
+  }
+  .member-romajiName {
+    font-size: 12px;
+  }
+  .member-button {
+    position: relative;
+  }
+  .member-arrow {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+  }
   .more-btn {
     padding-top: 20px;
     padding-bottom: 10px;

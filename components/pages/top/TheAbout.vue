@@ -75,7 +75,6 @@ export default {
 .about-column {
   padding-top: 10px;
   height: 250px;
-  color: $black;
   font-size: 15px;
   font-weight: bold;
 }
@@ -160,6 +159,7 @@ export default {
     height: auto;
   }
   .about-column-content {
+    font-size: 14px;
     margin-top: 10px;
   }
   .about-btn-area {

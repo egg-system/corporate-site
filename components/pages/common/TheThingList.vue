@@ -50,7 +50,10 @@ export default {
 }
 @media screen and (max-width: 600px) {
   .strength-content {
-    height: 300px;
+    height: auto;
+  }
+  .strength-title {
+    font-size: 16px;
   }
 }
 </style>

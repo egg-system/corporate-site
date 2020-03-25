@@ -43,5 +43,8 @@ export default {
   .news-inner {
     margin: 10px auto;
   }
+  .news-title {
+    font-size: 14px;
+  }
 }
 </style>

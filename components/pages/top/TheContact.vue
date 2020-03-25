@@ -56,13 +56,19 @@
 }
 @media screen and (max-width: 600px) {
   .contact-content p {
-    font-size: 22px;
+    font-size: 14px;
     text-align: center;
-    padding: 10px 5px;
+    padding: 10px 0;
   }
   .contact-btn-area {
     width: 100%;
     margin: 30px auto;
+  }
+  .btn-area p {
+    font-size: 14px;
+  }
+  .btn-area p span {
+    margin-left: 10px;
   }
 }
 </style>
