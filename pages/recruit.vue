@@ -10,8 +10,8 @@
     <the-about />
     <div class="content page-content">
       <the-study />
-      <the-sub-header class="blank" text="最近の活動・コラム" />
-      <the-column class="end" />
+      <!-- <the-sub-header class="blank" text="最近の活動・コラム" />
+      <the-column class="end" /> -->
     </div>
   </div>
 </template>
