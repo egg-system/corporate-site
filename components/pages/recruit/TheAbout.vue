@@ -18,8 +18,8 @@
         <img :src="img">
       </div>
     </div>
-    <the-sub-header text="わたしたちについて" class="about-header-sp" />
     <div class="about-columns-sp">
+      <the-sub-header text="わたしたちについて" class="about-header-sp" />
       <div class="about-column first">
         <img :src="img">
       </div>
