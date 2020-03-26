@@ -136,6 +136,9 @@ export default {
   vertical-align: 2px;
 }
 @media screen and (max-width: 600px) {
+  .member {
+    width: 90%;
+  }
   .member-name {
     font-size: 12px;
   }
@@ -144,10 +147,11 @@ export default {
   }
   .member-button {
     position: relative;
+    font-size: 14px;
   }
   .member-arrow {
     position: absolute;
-    top: 4px;
+    top: 2px;
     right: 10px;
   }
   .more-btn {

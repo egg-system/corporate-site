@@ -55,6 +55,9 @@
   margin-left: 15px;
 }
 @media screen and (max-width: 600px) {
+  .contact {
+    width: 90%;
+  }
   .contact-content p {
     font-size: 14px;
     text-align: center;

@@ -1,8 +1,8 @@
 <template>
   <div>
     <the-hero-image />
-    <the-sub-header text="最近の活動・コラム" />
-    <the-column-list />
+    <!--<the-sub-header text="最近の活動・コラム" />
+    // <the-column-list />-->
     <the-service />
     <the-about />
     <the-sub-header text="x-faCEの強み" />
@@ -10,7 +10,7 @@
     <the-contact />
     <the-sub-header text="メンバー" />
     <the-member />
-    <the-news-list />
+    <!--<the-news-list />-->
   </div>
 </template>
 

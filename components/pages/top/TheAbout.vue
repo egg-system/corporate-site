@@ -150,7 +150,7 @@ export default {
   }
   .about-columns-sp {
     display: block;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
   .about-column {

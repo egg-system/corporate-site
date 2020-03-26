@@ -52,12 +52,15 @@
   margin-left: 15px;
 }
 @media screen and (max-width: 600px) {
+  .service {
+    width: 90%;
+  }
   .service-columns {
     display: block;
   }
   .service-column {
     width: 100%;
-    margin: 15px auto;
+    margin: 50px auto;
   }
 }
 </style>

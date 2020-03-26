@@ -57,6 +57,9 @@ export default {
   vertical-align: 2px;
 }
 @media screen and (max-width: 600px) {
+  .strength-list {
+    width: 90%;
+  }
   .more-btn {
     padding-top: 20px;
     padding-bottom: 10px;
