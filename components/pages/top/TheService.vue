@@ -23,7 +23,7 @@
   width: 80%;
   margin: 0 auto;
   margin-top: 8%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   background: $white;
 }
 .service-columns {

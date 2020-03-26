@@ -59,8 +59,8 @@ export default {
 .about {
   width: 100%;
   height: 350px;
-  margin-top: 8%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   background: $whitesmoke;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -141,6 +141,7 @@ export default {
   .about {
     background: $white;
     height: auto;
+    margin-top: 0;
   }
   .about-columns {
     display: none;

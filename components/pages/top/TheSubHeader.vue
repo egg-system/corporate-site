@@ -18,7 +18,7 @@ export default {
 <style lang="scss" scoped>
 .sub-header-container {
   width: 90%;
-  margin: 80px auto 0;
+  margin: 30px auto 0;
 }
 .sub-header {
   display: inline-block;
