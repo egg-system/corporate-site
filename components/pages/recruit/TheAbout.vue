@@ -65,7 +65,7 @@ export default {
   padding-bottom: 15px;
 }
 .about-columns {
-  width: 90%;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
   display: flex;
