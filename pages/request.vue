@@ -42,7 +42,20 @@ export default {
   },
   data: () => ({
     services: services.services
-  })
+  }),
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'request',
+          name: 'ご依頼について',
+          content:
+            'ご要件やご予算が決まっていない段階でのご相談でも問題ありません。「こんな相談をしてよいのかどうか分からないけど・・・」「まずは調査と分析だけ依頼したい」「このくらいのシステムを作る場合の費用を知りたい」など、どんな内容もまずはお気軽にご相談ください。'
+        }
+      ]
+    }
+  }
 }
 </script>
 
