@@ -49,18 +49,23 @@ export default {
   },
   data: () => ({
     consultingImage,
-    systemImage,
-    title: 'サービス紹介'
+    systemImage
   }),
   head() {
     return {
-      title: this.title,
+      title: 'サービス紹介',
       meta: [
         {
-          hid: 'service',
-          name: 'サービス紹介',
+          hid: 'service-description',
+          name: 'description',
           content:
             'システム導入や導入後の運用を軸に、「計画」「推進」「管理」の3つのサービスを提供します。'
+        },
+        {
+          hid: 'service-keywords',
+          name: 'keywords',
+          content:
+            'サービス紹介, システムコンサルティング, 開発, IT戦略, IT投資計画策定, システム化支援, 業務改善, ToBe, CanBe, プロジェクトマネジメント, サロン, 整体, エステ, 接骨院, マッサージ, トレーニングジム, EGG'
         }
       ]
     }

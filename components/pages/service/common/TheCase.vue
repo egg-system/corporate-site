@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="is-size-5">事例紹介</p>
+    <h3>事例紹介</h3>
     <div class="columns is-multiline">
       <div v-for="(item, i) in cases" :key="i" :class="{ right: (i % 2) === 1 }" class="column is-half">
         <div class="case-title button is-dark">
@@ -44,11 +44,12 @@ export default {
   margin-bottom: 3rem;
 }
 div {
-  font-size: 0.75rem;
+  font-size: 14px;
 }
 .column {
   position: relative;
   min-height: 20rem;
+  padding: 2rem;
   .button {
     width: 15rem;
     margin-bottom: 1rem;
@@ -62,7 +63,7 @@ div {
 .sub-title,
 .description,
 .case-item {
-  line-height: 1.75;
+  line-height: 2rem;
 }
 @media screen and (min-width: 769px) {
   .right::before {

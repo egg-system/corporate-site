@@ -2,7 +2,7 @@
   <div>
     <div class="columns">
       <div class="column is-half">
-        <h4 class="is-4">システム開発</h4>
+        <h2>システム開発</h2>
         <div class="message">
           ご要望に合わせてスクラッチやWebシステムや業務システムの開発を行います。
         </div>
@@ -72,10 +72,10 @@
         <div class="table-content target-system">
           <h6>対象システム</h6>
           <div>
-            <p> -業務システム（販売管理、顧客管理、予約管理、等）</p>
+            <p>- 業務システム（販売管理、顧客管理、予約管理、等）</p>
             <p>- Webシステム（Webアプリケーション、ECサイト、サーバー構築支援、等）</p>
             <p>- 業務システム連携用API&nbsp;など</p>
-            <p class="note message">※上記以外のシステム開発の対応可否については<nuxt-link to="/contact">こちらから</nuxt-link>ご相談ください</p>
+            <p class="note">※上記以外のシステム開発の対応可否については<nuxt-link to="/contact">こちらから</nuxt-link>ご相談ください</p>
           </div>
         </div>
         <div class="table-content deliverables">
@@ -133,12 +133,14 @@ export default {
 }
 .table-content {
   margin: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  line-height: 2rem;
   div {
-    font-size: 0.75rem;
+    font-size: 14px;
   }
   p {
-    font-size: 0.75rem;
+    font-size: 14px;
     margin-bottom: 0.5rem;
   }
 }

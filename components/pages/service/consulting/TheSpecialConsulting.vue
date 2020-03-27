@@ -2,7 +2,7 @@
   <div>
     <div class="columns">
       <div class="column is-half">
-        <h4 class="is-4">業界特化型<br>システムコンサルティングサービス</h4>
+        <h2>業界特化型<br>システムコンサルティングサービス</h2>
         <div class="message">
           サロン・整体・エステ・接骨院・マッサージ・トレーニングジムの業界に特化したコンサルティングサービスを行っています。<br>
           事業戦力の策定や集客の支援から、手間がかかるホームページ等のシステム面のサポートまでオールインワンで行います。
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div>
-      <p class="table-title is-size-5">サロン業界特化型コンサルティングサービス</p>
+      <h3 class="table-title">サロン業界特化型コンサルティングサービス</h3>
       <div class="columns table">
         <div class="column is-4 left">
           <div class="table-content target">
@@ -56,7 +56,7 @@
         </figure>
       </div>
       <div class="column is-half">
-        <h4 class="is-4">当社が運営するオウンドメディア</h4>
+        <h3>当社が運営するオウンドメディア</h3>
         <div class="message">
           サロンオーナー様にとってできるだけ負担なく手軽に情報を収集できる場所として、
           当社が持つノウハウを駆使してメディアサイト「EGG」を立ち上げました。
@@ -129,13 +129,15 @@ export default {
 }
 .table-content {
   margin: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  line-height: 2rem;
   div {
-    font-size: 0.75rem;
+    font-size: 14px;
   }
   p {
-    font-size: 0.75rem;
-    margin-bottom: 0.5rem;
+    font-size: 14px;
+    margin-bottom: 0.25rem;
   }
 }
 .service-content-item {
@@ -151,7 +153,7 @@ export default {
   width: 80%;
   height: 1px;
   background: $lightgray;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 769px) {
   .left::before {

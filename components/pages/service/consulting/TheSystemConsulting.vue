@@ -2,7 +2,7 @@
   <div>
     <div class="columns">
       <div class="column is-half system-consulting">
-        <h2 class="is-4">システムコンサルティングサービス</h2>
+        <h2>システムコンサルティングサービス</h2>
         <div class="message">システム導入や導入後の運用を軸に、「計画」「推進」「管理」の3つのサービスを提供します。</div>
         <div class="message">
           その他にも、お客様のご要望に合わせてカスタマイズしたサービスをご提供しますので、
@@ -97,7 +97,7 @@
         </div>
       </div>
     </div>
-    <p class="table-title is-size-5">2.&nbsp;システム化支援/業務改善コンサルティングサービス</p>
+    <h3 class="table-title">2.&nbsp;システム化支援/業務改善コンサルティングサービス</h3>
     <div class="columns table">
       <div class="column is-4 left">
         <div class="table-content target">
@@ -139,7 +139,7 @@
         </div>
       </div>
     </div>
-    <p class="table-title is-size-5">3.&nbsp;プロジェクトマネジメントサービス</p>
+    <h3 class="table-title">3.&nbsp;プロジェクトマネジメントサービス</h3>
     <div class="columns table">
       <div class="column is-4 left">
         <div class="table-content target">
@@ -209,6 +209,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.columns {
+  margin-top: 3rem;
+}
 .link {
   max-width: 30rem;
   margin: auto;
@@ -230,9 +233,6 @@ export default {
     }
   }
 }
-.long {
-  line-height: 2;
-}
 .table {
   border: 1px solid $lightgray;
   margin: 0px;
@@ -247,12 +247,13 @@ export default {
 .table-content {
   margin: 1rem;
   margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  line-height: 2rem;
   div {
-    font-size: 0.75rem;
+    font-size: 14px;
   }
   p {
-    font-size: 0.75rem;
+    font-size: 14px;
     margin-bottom: 0.25rem;
   }
 }
@@ -289,7 +290,7 @@ export default {
   width: 85%;
   height: 1px;
   background: $lightgray;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 769px) {
   .left::before {
@@ -311,25 +312,21 @@ export default {
     background: $lightgray;
     margin-top: 0.5rem;
   }
-  .five-ws .description {
-    margin-left: 1rem;
+  .five-ws {
+    margin-bottom: 0.25rem;
+    .description {
+      margin-left: 1rem;
+    }
   }
 }
-.service-content::after {
-  position: absolute;
-  content: '';
-  width: 90%;
-  height: 1px;
-  background: $lightgray;
-  margin-top: 0.5rem;
-}
+.service-content::after,
 .service-process::after {
   position: absolute;
   content: '';
   width: 90%;
   height: 1px;
   background: $lightgray;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 .content-description {
   display: inline-block;
