@@ -82,6 +82,7 @@ div {
     height: 1px;
     background: $lightgray;
     margin-top: 0.5rem;
+    bottom: 1rem;
   }
   .column:last-child::after {
     height: 0px;

@@ -19,7 +19,7 @@
       </div>
       <div class="column is-half">
         <figure class="image">
-          <img :src="DevelopmentImage">
+          <img :src="developmentImage">
         </figure>
       </div>
     </div>
@@ -28,17 +28,17 @@
         <div class="table-content type-of-contract">
           <h6>契約形態</h6>
           <div>
-            <p>-請負契約</p>
+            <p>- 請負契約</p>
             <p>要件がある程度決まっている場合、事前にお見積りさせて頂いた上で対応いたします。</p>
           </div>
           <div>
-            <p>-準委任契約</p>
+            <p>- 準委任契約</p>
             <p>要件がまだ決まっていない場合、「どういうシステムを開発すべきか」という上流フェーズから対応いたします。</p>
           </div>
         </div>
         <div class="table-content duration-cost">
           <h6>参考期間/費用</h6>
-          <p>-都度お見積りさせて頂きます。</p>
+          <p>- 都度お見積りさせて頂きます。</p>
           <p class="note message">※お問い合わせは<nuxt-link to="/contact">こちら</nuxt-link></p>
         </div>
       </div>
@@ -72,16 +72,16 @@
         <div class="table-content target-system">
           <h6>対象システム</h6>
           <div>
-            <p>-業務システム（販売管理、顧客管理、予約管理、等）</p>
-            <p>-Webシステム（Webアプリケーション、ECサイト、サーバー構築支援、等）</p>
-            <p>-業務システム連携用API&nbsp;など</p>
+            <p> -業務システム（販売管理、顧客管理、予約管理、等）</p>
+            <p>- Webシステム（Webアプリケーション、ECサイト、サーバー構築支援、等）</p>
+            <p>- 業務システム連携用API&nbsp;など</p>
             <p class="note message">※上記以外のシステム開発の対応可否については<nuxt-link to="/contact">こちらから</nuxt-link>ご相談ください</p>
           </div>
         </div>
         <div class="table-content deliverables">
           <h6>成果物</h6>
-          <p>-設計書</p>
-          <p>-開発したプログラム</p>
+          <p>- 設計書</p>
+          <p>- 開発したプログラム</p>
         </div>
       </div>
     </div>
@@ -91,16 +91,16 @@
 
 <script>
 import TheCase from '~/components/pages/service/common/TheCase.vue'
-import DevelopmentImage from '~/assets/service/img/service-system01.JPG'
-import DevelopmentCases from '~/assets/service/js/DevelopmentCases.js'
+import developmentImage from '~/assets/service/img/service-system01.JPG'
+import developmentCases from '~/assets/service/js/DevelopmentCases.js'
 
 export default {
   components: {
     TheCase
   },
   data: () => ({
-    DevelopmentImage,
-    cases: DevelopmentCases.cases
+    developmentImage,
+    cases: developmentCases.cases
   })
 }
 </script>

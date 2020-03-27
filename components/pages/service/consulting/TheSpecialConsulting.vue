@@ -11,7 +11,7 @@
       </div>
       <div class="column is-half">
         <figure class="image special-consulting">
-          <img :src="SpecialConsultingImage">
+          <img :src="specialConsultingImage">
         </figure>
       </div>
     </div>
@@ -21,13 +21,13 @@
         <div class="column is-4 left">
           <div class="table-content target">
             <h6>対象者</h6>
-            <p>-サロン・整体・エステ・接骨院・マッサージ・トレーニングジムの事業を行っているオーナー様</p>
-            <p>-売上100万円/月を目指して事業を行っているオーナー様</p>
+            <p>- サロン・整体・エステ・接骨院・マッサージ・トレーニングジムの事業を行っているオーナー様</p>
+            <p>- 売上100万円/月を目指して事業を行っているオーナー様</p>
           </div>
           <div class="table-content duration-cost">
             <h6>参考期間/費用</h6>
-            <p>-約3か月～約6か月程度</p>
-            <p>-約5万円～10万円程度/月</p>
+            <p>- 約3か月～約6か月程度</p>
+            <p>- 約5万円～10万円程度/月</p>
             <p class="note">※1か月単位でのご契約となります。</p>
           </div>
         </div>
@@ -38,12 +38,12 @@
               1年以内の廃業率60%、3年以内の廃業率90%という厳しい現実に向かっていくために『施術以外の不安をゼロ』にすべく、下記サービスをご提供します。
             </p>
             <div class="service-content-item">
-              <p>-実現したい目標や店舗についてのヒアリング</p>
-              <p>-来店してほしい顧客像の作成</p>
-              <p>-他店と差別化するコンセプトの策定</p>
-              <p>-集客導線及び集客方法の設計</p>
-              <p>-予約から会計まで一貫したオペレーションの実現</p>
-              <p>-豊富な他者事例のご提供</p>
+              <p>- 実現したい目標や店舗についてのヒアリング</p>
+              <p>- 来店してほしい顧客像の作成</p>
+              <p>- 他店と差別化するコンセプトの策定</p>
+              <p>- 集客導線及び集客方法の設計</p>
+              <p>- 予約から会計まで一貫したオペレーションの実現</p>
+              <p>- 豊富な他者事例のご提供</p>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
     <div class="columns">
       <div class="column is-half">
         <figure class="image salon">
-          <img :src="SalonImage">
+          <img :src="salonImage">
         </figure>
       </div>
       <div class="column is-half">
@@ -79,17 +79,17 @@
 
 <script>
 import TheCase from '~/components/pages/service/common/TheCase.vue'
-import SpecialConsultingImage from '~/assets/service/img/request-service4.png'
-import SalonImage from '~/assets/service/img/service-salon.png'
-import SpecialConsultingCases from '~/assets/service/js/SpecialConsultingCases.js'
+import specialConsultingImage from '~/assets/service/img/request-service4.png'
+import salonImage from '~/assets/service/img/service-salon.png'
+import specialConsultingCases from '~/assets/service/js/SpecialConsultingCases.js'
 export default {
   components: {
     TheCase
   },
   data: () => ({
-    SpecialConsultingImage,
-    SalonImage,
-    cases: SpecialConsultingCases.cases
+    specialConsultingImage,
+    salonImage,
+    cases: specialConsultingCases.cases
   })
 }
 </script>

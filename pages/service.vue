@@ -5,7 +5,7 @@
       <div class="columns">
         <div class="consulting column is-half">
           <figure class="image">
-            <img :src="ConsultingImage">
+            <img :src="consultingImage">
           </figure>
           <div class="is-size-5">システムコンサルティングサービス</div>
           <div class="link">
@@ -17,7 +17,7 @@
         </div>
         <div class="development column is-half">
           <figure class="image">
-            <img :src="SystemImage">
+            <img :src="systemImage">
           </figure>
           <div class="is-size-5">システム開発</div>
           <div class="link">
@@ -38,8 +38,8 @@
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheConsulting from '~/components/pages/service/TheConsulting.vue'
 import TheDevelopment from '~/components/pages/service/TheDevelopment.vue'
-import ConsultingImage from '~/assets/service/img/service-consult01.JPG'
-import SystemImage from '~/assets/service/img/service-system01.JPG'
+import consultingImage from '~/assets/service/img/service-consult01.JPG'
+import systemImage from '~/assets/service/img/service-system01.JPG'
 
 export default {
   components: {
@@ -48,9 +48,23 @@ export default {
     TheDevelopment
   },
   data: () => ({
-    ConsultingImage,
-    SystemImage
-  })
+    consultingImage,
+    systemImage,
+    title: 'サービス紹介'
+  }),
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'service',
+          name: 'サービス紹介',
+          content:
+            'システム導入や導入後の運用を軸に、「計画」「推進」「管理」の3つのサービスを提供します。'
+        }
+      ]
+    }
+  }
 }
 </script>
 
