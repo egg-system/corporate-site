@@ -1,33 +1,52 @@
 <template>
   <div class="bg-image">
-    <div class="bg-mask">
-      <h1 class="title is-2">
-        <p class="bg-text">献身的な人のためにITシステムを活用する</p>
-      </h1>
-    </div>
+    <img :src="img">
   </div>
 </template>
 
 <script>
-export default {}
+import heroImage from '~/assets/top/top.jpeg'
+export default {
+  data() {
+    return {
+      img: heroImage
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
-.bg-image {
-  background: url('https://storage.googleapis.com/prd-careers-asset/2019/05/7b516167-design_thum-768x400.jpg');
-  width: 100%;
-  height: 500px;
-  background-size: cover;
+.title {
+  padding-top: 30px;
 }
-.bg-mask {
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+.bg-image {
+  width: 100%;
 }
 .bg-text {
-  color: $white;
+  font-size: 44px;
+  color: $black;
   line-height: 3.5rem;
-  padding-top: 100px;
-  width: 80%;
+  padding-top: 10px;
+  width: 85%;
   margin: 0 auto;
+  text-align: right;
+}
+.sp {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .title {
+    padding-top: 100px;
+  }
+  .bg-text {
+    width: 90%;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-right: 70px;
+    text-align: left;
+  }
+  .sp {
+    display: block;
+  }
 }
 </style>
