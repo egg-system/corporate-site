@@ -80,7 +80,7 @@ export default {
 .study-column p {
   color: $lightgray;
   font-size: 18px;
-  margin: 15px;
+  margin: 45px;
 }
 .study-column p span {
   margin-left: 15px;
