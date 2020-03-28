@@ -41,11 +41,9 @@
           最近の活動・コラム
         </nuxt-link>
       -->
-        <!--
         <nuxt-link class="navbar-item" to="/recruit">
           採用
         </nuxt-link>
-      -->
 
         <nuxt-link class="navbar-item" to="contact">
           お問い合わせ
