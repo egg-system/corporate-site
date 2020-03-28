@@ -1,7 +1,7 @@
 <template>
   <div class="entry">
     <div class="entry-columns">
-      <a href="https://www.find-job.net/fj/showjob.cgi?id=125695" target="_blank">
+      <a href="https://www.green-japan.com/company/6999" target="_blank">
         <div class="entry-column">
           <p>エントリー<span>></span></p>
         </div>
