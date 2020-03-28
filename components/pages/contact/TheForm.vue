@@ -1,4 +1,12 @@
 <template>
+  <div class="google-form">
+    <iframe class="form-frame" src="https://docs.google.com/forms/d/e/1FAIpQLScl1MPXpHjWFoyknPUdixv6GOccTxrDdjU8JD7W43yMZ8-vmA/viewform?embedded=true" width="100%"
+            height="1000"
+            frameborder="0"
+            marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+  </div>
+<!--
+
   <div class="field contact-form">
     <label class="label">お名前<span class="attention">（必須）</span></label>
     <div class="control has-icons-left has-icons-right">
@@ -95,8 +103,9 @@
     </div>
 
   </div>
+-->
 </template>
-
+<!--
 <script>
 export default {
   head: {
@@ -217,5 +226,11 @@ export default {
 }
 .error {
   color: red;
+}
+</style>
+-->
+<style lang="scss" scoped>
+iframe.form-frame {
+  height: 1000px;
 }
 </style>
