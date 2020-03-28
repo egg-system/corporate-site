@@ -1,7 +1,7 @@
 <template>
   <div class="member">
     <slick-slide ref="slick" :options="slickOptions">
-      <div v-for="value in members" :key="value">
+      <div v-for="(value, key) in members" :key="key">
         <div class="member-list">
           <div class="member-image">
             <img :src="value.image">
