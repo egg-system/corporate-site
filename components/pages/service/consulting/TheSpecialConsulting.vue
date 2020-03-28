@@ -1,8 +1,8 @@
 <template>
   <div>
+    <the-sub-header text="業界特化型<br>システムコンサルティングサービス" />
     <div class="columns">
       <div class="column is-half">
-        <h2>業界特化型<br>システムコンサルティングサービス</h2>
         <div class="message">
           サロン・整体・エステ・接骨院・マッサージ・トレーニングジムの業界に特化したコンサルティングサービスを行っています。<br>
           事業戦力の策定や集客の支援から、手間がかかるホームページ等のシステム面のサポートまでオールインワンで行います。
@@ -78,12 +78,14 @@
 </template>
 
 <script>
+import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
 import TheCase from '~/components/pages/service/common/TheCase.vue'
 import specialConsultingImage from '~/assets/service/img/request-service4.png'
 import salonImage from '~/assets/service/img/service-salon.png'
 import specialConsultingCases from '~/assets/service/js/SpecialConsultingCases.js'
 export default {
   components: {
+    TheSubHeader,
     TheCase
   },
   data: () => ({
@@ -95,15 +97,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+div {
+  letter-spacing: 1px;
+}
 .link {
   max-width: 30rem;
   margin: auto;
-  width: 100%;
+  width: 80%;
 }
 .note {
   margin-left: 1rem;
 }
 .columns {
+  margin: auto;
   margin-top: 1rem;
   margin-bottom: 3rem;
   .column {
@@ -111,6 +117,10 @@ export default {
     div {
       line-height: 1.75;
     }
+  }
+  .is-half {
+    padding: 2rem;
+    padding-top: 1rem;
   }
 }
 .salon {

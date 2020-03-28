@@ -1,8 +1,8 @@
 <template>
   <div>
+    <the-sub-header text="システム開発" />
     <div class="columns">
       <div class="column is-half">
-        <h2>システム開発</h2>
         <div class="message">
           ご要望に合わせてスクラッチやWebシステムや業務システムの開発を行います。
         </div>
@@ -90,12 +90,14 @@
 </template>
 
 <script>
+import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
 import TheCase from '~/components/pages/service/common/TheCase.vue'
 import developmentImage from '~/assets/service/img/service-system01.JPG'
 import developmentCases from '~/assets/service/js/DevelopmentCases.js'
 
 export default {
   components: {
+    TheSubHeader,
     TheCase
   },
   data: () => ({
@@ -105,13 +107,17 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+div {
+  letter-spacing: 1px;
+}
 .columns {
-  margin-top: 2rem;
+  margin: auto;
+  margin-top: 1rem;
 }
 .link {
   max-width: 30rem;
   margin: auto;
-  width: 100%;
+  width: 80%;
 }
 .note {
   margin-left: 1rem;
@@ -158,8 +164,14 @@ export default {
     border-bottom: 1px solid black;
   }
 }
-.columns .column {
-  position: relative;
+.columns {
+  .column {
+    position: relative;
+  }
+  .is-half {
+    padding: 2rem;
+    padding-top: 1rem;
+  }
 }
 .type-of-contract::after {
   position: absolute;

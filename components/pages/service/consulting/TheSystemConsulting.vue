@@ -1,8 +1,8 @@
 <template>
   <div>
+    <the-sub-header text="システムコンサルティングサービス" class="subheader" />
     <div class="columns">
       <div class="column is-half system-consulting">
-        <h2>システムコンサルティングサービス</h2>
         <div class="message">システム導入や導入後の運用を軸に、「計画」「推進」「管理」の3つのサービスを提供します。</div>
         <div class="message">
           その他にも、お客様のご要望に合わせてカスタマイズしたサービスをご提供しますので、
@@ -193,12 +193,14 @@
 </template>
 
 <script>
+import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
 import TheCase from '~/components/pages/service/common/TheCase.vue'
 import consultingImage from '~/assets/service/img/service-consult01.JPG'
 import systemConsultingCases from '~/assets/service/js/SystemConsultingCases.js'
 
 export default {
   components: {
+    TheSubHeader,
     TheCase
   },
   data: () => ({
@@ -209,13 +211,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+div {
+  letter-spacing: 1px;
+}
 .columns {
-  margin-top: 3rem;
+  margin: auto;
+  margin-top: 1rem;
+  .is-half {
+    padding: 2rem;
+    padding-top: 1rem;
+  }
 }
 .link {
   max-width: 30rem;
   margin: auto;
-  width: 100%;
+  width: 80%;
 }
 .note {
   margin-left: 1rem;

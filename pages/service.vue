@@ -28,7 +28,7 @@
           </div>
         </div>
       </div>
-      <the-consulting id="the-consulting" class="lightgray-underline" />
+      <the-consulting id="the-consulting" />
       <the-development id="the-development" />
     </div>
   </div>
@@ -74,6 +74,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+div {
+  letter-spacing: 1px;
+}
 .columns {
   text-align: center;
   position: relative;

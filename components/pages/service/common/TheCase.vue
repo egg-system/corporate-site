@@ -36,6 +36,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+div {
+  letter-spacing: 1px;
+}
 .is-size-5 {
   margin-top: 2rem;
 }
@@ -51,7 +54,7 @@ div {
   min-height: 20rem;
   padding: 2rem;
   .button {
-    width: 15rem;
+    width: 16rem;
     margin-bottom: 1rem;
     font-size: 0.9rem;
   }

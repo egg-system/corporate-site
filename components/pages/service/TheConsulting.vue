@@ -18,4 +18,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.lightgray-underline {
+  margin-bottom: 3rem;
+}
 </style>
