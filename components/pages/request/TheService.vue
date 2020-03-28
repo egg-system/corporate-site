@@ -4,9 +4,9 @@
       <figure class="image">
         <img :src="service.img" class="is-square">
       </figure>
-      <div class="center-text darksmoke-underline">
-        {{ service.title }}<br><br>
-        {{ service.description }}
+      <div class="center-text">
+        <p v-html="service.title" />
+        <p v-html="service.description" />
       </div>
     </div>
   </div>
@@ -24,27 +24,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-b {
-  font-size: 22px;
-}
-.image {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.5rem;
-  width: 200px;
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: 200px;
-  }
-}
-
 .columns {
-  padding: 40px;
+  position: relative;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
 }
-.center-text {
-  height: 150px;
+.column {
+  padding: 2rem;
+  min-height: 30rem;
+  position: relative;
+}
+.center-text::after {
+  position: absolute;
+  content: '';
   width: 80%;
-  margin: auto;
+  height: 1px;
+  background: $lightgray;
+  margin-top: 1.5rem;
+  left: 10%;
+  bottom: 0;
 }
 </style>
