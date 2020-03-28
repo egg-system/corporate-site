@@ -45,13 +45,40 @@ export default {
   }),
   head() {
     return {
-      title: this.title,
+      title: 'ご依頼について',
       meta: [
         {
-          hid: 'request',
-          name: 'ご依頼について',
+          hid: 'request-description',
+          name: 'description',
           content:
             'ご要件やご予算が決まっていない段階でのご相談でも問題ありません。「こんな相談をしてよいのかどうか分からないけど・・・」「まずは調査と分析だけ依頼したい」「このくらいのシステムを作る場合の費用を知りたい」など、どんな内容もまずはお気軽にご相談ください。'
+        },
+        {
+          hid: 'request-keywords',
+          name: 'keywords',
+          content:
+            'お問い合わせ, ご依頼について, ご依頼の流れ, 要件, 予算, 予算がきまっていない, 相談, 調査, 分析, 見積もり, 打合せ, サロン, 整体, エステ, 接骨院, マッサージ, トレーニングジム, EGG'
+        },
+        {
+          hid: 'request-og:type',
+          property: 'og:type',
+          content: 'article'
+        },
+        {
+          hid: 'request-og:title',
+          property: 'og:title',
+          content: 'ご依頼について'
+        },
+        {
+          hid: 'request-og:description',
+          property: 'og:description',
+          content:
+            'ご要件やご予算が決まっていない段階でのご相談でも問題ありません。「こんな相談をしてよいのかどうか分からないけど・・・」「まずは調査と分析だけ依頼したい」「このくらいのシステムを作る場合の費用を知りたい」など、どんな内容もまずはお気軽にご相談ください。'
+        },
+        {
+          hid: 'request-og:url',
+          property: 'og:url',
+          content: 'https://eggsystem.co.jp/request'
         }
       ]
     }
