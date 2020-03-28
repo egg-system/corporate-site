@@ -5,7 +5,12 @@
       <p>「まずは話だけ聞いてみたい」</p>
       <p>といった方もお気軽にご相談ください。</p>
     </div>
-    <button class="button is-dark">相談する&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;＞</button>
+    <div class="link">
+      <nuxt-link to="/contact" class="button is-dark">
+        <div class="link-message">相談する</div>
+        <div class="arrow">></div>
+      </nuxt-link>
+    </div>
   </div>
 </template>
 
@@ -22,5 +27,8 @@ export default {}
   .message .button {
     color: $black;
   }
+}
+.link .button {
+  width: 300px;
 }
 </style>
