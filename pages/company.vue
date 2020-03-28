@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="content page-content">
-      <the-sub-header class="blank" text="会社概要" />
+      <the-hero-title main-text="会社概要" />
       <the-info />
       <the-sub-header class="blank" text="代表メッセージ" />
       <the-message class="end" />
