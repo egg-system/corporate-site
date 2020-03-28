@@ -1,50 +1,66 @@
 <template>
   <div class="service">
-    <the-sub-header text="service" />
-    <div class="columns">
-      <div class="column is-one-quarter">
-        <div class="circle">システムコンサルティング</div>
-      </div>
-      <div class="column is-one-quarter">
-        <div class="circle">システム開発</div>
-      </div>
-      <div class="column is-one-quarter">
-        <div class="circle">サロン開業支援サービス</div>
-      </div>
-      <div class="column is-one-quarter">
-        <div class="circle">オウンドメディア運営</div>
-      </div>
+    <div class="service-columns">
+      <nuxt-link to="/service">
+        <div class="service-column">
+          <p>x-faCEのサービスへ<span>></span></p>
+        </div>
+      </nuxt-link>
+      <nuxt-link to="/service">
+        <div class="service-column">
+          <p>ご依頼の流れ<span>></span></p>
+        </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
 
 <script>
-import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
-
-export default {
-  components: {
-    TheSubHeader
-  }
-}
 </script>
 
 <style lang="scss" scoped>
 .service {
   width: 80%;
   margin: 0 auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  background: $white;
 }
-.circle {
-  width: 80%;
-  margin: 0 auto;
-  height: 200px;
-  background-color: $gray;
-  color: $black;
-  border-radius: 50%;
+.service-columns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.service-columns a {
+  width: 40%;
+}
+.service-column {
+  padding: 0;
+  height: 50px;
   text-align: center;
-  line-height: 200px;
+  line-height: 50px;
   font-size: 15px;
   font-weight: bold;
+  background: $darkblack;
+  border-radius: 4px;
+}
+.service-column p {
+  color: $lightgray;
+  font-size: 18px;
+}
+.service-column p span {
+  margin-left: 15px;
+}
+@media screen and (max-width: 600px) {
+  .service {
+    width: 90%;
+  }
+  .service-columns {
+    display: block;
+  }
+  .service-column {
+    width: 100%;
+    margin: 50px auto;
+  }
 }
 </style>

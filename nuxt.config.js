@@ -38,7 +38,8 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    '~plugins/vue-scrollto'
+    '~plugins/vue-scrollto',
+    { src: '~plugins/slick-slide.js', mode: 'client' }
   ],
   /*
    ** Nuxt.js modules

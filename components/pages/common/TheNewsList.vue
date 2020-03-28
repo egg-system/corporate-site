@@ -1,26 +1,10 @@
 <template>
   <div class="news-list">
     <div v-for="(item, i) in news" :key="i">
-      <div class="columns">
-
-        <div class="column is-4">
-          <div class="columns is-mobile">
-            <div class="column is-4-mobile">{{ item.date }}</div>
-            <div class="column is-4-mobile">
-              <span class="tag is-warning">
-                {{ item.label }}
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="column is-8">
-          <nuxt-link :to="item.url">
-            {{ item.title }}
-          </nuxt-link>
-        </div>
+      <div class="news-inner">
+        <div class="news-title">{{ item.title }}</div>
+        <div class="news-date">{{ item.date }}</div>
       </div>
-      <hr v-if="(i + 1 !== Object.keys(news).length)" >
     </div>
   </div>
 </template>
@@ -37,4 +21,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.news-list {
+  display: flex;
+}
+.news-inner {
+  width: 90%;
+  margin: 0 auto;
+}
+.news-title {
+  padding: 5px 10px;
+}
+.news-date {
+  text-align: right;
+  font-size: 14px;
+  color: $darksmoke;
+}
+@media screen and (max-width: 600px) {
+  .news-list {
+    display: block;
+  }
+  .news-inner {
+    margin: 10px auto;
+  }
+  .news-title {
+    font-size: 14px;
+  }
+}
 </style>

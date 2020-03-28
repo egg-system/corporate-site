@@ -1,16 +1,16 @@
 <template>
   <div class="column-item">
     <div class="columns is-multiline">
-      <div v-for="(item, i) in columns" :key="i" class="column is-one-third"> 
-        <div class="column-inner">
-          <div class="column-image">
+      <div v-for="(item, i) in things" :key="i" class="column is-one-third">
+        <div class="strength">
+          <div class="strength-image">
             <figure class="image">
               <img :src="item.img" :alt="item.title">
             </figure>
           </div>
-          <div class="column-content">
-            <p class="column-title">{{ item.title }}</p>
-            <p class="column-store">{{ item.store }}</p>
+          <div class="strength-content">
+            <p class="strength-title">{{ item.title }}</p>
+            <p class="strength-store">{{ item.content }}</p>
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@
 <script>
 export default {
   props: {
-    columns: {
+    things: {
       type: Array,
       default: null
     }
@@ -30,25 +30,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.column-inner {
+.strength {
   border-bottom: 1px solid $lightgray;
 }
-.column-content {
+.strength-content {
   padding: 10px 5px;
+  height: 300px;
 }
-.column-title {
-  font-size: 14px;
+.strength-title {
+  font-size: 20px;
   height: 40px;
+  text-align: center;
 }
-.column-store {
+.strength-store {
   font-size: 14px;
-  color: $darksmoke;
   margin-top: 10px;
   margin-bottom: 20px;
+  line-height: 32px;
 }
 @media screen and (max-width: 600px) {
-  .column-title {
+  .strength-content {
     height: auto;
+  }
+  .strength-title {
+    font-size: 16px;
   }
 }
 </style>

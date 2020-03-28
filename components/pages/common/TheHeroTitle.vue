@@ -34,4 +34,7 @@ export default {
 .hero {
   text-align: left;
 }
+.subtitle {
+  font-size: 1.75rem;
+}
 </style>

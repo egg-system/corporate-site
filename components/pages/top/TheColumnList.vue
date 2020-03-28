@@ -1,9 +1,11 @@
 <template>
   <div class="column-list">
-    <the-sub-header text="column" />
     <the-column-list :columns="columns" />
-    <div class="more-btn">
-      <button class="button is-fullwidth more" @click="go('/column')">もっと見る</button>
+    <div class="btn-area">
+      <div class="more-btn">
+        <nuxt-link class="column-button" to="/column">詳しくみる　　　<p class="column-arrow">></p>
+        </nuxt-link>
+      </div>
     </div>
   </div>
 </template>
@@ -22,26 +24,27 @@ export default {
   data: () => ({
     columns: [
       {
-        title:
-          'デジタルトランスフォーメーション（DX）とは？DXレポートから中小企業での活用方法まで解説（前編）',
+        title: '1月21日(火)より　ルクア大阪店 改装に伴う一時休業のお知らせ',
         date: '2019/11/03',
+        store: 'Soup Stock Tokyo　ルクア大阪店',
         label: 'info',
         url: '/column/aaa',
         img:
           'https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg'
       },
       {
-        title: '明石悠佳（あかしゆか）さん座談会｜複業・働き方を考える',
+        title: `12月30日(月)より　野菜と鶏肉のトマトシチュー販売`,
         date: '2019/10/28',
+        store: 'Soup Stock Tokyo全店',
         label: 'info',
         url: '/column/aaa',
         img:
           'https://eggsystem.co.jp/wp-content/uploads/2019/10/20190910-08-1024x683.jpg'
       },
       {
-        title:
-          '複業メンバーによるシステム開発をやってみて【振り返りと今後の対策】',
+        title: 'Soup Stock Tokyoの、年始のご挨拶',
         date: '2019/08/18',
+        store: 'Soup Stock Tokyo全店',
         label: 'info',
         url: '/column/aaa',
         img:
@@ -56,14 +59,49 @@ export default {
 .column-list {
   width: 80%;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 20px;
   margin-bottom: 5%;
 }
-.more {
-  margin-top: 30px;
+.btn-area {
+  text-align: right;
+  width: 100%;
 }
 .more-btn {
   width: 50%;
-  margin: auto;
+  margin-left: 50%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $lightgray;
+}
+.column-button {
+  font-size: 16px;
+  display: inline-block;
+  color: $black;
+}
+.column-arrow {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  font-size: 12px;
+  background: $black;
+  border-radius: 50%;
+  color: $white;
+  text-align: center;
+  line-height: 17px;
+  vertical-align: 2px;
+}
+@media screen and (max-width: 600px) {
+  .column-button {
+    position: relative;
+  }
+  .column-arrow {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+  }
+  .more-btn {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
 }
 </style>
