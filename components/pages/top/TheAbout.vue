@@ -4,7 +4,7 @@
       <div class="about-column first">
         <p class="about-column-title">わたしたちについて</p>
         <p class="about-column-content">
-          株式会社エッグシステムでは、<br class="sp">「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会<br class="sp">の実現のために、ITシステムを活用します。
+          株式会社エッグシステムのコンサルティングエンジニア集団<br>「x-faCE（for all Consulting Engineer）」では、 <br>《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》<br>の実現のために、ITシステムを活用します。
         </p>
         <div class="about-btn-area">
           <nuxt-link to="/about">
@@ -25,7 +25,7 @@
       </div>
       <div class="about-column second">
         <p class="about-column-content">
-          株式会社エッグシステムでは、<br class="sp">「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会<br class="sp">の実現のために、ITシステムを活用します。
+          株式会社エッグシステムのコンサルティングエンジニア集団「x-faCE（for all Consulting Engineer）」では、《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。
         </p>
         <div class="about-btn-area">
           <nuxt-link to="/about">
@@ -167,9 +167,6 @@ export default {
     width: 100%;
     float: none;
     margin-top: 20px;
-  }
-  .sp {
-    display: none;
   }
 }
 </style>
