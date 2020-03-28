@@ -1,31 +1,43 @@
 <template>
   <div>
-    <the-hero-title main-text="採用情報" />
-    <the-main-image />
+    <the-hero-title main-text="ジブンゴトで働こう" />
     <div class="content page-content">
+      <the-main-image />
       <the-main-message />
-      <div class="btn">
-        <a href="https://www.find-job.net/fj/showjob.cgi?id=125695" target="_blank">
-          <button class="button is-primary is-outlined is-large is-fullwidth">エントリーする</button>
-        </a>
-      </div>
+      <the-entry />
       <the-contact />
+    </div>
+    <the-about />
+    <div class="content page-content">
+      <the-study />
+      <!-- <the-sub-header class="blank" text="最近の活動・コラム" />
+      <the-column class="end" /> -->
     </div>
   </div>
 </template>
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
+// import TheSubHeader from '~/components/pages/common/TheSubHeader.vue'
+import TheContact from '~/components/pages/common/TheContact.vue'
 import TheMainImage from '~/components/pages/recruit/TheMainImage.vue'
 import TheMainMessage from '~/components/pages/recruit/TheMainMessage.vue'
-import TheContact from '~/components/pages/common/TheContact.vue'
+import TheAbout from '~/components/pages/top/TheAbout.vue'
+import TheStudy from '~/components/pages/recruit/TheStudy.vue'
+import TheEntry from '~/components/pages/recruit/TheEntry.vue'
+// import TheColumn from '~/components/pages/about/TheColumn.vue'
 
 export default {
   components: {
     TheHeroTitle,
+    // TheSubHeader,
+    TheContact,
     TheMainImage,
     TheMainMessage,
-    TheContact
+    TheAbout,
+    TheStudy,
+    TheEntry
+    // TheColumn
   }
 }
 </script>
@@ -35,5 +47,18 @@ export default {
   width: 50%;
   margin: 30px auto 30px;
   text-align: center;
+}
+.blank {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+.end {
+  margin: 0 0 50px;
+}
+@media screen and (max-width: 600px) {
+  .end {
+    margin: 0;
+    padding-bottom: 0;
+  }
 }
 </style>

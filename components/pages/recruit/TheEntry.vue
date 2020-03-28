@@ -1,11 +1,11 @@
 <template>
-  <div class="contact">
-    <div class="contact-columns">
-      <nuxt-link to="/contact">
-        <div class="contact-column">
-          <p>採用について質問する<span>></span></p>
+  <div class="entry">
+    <div class="entry-columns">
+      <a href="https://www.green-japan.com/company/6999" target="_blank">
+        <div class="entry-column">
+          <p>エントリー<span>></span></p>
         </div>
-      </nuxt-link>
+      </a>
     </div>
   </div>
 </template>
@@ -18,22 +18,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.contact {
+.entry {
   width: 80%;
   margin: 0 auto;
   margin-top: 8%;
   margin-bottom: 10%;
   background: $white;
 }
-.contact-columns {
+.entry-columns {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.contact-columns a {
+.entry-columns a {
   width: 60%;
 }
-.contact-column {
+.entry-column {
   padding: 0;
   height: 50px;
   text-align: center;
@@ -43,18 +43,18 @@ export default {
   background: $darkblack;
   border-radius: 4px;
 }
-.contact-column p {
+.entry-column p {
   color: $lightgray;
   font-size: 18px;
 }
-.contact-column p span {
+.entry-column p span {
   margin-left: 15px;
 }
 @media screen and (max-width: 600px) {
-  .contact-columns {
+  .entry-columns {
     display: block;
   }
-  .contact-column {
+  .entry-column {
     width: 100%;
     margin: 15px auto;
   }

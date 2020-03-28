@@ -1,9 +1,9 @@
 <template>
   <div>
     <section class="hero">
-      <div class="hero-body page-content">
+      <div class="hero-body">
         <div class="container">
-          <h1 class="subtitle">
+          <h1 class="title">
             {{ mainText }}
           </h1>
           <h2 v-if="subText !== ''" class="subtitle">
@@ -29,6 +29,7 @@ export default {
   }
 }
 </script>
+
 <style lang="scss" scoped>
 .hero {
   text-align: left;

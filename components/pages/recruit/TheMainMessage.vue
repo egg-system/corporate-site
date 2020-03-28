@@ -1,7 +1,7 @@
 <template>
   <div>
     <p class="top-message">
-      システムコンサルタントを目指すシステムエンジニアを募集しています
+      コンサルティングエンジニア集団「x-faCE」の一員を募集しています
     </p>
     <p class="sub-message">
       どこへ行っても通用するスキルを身につけたい『コンサルティングエンジニア(＝システムコンサルタント兼システムエンジニア)』を希望する方を募集しています。<br><br>
@@ -19,7 +19,7 @@ export default {}
 
 <style lang="scss" scoped>
 .top-message {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-size: 32px;
   margin-top: 30px;
