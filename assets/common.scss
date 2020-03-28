@@ -8,6 +8,10 @@ $lightBlue: #87cefa;
 $white: #ffffff;
 $lightgray: #dbdbdb;
 
+$navbar-breakpoint: 1200px;
+$navbar-item-img-max-height: 2rem;
+$navbar-height: 4rem;
+
 // ページの横幅
 .page-content {
   width: 80%;
@@ -20,3 +24,4 @@ $lightgray: #dbdbdb;
     margin: 0 auto;
   }
 }
+

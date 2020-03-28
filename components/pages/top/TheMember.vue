@@ -15,8 +15,8 @@
     </slick-slide>
     <div class="btn-area">
       <div class="more-btn">
-        <a class="member-button" href="/member">詳しくみる　　　<p class="member-arrow">></p>
-        </a>
+        <nuxt-link class="member-button" to="/member">詳しくみる　　　<p class="member-arrow">></p>
+        </nuxt-link>
       </div>
     </div>
   </div>
