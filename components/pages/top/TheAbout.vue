@@ -99,7 +99,7 @@ export default {
 }
 .about-btn-area {
   width: 40%;
-  margin-top: 55px;
+  margin-top: 30px;
   float: right;
 }
 .btn-area {
