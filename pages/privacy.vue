@@ -24,8 +24,9 @@
       <p>株式会社 エッグシステム（EGG SYSTEM, Inc.）の個人情報の取扱に関するお問い合せは、下記までご連絡ください。</p>
       <div class="contact">
         <p>
-          株式会社エッグシステム（EGG SYSTEM, Inc.）<br>
-          〒166-0003　東京都杉並区高円寺南1-6-5-602<br>
+          株式会社エッグシステム（EGG SYSTEM, Inc.）<br><br>
+          〒160-0023<br>
+          東京都新宿区西新宿8-11-10 星野ビル3F<br>
           TEL：03-6262-9734<br>
           MAIL：<nuxt-link to="/contact">お問い合わせ</nuxt-link>フォームよりお願いいたします<br>
         </p>
