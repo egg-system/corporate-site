@@ -1,6 +1,6 @@
 <template>
   <div class="field contact-form">
-    <label class="label">お名前（必須）</label>
+    <label class="label">お名前<span class="attention">（必須）</span></label>
     <div class="control has-icons-left has-icons-right">
       <input v-model="name"
              class="input"
@@ -25,7 +25,7 @@
       </span>
     </div>
 
-    <label class="label">メールアドレス（必須）</label>
+    <label class="label">メールアドレス<span class="attention">（必須）</span></label>
     <div class="control has-icons-left has-icons-right">
       <input v-model="mail"
              class="input"
@@ -50,7 +50,7 @@
       </span>
     </div>
 
-    <label class="label">お問い合わせの種類（必須）</label>
+    <label class="label">お問い合わせの種類<span class="attention">（必須）</span></label>
     <div class="control">
       <label class="radio">
         <input v-model="question"
@@ -78,11 +78,11 @@
       </label>
     </div>
 
-    <label class="label">お問合わせ内容（必須）</label>
+    <label class="label">お問合わせ内容<span class="attention">（必須）</span></label>
     <textarea v-model="message" class="textarea" placeholder="お問い合わせ内容" />
     <p class="error">{{ messageError }}</p>
 
-    <label class="label"><nuxt-link to="/privacy">個人情報のお取り扱い</nuxt-link>について同意していただけるお客様は、<br>[同意する]を選択して下さい。</label>
+    <label class="label"><nuxt-link to="/privacy">個人情報のお取り扱い</nuxt-link>について同意していただけるお客様は <span class="attention">[同意する]</span> を選択して下さい。</label>
     <label class="checkbox check-center">
       <input v-model="checkbox" type="checkbox">
       同意する
@@ -160,7 +160,8 @@ export default {
         data: {
           'entry.337469442': this.name,
           'entry.191390181': this.company,
-          'entry.1442783425': this.mail,
+          // 'entry.1442783425': this.mail,
+          'emailAddress' : this.mail,// eslint-disable-line
           'entry.961972315': this.phonenumber,
           'entry.1554647853': this.question,
           'entry.1568037778': this.message
@@ -191,6 +192,9 @@ export default {
 }
 .button.is-primary {
   background-color: #363636;
+}
+.attention {
+  color: #f0640a;
 }
 /* スマホの場合は幅を広くする */
 @media screen and (max-width: 400px) {
