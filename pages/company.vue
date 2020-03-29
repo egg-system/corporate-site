@@ -63,7 +63,7 @@ export default {
             '私は、ITシステムのプロフェッショナルとして立場に左右されずに良いものは良いと言い、『想い』や『頑張り』を可視化することで、システムエンジニアにとっても、事業者にとっても、真面目に頑張る人が評価される環境をつくります。'
         },
         {
-          hid: 'request-og:url',
+          hid: 'company-og:url',
           property: 'og:url',
           content: 'https://eggsystem.co.jp/company'
         }
