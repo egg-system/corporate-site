@@ -41,7 +41,7 @@ const members = [
     img: unknown
   },
   {
-    nameJP: ' 坂',
+    nameJP: '坂',
     nameEN: 'Zaka',
     img: unknown
   }
