@@ -36,6 +36,10 @@
           会社概要
         </nuxt-link>
 
+        <nuxt-link class="navbar-item" to="/request">
+          ご依頼について
+        </nuxt-link>
+
         <!--
         <nuxt-link class="navbar-item" to="/column">
           最近の活動・コラム

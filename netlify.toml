@@ -1,0 +1,39 @@
+[[redirects]]
+  from = "/message"
+  to = "/company"
+  status = 301
+
+[[redirects]]
+  from = "/vision"
+  to = "/company"
+  status = 301
+
+[[redirects]]
+  from = "/homepage-web"
+  to = "/service"
+  status = 301
+
+[[redirects]]
+  from = "/hp-casestudy"
+  to = "/service"
+  status = 301
+
+[[redirects]]
+  from = "/system-consulting"
+  to = "/service"
+  status = 301
+
+[[redirects]]
+  from = "/se-support"
+  to = "/service"
+  status = 301
+
+[[redirects]]
+  from = "/system-casestudy"
+  to = "/service"
+  status = 301
+
+[[redirects]]
+  from = "/salon-support"
+  to = "/service"
+  status = 301

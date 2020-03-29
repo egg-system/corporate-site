@@ -28,8 +28,8 @@ const members = [
   },
   {
     image: Shingo,
-    name: '廣海 真吾',
-    romajiName: 'Shingo Hiromi'
+    name: '廣海',
+    romajiName: 'Hiromi'
   },
   {
     image: unknown,
