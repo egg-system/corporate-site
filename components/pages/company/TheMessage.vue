@@ -2,7 +2,7 @@
   <div class="columns">
     <div class="column is-two-fifths">
       <figure class="image">
-        <img src="https://eggsystem.co.jp/wp-content/uploads/2018/04/ceo-1-1200x900.jpg">
+        <img :src="representativeImage">
       </figure>
     </div>
     <div class="column">
@@ -35,7 +35,13 @@
 </template>
 
 <script>
-export default {}
+import representativeImage from '~/assets/company/company-tsubasa.jpg'
+
+export default {
+  data: () => ({
+    representativeImage
+  })
+}
 </script>
 
 <style lang="scss" scoped>

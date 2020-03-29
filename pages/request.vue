@@ -15,7 +15,7 @@
       <the-flow class="lightgray-underline" />
       <the-sub-header :is-line="true" text="当社サービスについて" class="subheader" />
       <the-service :services="services" class="service lightgray-underline"/>
-      <the-message />
+      <the-contact />
       <!-- <the-sub-header :is-line="true" text="最近の活動・コラム" class="subheader" />
       <the-column /> -->
     </div>
@@ -27,7 +27,7 @@ import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheSubHeader from '~/components/pages/request/TheSubHeader.vue'
 import TheFlow from '~/components/pages/request/TheFlow.vue'
 import TheService from '~/components/pages/request/TheService.vue'
-import TheMessage from '~/components/pages/request/TheMessage.vue'
+import TheContact from '~/components/pages/top/TheContact.vue'
 import TheColumn from '~/components/pages/request/TheColumn.vue'
 import services from '~/assets/request/js/services.js'
 
@@ -37,7 +37,7 @@ export default {
     TheSubHeader,
     TheFlow,
     TheService,
-    TheMessage,
+    TheContact,
     TheColumn
   },
   data: () => ({

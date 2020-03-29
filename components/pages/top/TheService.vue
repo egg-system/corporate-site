@@ -6,7 +6,7 @@
           <p>x-faCEのサービスへ<span>></span></p>
         </div>
       </nuxt-link>
-      <nuxt-link to="/service">
+      <nuxt-link to="/request">
         <div class="service-column">
           <p>ご依頼の流れ<span>></span></p>
         </div>

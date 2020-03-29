@@ -53,19 +53,50 @@ export default {
   }),
   head() {
     return {
-      title: 'サービス紹介',
+      title: 'サービス',
       meta: [
         {
           hid: 'service-description',
           name: 'description',
           content:
-            'システム導入や導入後の運用を軸に、「計画」「推進」「管理」の3つのサービスを提供します。'
+            'システム導入や導入後の運用を軸に、「計画」「推進」「管理」の3つのサービスを提供します。サロン・整体・エステ・接骨院・マッサージ・トレーニングジムの業界に特化したコンサルティングサービスを行っています。事業戦力の策定や集客の支援から、手間がかかるホームページ等のシステム面のサポートまでオールインワンで行います。ご要望に合わせてスクラッチやWebシステムや業務システムの開発を行います。'
         },
         {
           hid: 'service-keywords',
           name: 'keywords',
           content:
             'サービス紹介, システムコンサルティング, 開発, IT戦略, IT投資計画策定, システム化支援, 業務改善, ToBe, CanBe, プロジェクトマネジメント, サロン, 整体, エステ, 接骨院, マッサージ, トレーニングジム, EGG'
+        },
+        {
+          hid: 'service-twitter:card',
+          property: 'twitter:card',
+          content: 'summary'
+        },
+        {
+          hid: 'service-og:type',
+          property: 'og:type',
+          content: 'article'
+        },
+        {
+          hid: 'service-og:title',
+          property: 'og:title',
+          content: 'サービス'
+        },
+        {
+          hid: 'service-og:description',
+          property: 'og:description',
+          content:
+            'システム導入や導入後の運用を軸に、「計画」「推進」「管理」の3つのサービスを提供します。サロン・整体・エステ・接骨院・マッサージ・トレーニングジムの業界に特化したコンサルティングサービスを行っています。事業戦力の策定や集客の支援から、手間がかかるホームページ等のシステム面のサポートまでオールインワンで行います。ご要望に合わせてスクラッチやWebシステムや業務システムの開発を行います。'
+        },
+        {
+          hid: 'service-og:url',
+          property: 'og:url',
+          content: 'https://eggsystem.co.jp/'
+        },
+        {
+          hid: 'service-og:image',
+          property: 'og:image',
+          content: 'https://eggsystem.co.jp/ogp/service-system01.JPG'
         }
       ]
     }
