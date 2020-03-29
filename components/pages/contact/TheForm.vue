@@ -231,6 +231,11 @@ export default {
 -->
 <style lang="scss" scoped>
 iframe.form-frame {
-  height: 1000px;
+  height: 1800px;
+}
+@media screen and (max-width: 600px) {
+  iframe.form-frame {
+    height: 2200px;
+  }
 }
 </style>
