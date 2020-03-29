@@ -91,12 +91,12 @@ export default {
         {
           hid: 'service-og:url',
           property: 'og:url',
-          content: 'https://eggsystem.co.jp/service'
+          content: 'https://eggsystem.co.jp/'
         },
         {
           hid: 'service-og:image',
           property: 'og:image',
-          content: 'https://eggsystem.co.jp/_nuxt/img/13111c3.JPG'
+          content: 'https://eggsystem.co.jp/ogp/service-system01.JPG'
         }
       ]
     }

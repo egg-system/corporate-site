@@ -83,12 +83,12 @@ export default {
         {
           hid: 'request-og:url',
           property: 'og:url',
-          content: 'https://eggsystem.co.jp/request'
+          content: 'https://eggsystem.co.jp/'
         },
         {
           hid: 'request-og:image',
           property: 'og:image',
-          content: 'https://eggsystem.co.jp/_nuxt/img/f57a9f0.JPG'
+          content: 'https://eggsystem.co.jp/ogp/request-service3.JPG'
         }
       ]
     }

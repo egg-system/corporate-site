@@ -70,12 +70,12 @@ export default {
         {
           hid: 'company-og:url',
           property: 'og:url',
-          content: 'https://eggsystem.co.jp/company'
+          content: 'https://eggsystem.co.jp/'
         },
         {
           hid: 'company-og:image',
           property: 'og:image',
-          content: 'https://eggsystem.co.jp/top00.jpg'
+          content: 'https://eggsystem.co.jp/ogp/top00.jpg'
         }
       ]
     }
