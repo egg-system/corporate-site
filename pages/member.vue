@@ -12,7 +12,7 @@
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheMember from '~/components/pages/common/TheMember.vue'
 import members from '~/assets/js/member.js'
-import tsubasa from '~/assets/members/tsubasa.jpg'
+import tsubasa from '~/static/tsubasa_ogp.jpg'
 
 export default {
   components: {
@@ -58,7 +58,7 @@ export default {
         {
           hid: 'member-og:url',
           property: 'og:url',
-          content: 'https://eggsystem.co.jp/member'
+          content: 'https://eggsystem.co.jp'
         },
         { hid: 'member-og:image', property: 'og:image', content: tsubasa }
       ]
