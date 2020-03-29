@@ -12,6 +12,7 @@
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheMember from '~/components/pages/common/TheMember.vue'
 import members from '~/assets/js/member.js'
+import tsubasa from '~/assets/members/tsubasa.jpg'
 
 export default {
   components: {
@@ -20,23 +21,37 @@ export default {
   },
   data() {
     return {
-      members: members.members,
-      meta: {
-        title: 'メンバー紹介',
-        description: 'メンバー紹介ページです',
-        type: 'article',
-        url: 'https://eggsystem.co.jp/member'
-      }
+      members: members.members
     }
   },
   head() {
     return {
+      title: 'メンバー紹介',
       meta: [
-        { hid: 'description', name: 'description', content: this.meta.description },
-        { hid: 'og:type', property: 'og:type', content: this.meta.type },
-        { hid: 'og:title', property: 'og:title', content: this.meta.title },
-        { hid: 'og:description', property: 'og:description', content: this.meta.description },
-        { hid: 'og:url', property: 'og:url', content: this.meta.url }
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'メンバー紹介ページです'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:
+            '高橋 翼, 高橋 光, 布村 武大, 横田 峻, 廣海 真吾, 小川, 加藤, 坂'
+        },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+        { hid: 'og:title', property: 'og:title', content: 'メンバー紹介' },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'メンバー紹介ページです'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://eggsystem.co.jp/member'
+        },
+        { hid: 'og:image', property: 'og:image', content: tsubasa }
       ]
     }
   }
