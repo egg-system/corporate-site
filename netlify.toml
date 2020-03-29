@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "https://eggsystem.co.jp/message"
-  to = "https://eggsystem.co.jp/company"
+  from = "/message"
+  to = "/company"
   status = 301
 
 [[redirects]]
