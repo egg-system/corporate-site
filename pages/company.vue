@@ -29,6 +29,46 @@ export default {
     TheValue,
     TheMessage,
     TheMap
+  },
+  head() {
+    return {
+      title: '会社概要',
+      meta: [
+        {
+          hid: 'company-description',
+          name: 'description',
+          content:
+            '私は、ITシステムのプロフェッショナルとして立場に左右されずに良いものは良いと言い、『想い』や『頑張り』を可視化することで、システムエンジニアにとっても、事業者にとっても、真面目に頑張る人が評価される環境をつくります。'
+        },
+        {
+          hid: 'company-keywords',
+          name: 'keywords',
+          content:
+            '株式会社エッグシステム, エッグシステム, EGG SYSTEM, 高橋 翼, 代表メッセージ, 真面目な頑張りが評価される社会へ'
+        },
+        {
+          hid: 'company-og:type',
+          property: 'og:type',
+          content: 'article'
+        },
+        {
+          hid: 'company-og:title',
+          property: 'og:title',
+          content: '会社概要'
+        },
+        {
+          hid: 'company-og:description',
+          property: 'og:description',
+          content:
+            '私は、ITシステムのプロフェッショナルとして立場に左右されずに良いものは良いと言い、『想い』や『頑張り』を可視化することで、システムエンジニアにとっても、事業者にとっても、真面目に頑張る人が評価される環境をつくります。'
+        },
+        {
+          hid: 'company-og:url',
+          property: 'og:url',
+          content: 'https://eggsystem.co.jp/company'
+        }
+      ]
+    }
   }
 }
 </script>
