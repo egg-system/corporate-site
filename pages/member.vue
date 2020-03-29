@@ -18,9 +18,28 @@ export default {
     TheHeroTitle,
     TheMember
   },
-  data: () => ({
-    members: members.members
-  })
+  data() {
+    return {
+      members: members.members,
+      meta: {
+        title: 'メンバー紹介',
+        description: 'メンバー紹介ページです',
+        type: 'article',
+        url: 'https://eggsystem.co.jp/member'
+      }
+    }
+  },
+  head() {
+    return {
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta.description },
+        { hid: 'og:type', property: 'og:type', content: this.meta.type },
+        { hid: 'og:title', property: 'og:title', content: this.meta.title },
+        { hid: 'og:description', property: 'og:description', content: this.meta.description },
+        { hid: 'og:url', property: 'og:url', content: this.meta.url }
+      ]
+    }
+  }
 }
 </script>
 
