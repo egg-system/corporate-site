@@ -26,6 +26,7 @@ import TheAbout from '~/components/pages/top/TheAbout.vue'
 import TheStudy from '~/components/pages/recruit/TheStudy.vue'
 import TheEntry from '~/components/pages/recruit/TheEntry.vue'
 // import TheColumn from '~/components/pages/about/TheColumn.vue'
+import recruitTop from '~/assets/recruit/recruit-top.jpg'
 
 export default {
   components: {
@@ -38,6 +39,52 @@ export default {
     TheStudy,
     TheEntry
     // TheColumn
+  },
+  components: {
+    TheHeroTitle,
+    TheMember
+  },
+  data() {
+    return {
+      members: members.members
+    }
+  },
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'title',
+          name: 'title',
+          content: '採用ページ'
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'どこへ行っても通用するスキルを身につけたい『コンサルティングエンジニア(＝システムコンサルタント兼システムエンジニア)』を希望する方を募集しています。'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:
+            'ジブンゴトで働こう, システムエンジニア勉強会, コンサルティングエンジニア集団「x-faCE」の一員を募集しています'
+        },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+        { hid: 'og:title', property: 'og:title', content: '採用ページ' },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content:
+            'どこへ行っても通用するスキルを身につけたい『コンサルティングエンジニア(＝システムコンサルタント兼システムエンジニア)』を希望する方を募集しています。'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://eggsystem.co.jp/recruit'
+        },
+        { hid: 'og:image', property: 'og:image', content: recruitTop }
+      ]
+    }
   }
 }
 </script>
