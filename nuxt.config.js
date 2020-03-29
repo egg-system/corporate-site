@@ -14,13 +14,13 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: '中小企業やサロン・整体オーナー向けに、事業成長を目的としたシステム企画から開発・運用まで行います。【エッグシステム】では貴方の企業・店舗の魅力を「カタチ」にします。'
       },
       { hid: 'og:site_name', property: 'og:site_name', content: 'eggsystem' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:url', property: 'og:url', content: 'https://eggsystem.co.jp' },
       { hid: 'og:title', property: 'og:title', content: 'eggsystem' },
-      { hid: 'og:description', property: 'og:description', content: process.env.npm_package_description || '' },
+      { hid: 'og:description', property: 'og:description', content: '中小企業やサロン・整体オーナー向けに、事業成長を目的としたシステム企画から開発・運用まで行います。【エッグシステム】では貴方の企業・店舗の魅力を「カタチ」にします。' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
