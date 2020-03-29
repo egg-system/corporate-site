@@ -68,6 +68,11 @@ export default {
             'サービス紹介, システムコンサルティング, 開発, IT戦略, IT投資計画策定, システム化支援, 業務改善, ToBe, CanBe, プロジェクトマネジメント, サロン, 整体, エステ, 接骨院, マッサージ, トレーニングジム, EGG'
         },
         {
+          hid: 'service-twitter:card',
+          property: 'twitter:card',
+          content: 'summary'
+        },
+        {
           hid: 'service-og:type',
           property: 'og:type',
           content: 'article'
@@ -87,6 +92,11 @@ export default {
           hid: 'service-og:url',
           property: 'og:url',
           content: 'https://eggsystem.co.jp/service'
+        },
+        {
+          hid: 'service-og:image',
+          property: 'og:image',
+          content: 'https://eggsystem.co.jp/_nuxt/img/13111c3.JPG'
         }
       ]
     }

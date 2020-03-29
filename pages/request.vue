@@ -60,6 +60,11 @@ export default {
             'お問い合わせ, ご依頼について, ご依頼の流れ, 要件, 予算, 予算がきまっていない, 相談, 調査, 分析, 見積もり, 打合せ, サロン, 整体, エステ, 接骨院, マッサージ, トレーニングジム, EGG'
         },
         {
+          hid: 'request-twitter:card',
+          property: 'twitter:card',
+          content: 'summary'
+        },
+        {
           hid: 'request-og:type',
           property: 'og:type',
           content: 'article'
@@ -79,6 +84,11 @@ export default {
           hid: 'request-og:url',
           property: 'og:url',
           content: 'https://eggsystem.co.jp/request'
+        },
+        {
+          hid: 'request-og:image',
+          property: 'og:image',
+          content: 'https://eggsystem.co.jp/_nuxt/img/f57a9f0.JPG'
         }
       ]
     }

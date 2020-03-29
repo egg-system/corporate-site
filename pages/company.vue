@@ -47,6 +47,11 @@ export default {
             '株式会社エッグシステム, エッグシステム, EGG SYSTEM, 高橋 翼, 代表メッセージ, 真面目な頑張りが評価される社会へ'
         },
         {
+          hid: 'company-twitter:card',
+          property: 'twitter:card',
+          content: 'summary'
+        },
+        {
           hid: 'company-og:type',
           property: 'og:type',
           content: 'article'
@@ -66,6 +71,11 @@ export default {
           hid: 'company-og:url',
           property: 'og:url',
           content: 'https://eggsystem.co.jp/company'
+        },
+        {
+          hid: 'company-og:image',
+          property: 'og:image',
+          content: 'https://eggsystem.co.jp/top00.jpg'
         }
       ]
     }
