@@ -12,7 +12,6 @@
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheMember from '~/components/pages/common/TheMember.vue'
 import members from '~/assets/js/member.js'
-import tsubasa from '~/static/tsubasa_ogp.jpg'
 
 export default {
   components: {
@@ -60,7 +59,11 @@ export default {
           property: 'og:url',
           content: 'https://eggsystem.co.jp'
         },
-        { hid: 'member-og:image', property: 'og:image', content: tsubasa }
+        {
+          hid: 'member-og:image',
+          property: 'og:image',
+          content: '/tsubasa-ogp.jpg'
+        }
       ]
     }
   }

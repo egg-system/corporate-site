@@ -26,7 +26,7 @@ import TheAbout from '~/components/pages/top/TheAbout.vue'
 import TheStudy from '~/components/pages/recruit/TheStudy.vue'
 import TheEntry from '~/components/pages/recruit/TheEntry.vue'
 // import TheColumn from '~/components/pages/about/TheColumn.vue'
-import recruitTop from '~/staticrecruit-top-ogp.jpg'
+// import recruitTop from 'recruit-top-ogp.jpg'
 
 export default {
   components: {
@@ -78,7 +78,11 @@ export default {
           property: 'og:url',
           content: 'https://eggsystem.co.jp'
         },
-        { hid: 'recruit-og:image', property: 'og:image', content: recruitTop }
+        {
+          hid: 'recruit-og:image',
+          property: 'og:image',
+          content: '/recruit-top-ogp.jpg'
+        }
       ]
     }
   }
