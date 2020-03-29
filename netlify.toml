@@ -1,0 +1,39 @@
+[[redirects]]
+  from = "https://eggsytem.co.jp/message"
+  to = "https://eggsystem.co.jp/company"
+  status = 301
+
+[[redirects]]
+  from = "https://eggsytem.co.jp/vision"
+  to = "https://eggsystem.co.jp/service"
+  status = 301
+
+[[redirects]]
+  from = "https://eggsytem.co.jp/homepage-web"
+  to = "https://eggsystem.co.jp/service"
+  status = 301
+
+[[redirects]]
+  from = "https://eggsytem.co.jp/hp-casestudy"
+  to = "https://eggsystem.co.jp/service"
+  status = 301
+
+[[redirects]]
+  from = "https://eggsytem.co.jp/system-consulting"
+  to = "https://eggsystem.co.jp/service"
+  status = 301
+
+[[redirects]]
+  from = "https://eggsytem.co.jp/se-support"
+  to = "https://eggsystem.co.jp/service"
+  status = 301
+
+[[redirects]]
+  from = "https://eggsytem.co.jp/system-casestudy"
+  to = "https://eggsystem.co.jp/service"
+  status = 301
+
+[[redirects]]
+  from = "https://eggsytem.co.jp/salon-support"
+  to = "https://eggsystem.co.jp/service"
+  status = 301
