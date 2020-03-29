@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import TheHeroTitle from '~/components/pages/request/TheHeroTitle.vue'
+import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheSubHeader from '~/components/pages/request/TheSubHeader.vue'
 import TheFlow from '~/components/pages/request/TheFlow.vue'
 import TheService from '~/components/pages/request/TheService.vue'
