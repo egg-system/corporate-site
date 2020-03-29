@@ -5,8 +5,8 @@
         <img :src="service.img" class="is-square">
       </figure>
       <div class="center-text">
-        {{ service.title }}<br>
-        {{ service.description }}
+        <p v-html="service.title" />
+        <p v-html="service.description" />
       </div>
     </div>
   </div>
@@ -24,20 +24,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-b {
-  font-size: 22px;
-}
-.image {
-  margin: auto;
-  width: 200px;
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: 200px;
-  }
-}
-
 .columns {
-  padding: 40px;
+  position: relative;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+}
+.column {
+  padding: 2rem;
+  min-height: 30rem;
+  position: relative;
+}
+.center-text::after {
+  position: absolute;
+  content: '';
+  width: 80%;
+  height: 1px;
+  background: $lightgray;
+  margin-top: 1.5rem;
+  left: 10%;
+  bottom: 0;
 }
 </style>

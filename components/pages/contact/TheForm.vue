@@ -1,6 +1,14 @@
 <template>
+  <div class="google-form">
+    <iframe class="form-frame" src="https://docs.google.com/forms/d/e/1FAIpQLScl1MPXpHjWFoyknPUdixv6GOccTxrDdjU8JD7W43yMZ8-vmA/viewform?embedded=true" width="100%"
+            height="1000"
+            frameborder="0"
+            marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+  </div>
+<!--
+
   <div class="field contact-form">
-    <label class="label">お名前(必須)</label>
+    <label class="label">お名前<span class="attention">（必須）</span></label>
     <div class="control has-icons-left has-icons-right">
       <input v-model="name"
              class="input"
@@ -13,7 +21,7 @@
     </div>
     <p v-if="nameError !== ''" class="error">{{ nameError }}</p>
 
-    <label class="label">会社名(個人の方は入力不要です)</label>
+    <label class="label">会社名（個人の方は入力不要です）</label>
     <div class="control has-icons-left has-icons-right">
       <input v-model="company"
              class="input"
@@ -25,7 +33,7 @@
       </span>
     </div>
 
-    <label class="label">メールアドレス(必須)</label>
+    <label class="label">メールアドレス<span class="attention">（必須）</span></label>
     <div class="control has-icons-left has-icons-right">
       <input v-model="mail"
              class="input"
@@ -50,15 +58,15 @@
       </span>
     </div>
 
-    <label class="label">お問い合わせの種類(必須)</label>
+    <label class="label">お問い合わせの種類<span class="attention">（必須）</span></label>
     <div class="control">
       <label class="radio">
         <input v-model="question"
                type="radio"
                name="question"
-               value="ホームページ・Webシステム開発"
+               value="Webシステム開発"
                checked="checked">
-        ホームページ・Webシステム開発
+        Webシステム開発
       </label><br>
       <label class="radio">
         <input v-model="question" value="システムコンサルティング" type="radio" name="question">
@@ -67,10 +75,6 @@
       <label class="radio">
         <input v-model="question" value="サロン開業支援サービス" type="radio" name="question">
         サロン開業支援サービス
-      </label><br>
-      <label class="radio">
-        <input v-model="question" value="システムエンジニアコミュニティ" type="radio" name="question">
-        システムエンジニアコミュニティ
       </label><br>
       <label class="radio">
         <input v-model="question" value="採用について" type="radio" name="question">
@@ -82,11 +86,11 @@
       </label>
     </div>
 
-    <label class="label">お問合わせ内容(必須)</label>
+    <label class="label">お問合わせ内容<span class="attention">（必須）</span></label>
     <textarea v-model="message" class="textarea" placeholder="お問い合わせ内容" />
     <p class="error">{{ messageError }}</p>
 
-    <label class="label"><nuxt-link to="/privacy">個人情報のお取り扱い</nuxt-link>について同意していただけるお客様は、<br>[同意する]を選択して下さい。</label>
+    <label class="label"><nuxt-link to="/privacy">個人情報のお取り扱い</nuxt-link>について同意していただけるお客様は <span class="attention">[同意する]</span> を選択して下さい。</label>
     <label class="checkbox check-center">
       <input v-model="checkbox" type="checkbox">
       同意する
@@ -99,8 +103,9 @@
     </div>
 
   </div>
+-->
 </template>
-
+<!--
 <script>
 export default {
   head: {
@@ -115,7 +120,7 @@ export default {
     company: '',
     mail: '',
     phonenumber: '',
-    question: 'ホームページ・Webシステム開発',
+    question: 'Webシステム開発',
     message: '',
     checkbox: '',
     nameError: '',
@@ -143,7 +148,7 @@ export default {
           ? true
           : false
 
-      this.buttonError = !isOk ? '※エラーがあります' : ''
+      this.buttonError = !isOk ? '※入力内容に誤りがあります。' : ''
 
       return isOk
     },
@@ -154,7 +159,7 @@ export default {
       }
 
       const requestUrl =
-        'https://docs.google.com/forms/u/2/d/e/1FAIpQLSchfU461dMhTDxk-EZs0G-ZM4HLsROZ8jY5rSM2dqIS0s6eYw/formResponse'
+        'https://docs.google.com/forms/u/1/d/e/1FAIpQLScl1MPXpHjWFoyknPUdixv6GOccTxrDdjU8JD7W43yMZ8-vmA/formResponse'
       // axiosだとうまく行かなかったのでajaxを使っている
       // ajaxだとCORSエラーは出るがアケート自体は送られる
       // エラーハンドリングができないのが課題
@@ -162,12 +167,13 @@ export default {
         url: requestUrl,
         // Googleフォームから項目のinput nameを探す
         data: {
-          'entry.1528476759': this.name,
-          'entry.1104158312': this.company,
-          'entry.1442783425': this.mail,
-          'entry.566003588': this.phonenumber,
-          'entry.715603368': this.question,
-          'entry.396059795': this.message
+          'entry.337469442': this.name,
+          'entry.191390181': this.company,
+          // 'entry.1442783425': this.mail,
+          'emailAddress' : this.mail,// eslint-disable-line
+          'entry.961972315': this.phonenumber,
+          'entry.1554647853': this.question,
+          'entry.1568037778': this.message
         },
         type: 'POST',
         dataType: 'xml',
@@ -193,6 +199,12 @@ export default {
   width: 60%;
   margin: 0 auto;
 }
+.button.is-primary {
+  background-color: #363636;
+}
+.attention {
+  color: #f0640a;
+}
 /* スマホの場合は幅を広くする */
 @media screen and (max-width: 400px) {
   .contact-form {
@@ -214,5 +226,16 @@ export default {
 }
 .error {
   color: red;
+}
+</style>
+-->
+<style lang="scss" scoped>
+iframe.form-frame {
+  height: 1800px;
+}
+@media screen and (max-width: 600px) {
+  iframe.form-frame {
+    height: 2200px;
+  }
 }
 </style>

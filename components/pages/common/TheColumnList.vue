@@ -3,22 +3,21 @@
     <div class="columns is-multiline">
       <div v-for="(item, i) in columns" :key="i" class="column is-one-third">
         <nuxt-link :to="'column/' + item.id">
-          <div class="card">
-            <div class="card-image">
+          <div class="column-inner">
+            <div class="column-image">
               <figure class="image">
                 <img :src="item.img.url" :alt="item.title">
               </figure>
             </div>
-            <div class="card-content">
-              <div>
-                {{ item.title }}
-                <br>
-                {{ item.createdAt | dayjs }}
-                <br>
-                <span class="tag is-primary">
-                  {{ item.label.label }}
-                </span>
-              </div>
+            <div class="column-content">
+              <p class="column-title">{{ item.title }}</p>
+              <br>
+              {{ item.createdAt | dayjs }}
+              <br>
+              <p class="column-store">{{ item.store }}</p>
+              <span class="tag is-primary">
+                {{ item.label.label }}
+              </span>
             </div>
           </div>
         </nuxt-link>
@@ -39,4 +38,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.column-inner {
+  border-bottom: 1px solid $lightgray;
+}
+.column-content {
+  padding: 10px 5px;
+}
+.column-title {
+  font-size: 14px;
+  height: 40px;
+}
+.column-store {
+  font-size: 14px;
+  color: $darksmoke;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .column-title {
+    height: auto;
+  }
+}
 </style>

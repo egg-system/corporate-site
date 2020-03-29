@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        COPYRIGHT © 2019 システムコンサルティング・Webシステム開発｜中小企業、サロン開業者向け｜株式会社エッグシステム. All rights reserved.
+        COPYRIGHT © EGG SYSTEM,Inc. All rights reserved.
       </p>
       <nuxt-link to="/privacy">
         <p class="privacy">

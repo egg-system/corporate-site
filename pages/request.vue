@@ -1,29 +1,23 @@
 <template>
   <div>
     <the-hero-title main-text="ご依頼について" />
-    <div class="content">
-      <table class="table">
-        <tbody>
-          <tr class="darksmoke-underline">
-            <the-about />
-          </tr>
-          <tr class="darksmoke-underline">
-            <the-sub-header :is-line="true" text="ご依頼の流れ" />
-            <the-flow />
-          </tr>
-          <tr class="darksmoke-underline">
-            <the-sub-header :is-line="true" text="当社サービスについて" />
-            <the-service :services="services" class="service"/>
-          </tr>
-          <tr class="darksmoke-underline">
-            <the-message />
-          </tr>
-          <tr>
-            <the-sub-header :is-line="true" text="最近の活動・コラム" />
-            <the-column />
-          </tr>
-        </tbody>
-      </table>
+    <div class="content  page-content">
+      <div class="message lightgray-underline">
+        <p>ご要件やご予算が決まっていない段階でのご相談でも問題ありません。</p>
+        <br>
+        <p>「こんな相談をしてよいのかどうか分からないけど・・・」</p>
+        <p>「まずは調査と分析だけ依頼したい」</p>
+        <p>「このくらいのシステムを作る場合の費用を知りたい」</p>
+        <br>
+        <p>など、どんな内容もまずはお気軽にご相談ください。</p>
+      </div>
+      <the-sub-header :is-line="true" text="ご依頼の流れ" class="subheader" />
+      <the-flow class="lightgray-underline" />
+      <the-sub-header :is-line="true" text="当社サービスについて" class="subheader" />
+      <the-service :services="services" class="service lightgray-underline"/>
+      <the-contact />
+      <!-- <the-sub-header :is-line="true" text="最近の活動・コラム" class="subheader" />
+      <the-column /> -->
     </div>
   </div>
 </template>
@@ -31,33 +25,47 @@
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheSubHeader from '~/components/pages/request/TheSubHeader.vue'
-import TheAbout from '~/components/pages/request/TheAbout.vue'
 import TheFlow from '~/components/pages/request/TheFlow.vue'
 import TheService from '~/components/pages/request/TheService.vue'
-import TheMessage from '~/components/pages/request/TheMessage.vue'
+import TheContact from '~/components/pages/top/TheContact.vue'
 import TheColumn from '~/components/pages/request/TheColumn.vue'
-import services from '~/assets/js/services.js'
+import services from '~/assets/request/js/services.js'
 
 export default {
   components: {
     TheHeroTitle,
     TheSubHeader,
-    TheAbout,
     TheFlow,
     TheService,
-    TheMessage,
+    TheContact,
     TheColumn
   },
   data: () => ({
     services: services.services
-  })
+  }),
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'request',
+          name: 'ご依頼について',
+          content:
+            'ご要件やご予算が決まっていない段階でのご相談でも問題ありません。「こんな相談をしてよいのかどうか分からないけど・・・」「まずは調査と分析だけ依頼したい」「このくらいのシステムを作る場合の費用を知りたい」など、どんな内容もまずはお気軽にご相談ください。'
+        }
+      ]
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-.content {
-  width: 80%;
-  margin: 0 auto;
+.message {
+  background-color: inherit;
+  padding-bottom: 4rem;
+}
+.subheader {
+  margin-top: 1rem;
 }
 .link {
   text-align: right;

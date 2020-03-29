@@ -32,7 +32,9 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
-  border-top: 2px solid $whitesmoke;
   text-align: left;
+}
+.subtitle {
+  font-size: 1.75rem;
 }
 </style>

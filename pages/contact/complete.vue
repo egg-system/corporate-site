@@ -3,7 +3,10 @@
     <the-hero-title main-text="お問い合わせ 完了" />
     <div class="content page-content">
       お問い合わせ完了しました。<br>
-      内容確認してご連絡致しますので、それまでしばらくお待ちください。
+      <br>
+      後日、担当者よりご連絡させて頂きますので、しばらくお待ちください。
+      <br>
+      株式会社エッグシステム
     </div>
   </div>
 </template>

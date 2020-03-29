@@ -1,19 +1,17 @@
 <template>
   <div class="contact">
-    <p>
-      サービス内容や事例について等、お気軽にお問い合わせください。<br>
-      依頼するかどうかまだ決まっていない、問い合わせるべきかどうか迷っている、<br>
-      といった状態でもご相談を受け付けております。<br>
-    </p>
-    <div class="contact-button">
-      <button class="button is-large is-fullwidth" @click="go('/contact')">お問い合わせ</button>
+    <div class="contact-columns">
+      <nuxt-link to="/contact">
+        <div class="contact-column">
+          <p>採用について質問する<span>></span></p>
+        </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
 
 <script>
 import method from '~/mixins/method'
-
 export default {
   mixins: [method]
 }
@@ -21,12 +19,44 @@ export default {
 
 <style lang="scss" scoped>
 .contact {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 8%;
+  margin-bottom: 10%;
+  background: $white;
 }
-.contact-button {
-  width: 50%;
-  margin: auto;
+.contact-columns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-columns a {
+  width: 60%;
+}
+.contact-column {
+  padding: 0;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  background: $darkblack;
+  border-radius: 4px;
+}
+.contact-column p {
+  color: $lightgray;
+  font-size: 18px;
+}
+.contact-column p span {
+  margin-left: 15px;
+}
+@media screen and (max-width: 600px) {
+  .contact-columns {
+    display: block;
+  }
+  .contact-column {
+    width: 100%;
+    margin: 15px auto;
+  }
 }
 </style>

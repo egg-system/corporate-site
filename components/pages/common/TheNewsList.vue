@@ -1,27 +1,27 @@
 <template>
   <div class="news-list">
-    <div v-for="(item, i) in news" :key="i">
-      <div class="columns">
+    <li>
+      <div v-for="(item, i) in news" :key="i">
+        <ul>
+          <div class="columns">
+            <div class="columns is-mobile">
+              <div class="column news-date is-4-mobile">{{ item.createdAt | dayjs }}</div>
+              <div class="column is-4-mobile">
+                <span class="tag is-primary">
+                  {{ item.label.label }}
+                </span>
+              </div>
+            </div>
 
-        <div class="column is-4">
-          <div class="columns is-mobile">
-            <div class="column is-4-mobile">{{ item.createdAt | dayjs }}</div>
-            <div class="column is-4-mobile">
-              <span class="tag is-primary">
-                {{ item.label.label }}
-              </span>
+            <div class="news-title">
+              <nuxt-link :to="'news/' + item.id">
+                {{ item.title }}
+              </nuxt-link>
             </div>
           </div>
-        </div>
-
-        <div class="column is-8">
-          <nuxt-link :to="'news/' + item.id">
-            {{ item.title }}
-          </nuxt-link>
-        </div>
+        </ul>
       </div>
-      <hr v-if="(i + 1 !== Object.keys(news).length)" >
-    </div>
+    </li>
   </div>
 </template>
 
@@ -37,4 +37,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.news-list {
+  display: flex;
+}
+.news-inner {
+  width: 90%;
+  margin: 0 auto;
+}
+.news-title {
+  padding: 5px 10px;
+}
+.news-date {
+  text-align: right;
+  font-size: 14px;
+  color: $darksmoke;
+}
+li {
+  list-style: none;
+}
+@media screen and (max-width: 600px) {
+  .news-list {
+    display: block;
+  }
+  .news-inner {
+    margin: 10px auto;
+  }
+  .news-title {
+    font-size: 14px;
+  }
+}
 </style>

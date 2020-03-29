@@ -1,12 +1,14 @@
 <template>
   <div>
     <div class="content page-content">
-      <the-sub-header class="blank" text="わたしたちについて" />
+      <the-hero-title main-text="わたしたちについて" />
       <the-message class="end" />
       <the-sub-header class="blank" text="当社の強み" />
       <the-value class="end" />
+      <!--
       <the-sub-header class="blank" text="最近の活動・コラム" />
       <the-column class="end" />
+    -->
     </div>
   </div>
 </template>
