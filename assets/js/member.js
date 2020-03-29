@@ -26,8 +26,8 @@ const members = [
     img: shun
   },
   {
-    nameJP: '廣海 真吾',
-    nameEN: 'Shingo Hiromi',
+    nameJP: '廣海',
+    nameEN: 'Hiromi',
     img: shingo
   },
   {
