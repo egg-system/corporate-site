@@ -76,12 +76,12 @@ export default {
         {
           hid: 'recruit-og:url',
           property: 'og:url',
-          content: 'https://eggsystem.co.jp'
+          content: 'https://eggsystem.co.jp/recruit'
         },
         {
           hid: 'recruit-og:image',
           property: 'og:image',
-          content: '/recruit-top-ogp.jpg'
+          content: 'https://eggsystem.co.jp/ogp/recruit-top-ogp.jpg'
         }
       ]
     }

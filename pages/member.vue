@@ -57,12 +57,12 @@ export default {
         {
           hid: 'member-og:url',
           property: 'og:url',
-          content: 'https://eggsystem.co.jp'
+          content: 'https://eggsystem.co.jp/member'
         },
         {
           hid: 'member-og:image',
           property: 'og:image',
-          content: '/tsubasa-ogp.jpg'
+          content: 'https://eggsystem.co.jp/ogp/tsubasa-ogp.jpg'
         }
       ]
     }
