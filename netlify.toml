@@ -4,7 +4,6 @@
   status = 301
 
 [[redirects]]
-  to = "https://eggsystem.co.jp/company"
   from = "/vision"
   to = "/company"
   status = 301
