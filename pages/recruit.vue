@@ -56,6 +56,11 @@ export default {
           content:
             'ジブンゴトで働こう, システムエンジニア勉強会, コンサルティングエンジニア集団「x-faCE」の一員を募集しています'
         },
+        {
+          hid: 'recruit-twitter:card',
+          property: 'twitter:card',
+          content: 'summary'
+        },
         { hid: 'recruit-og:type', property: 'og:type', content: 'article' },
         {
           hid: 'recruit-og:title',
