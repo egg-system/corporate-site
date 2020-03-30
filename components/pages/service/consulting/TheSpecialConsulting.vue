@@ -1,18 +1,18 @@
 <template>
   <div>
     <the-sub-header text="業界特化型<br>システムコンサルティングサービス" />
-    <div class="columns">
+    <div class="columns reverse">
+      <div class="column is-half">
+        <figure class="image special-consulting">
+          <img :src="specialConsultingImage">
+        </figure>
+      </div>
       <div class="column is-half">
         <div class="message">
           サロン・整体・エステ・接骨院・マッサージ・トレーニングジムの業界に特化したコンサルティングサービスを行っています。<br>
           事業戦力の策定や集客の支援から、手間がかかるホームページ等のシステム面のサポートまでオールインワンで行います。
         </div>
         <div class="message">まずは問い合わせフォームよりお気軽にご相談ください。</div>
-      </div>
-      <div class="column is-half">
-        <figure class="image special-consulting">
-          <img :src="specialConsultingImage">
-        </figure>
       </div>
     </div>
     <div>
@@ -49,6 +49,7 @@
         </div>
       </div>
     </div>
+    <h3>当社が運営するオウンドメディア</h3>
     <div class="columns">
       <div class="column is-half">
         <figure class="image salon">
@@ -56,7 +57,6 @@
         </figure>
       </div>
       <div class="column is-half">
-        <h3>当社が運営するオウンドメディア</h3>
         <div class="message">
           サロンオーナー様にとってできるだけ負担なく手軽に情報を収集できる場所として、
           当社が持つノウハウを駆使してメディアサイト「EGG」を立ち上げました。
@@ -174,6 +174,9 @@ div {
     top: 5%;
     right: 0;
     background: $lightgray;
+  }
+  .reverse {
+    flex-direction: row-reverse;
   }
 }
 @media screen and (max-width: 768px) {
