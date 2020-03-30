@@ -37,3 +37,19 @@
   from = "/salon-support"
   to = "/service"
   status = 301
+
+[[redirects]]
+  from = "/company-data/"
+  to = "/company"
+  status = 301
+
+[[redirects]]
+  from = "/hpservice-terms/"
+  to = "/service"
+  status = 301
+
+[[redirects]]
+  from = "/personal-info/"
+  to = "/privacy"
+  status = 301
+
