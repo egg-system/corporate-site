@@ -24,6 +24,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+figure {
+  margin: 0;
+}
 .columns {
   position: relative;
   margin-top: 2rem;

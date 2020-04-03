@@ -31,6 +31,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+figure {
+  margin: 0;
+}
 .note {
   margin-left: 1rem;
 }

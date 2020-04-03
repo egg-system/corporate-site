@@ -12,7 +12,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'eggsystem',
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns#'
     },
@@ -89,12 +89,19 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/axios', '@nuxtjs/style-resources'],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/style-resources'
+  ],
 
   styleResources: {
     scss: ['~/assets/common.scss']
   },
 
+  googleAnalytics: {
+    id: 'UA-118871797-1'
+  },
   /*
    ** Build configuration
    */

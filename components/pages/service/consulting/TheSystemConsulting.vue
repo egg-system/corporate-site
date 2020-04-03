@@ -1,7 +1,12 @@
 <template>
   <div>
     <the-sub-header text="システムコンサルティングサービス" class="subheader" />
-    <div class="columns">
+    <div class="columns reverse">
+      <div class="column is-half">
+        <figure class="image">
+          <img :src="consultingImage">
+        </figure>
+      </div>
       <div class="column is-half system-consulting">
         <div class="message">システム導入や導入後の運用を軸に、「計画」「推進」「管理」の3つのサービスを提供します。</div>
         <div class="message">
@@ -14,11 +19,6 @@
             <div class="arrow">></div>
           </nuxt-link>
         </div>
-      </div>
-      <div class="column is-half">
-        <figure class="image">
-          <img :src="consultingImage">
-        </figure>
       </div>
     </div>
     <h3 class="table-title">1.&nbsp;IT戦略/IT投資計画策定サービス</h3>
@@ -46,35 +46,35 @@
           </p>
           <div class="service-5w2h1e">
             <div class="columns five-ws">
-              <div class="column is-2 item-5w">- Why</div>
+              <div class="column is-2 item-5w2h1e">- Why</div>
               <div class="column description">目的（何のためにシステムを導入するか）</div>
             </div>
             <div class="columns five-ws">
-              <div class="column is-2 item-5w">- What</div>
+              <div class="column is-2 item-5w2h1e">- What</div>
               <div class="column description">導入予定の対象システム</div>
             </div>
             <div class="columns five-ws">
-              <div class="column is-2 item-5w">- When</div>
+              <div class="column is-2 item-5w2h1e">- When</div>
               <div class="column description">各システムの導入スケジュール</div>
             </div>
             <div class="columns five-ws">
-              <div class="column is-2 item-5w">- Who</div>
+              <div class="column is-2 item-5w2h1e">- Who</div>
               <div class="column description">各システムの導入ベンダー</div>
             </div>
             <div class="columns five-ws">
-              <div class="column is-2 item-5w">- Where</div>
+              <div class="column is-2 item-5w2h1e">- Where</div>
               <div class="column description">インフラ・ネットワーク環境</div>
             </div>
             <div class="columns five-ws">
-              <div class="column is-2 item-2h">- How</div>
+              <div class="column is-2 item-5w2h1e">- How</div>
               <div class="column description">システム導入方法（進め方）</div>
             </div>
             <div class="columns five-ws">
-              <div class="column is-2 item-2h">- How Much</div>
+              <div class="column is-2 item-5w2h1e">- How Much</div>
               <div class="column description">概算費用に基づく投資計画</div>
             </div>
             <div class="columns five-ws">
-              <div class="column is-2 item-1e">- Effect</div>
+              <div class="column is-2 item-5w2h1e">- Effect</div>
               <div class="column description">導入効果の試算</div>
             </div>
           </div>
@@ -285,33 +285,12 @@ div {
   margin-left: 1rem;
   margin-right: 2rem;
 }
-.item-5w::after {
+.item-5w2h1e::after {
   content: '';
   position: absolute;
-  top: 2px;
-  left: 0.72rem;
+  left: 0.5rem;
   right: 0;
-  width: 0.85rem;
-  margin-top: 1rem;
-  border-bottom: 1px solid black;
-}
-.item-2h::after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 0.7rem;
-  right: 0;
-  width: 0.7rem;
-  margin-top: 1rem;
-  border-bottom: 1px solid black;
-}
-.item-1e::after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 0.72rem;
-  right: 0;
-  width: 0.5rem;
+  width: 0.75rem;
   margin-top: 1rem;
   border-bottom: 1px solid black;
 }
@@ -332,6 +311,9 @@ div {
     top: 5%;
     right: 0;
     background: $lightgray;
+  }
+  .reverse {
+    flex-direction: row-reverse;
   }
 }
 @media screen and (max-width: 768px) {

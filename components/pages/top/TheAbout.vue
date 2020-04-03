@@ -1,31 +1,14 @@
 <template>
   <div class="about">
-    <div class="about-columns">
-      <div class="about-column first">
+    <the-sub-header text="わたしたちについて" class="about-header-sp" />
+    <div class="columns reverse">
+      <div class="column second is-5">
+        <img :src="img">
+      </div>
+      <div class="column first is-7">
         <p class="about-column-title">わたしたちについて</p>
         <p class="about-column-content">
           株式会社エッグシステムのコンサルティングエンジニア集団<br>「x-faCE（for all Consulting Engineer）」では、 <br>《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》<br>の実現のために、ITシステムを活用します。
-        </p>
-        <div class="about-btn-area">
-          <nuxt-link to="/about">
-            <div class="btn-area">
-              <p>詳しくみる<span>></span></p>
-            </div>
-          </nuxt-link>
-        </div>
-      </div>
-      <div class="about-column second">
-        <img :src="img">
-      </div>
-    </div>
-    <the-sub-header text="わたしたちについて" class="about-header-sp" />
-    <div class="about-columns-sp">
-      <div class="about-column first">
-        <img :src="img">
-      </div>
-      <div class="about-column second">
-        <p class="about-column-content">
-          株式会社エッグシステムのコンサルティングエンジニア集団「x-faCE（for all Consulting Engineer）」では、《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。
         </p>
         <div class="about-btn-area">
           <nuxt-link to="/about">
@@ -58,32 +41,20 @@ export default {
 <style lang="scss" scoped>
 .about {
   width: 100%;
-  height: 350px;
+  min-height: 350px;
   margin-top: 5%;
   margin-bottom: 5%;
   background: $whitesmoke;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.about-columns {
+.columns {
+  margin: auto;
+  position: relative;
   width: 90%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
-.about-column {
-  padding-top: 10px;
-  height: 250px;
-  font-size: 15px;
-  font-weight: bold;
-}
-.first {
-  width: 55%;
-  padding: 5px;
-}
-.second {
-  width: 35%;
+.reverse {
+  flex-direction: row-reverse;
 }
 .about-column-title {
   font-size: 24px;
@@ -99,6 +70,7 @@ export default {
 }
 .about-btn-area {
   width: 40%;
+  min-width: 15rem;
   margin-top: 30px;
   float: right;
 }
@@ -137,27 +109,17 @@ export default {
 .about-columns-sp {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .about {
     background: $white;
     height: auto;
     margin-top: 0;
   }
-  .about-columns {
-    display: none;
-  }
   .about-header-sp {
     display: block;
   }
-  .about-columns-sp {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .about-column {
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
+  .about-column-title {
+    display: none;
   }
   .about-column-content {
     font-size: 14px;

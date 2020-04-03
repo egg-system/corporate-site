@@ -1,7 +1,12 @@
 <template>
   <div>
     <the-sub-header text="システム開発" />
-    <div class="columns">
+    <div class="columns reverse">
+      <div class="column is-half">
+        <figure class="image">
+          <img :src="developmentImage">
+        </figure>
+      </div>
       <div class="column is-half">
         <div class="message">
           ご要望に合わせてスクラッチやWebシステムや業務システムの開発を行います。
@@ -16,11 +21,6 @@
             <div class="arrow">></div>
           </nuxt-link>
         </div>
-      </div>
-      <div class="column is-half">
-        <figure class="image">
-          <img :src="developmentImage">
-        </figure>
       </div>
     </div>
     <div class="columns table">
@@ -190,6 +190,9 @@ div {
     top: 5%;
     right: 0;
     background: $lightgray;
+  }
+  .reverse {
+    flex-direction: row-reverse;
   }
 }
 @media screen and (max-width: 768px) {

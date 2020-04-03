@@ -34,7 +34,7 @@
   padding: 10px 5px;
 }
 .contact-btn-area {
-  width: 35%;
+  width: 30rem;
   margin: 30px auto;
 }
 .btn-area {

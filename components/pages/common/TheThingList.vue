@@ -30,16 +30,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.strength {
-  border-bottom: 1px solid $lightgray;
+.column {
+  position: relative;
+}
+.strength::after {
+  position: absolute;
+  content: '';
+  width: 95%;
+  height: 1px;
+  background: $lightgray;
+  margin-top: 0.5rem;
+  bottom: 1rem;
+}
+.column:last-child::after {
+  height: 0px;
 }
 .strength-content {
   padding: 10px 5px;
-  height: 300px;
 }
 .strength-title {
+  margin-top: 10px;
   font-size: 20px;
-  height: 40px;
+  height: 50px;
   text-align: center;
 }
 .strength-store {
