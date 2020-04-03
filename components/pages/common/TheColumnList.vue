@@ -12,7 +12,7 @@
             <div class="column-content">
               <p class="column-title">{{ item.title }}</p>
               <br>
-              {{ item.createdAt | dayjs }}
+              {{ item.display_at | dayjs }}
               <br>
               <p class="column-store">{{ item.store }}</p>
               <span class="tag is-primary">
