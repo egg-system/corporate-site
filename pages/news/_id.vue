@@ -28,6 +28,45 @@ export default {
   components: {
     TheHeroTitle
   },
+  head() {
+    return {
+      title: 'ニュース',
+      meta: [
+        {
+          hid: 'news-description',
+          name: 'description',
+          content: '株式会社エッグシステム ニュース'
+        },
+        {
+          hid: 'news-keywords',
+          name: 'keywords',
+          content: 'ニュース, eggsystem, 株式会社エッグシステム'
+        },
+        {
+          hid: 'news-twitter:card',
+          property: 'twitter:card',
+          content: 'summary'
+        },
+        { hid: 'news-og:type', property: 'og:type', content: 'article' },
+        {
+          hid: 'news-og:title',
+          property: 'og:title',
+          content: 'ニュース'
+        },
+        {
+          hid: 'news-og:description',
+          property: 'og:description',
+          content: '株式会社エッグシステム ニュース'
+        },
+        {
+          hid: 'news-og:url',
+          property: 'og:url',
+          content: 'https://eggsystem.co.jp/news'
+        }
+      ]
+    }
+  },
+
   asyncData({ params }) {
     return fetchCmsDataNews(params.id)
   }
