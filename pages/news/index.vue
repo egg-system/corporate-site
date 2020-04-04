@@ -10,7 +10,6 @@
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheNewsList from '~/components/pages/common/TheNewsList.vue'
-import axios from 'axios'
 import { fetchCmsListDataNews } from '~/lib/cms'
 
 export default {

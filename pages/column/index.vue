@@ -10,7 +10,6 @@
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheColumnList from '~/components/pages/common/TheColumnList.vue'
-import axios from 'axios'
 import { fetchCmsListDataColumn } from '~/lib/cms'
 
 export default {
