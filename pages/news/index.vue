@@ -17,14 +17,6 @@ export default {
     TheHeroTitle,
     TheNewsList
   },
-  data() {
-    return {
-      news: ''
-    }
-  },
-  head: {
-    script: []
-  },
 
   asyncData() {
     return fetchCmsListDataNews()
