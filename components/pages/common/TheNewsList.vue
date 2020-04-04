@@ -14,7 +14,7 @@
             </div>
 
             <div class="news-title">
-              <nuxt-link :to="'news/' + item.id">
+              <nuxt-link :to="'/news/' + item.id">
                 {{ item.title }}
               </nuxt-link>
             </div>
