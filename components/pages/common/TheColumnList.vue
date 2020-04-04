@@ -2,7 +2,7 @@
   <div class="column-item">
     <div class="columns is-multiline">
       <div v-for="(item, i) in columns" :key="i" class="column is-one-third">
-        <nuxt-link :to="'column/' + item.id">
+        <nuxt-link :to="'/column/' + item.id">
           <div class="column-inner">
             <div class="column-image">
               <figure class="image">
