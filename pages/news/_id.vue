@@ -30,7 +30,7 @@ export default {
   },
   head() {
     return {
-      title: 'ニュース',
+      title: this.data.title,
       meta: [
         {
           hid: 'news-description',
@@ -51,7 +51,7 @@ export default {
         {
           hid: 'news-og:title',
           property: 'og:title',
-          content: 'ニュース'
+          content: this.data.title
         },
         {
           hid: 'news-og:description',
@@ -61,7 +61,7 @@ export default {
         {
           hid: 'news-og:url',
           property: 'og:url',
-          content: 'https://eggsystem.co.jp/news'
+          content: 'https://eggsystem.co.jp/news/' + this.data.id
         }
       ]
     }

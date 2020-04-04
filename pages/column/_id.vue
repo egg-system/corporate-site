@@ -33,7 +33,7 @@ export default {
   },
   head() {
     return {
-      title: 'コラム',
+      title: this.data.title,
       meta: [
         {
           hid: 'column-description',
@@ -54,7 +54,7 @@ export default {
         {
           hid: 'column-og:title',
           property: 'og:title',
-          content: 'コラム'
+          content: this.data.title
         },
         {
           hid: 'column-og:description',
@@ -64,12 +64,12 @@ export default {
         {
           hid: 'column-og:url',
           property: 'og:url',
-          content: 'https://eggsystem.co.jp/column'
+          content: 'https://eggsystem.co.jp/column/' + this.data.id
         }
       ]
     }
   },
-  
+
   asyncData({ params }) {
     return fetchCmsDataColumn(params.id)
   }
