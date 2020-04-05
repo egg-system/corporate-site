@@ -53,8 +53,8 @@ export default {
           content: 'https://eggsystem.co.jp/column'
         },
         {
-          hid: 'column-og:imgae',
-          property: 'og:imgae',
+          hid: 'og:image',
+          property: 'og:image',
           content: 'https://eggsystem.co.jp/logo.png'
         }
       ]
