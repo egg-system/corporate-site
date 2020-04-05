@@ -1,18 +1,26 @@
 <template>
   <div class="column-item">
     <div class="columns is-multiline">
-      <div v-for="(item, i) in columns" :key="i" class="column is-one-third"> 
-        <div class="column-inner">
-          <div class="column-image">
-            <figure class="image">
-              <img :src="item.img" :alt="item.title">
-            </figure>
+      <div v-for="(item, i) in columns" :key="i" class="column is-one-third">
+        <nuxt-link :to="'/column/' + item.id">
+          <div class="column-inner">
+            <div class="column-image">
+              <figure class="image">
+                <img :src="item.img.url" :alt="item.title">
+              </figure>
+            </div>
+            <div class="column-content">
+              <p class="column-title">{{ item.title }}</p>
+              <br>
+              {{ item.display_at | dayjs }}
+              <br>
+              <p class="column-store">{{ item.store }}</p>
+              <span class="tag is-primary">
+                {{ item.label.label }}
+              </span>
+            </div>
           </div>
-          <div class="column-content">
-            <p class="column-title">{{ item.title }}</p>
-            <p class="column-store">{{ item.store }}</p>
-          </div>
-        </div>
+        </nuxt-link>
       </div>
     </div>
   </div>

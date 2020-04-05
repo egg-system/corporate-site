@@ -1,15 +1,15 @@
 <template>
   <div>
-    <the-hero-title :main-text="news.title" />
+    <the-hero-title :main-text="data.title" />
     <div class="news page-content">
       <div class="sub">
-        <span class="date">{{ news.date }}</span>
-        <span class="tag is-warning">
-          {{ news.label }}
+        <span class="date">{{ data.display_at | dayjs }}</span>
+        <span class="tag is-primary">
+          {{ data.label.label }}
         </span>
       </div>
       <div class="main">
-        <div v-html="news.content" />
+        <div v-html="data.content" />
       </div>
       <p class="back">
         <nuxt-link to="/news">
@@ -22,24 +22,58 @@
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
+import { fetchCmsDataNews } from '~/lib/cms'
 
 export default {
   components: {
     TheHeroTitle
   },
-  data: () => ({
-    news: {
-      title: '本社移転のお知らせ',
-      date: '2019/06/03',
-      label: 'info',
-      content: '<div>aaaa</div><div>bbbbb</div><div>ああああ</div>'
-    }
-  }),
-  async asyncData({ params }) {
-    // idからデータを取得
+  head() {
     return {
-      id: params.id
+      title: this.data.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: '株式会社エッグシステム ニュース'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: 'ニュース, eggsystem, 株式会社エッグシステム'
+        },
+        {
+          hid: 'twitter:card',
+          property: 'twitter:card',
+          content: 'summary'
+        },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.data.title
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: '株式会社エッグシステム ニュース'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://eggsystem.co.jp/news/' + this.data.id
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://eggsystem.co.jp/logo.png'
+        }
+      ]
     }
+  },
+
+  asyncData({ params }) {
+    return fetchCmsDataNews(params.id)
   }
 }
 </script>

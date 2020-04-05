@@ -16,7 +16,10 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.9.5",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "axios": "^0.19.2",
     "bulma": "^0.7.5",
+    "dayjs": "^1.8.22",
     "file-loader": "^5.0.2",
     "jquery": "^3.4.1",
     "nuxt": "^2.12.0",

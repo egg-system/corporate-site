@@ -1,11 +1,27 @@
 <template>
   <div class="news-list">
-    <div v-for="(item, i) in news" :key="i">
-      <div class="news-inner">
-        <div class="news-title">{{ item.title }}</div>
-        <div class="news-date">{{ item.date }}</div>
+    <li>
+      <div v-for="(item, i) in news" :key="i">
+        <ul>
+          <div class="columns">
+            <div class="columns is-mobile">
+              <div class="column news-date is-4-mobile">{{ item.display_at | dayjs }}</div>
+              <div class="column is-4-mobile">
+                <span class="tag is-primary">
+                  {{ item.label.label }}
+                </span>
+              </div>
+            </div>
+
+            <div class="news-title">
+              <nuxt-link :to="'/news/' + item.id">
+                {{ item.title }}
+              </nuxt-link>
+            </div>
+          </div>
+        </ul>
       </div>
-    </div>
+    </li>
   </div>
 </template>
 
@@ -35,6 +51,9 @@ export default {
   text-align: right;
   font-size: 14px;
   color: $darksmoke;
+}
+li {
+  list-style: none;
 }
 @media screen and (max-width: 600px) {
   .news-list {

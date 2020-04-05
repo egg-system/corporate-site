@@ -1,18 +1,18 @@
 <template>
   <div>
-    <the-hero-title :main-text="column.title" />
+    <the-hero-title :main-text="data.title" />
     <div class="column-item page-content">
       <figure class="image">
-        <img :src="column.img">
+        <img :src="data.img.url">
       </figure>
       <div class="sub">
-        <span class="date">{{ column.date }}</span>
-        <span class="tag is-warning">
-          {{ column.label }}
+        <span class="date">{{ data.display_at | dayjs }}</span>
+        <span class="tag is-primary">
+          {{ data.label.label }}
         </span>
       </div>
       <div class="main">
-        <div v-html="column.content" />
+        <div v-html="data.content" />
       </div>
       <p class="back">
         <nuxt-link to="/column">
@@ -25,28 +25,58 @@
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
+import { fetchCmsDataColumn } from '~/lib/cms'
 
 export default {
   components: {
     TheHeroTitle
   },
-  data: () => ({
-    column: {
-      title:
-        'デジタルトランスフォーメーション（DX）とは？DXレポートから中小企業での活用方法まで解説（前編）',
-      date: '2019/11/03',
-      label: 'info',
-      url: '/column/aaa',
-      img:
-        'https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg',
-      content: '<div>aaaa</div><div>bbbbb</div><div>ああああ</div>'
-    }
-  }),
-  async asyncData({ params }) {
-    // idからデータを取得
+  head() {
     return {
-      id: params.id
+      title: this.data.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: '株式会社エッグシステム コラム'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: 'コラム, eggsystem, 株式会社エッグシステム'
+        },
+        {
+          hid: 'twitter:card',
+          property: 'twitter:card',
+          content: 'summary'
+        },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.data.title
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: '株式会社エッグシステム コラム'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://eggsystem.co.jp/column/' + this.data.id
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.data.img.url
+        }
+      ]
     }
+  },
+
+  asyncData({ params }) {
+    return fetchCmsDataColumn(params.id)
   }
 }
 </script>

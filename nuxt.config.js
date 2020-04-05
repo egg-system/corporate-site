@@ -1,4 +1,12 @@
+require('dotenv').config()
+import { routing } from './lib/cms'
+const { microCmsApiKey, microCmsApiDomain } = process.env
+
 export default {
+  env: {
+    microCmsApiKey,
+    microCmsApiDomain
+  },
   mode: 'universal',
   /*
    ** Headers of the page
@@ -37,8 +45,8 @@ export default {
           '中小企業やサロン・整体オーナー向けに、事業成長を目的としたシステム企画から開発・運用まで行います。【エッグシステム】では貴方の企業・店舗の魅力を「カタチ」にします。'
       },
       {
-        hid: 'og:imgae',
-        property: 'og:imgae',
+        hid: 'og:image',
+        property: 'og:image',
         content: 'https://eggsystem.co.jp/ogp/top00.jpg'
       }
     ],
@@ -55,6 +63,14 @@ export default {
     ]
   },
   /*
+  ** generateオプション
+  */
+  generate: {
+    async routes() {
+      return routing()
+    }
+  },
+  /*
    ** Customize the progress-bar color
    */
   loading: { color: '#1f55a5' },
@@ -66,6 +82,7 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
+    '~/plugins/filters.js',
     '~plugins/vue-scrollto',
     { src: '~plugins/slick-slide.js', mode: 'client' }
   ],
@@ -93,6 +110,9 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {
+      config.node = {
+        fs: 'empty'
+      }
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({

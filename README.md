@@ -17,6 +17,15 @@ $ npm start
 $ npm run generate
 ```
 
+## .envファイルの作成
+
+ローカル環境で動作確認をするために、ルート直下に `.env` ファイルを作成してください
+
+```
+microCmsApiKey = ''
+microCmsApiDomain = ''
+```
+
 ## Document
 ### UI
 * [Bulma](https://bulma.io/documentation/)
