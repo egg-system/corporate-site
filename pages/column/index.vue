@@ -22,39 +22,39 @@ export default {
       title: 'コラム',
       meta: [
         {
-          hid: 'column-description',
+          hid: 'description',
           name: 'description',
           content: '株式会社エッグシステム コラム'
         },
         {
-          hid: 'column-keywords',
+          hid: 'keywords',
           name: 'keywords',
           content: 'コラム, eggsystem, 株式会社エッグシステム'
         },
         {
-          hid: 'column-twitter:card',
+          hid: 'twitter:card',
           property: 'twitter:card',
           content: 'summary'
         },
-        { hid: 'column-og:type', property: 'og:type', content: 'article' },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
         {
-          hid: 'column-og:title',
+          hid: 'og:title',
           property: 'og:title',
           content: 'コラム'
         },
         {
-          hid: 'column-og:description',
+          hid: 'og:description',
           property: 'og:description',
           content: '株式会社エッグシステム コラム'
         },
         {
-          hid: 'column-og:url',
+          hid: 'og:url',
           property: 'og:url',
           content: 'https://eggsystem.co.jp/column'
         },
         {
-          hid: 'column-og:imgae',
-          property: 'og:imgae',
+          hid: 'og:image',
+          property: 'og:image',
           content: 'https://eggsystem.co.jp/logo.png'
         }
       ]

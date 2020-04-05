@@ -33,39 +33,39 @@ export default {
       title: this.data.title,
       meta: [
         {
-          hid: 'news-description',
+          hid: 'description',
           name: 'description',
           content: '株式会社エッグシステム ニュース'
         },
         {
-          hid: 'news-keywords',
+          hid: 'keywords',
           name: 'keywords',
           content: 'ニュース, eggsystem, 株式会社エッグシステム'
         },
         {
-          hid: 'news-twitter:card',
+          hid: 'twitter:card',
           property: 'twitter:card',
           content: 'summary'
         },
-        { hid: 'news-og:type', property: 'og:type', content: 'article' },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
         {
-          hid: 'news-og:title',
+          hid: 'og:title',
           property: 'og:title',
           content: this.data.title
         },
         {
-          hid: 'news-og:description',
+          hid: 'og:description',
           property: 'og:description',
           content: '株式会社エッグシステム ニュース'
         },
         {
-          hid: 'news-og:url',
+          hid: 'og:url',
           property: 'og:url',
           content: 'https://eggsystem.co.jp/news/' + this.data.id
         },
         {
-          hid: 'news-og:imgae',
-          property: 'og:imgae',
+          hid: 'og:image',
+          property: 'og:image',
           content: 'https://eggsystem.co.jp/logo.png'
         }
       ]
