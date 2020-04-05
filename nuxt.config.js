@@ -45,8 +45,8 @@ export default {
           '中小企業やサロン・整体オーナー向けに、事業成長を目的としたシステム企画から開発・運用まで行います。【エッグシステム】では貴方の企業・店舗の魅力を「カタチ」にします。'
       },
       {
-        hid: 'og:imgae',
-        property: 'og:imgae',
+        hid: 'og:image',
+        property: 'og:image',
         content: 'https://eggsystem.co.jp/ogp/top00.jpg'
       }
     ],
