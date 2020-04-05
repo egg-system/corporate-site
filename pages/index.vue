@@ -1,8 +1,10 @@
 <template>
   <div>
     <the-hero-image />
-    <!--<the-sub-header text="最近の活動・コラム" />
-    // <the-column-list />-->
+    <the-sub-header text="最近の活動・コラム" />
+    <div class="column-list page-content">
+      <the-column-list :columns="listData" />
+    </div>
     <the-about />
     <the-sub-header text="x-faCEの強み" />
     <the-strength />
@@ -10,7 +12,7 @@
     <the-contact />
     <the-sub-header text="メンバー" />
     <the-member />
-    <!--<the-news-list />-->
+    <the-news-list />
   </div>
 </template>
 
@@ -24,6 +26,7 @@ import TheStrength from '~/components/pages/top/TheStrength.vue'
 import TheContact from '~/components/pages/top/TheContact.vue'
 import TheMember from '~/components/pages/top/TheMember.vue'
 import TheNewsList from '~/components/pages/top/TheNewsList.vue'
+import { fetchCmsListDataColumn } from '~/lib/cms'
 
 export default {
   components: {
@@ -36,6 +39,9 @@ export default {
     TheContact,
     TheMember,
     TheNewsList
+  },
+  asyncData() {
+    return fetchCmsListDataColumn(3)
   }
 }
 </script>

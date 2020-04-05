@@ -1,57 +1,45 @@
 <template>
-  <div class="column-list">
-    <the-column-list :columns="columns" />
-    <div class="btn-area">
-      <div class="more-btn">
-        <nuxt-link class="column-button" to="/column">詳しくみる　　　<p class="column-arrow">></p>
+  <div class="column-item">
+    <div class="columns is-multiline">
+      <div v-for="(item, i) in columns" :key="i" class="column is-one-third">
+        <nuxt-link :to="'/column/' + item.id">
+          <div class="column-inner">
+            <div class="column-image">
+              <figure class="image">
+                <img :src="item.img.url" :alt="item.title">
+              </figure>
+            </div>
+            <div class="column-content">
+              <p class="column-title">{{ item.title }}</p>
+              <br>
+              {{ item.display_at | dayjs }}
+              <br>
+              <p class="column-store">{{ item.store }}</p>
+              <span class="tag is-primary">
+                {{ item.label.label }}
+              </span>
+            </div>
+          </div>
         </nuxt-link>
+      </div>
+      <div class="btn-area">
+        <div class="more-btn">
+          <nuxt-link class="column-button" to="/column">詳しくみる　　　<p class="column-arrow">></p>
+          </nuxt-link>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
-import TheColumnList from '~/components/pages/common/TheColumnList.vue'
-import method from '~/mixins/method'
-
 export default {
-  components: {
-    TheSubHeader,
-    TheColumnList
-  },
-  mixins: [method],
-  data: () => ({
-    columns: [
-      {
-        title: '1月21日(火)より　ルクア大阪店 改装に伴う一時休業のお知らせ',
-        date: '2019/11/03',
-        store: 'Soup Stock Tokyo　ルクア大阪店',
-        label: 'info',
-        url: '/column/aaa',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/10/201910-dx3-1024x682.jpg'
-      },
-      {
-        title: `12月30日(月)より　野菜と鶏肉のトマトシチュー販売`,
-        date: '2019/10/28',
-        store: 'Soup Stock Tokyo全店',
-        label: 'info',
-        url: '/column/aaa',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/10/20190910-08-1024x683.jpg'
-      },
-      {
-        title: 'Soup Stock Tokyoの、年始のご挨拶',
-        date: '2019/08/18',
-        store: 'Soup Stock Tokyo全店',
-        label: 'info',
-        url: '/column/aaa',
-        img:
-          'https://eggsystem.co.jp/wp-content/uploads/2019/08/20190622-DSC_3506-min-1024x684.jpg'
-      }
-    ]
-  })
+  props: {
+    columns: {
+      type: Array,
+      default: null
+    }
+  }
 }
 </script>
 
