@@ -62,6 +62,11 @@ export default {
           hid: 'news-og:url',
           property: 'og:url',
           content: 'https://eggsystem.co.jp/news/' + this.data.id
+        },
+        {
+          hid: 'news-og:imgae',
+          property: 'og:imgae',
+          content: 'https://eggsystem.co.jp/logo.png'
         }
       ]
     }

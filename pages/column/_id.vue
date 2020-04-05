@@ -65,6 +65,11 @@ export default {
           hid: 'column-og:url',
           property: 'og:url',
           content: 'https://eggsystem.co.jp/column/' + this.data.id
+        },
+        {
+          hid: 'column-og:imgae',
+          property: 'og:imgae',
+          content: this.data.img.url
         }
       ]
     }
