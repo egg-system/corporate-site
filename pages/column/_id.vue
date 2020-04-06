@@ -1,10 +1,10 @@
 <template>
   <div>
-    <the-hero-title :main-text="data.title" />
     <div class="column-item page-content">
-      <figure class="image">
+      <!-- <figure class="image">
         <img :src="data.img.url">
       </figure>
+      <the-hero-title :main-text="data.title" />
       <div class="sub">
         <span class="date">{{ data.display_at | dayjs }}</span>
         <span class="tag is-primary">
@@ -18,18 +18,23 @@
         <nuxt-link to="/column">
           <i class="fas fa-caret-square-left"/>一覧に戻る
         </nuxt-link>
-      </p>
+      </p> -->
+      <div class="column-list page-content">
+        <the-column-list :columns="listData" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
+import TheColumnList from '~/components/pages/top/TheColumnList.vue'
 import { fetchCmsDataColumn } from '~/lib/cms'
 
 export default {
   components: {
-    TheHeroTitle
+    TheHeroTitle,
+    TheColumnList
   },
   head() {
     return {
@@ -70,8 +75,8 @@ export default {
     }
   },
 
-  asyncData({ params }) {
-    return fetchCmsDataColumn(params.id)
+  asyncData() {
+    return fetchCmsDataColumn(3)
   }
 }
 </script>
@@ -80,6 +85,9 @@ export default {
 .column-item {
   margin-top: 5%;
   margin-bottom: 5%;
+}
+.page-content {
+  width: 60%;
 }
 .sub {
   margin-top: 20px;
@@ -95,7 +103,11 @@ export default {
 }
 .main {
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 16px;
+}
+img {
+  display: block;
+  margin: 0 auto;
 }
 .back {
   margin-top: 30px;
