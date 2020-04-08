@@ -16,11 +16,12 @@
       </div>
       <p class="back">
         <nuxt-link to="/column">
-          <i class="fas fa-caret-square-left"/>一覧に戻る
+          <i class=""/>一覧を見る<span>></span>
         </nuxt-link>
+        <the-sub-header text="最近の活動・コラム" />
       </p>
-      <div class="column-list page-content">
-        <!-- <the-column-list :columns="list" /> -->
+      <div class="column-list">
+        <the-column-list :columns="list" />
       </div>
     </div>
   </div>
@@ -29,12 +30,14 @@
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheColumnList from '~/components/pages/top/TheColumnList.vue'
+import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
 import { fetchCmsDataColumn, fetchCmsListDataColumn } from '~/lib/cms'
 
 export default {
   components: {
     TheHeroTitle,
-    TheColumnList
+    TheColumnList,
+    TheSubHeader
   },
   head() {
     return {
@@ -80,44 +83,12 @@ export default {
       list: []
     }
   },
-  asyncData({ params }) {
-    const data = fetchCmsDataColumn(params.id)
-    // const list = fetchCmsListDataColumn(3)
-    const promise1 = new Promise(function(resolve, reject) {
-      resolve(data)
-    })
-    // const promise2 = new Promise(function(resolve, reject) {
-    //   resolve(list)
-    // })
-
-    // Promise.resolve().then(function() {
-    //   return new Promise(function(fulfilled, rejected) {
-    //     asyncFunc(function() {
-    //       fulfilled(data)
-    //     })
-    //   }).then(function() {
-    //     return new Promise(function(fulfilled, rejected) {
-    //       asyncFunc(function() {
-    //         fulfilled(list)
-    //       })
-    //     })
-    //   })
-    // })
-    return promise1.then(function(data) {
-      // console.log('promise')
-      // console.log(data)
-      return { data: data.data }
-    })
-    // list: promise2.then(function(list) {
-    //   // console.log('promise')
-    //   console.log('promise2')
-    //   console.log(list.listData)
-    //   return list.listData
-    // })
-    // return {
-    //   promise1,
-    //   promise2
-    // }
+  async asyncData({ params }) {
+    const data = await Promise.all([
+      fetchCmsDataColumn(params.id),
+      fetchCmsListDataColumn(3)
+    ])
+    return { data: data[0].data, list: data[1].listData }
   }
 }
 </script>
@@ -156,14 +127,18 @@ export default {
     font-size: 100%;
   }
   /deep/ h2 {
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px $black;
     margin-bottom: 10px;
+    font-size: 28px;
   }
   /deep/ h3 {
+    padding-left: 10px;
     position: relative;
-    color: black;
+    color: $black;
+    font-size: 22px;
   }
   /deep/ h3::after {
+    margin-left: 7px;
     position: absolute;
     top: 50%;
     left: -5px;
@@ -171,7 +146,7 @@ export default {
     content: '';
     width: 3px;
     height: 1em;
-    background-color: #446689;
+    background-color: $darkblue;
   }
   /deep/ img {
     display: block;
@@ -182,8 +157,8 @@ export default {
     padding: 15px 15px 8px 15px;
     box-sizing: border-box;
     font-style: italic;
-    background: #efefef;
-    color: #555;
+    background: $backwhite;
+    color: $lightbrown;
   }
   /deep/ blockquote:before {
     display: inline-block;
@@ -191,7 +166,7 @@ export default {
     top: 13px;
     left: 15px;
     font-family: FontAwesome;
-    color: #cfcfcf;
+    color: $cream;
     font-size: 28px;
     line-height: 1;
     font-weight: 900;
@@ -206,14 +181,36 @@ export default {
   /deep/ blockquote cite {
     display: block;
     text-align: right;
-    color: #888888;
+    color: $brown;
     font-size: 0.9em;
+  }
+  /deep/ ol li {
+    margin-left: 20px;
   }
 }
 .back {
   margin-top: 30px;
 }
+.back a {
+  border-top: solid 2px $backwhite;
+  padding-top: 10%;
+  display: block;
+  text-align: right;
+}
 .back i {
   margin-right: 5px;
+}
+.back span {
+  margin-left: 20px;
+}
+/deep/ div .btn-area {
+  display: none;
+}
+/deep/ div .column {
+  border-bottom: solid 2px $backwhite;
+}
+div .sub-header-container {
+  margin-top: 0px;
+  margin-left: 0px;
 }
 </style>
