@@ -29,8 +29,7 @@
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheColumnList from '~/components/pages/top/TheColumnList.vue'
-import { fetchCmsDataColumn } from '~/lib/cms'
-import { fetchCmsListDataColumn } from '~/lib/cms'
+import { fetchCmsDataColumn, fetchCmsListDataColumn } from '~/lib/cms'
 
 export default {
   components: {
