@@ -1,7 +1,7 @@
 <template>
   <div class="column-item">
     <div class="columns is-multiline">
-      <div v-for="(item, i) in columns" :key="i" class="column is-one-third">
+      <div v-for="(item, i) in columns" :key="i" :class="[ i === 0 || i ===1 || i === 2 ? 'column is-one-third' : 'column is-one-quarter']" >
         <nuxt-link :to="'/column/' + item.id">
           <div class="column-inner">
             <div class="column-image">
