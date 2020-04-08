@@ -29,7 +29,7 @@
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
-import TheColumnList from '~/components/pages/top/TheColumnList.vue'
+import TheColumnList from '~/components/pages/common/TheColumnList.vue'
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
 import { fetchCmsDataColumn, fetchCmsListDataColumn } from '~/lib/cms'
 
@@ -75,12 +75,6 @@ export default {
           content: 'https://eggsystem.co.jp/column/' + this.data.id
         }
       ]
-    }
-  },
-  data() {
-    return {
-      data: '',
-      list: []
     }
   },
   async asyncData({ params }) {
@@ -206,11 +200,13 @@ export default {
 /deep/ div .btn-area {
   display: none;
 }
-/deep/ div .column {
-  border-bottom: solid 2px $backwhite;
-}
-div .sub-header-container {
+/deep/ div .sub-header-container {
   margin-top: 0px;
   margin-left: 0px;
+}
+@media screen and (max-width: 600px) {
+  .page-content {
+    width: 85%;
+  }
 }
 </style>
