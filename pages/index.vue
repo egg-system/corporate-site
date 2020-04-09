@@ -6,7 +6,7 @@
       <the-column-list :columns="columns" />
       <div class="btn-area">
         <div class="more-btn">
-          <nuxt-link class="member-button" to="/member">詳しくみる　　　<p class="member-arrow">></p>
+          <nuxt-link class="column-button" to="/column">詳しくみる　　　<p class="column-arrow">></p>
           </nuxt-link>
         </div>
       </div>
@@ -21,7 +21,7 @@
     <the-sub-header text="お知らせ" />
     <div class="news-list page-content">
       <p class="back">
-        <nuxt-link to="/column">
+        <nuxt-link to="/news">
           <i class=""/>一覧を見る<span>></span>
         </nuxt-link>
       </p>
@@ -76,12 +76,12 @@ export default {
   padding-bottom: 20px;
   border-bottom: 1px solid $lightgray;
 }
-.member-button {
+.column-button {
   font-size: 16px;
   display: inline-block;
   color: $black;
 }
-.member-arrow {
+.column-arrow {
   display: inline-block;
   width: 17px;
   height: 17px;
