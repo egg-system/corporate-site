@@ -2,6 +2,45 @@
   <div>
     <the-hero-title main-text="最近の活動・コラム" />
     <div class="column-list page-content">
+      <nav class="Tabbed__nav">
+        <ul class="TabList">
+          <li class="TabList__item current-cat"> 
+            <nuxt-link to="/column">
+              <i class=""/>すべて
+            </nuxt-link>
+          </li>
+          <li class="TabList__item current-cat"> 
+            <nuxt-link to="/column">
+              <i class=""/>産地だより
+            </nuxt-link>
+          </li>
+          <li class="TabList__item current-cat"> 
+            <nuxt-link to="/column">
+              <i class=""/>スープのひみつ
+            </nuxt-link>
+          </li>
+          <li class="TabList__item current-cat"> 
+            <nuxt-link to="/column">
+              <i class=""/>お店のひみつ
+            </nuxt-link>
+          </li>
+          <li class="TabList__item current-cat"> 
+            <nuxt-link to="/column">
+              <i class=""/>取り組み
+            </nuxt-link>
+          </li>
+          <li class="TabList__item current-cat"> 
+            <nuxt-link to="/column">
+              <i class=""/>ワークショップ
+            </nuxt-link>
+          </li>
+          <li class="TabList__item current-cat"> 
+            <nuxt-link to="/column">
+              <i class=""/>Soup Friends
+            </nuxt-link>
+          </li>
+        </ul>
+      </nav>
       <the-column-list :columns="listData" />
     </div>
   </div>
@@ -71,5 +110,67 @@ export default {
 .column-list {
   margin-top: 5%;
   margin-bottom: 5%;
+}
+.column-item {
+  padding-top: 2.5rem;
+}
+nav {
+  display: block;
+}
+.TabList {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  overflow-x: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 0;
+  list-style-type: none;
+  font-family: a-otf-ryumin-pr6n, Yu Mincho, YuMincho, serif;
+  font-size: 1rem;
+}
+.TabList li {
+  background-image: linear-gradient(to top, #ccc 1px, transparent 1px);
+  background-repeat: no-repeat;
+}
+.TabList li {
+  outline: 0;
+  position: relative;
+  z-index: 0;
+  display: block;
+  padding: 0.5rem;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+  color: currentColor;
+  text-decoration: none;
+  white-space: nowrap;
+  outline-offset: -0.7rem;
+}
+.TabList li a:after {
+  content: '';
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0;
+  left: 0.5rem;
+  height: 2px;
+  background-color: #999;
+  opacity: 0;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.TabList:after {
+  content: '';
+  flex: 1 1 auto;
+  height: 1px;
+  background-image: linear-gradient(to top, #ccc 1px, transparent 1px);
+  background-repeat: no-repeat;
+}
+ul {
+  list-style: none;
+}
+@media (min-width: 48em) {
+  .TabList li {
+    padding-left: 2.5rem;
+  }
 }
 </style>
