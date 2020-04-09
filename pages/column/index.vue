@@ -2,39 +2,39 @@
   <div>
     <the-hero-title main-text="最近の活動・コラム" />
     <div class="column-list page-content">
-      <nav class="Tabbed__nav">
-        <ul class="TabList">
-          <li class="TabList__item current-cat"> 
+      <nav class="tabbed-nav">
+        <ul class="tab-list">
+          <li class="tab-list-item current-cat"> 
             <nuxt-link to="/column">
               <i class=""/>すべて
             </nuxt-link>
           </li>
-          <li class="TabList__item current-cat"> 
+          <li class="tab-list-item current-cat"> 
             <nuxt-link to="/column">
               <i class=""/>産地だより
             </nuxt-link>
           </li>
-          <li class="TabList__item current-cat"> 
+          <li class="tab-list-item current-cat"> 
             <nuxt-link to="/column">
               <i class=""/>スープのひみつ
             </nuxt-link>
           </li>
-          <li class="TabList__item current-cat"> 
+          <li class="tab-list-item current-cat"> 
             <nuxt-link to="/column">
               <i class=""/>お店のひみつ
             </nuxt-link>
           </li>
-          <li class="TabList__item current-cat"> 
+          <li class="tab-list-item current-cat"> 
             <nuxt-link to="/column">
               <i class=""/>取り組み
             </nuxt-link>
           </li>
-          <li class="TabList__item current-cat"> 
+          <li class="tab-list-item current-cat"> 
             <nuxt-link to="/column">
               <i class=""/>ワークショップ
             </nuxt-link>
           </li>
-          <li class="TabList__item current-cat"> 
+          <li class="tab-list-item current-cat"> 
             <nuxt-link to="/column">
               <i class=""/>Soup Friends
             </nuxt-link>
@@ -117,7 +117,7 @@ export default {
 nav {
   display: block;
 }
-.TabList {
+.tab-list {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-end;
@@ -127,14 +127,13 @@ nav {
   margin: 0;
   padding: 0.5rem 0;
   list-style-type: none;
-  font-family: a-otf-ryumin-pr6n, Yu Mincho, YuMincho, serif;
   font-size: 1rem;
 }
-.TabList li {
+.tab-list li {
   background-image: linear-gradient(to top, #ccc 1px, transparent 1px);
   background-repeat: no-repeat;
 }
-.TabList li {
+.tab-list li {
   outline: 0;
   position: relative;
   z-index: 0;
@@ -147,18 +146,18 @@ nav {
   white-space: nowrap;
   outline-offset: -0.7rem;
 }
-.TabList li a:after {
+.tab-list li a:after {
   content: '';
   position: absolute;
   right: 0.5rem;
   bottom: 0;
   left: 0.5rem;
   height: 2px;
-  background-color: #999;
+  background-color: $darkbrown;
   opacity: 0;
   transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.TabList:after {
+.tab-list:after {
   content: '';
   flex: 1 1 auto;
   height: 1px;
@@ -169,7 +168,7 @@ ul {
   list-style: none;
 }
 @media (min-width: 48em) {
-  .TabList li {
+  .tab-list li {
     padding-left: 2.5rem;
   }
 }
