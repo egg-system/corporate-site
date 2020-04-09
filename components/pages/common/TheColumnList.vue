@@ -54,6 +54,9 @@ export default {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+.is-one-quarter img {
+  max-height: 160px;
+}
 @media screen and (max-width: 600px) {
   .column-title {
     height: auto;
