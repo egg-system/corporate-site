@@ -92,8 +92,22 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/google-analytics',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/sitemap'
   ],
+
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://eggsystem.co.jp/',
+    generate: false,
+    exclude: [
+      '/404',
+      '/contact/complete'
+    ],
+    async routes() {
+      return routing()
+    }
+  },
 
   styleResources: {
     scss: ['~/assets/common.scss']
