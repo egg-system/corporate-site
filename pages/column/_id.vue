@@ -29,7 +29,7 @@
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
-import TheColumnList from '~/components/pages/top/TheColumnList.vue'
+import TheColumnList from '~/components/pages/common/TheColumnList.vue'
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
 import { fetchCmsDataColumn, fetchCmsListDataColumn } from '~/lib/cms'
 
@@ -44,43 +44,42 @@ export default {
       title: this.data.title,
       meta: [
         {
-          hid: 'column-description',
+          hid: 'description',
           name: 'description',
           content: '株式会社エッグシステム コラム'
         },
         {
-          hid: 'column-keywords',
+          hid: 'keywords',
           name: 'keywords',
           content: 'コラム, eggsystem, 株式会社エッグシステム'
         },
         {
-          hid: 'column-twitter:card',
+          hid: 'twitter:card',
           property: 'twitter:card',
           content: 'summary'
         },
-        { hid: 'column-og:type', property: 'og:type', content: 'article' },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
         {
-          hid: 'column-og:title',
+          hid: 'og:title',
           property: 'og:title',
           content: this.data.title
         },
         {
-          hid: 'column-og:description',
+          hid: 'og:description',
           property: 'og:description',
           content: '株式会社エッグシステム コラム'
         },
         {
-          hid: 'column-og:url',
+          hid: 'og:url',
           property: 'og:url',
           content: 'https://eggsystem.co.jp/column/' + this.data.id
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.data.img.url
         }
       ]
-    }
-  },
-  data() {
-    return {
-      data: '',
-      list: []
     }
   },
   async asyncData({ params }) {
@@ -206,11 +205,13 @@ export default {
 /deep/ div .btn-area {
   display: none;
 }
-/deep/ div .column {
-  border-bottom: solid 2px $backwhite;
-}
-div .sub-header-container {
+/deep/ div .sub-header-container {
   margin-top: 0px;
   margin-left: 0px;
+}
+@media screen and (max-width: 600px) {
+  .page-content {
+    width: 85%;
+  }
 }
 </style>
