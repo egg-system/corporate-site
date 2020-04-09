@@ -40,11 +40,10 @@
           ご依頼について
         </nuxt-link>
 
-        <!--
         <nuxt-link class="navbar-item" to="/column">
           最近の活動・コラム
         </nuxt-link>
-      -->
+
         <nuxt-link class="navbar-item" to="/recruit">
           採用
         </nuxt-link>

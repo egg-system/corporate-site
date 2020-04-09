@@ -53,3 +53,117 @@
   to = "/privacy"
   status = 301
 
+[[redirects]]
+  from = "/2017/07/16/unicorn/"
+  to = "/column/20170716-unicorn"
+  status = 301
+
+[[redirects]]
+  from = "/2018/05/03/about-rpa/"
+  to = "/column/20180503-about-rpa"
+  status = 301
+
+[[redirects]]
+  from = "/2018/06/12/why-company-exist/"
+  to = "/column/20180612-company"
+  status = 301
+
+[[redirects]]
+  from = "/2018/06/19/ec-security/"
+  to = "/column/20180619-ec-security"
+  status = 301
+
+[[redirects]]
+  from = "/2018/06/26/creditcard-security/"
+  to = "/column/20180626-creditcard-security"
+  status = 301
+
+[[redirects]]
+  from = "/2018/07/09/it-cost-reduction/"
+  to = "/column/20180709-it-cost-reduction"
+  status = 301
+
+[[redirects]]
+  from = "/2018/07/11/web-ssl/"
+  to = "/column/20180711-ssl"
+  status = 301
+
+[[redirects]]
+  from = "/2018/08/27/project-success/"
+  to = "/column/20180827-project-success"
+  status = 301
+
+[[redirects]]
+  from = "/2018/12/04/symposium/"
+  to = "/column/20181204-symposium"
+  status = 301
+
+[[redirects]]
+  from = "/2019/01/15/marketing-diary1/"
+  to = "/column/20190115-marketing-diary1"
+  status = 301
+
+[[redirects]]
+  from = "/2019/02/10/marketing-diary2/"
+  to = "/column/20190210-marketing-diary2"
+  status = 301
+
+[[redirects]]
+  from = "/2019/03/08/presentation/"
+  to = "/column/20190308-presentation"
+  status = 301
+
+[[redirects]]
+  from = "/2019/08/18/system-develop/"
+  to = "/column/20190818-system-develop"
+  status = 301
+
+[[redirects]]
+  from = "/2019/10/28/work-style-symposium/"
+  to = "/column/20191028-work-style-symposium"
+  status = 301
+
+[[redirects]]
+  from = "/2019/11/03/digital-transformation-1/"
+  to = "/column/20191103-dx"
+  status = 301
+
+[[redirects]]
+  from = "/news/h29-it-hojo/"
+  to = "/news/20180511-h29-it-hojo"
+  status = 301
+
+[[redirects]]
+  from = "/news/h29-it-hojo-decision1/"
+  to = "/news/20180614-h29-it-hojo-decision1"
+  status = 301
+
+[[redirects]]
+  from = "/news/h29-it-hojo-decision2/"
+  to = "/news/20180818-h29-it-hojo-decision2"
+  status = 301
+
+[[redirects]]
+  from = "/news/h29-it-hojo-decision3-1"
+  to = "/news/20181009-h29-it-hojo-decision3-1"
+  status = 301
+
+[[redirects]]
+  from = "/news/2019-newyear/"
+  to = "/news/20190107-newyear"
+  status = 301
+
+[[redirects]]
+  from = "/news/201904magazine/"
+  to = "/news/20190403-magazine"
+  status = 301
+
+[[redirects]]
+  from = "/news/h30-it-hojo/"
+  to = "/news/20190426-h30-it-hojo"
+  status = 301
+
+[[redirects]]
+  from = "/news/201906-officetransfer/"
+  to = "/news/20190603-officetransfer"
+  status = 301

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <the-hero-title main-text="コラム" />
+    <the-hero-title main-text="最近の活動・コラム" />
     <div class="column-list page-content">
       <the-column-list :columns="listData" />
     </div>
@@ -19,7 +19,7 @@ export default {
   },
   head() {
     return {
-      title: 'コラム',
+      title: '最近の活動・コラム',
       meta: [
         {
           hid: 'description',
@@ -29,7 +29,7 @@ export default {
         {
           hid: 'keywords',
           name: 'keywords',
-          content: 'コラム, eggsystem, 株式会社エッグシステム'
+          content: '最近の活動・コラム, eggsystem, 株式会社エッグシステム'
         },
         {
           hid: 'twitter:card',
@@ -40,7 +40,7 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: 'コラム'
+          content: '最近の活動・コラム'
         },
         {
           hid: 'og:description',
