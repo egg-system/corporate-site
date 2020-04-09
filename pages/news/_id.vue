@@ -114,12 +114,23 @@ export default {
     display: block;
     margin: 0 auto;
   }
+  /deep/ div .sub-header-container {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
 }
 .back {
   margin-top: 30px;
 }
+.back a {
+  display: block;
+  text-align: right;
+}
 .back i {
   margin-right: 5px;
+}
+.back span {
+  margin-left: 20px;
 }
 @media screen and (max-width: 600px) {
   .page-content {
