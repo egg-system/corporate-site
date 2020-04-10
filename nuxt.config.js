@@ -12,7 +12,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'eggsystem',
+    title: '株式会社エッグシステム',
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns#'
     },
@@ -23,7 +23,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          '中小企業やサロン・整体オーナー向けに、事業成長を目的としたシステム企画から開発・運用まで行います。【エッグシステム】では貴方の企業・店舗の魅力を「カタチ」にします。'
+          '中小企業向けに、事業成長を目的としたシステム企画から開発・運用まで行います。株式会社エッグシステムのコンサルティングエンジニア集団「x-faCE（for all Consulting Engineer）」では《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。'
       },
       {
         hid: 'twitter:card',
@@ -42,7 +42,7 @@ export default {
         hid: 'og:description',
         property: 'og:description',
         content:
-          '中小企業やサロン・整体オーナー向けに、事業成長を目的としたシステム企画から開発・運用まで行います。【エッグシステム】では貴方の企業・店舗の魅力を「カタチ」にします。'
+          '中小企業向けに、事業成長を目的としたシステム企画から開発・運用まで行います。株式会社エッグシステムのコンサルティングエンジニア集団「x-faCE（for all Consulting Engineer）」では《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。'
       },
       {
         hid: 'og:image',
@@ -100,10 +100,7 @@ export default {
     path: '/sitemap.xml',
     hostname: 'https://eggsystem.co.jp/',
     generate: false,
-    exclude: [
-      '/404',
-      '/contact/complete'
-    ],
+    exclude: ['/404', '/contact/complete'],
     async routes() {
       return routing()
     }
