@@ -29,6 +29,7 @@
         </div>
       </div>
       <the-consulting id="the-consulting" />
+      <the-contact />
       <the-development id="the-development" />
       <the-contact />
     </div>
@@ -41,7 +42,7 @@ import TheConsulting from '~/components/pages/service/TheConsulting.vue'
 import TheDevelopment from '~/components/pages/service/TheDevelopment.vue'
 import consultingImage from '~/assets/service/img/service-consult01.JPG'
 import systemImage from '~/assets/service/img/service-system01.JPG'
-import TheContact from '~/components/pages/service/TheContact.vue'
+import TheContact from '~/components/pages/top/TheContact.vue'
 
 export default {
   components: {
