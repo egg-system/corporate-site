@@ -1,7 +1,7 @@
 <template>
   <div>
-    <the-hero-title main-text="ご依頼について" />
     <div class="content  page-content">
+      <the-hero-title main-text="ご依頼について" />
       <div class="message lightgray-underline">
         <p>ご要件やご予算が決まっていない段階でのご相談でも問題ありません。</p>
         <br>
