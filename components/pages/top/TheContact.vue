@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div class="contact lightgray-underline">
     <div class="contact-content">
       <p>「こんな相談してよいのか分からない」</p>
       <p>「まずは話だけ聞いてみたい」</p>
@@ -53,6 +53,9 @@
 }
 .btn-area p span {
   margin-left: 15px;
+}
+.lightgray-underline {
+  margin-bottom: 3rem;
 }
 @media screen and (max-width: 600px) {
   .contact {

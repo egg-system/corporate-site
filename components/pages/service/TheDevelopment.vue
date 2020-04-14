@@ -85,7 +85,7 @@
         </div>
       </div>
     </div>
-    <the-case :cases="cases" class="cases"/>
+    <the-case :cases="cases" class="cases lightgray-underline"/>
   </div>
 </template>
 
@@ -180,6 +180,9 @@ div {
   height: 1px;
   background: $lightgray;
   margin-top: 0.5rem;
+}
+.lightgray-underline {
+  margin-bottom: 3rem;
 }
 @media screen and (min-width: 769px) {
   .left::before {
