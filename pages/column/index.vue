@@ -1,7 +1,7 @@
 <template>
   <div>
-    <the-hero-title main-text="最近の活動・コラム" />
     <div class="column-list page-content">
+      <the-hero-title main-text="最近の活動・コラム" />
       <the-column-list :columns="listData" />
     </div>
   </div>
@@ -68,8 +68,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.column-list {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
 </style>

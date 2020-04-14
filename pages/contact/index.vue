@@ -1,7 +1,7 @@
 <template>
   <div>
-    <the-hero-title main-text="お問い合わせ" />
     <div class="content page-content">
+      <the-hero-title main-text="お問い合わせ" />
       <the-form />
     </div>
   </div>

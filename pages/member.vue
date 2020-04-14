@@ -1,8 +1,7 @@
 <template>
   <div>
-    <the-hero-title main-text="メンバー紹介" />
-
     <div class="page-content">
+      <the-hero-title main-text="メンバー紹介" />
       <the-member :members="members" class="member"/>
     </div>
   </div>

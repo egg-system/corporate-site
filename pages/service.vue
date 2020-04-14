@@ -1,7 +1,7 @@
 <template>
   <div>
-    <the-hero-title main-text="サービス紹介" />
     <div class="content page-content">
+      <the-hero-title main-text="サービス紹介" />
       <div class="columns">
         <div class="consulting column is-half">
           <figure class="image">
