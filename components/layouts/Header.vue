@@ -48,7 +48,7 @@
           採用
         </nuxt-link>
 
-        <nuxt-link class="navbar-item" to="contact">
+        <nuxt-link class="navbar-item" to="/contact">
           お問い合わせ
         </nuxt-link>
 
