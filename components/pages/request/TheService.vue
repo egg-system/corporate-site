@@ -29,7 +29,8 @@ figure {
 }
 .columns {
   position: relative;
-  margin-top: 2rem;
+  margin: 0rem;
+  margin-top: 1rem;
   padding-bottom: 3rem;
 }
 .column {

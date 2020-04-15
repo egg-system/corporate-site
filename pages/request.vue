@@ -15,9 +15,17 @@
       <the-flow class="lightgray-underline" />
       <the-sub-header :is-line="true" text="当社サービスについて" class="subheader" />
       <the-service :services="services" class="service lightgray-underline"/>
-      <the-contact />
-      <!-- <the-sub-header :is-line="true" text="最近の活動・コラム" class="subheader" />
-      <the-column /> -->
+      <the-contact class="lightgray-underline"/>
+      <div class="column-header blank">
+        <the-sub-header :is-line="true" text="最近の活動・コラム" class="subheader"/>
+        <div class="link">
+          <nuxt-link class="column-button" to="/column">
+            <div class="left">一覧を見る</div>
+            <div class="right">></div>
+          </nuxt-link>
+        </div>
+      </div>
+      <the-column-list :columns="columns" class="end"/>
     </div>
   </div>
 </template>
@@ -28,7 +36,8 @@ import TheSubHeader from '~/components/pages/request/TheSubHeader.vue'
 import TheFlow from '~/components/pages/request/TheFlow.vue'
 import TheService from '~/components/pages/request/TheService.vue'
 import TheContact from '~/components/pages/top/TheContact.vue'
-import TheColumn from '~/components/pages/request/TheColumn.vue'
+import TheColumnList from '~/components/pages/common/TheColumnList.vue'
+import { fetchCmsListDataColumn, fetchCmsListDataNews } from '~/lib/cms'
 import services from '~/assets/request/js/services.js'
 
 export default {
@@ -38,7 +47,14 @@ export default {
     TheFlow,
     TheService,
     TheContact,
-    TheColumn
+    TheColumnList
+  },
+  async asyncData() {
+    const data = await Promise.all([
+      fetchCmsListDataColumn(3),
+      fetchCmsListDataNews(3)
+    ])
+    return { columns: data[0].listData, news: data[1].listData }
   },
   data: () => ({
     services: services.services
@@ -101,11 +117,36 @@ export default {
   background-color: inherit;
   padding-bottom: 4rem;
 }
+.contact {
+  width: 100%;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
 .subheader {
   margin-top: 1rem;
 }
 .link {
   text-align: right;
+}
+.column-header {
+  display: flex;
+  .link {
+    margin: auto;
+    margin-right: 0;
+    margin-bottom: 0;
+    a {
+      display: flex;
+      width: 8rem;
+      margin-right: 2rem;
+      color: inherit;
+      .left {
+        margin-right: auto;
+      }
+      .right {
+        margin-left: auto;
+      }
+    }
+  }
 }
 /* スマホの場合は幅を広くする */
 @media screen and (max-width: 400px) {
@@ -113,9 +154,16 @@ export default {
     width: 90%;
     margin: 0 auto;
   }
+  .column-header {
+    display: block;
+    .link a {
+      margin-left: auto;
+      margin-right: 1rem;
+    }
+  }
 }
 .blank {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 .end {
