@@ -9,36 +9,43 @@
     </div>
     <the-about />
     <div class="content page-content">
-      <the-study />
-      <!-- <the-sub-header class="blank" text="最近の活動・コラム" />
-      <the-column class="end" /> -->
+      <the-study class="padding-bottom-1rem lightgray-underline" />
+      <the-sub-header class="blank" text="最近の活動・コラム" />
+      <the-column-list :columns="columns" class="end"/>
     </div>
   </div>
 </template>
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
-// import TheSubHeader from '~/components/pages/common/TheSubHeader.vue'
+import TheSubHeader from '~/components/pages/common/TheSubHeader.vue'
 import TheContact from '~/components/pages/common/TheContact.vue'
 import TheMainImage from '~/components/pages/recruit/TheMainImage.vue'
 import TheMainMessage from '~/components/pages/recruit/TheMainMessage.vue'
 import TheAbout from '~/components/pages/top/TheAbout.vue'
 import TheStudy from '~/components/pages/recruit/TheStudy.vue'
 import TheEntry from '~/components/pages/recruit/TheEntry.vue'
-// import TheColumn from '~/components/pages/about/TheColumn.vue'
-// import recruitTop from 'recruit-top-ogp.jpg'
+import TheColumnList from '~/components/pages/common/TheColumnList.vue'
+import { fetchCmsListDataColumn, fetchCmsListDataNews } from '~/lib/cms'
 
 export default {
   components: {
     TheHeroTitle,
-    // TheSubHeader,
+    TheSubHeader,
     TheContact,
     TheMainImage,
     TheMainMessage,
     TheAbout,
     TheStudy,
-    TheEntry
-    // TheColumn
+    TheEntry,
+    TheColumnList
+  },
+  async asyncData() {
+    const data = await Promise.all([
+      fetchCmsListDataColumn(3),
+      fetchCmsListDataNews(3)
+    ])
+    return { columns: data[0].listData, news: data[1].listData }
   },
   head() {
     return {
@@ -102,9 +109,12 @@ export default {
 .end {
   margin: 0 0 50px;
 }
+.padding-bottom-1rem {
+  padding-bottom: 1rem;
+}
 @media screen and (max-width: 600px) {
   .end {
-    margin: 0;
+    margin-bottom: 2rem;
     padding-bottom: 0;
   }
 }

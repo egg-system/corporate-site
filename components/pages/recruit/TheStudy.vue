@@ -92,6 +92,9 @@ export default {
   .study-column {
     width: 100%;
     margin: 15px auto;
+    p {
+      font-size: 14px;
+    }
   }
 }
 </style>
