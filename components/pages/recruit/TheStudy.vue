@@ -15,7 +15,7 @@
         <div class="study-button">
           <a href="https://connpass.com/user/eggsystem/" target="_blank">
             <div class="study-column">
-              <p>connpas(外部サイト)へ<span>></span></p>
+              <p>connpass(外部サイト)へ<span>></span></p>
             </div>
           </a>
           <a href="https://techplay.jp/community/egg" target="_blank">

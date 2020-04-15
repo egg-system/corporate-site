@@ -10,7 +10,15 @@
     <the-about />
     <div class="content page-content">
       <the-study class="padding-bottom-1rem lightgray-underline" />
-      <the-sub-header class="blank" text="最近の活動・コラム" />
+      <div class="column-header blank">
+        <the-sub-header text="最近の活動・コラム" />
+        <div class="link">
+          <nuxt-link class="column-button" to="/column">
+            <div class="left">一覧を見る</div>
+            <div class="right">></div>
+          </nuxt-link>
+        </div>
+      </div>
       <the-column-list :columns="columns" class="end"/>
     </div>
   </div>
@@ -104,7 +112,7 @@ export default {
 }
 .blank {
   margin-top: 70px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .end {
   margin: 0 0 50px;
@@ -112,10 +120,37 @@ export default {
 .padding-bottom-1rem {
   padding-bottom: 1rem;
 }
+.column-header {
+  display: flex;
+  .link {
+    margin: auto;
+    margin-right: 0;
+    margin-bottom: 0;
+    a {
+      display: flex;
+      width: 8rem;
+      margin-right: 2rem;
+      color: inherit;
+      .left {
+        margin-right: auto;
+      }
+      .right {
+        margin-left: auto;
+      }
+    }
+  }
+}
 @media screen and (max-width: 600px) {
   .end {
     margin-bottom: 2rem;
     padding-bottom: 0;
+  }
+  .column-header {
+    display: block;
+    .link a {
+      margin-left: auto;
+      margin-right: 1rem;
+    }
   }
 }
 </style>
