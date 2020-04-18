@@ -1,15 +1,18 @@
 <template>
   <div class="bg-image">
-    <img :src="img">
+    <img :src="imgPC" class="pc">
+    <img :src="imgSP" class="sp">
   </div>
 </template>
 
 <script>
-import heroImage from '~/assets/top/top.jpeg'
+import heroImage4PC from '~/assets/top/top_pc.jpg'
+import heroImage4SP from '~/assets/top/top_sp.jpg'
 export default {
   data() {
     return {
-      img: heroImage
+      imgPC: heroImage4PC,
+      imgSP: heroImage4SP
     }
   }
 }
@@ -44,6 +47,9 @@ export default {
     padding-top: 50px;
     padding-right: 70px;
     text-align: left;
+  }
+  .pc {
+    display: none;
   }
   .sp {
     display: block;
