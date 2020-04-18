@@ -29,8 +29,10 @@
         </div>
       </div>
       <the-consulting id="the-consulting" />
-      <the-contact />
-      <the-development id="the-development" />
+      <div class="contact-area lightgray-underline">
+        <the-contact />
+      </div>
+      <the-development id="the-development" />    
       <the-contact />
     </div>
   </div>

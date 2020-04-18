@@ -1,5 +1,5 @@
 <template>
-  <div class="contact lightgray-underline">
+  <div class="contact">
     <div class="contact-content">
       <p>「こんな相談してよいのか分からない」</p>
       <p>「まずは話だけ聞いてみたい」</p>
