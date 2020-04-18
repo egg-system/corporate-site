@@ -54,12 +54,15 @@
 .btn-area p span {
   margin-left: 15px;
 }
+.lightgray-underline {
+  margin-bottom: 3rem;
+}
 @media screen and (max-width: 600px) {
   .contact {
     width: 90%;
   }
   .contact-content p {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     padding: 10px 0;
   }
@@ -68,7 +71,7 @@
     margin: 30px auto;
   }
   .btn-area p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .btn-area p span {
     margin-left: 10px;
