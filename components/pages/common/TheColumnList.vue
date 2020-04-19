@@ -15,9 +15,11 @@
               {{ item.display_at | dayjs }}
               <br>
               <p class="column-store">{{ item.store }}</p>
-              <span class="tag is-primary">
-                {{ item.label.label }}
-              </span>
+              <nuxt-link :to="'/column/'">
+                <span :class="'tag ' + item.label.color_class ">
+                  {{ item.label.label }}
+                </span>
+              </nuxt-link>
             </div>
           </div>
         </nuxt-link>
