@@ -47,7 +47,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://eggsystem.co.jp/ogp/top00.jpg'
+        content: 'https://eggsystem.co.jp/ogp/top_pc.jpg'
       }
     ],
     link: [
