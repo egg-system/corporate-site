@@ -1,7 +1,7 @@
 <template>
   <div>
-    <the-hero-title main-text="ジブンゴトで働こう" />
     <div class="content page-content">
+      <the-hero-title main-text="ジブンゴトで働こう" />
       <the-main-image />
       <the-main-message />
       <the-entry />

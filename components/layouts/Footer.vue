@@ -20,6 +20,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.footer p {
+  color: $white;
+}
 .privacy {
   font-size: 10px;
 }
