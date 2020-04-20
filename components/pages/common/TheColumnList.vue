@@ -1,11 +1,11 @@
 <template>
   <div class="column-item">
     <div class="columns is-multiline">
-      <div v-for="(item, i) in columns" :key="i" :class="[ i === 0 || i ===1 || i === 2 ? 'column is-one-third' : 'column is-one-quarter']" >
+      <div v-for="(item, i) in columns" :key="i" :class="[ i <= 2 ? 'column is-one-third' : 'column is-one-quarter']" >
         <nuxt-link :to="'/column/' + item.id">
           <div class="column-inner">
             <div class="column-image">
-              <figure class="image">
+              <figure class="image is-4by3">
                 <img :src="item.img.url" :alt="item.title">
               </figure>
             </div>
@@ -53,9 +53,6 @@ export default {
   color: $darksmoke;
   margin-top: 10px;
   margin-bottom: 20px;
-}
-.is-one-quarter img {
-  max-height: 160px;
 }
 @media screen and (max-width: 600px) {
   .column-title {
