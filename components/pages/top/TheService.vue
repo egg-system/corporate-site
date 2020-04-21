@@ -1,16 +1,36 @@
 <template>
   <div class="service">
     <div class="service-columns">
-      <nuxt-link to="/service">
-        <div class="service-column">
-          <p>x-faCEのサービスへ<span>></span></p>
+      <div class="btn-area">
+        <div class="Heading__cta">
+          <nuxt-link class="ReadMore" to="/service">
+            <span class="ReadMore__label">x-faCEのサービスへ</span>
+            <svg class="Icon -arrow-right-rounded" aria-hidden="true" focusable="false">
+              <use xlink:href="#icon-arrow-right-rounded">
+                <svg id="icon-arrow-right-rounded" viewBox="0 0 18 18">
+                  <path d="M0 9c0-4.967 4.033-9 9-9s9 4.033 9 9-4.033 9-9 9-9-4.033-9-9z">*</path>
+                  <path d="M8.017 6l3.554 3.193-3.554 3.193" vector-effect="non-scaling-stroke">*</path>
+                </svg>
+              </use>
+            </svg>
+          </nuxt-link>
         </div>
-      </nuxt-link>
-      <nuxt-link to="/request">
-        <div class="service-column">
-          <p>ご依頼の流れ<span>></span></p>
+      </div>
+      <div class="btn-area">
+        <div class="Heading__cta">
+          <nuxt-link class="ReadMore" to="/request">
+            <span class="ReadMore__label">ご依頼の流れ</span>
+            <svg class="Icon -arrow-right-rounded" aria-hidden="true" focusable="false">
+              <use xlink:href="#icon-arrow-right-rounded">
+                <svg id="icon-arrow-right-rounded" viewBox="0 0 18 18">
+                  <path d="M0 9c0-4.967 4.033-9 9-9s9 4.033 9 9-4.033 9-9 9-9-4.033-9-9z">*</path>
+                  <path d="M8.017 6l3.554 3.193-3.554 3.193" vector-effect="non-scaling-stroke">*</path>
+                </svg>
+              </use>
+            </svg>
+          </nuxt-link>
         </div>
-      </nuxt-link>
+      </div>
     </div>
   </div>
 </template>
@@ -29,36 +49,53 @@
 .service-columns {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.service-columns a {
+.btn-area {
   width: 40%;
 }
-.service-column {
-  padding: 0;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 15px;
-  font-weight: bold;
-  background: $darkblack;
-  border-radius: 4px;
+.Heading__cta {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $lightgray;
+  text-align: right;
 }
-.service-column p {
-  color: $lightgray;
-  font-size: 18px;
+.ReadMore > * {
+  vertical-align: middle;
 }
-.service-column p span {
-  margin-left: 15px;
+.ReadMore {
+  color: inherit;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+.ReadMore__label {
+  margin-right: 5px;
+  font-size: 14px;
+}
+.Icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: inherit;
+  stroke: transparent;
+  fill: currentColor;
+}
+.Icon.-arrow-right-rounded {
+  stroke: #fff;
 }
 @media screen and (max-width: 600px) {
   .service {
     width: 90%;
   }
+}
+@media screen and (max-width: 769px) {
   .service-columns {
     display: block;
   }
-  .service-column {
+  .btn-area {
     width: 100%;
     margin: 50px auto;
   }

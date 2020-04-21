@@ -14,8 +14,17 @@
       </div>
     </slick-slide>
     <div class="btn-area">
-      <div class="more-btn">
-        <nuxt-link class="member-button" to="/member">詳しくみる　　　<p class="member-arrow">></p>
+      <div class="Heading__cta">
+        <nuxt-link class="ReadMore" to="/member">
+          <span class="ReadMore__label">詳しくみる</span>
+          <svg class="Icon -arrow-right-rounded" aria-hidden="true" focusable="false">
+            <use xlink:href="#icon-arrow-right-rounded">
+              <svg id="icon-arrow-right-rounded" viewBox="0 0 18 18">
+                <path d="M0 9c0-4.967 4.033-9 9-9s9 4.033 9 9-4.033 9-9 9-9-4.033-9-9z">*</path>
+                <path d="M8.017 6l3.554 3.193-3.554 3.193" vector-effect="non-scaling-stroke">*</path>
+              </svg>
+            </use>
+          </svg>
         </nuxt-link>
       </div>
     </div>
@@ -47,6 +56,13 @@ export default {
         responsive: [
           {
             breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 769,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2
@@ -108,32 +124,39 @@ export default {
   text-align: center;
 }
 .btn-area {
-  text-align: right;
-  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
-.more-btn {
-  width: 50%;
-  margin-left: 50%;
-  padding-top: 40px;
-  padding-bottom: 20px;
+.Heading__cta {
+  width: 45%;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid $lightgray;
+  text-align: right;
 }
-.member-button {
-  font-size: 16px;
-  display: inline-block;
-  color: $black;
+.ReadMore > * {
+  vertical-align: middle;
 }
-.member-arrow {
+.ReadMore {
+  color: inherit;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.ReadMore__label {
+  margin-right: 5px;
+  font-size: 14px;
+}
+.Icon {
   display: inline-block;
-  width: 17px;
-  height: 17px;
-  font-size: 12px;
-  background: $black;
-  border-radius: 50%;
-  color: $white;
-  text-align: center;
-  line-height: 17px;
-  vertical-align: 2px;
+  width: 1em;
+  height: 1em;
+  line-height: inherit;
+  stroke: transparent;
+  fill: currentColor;
+}
+.Icon.-arrow-right-rounded {
+  stroke: #fff;
 }
 @media screen and (max-width: 600px) {
   .member {
@@ -157,6 +180,11 @@ export default {
   .more-btn {
     padding-top: 20px;
     padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .Heading__cta {
+    width: 100%;
   }
 }
 </style>

@@ -8,14 +8,22 @@
       <div class="column first is-7">
         <p class="about-column-title">わたしたちについて</p>
         <p class="about-column-content">
-          株式会社エッグシステムのコンサルティングエンジニア集団<br>「x-faCE（for all Consulting Engineer）」では、 <br>《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》<br>の実現のために、ITシステムを活用します。
+          株式会社エッグシステムのコンサルティングエンジニア集団<br class="sp">「x-faCE（for all Consulting Engineer）」では、 <br class="sp">《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》<br class="sp">の実現のために、ITシステムを活用します。
         </p>
-        <div class="about-btn-area">
-          <nuxt-link to="/about">
-            <div class="btn-area">
-              <p>詳しくみる<span>></span></p>
-            </div>
-          </nuxt-link>
+        <div class="btn-area">
+          <div class="Heading__cta">
+            <nuxt-link class="ReadMore" to="/about">
+              <span class="ReadMore__label">詳しくみる</span>
+              <svg class="Icon -arrow-right-rounded" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-arrow-right-rounded">
+                  <svg id="icon-arrow-right-rounded" viewBox="0 0 18 18">
+                    <path d="M0 9c0-4.967 4.033-9 9-9s9 4.033 9 9-4.033 9-9 9-9-4.033-9-9z">*</path>
+                    <path d="M8.017 6l3.554 3.193-3.554 3.193" vector-effect="non-scaling-stroke">*</path>
+                  </svg>
+                </use>
+              </svg>
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </div>
@@ -51,7 +59,10 @@ export default {
 .columns {
   margin: auto;
   position: relative;
-  width: 90%;
+  width: 80%;
+}
+.column {
+  padding: 0;
 }
 .reverse {
   flex-direction: row-reverse;
@@ -68,46 +79,54 @@ export default {
   margin-top: 35px;
   line-height: 32px;
 }
-.about-btn-area {
-  width: 40%;
-  min-width: 15rem;
-  margin-top: 30px;
-  float: right;
-}
 .btn-area {
-  padding: 0;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 15px;
-  font-weight: bold;
-  background: $darkblack;
-  border-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
 }
-.btn-area p {
-  color: $lightgray;
-  font-size: 18px;
+.Heading__cta {
+  width: 45%;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $lightgray;
+  text-align: right;
 }
-.btn-area p span {
-  margin-left: 15px;
+.ReadMore > * {
+  vertical-align: middle;
 }
-.column-arrow {
+.ReadMore {
+  color: inherit;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.ReadMore__label {
+  margin-right: 5px;
+  font-size: 14px;
+}
+.Icon {
   display: inline-block;
-  width: 17px;
-  height: 17px;
-  font-size: 12px;
-  background: $black;
-  border-radius: 50%;
-  color: $white;
-  text-align: center;
-  line-height: 17px;
-  vertical-align: 2px;
+  width: 1em;
+  height: 1em;
+  line-height: inherit;
+  stroke: transparent;
+  fill: currentColor;
+}
+.Icon.-arrow-right-rounded {
+  stroke: #fff;
 }
 .about-header-sp {
   display: none;
 }
 .about-columns-sp {
   display: none;
+}
+.is-7 {
+  padding-right: 60px;
+}
+@media screen and (max-width: 600px) {
+  .columns {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 768px) {
   .about {
@@ -125,10 +144,14 @@ export default {
     font-size: 14px;
     margin-top: 10px;
   }
-  .about-btn-area {
+  .Heading__cta {
     width: 100%;
-    float: none;
-    margin-top: 20px;
+  }
+  .is-7 {
+    padding-right: 0;
+  }
+  .sp {
+    display: none;
   }
 }
 </style>
