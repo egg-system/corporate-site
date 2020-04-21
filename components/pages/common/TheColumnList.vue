@@ -15,7 +15,7 @@
               {{ item.display_at | dayjs }}
               <br>
               <p class="column-store">{{ item.store }}</p>
-              <nuxt-link :to="'/column/'">
+              <nuxt-link :to="'/column?filters=' + item.label.id">
                 <span :class="'tag ' + item.label.color_class ">
                   {{ item.label.label }}
                 </span>

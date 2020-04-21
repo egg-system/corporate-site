@@ -15,7 +15,8 @@ import { fetchCmsListDataColumn } from '~/lib/cms'
 export default {
   components: {
     TheHeroTitle,
-    TheColumnList
+    TheColumnList,
+    watchQuery: ['filters']
   },
   head() {
     return {
@@ -61,8 +62,8 @@ export default {
     }
   },
 
-  asyncData() {
-    return fetchCmsListDataColumn()
+  asyncData({ query }) {
+    return fetchCmsListDataColumn(null, null, query.filters)
   }
 }
 </script>
