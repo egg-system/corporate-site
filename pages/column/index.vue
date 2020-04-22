@@ -1,9 +1,7 @@
 <template>
   <div>
-    <div class="column-list page-content">
-      <the-hero-title main-text="最近の活動・コラム" />
-      <the-column-list :columns="listData" />
-    </div>
+    <the-hero-title main-text="最近の活動・コラム" />
+    <the-column-list :columns="listData" />
   </div>
 </template>
 
@@ -62,7 +60,7 @@ export default {
   },
 
   asyncData() {
-    return fetchCmsListDataColumn()
+    return fetchCmsListDataColumn(23)
   }
 }
 </script>
