@@ -10,8 +10,8 @@
           <div class="is-size-5">システムコンサルティングサービス</div>
           <div class="link">
             <nuxt-link v-scroll-to="'#the-consulting'" to class="button is-dark">
-              <div class="link-message">詳細へ</div>
-              <div class="arrow">></div>
+              <span class="link-message">詳細へ</span>
+              <span class="column-arrow" />
             </nuxt-link>
           </div>
         </div>
@@ -22,8 +22,8 @@
           <div class="is-size-5">システム開発</div>
           <div class="link">
             <nuxt-link v-scroll-to="'#the-development'" to class="button is-dark">
-              <div class="link-message">詳細へ</div>
-              <div class="arrow">></div>
+              <span class="link-message">詳細へ</span>
+              <span class="column-arrow" />
             </nuxt-link>
           </div>
         </div>
@@ -32,7 +32,7 @@
       <div class="contact-area lightgray-underline">
         <the-contact />
       </div>
-      <the-development id="the-development" />    
+      <the-development id="the-development" />
       <the-contact />
     </div>
   </div>
@@ -151,7 +151,10 @@ figure.image {
     margin-top: 3rem;
   }
 }
-.link .button {
-  width: 80%;
+.link {
+  width: auto;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
 }
 </style>

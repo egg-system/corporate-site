@@ -68,13 +68,35 @@ $colors: map-merge($colors, $addColors);
 .lightgray-underline{
   border-bottom: 1px solid $lightgray;
 }
-
 .link {
+  margin: auto;
+  width: 100%;
   a.button {
+    font-size: 14px;
+    height: 49px;
     width: 100%;
     .link-message {
-      margin-right: auto;
-      margin-bottom: auto;
+      margin: auto;
+      margin-left: 0;
     }
   }
+}
+.column-arrow {
+  position: relative;
+}
+.column-arrow:after {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  margin-right: 0.7em;
 }
