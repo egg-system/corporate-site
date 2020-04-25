@@ -90,20 +90,24 @@ $colors: map-merge($colors, $addColors);
   border-top: 1px solid $white;
   border-right: 1px solid $white;
   transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   margin: auto;
+  margin-right: 0.7em;
 }
 .link {
   margin: auto;
   width: 100%;
-  .button {
+  a.button {
     font-size: 14px;
     height: 49px;
     width: 100%;
     .link-message {
       margin: auto;
       margin-left: 0;
-      margin-right: auto;
-      margin-bottom: auto;
     }
   }
 }
