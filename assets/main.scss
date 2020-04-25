@@ -71,17 +71,19 @@ $colors: map-merge($colors, $addColors);
 body {
   letter-spacing: 0.15em;
 }
-
 .link {
+  margin: auto;
+  width: 100%;
   a.button {
+    font-size: 14px;
+    height: 49px;
     width: 100%;
     .link-message {
-      margin-right: auto;
-      margin-bottom: auto;
+      margin: auto;
+      margin-left: 0;
     }
   }
 }
-
 .column-arrow {
   position: relative;
 }
@@ -100,17 +102,4 @@ body {
   bottom: 0;
   margin: auto;
   margin-right: 0.7em;
-}
-.link {
-  margin: auto;
-  width: 100%;
-  a.button {
-    font-size: 14px;
-    height: 49px;
-    width: 100%;
-    .link-message {
-      margin: auto;
-      margin-left: 0;
-    }
-  }
 }
