@@ -1,6 +1,6 @@
 <template>
   <div class="sub-header-container">
-    <p class="sub-header">{{ text }}</p>
+    <h2 class="sub-header">{{ text }}</h2>
   </div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
 .sub-header {
   display: inline-block;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 @media screen and (max-width: 600px) {

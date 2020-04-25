@@ -3,10 +3,10 @@
     <the-sub-header text="わたしたちについて" class="about-header-sp" />
     <div class="columns reverse">
       <div class="column second is-5">
-        <img :src="img" class="image">
+        <img :src="img">
       </div>
       <div class="column first is-7">
-        <p class="about-column-title">わたしたちについて</p>
+        <h2 class="about-column-title">わたしたちについて</h2>
         <p class="about-column-content">
           株式会社エッグシステムのコンサルティングエンジニア集団<br class="sp">「x-faCE（for all Consulting Engineer）」では、 <br class="sp">《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》<br class="sp">の実現のために、ITシステムを活用します。
         </p>
@@ -60,8 +60,9 @@ export default {
   flex-direction: row-reverse;
 }
 .about-column-title {
-  font-size: 24px;
-  font-weight: normal;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
   text-align: left;
   margin-bottom: 2rem;
 }
@@ -90,10 +91,6 @@ export default {
 }
 .is-7 {
   padding-right: 60px;
-}
-.image {
-  width: 500px;
-  height: 250px;
 }
 @media screen and (max-width: 600px) {
   .about {
