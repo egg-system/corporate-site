@@ -28,11 +28,10 @@
   padding-top: 30px;
 }
 .contact-content p {
-  font-size: 32px;
+  font-size: 20px;
   text-align: center;
   padding: 10px 5px;
 }
-
 .link {
   width: 30rem;
   margin: 30px auto;
@@ -41,6 +40,9 @@
 @media screen and (max-width: 600px) {
   .contact {
     width: 90%;
+  }
+  .contact-content p {
+    font-size: 18px;
   }
   .link {
     width: 100%;

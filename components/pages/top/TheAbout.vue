@@ -45,7 +45,8 @@ export default {
   width: 100%;
   min-height: 350px;
   background: $whitesmoke;
-  margin-top: 30px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   padding: 5rem 0;
 }
 .columns {
