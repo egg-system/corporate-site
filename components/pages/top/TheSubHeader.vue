@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 .sub-header-container {
-  width: 90%;
+  width: 80%;
   margin: 30px auto 0;
 }
 .sub-header {
@@ -25,5 +25,10 @@ export default {
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .sub-header-container {
+    width: 90%;
+  }
 }
 </style>
