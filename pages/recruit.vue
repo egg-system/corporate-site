@@ -5,7 +5,6 @@
       <the-main-image />
       <the-main-message />
       <the-entry />
-      <the-contact />
     </div>
     <the-about />
     <div class="content page-content">
@@ -19,7 +18,6 @@
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 // import TheSubHeader from '~/components/pages/common/TheSubHeader.vue'
-import TheContact from '~/components/pages/common/TheContact.vue'
 import TheMainImage from '~/components/pages/recruit/TheMainImage.vue'
 import TheMainMessage from '~/components/pages/recruit/TheMainMessage.vue'
 import TheAbout from '~/components/pages/top/TheAbout.vue'
@@ -32,7 +30,6 @@ export default {
   components: {
     TheHeroTitle,
     // TheSubHeader,
-    TheContact,
     TheMainImage,
     TheMainMessage,
     TheAbout,
