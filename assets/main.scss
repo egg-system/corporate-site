@@ -68,6 +68,9 @@ $colors: map-merge($colors, $addColors);
 .lightgray-underline{
   border-bottom: 1px solid $lightgray;
 }
+body {
+  letter-spacing: 0.15em;
+}
 .link {
   margin: auto;
   width: 100%;

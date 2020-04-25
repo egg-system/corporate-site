@@ -14,8 +14,9 @@
       </div>
     </slick-slide>
     <div class="btn-area">
-      <div class="more-btn">
-        <nuxt-link class="member-button" to="/member">詳しくみる　　　<p class="member-arrow">></p>
+      <div class="Heading__cta">
+        <nuxt-link class="next-button" to="/member">
+          <the-link-button />
         </nuxt-link>
       </div>
     </div>
@@ -27,11 +28,13 @@ import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
 import '../../../node_modules/slick-carousel/slick/slick-theme.css'
 import '../../../node_modules/slick-carousel/slick/slick.css'
 import members from '~/assets/js/top-member.js'
+import TheLinkButton from '~/components/pages/common/TheLinkButton.vue'
 
 export default {
   name: 'Member',
   components: {
-    TheSubHeader
+    TheSubHeader,
+    TheLinkButton
   },
   data() {
     return {
@@ -47,6 +50,13 @@ export default {
         responsive: [
           {
             breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 769,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2
@@ -108,32 +118,18 @@ export default {
   text-align: center;
 }
 .btn-area {
-  text-align: right;
-  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
-.more-btn {
-  width: 50%;
-  margin-left: 50%;
-  padding-top: 40px;
-  padding-bottom: 20px;
+.Heading__cta {
+  width: 45%;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid $lightgray;
+  text-align: right;
 }
-.member-button {
-  font-size: 16px;
-  display: inline-block;
+.next-button {
   color: $black;
-}
-.member-arrow {
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  font-size: 12px;
-  background: $black;
-  border-radius: 50%;
-  color: $white;
-  text-align: center;
-  line-height: 17px;
-  vertical-align: 2px;
 }
 @media screen and (max-width: 600px) {
   .member {
@@ -145,18 +141,10 @@ export default {
   .member-romajiName {
     font-size: 12px;
   }
-  .member-button {
-    position: relative;
-    font-size: 14px;
-  }
-  .member-arrow {
-    position: absolute;
-    top: 2px;
-    right: 10px;
-  }
-  .more-btn {
-    padding-top: 20px;
-    padding-bottom: 10px;
+}
+@media screen and (max-width: 769px) {
+  .Heading__cta {
+    width: 100%;
   }
 }
 </style>

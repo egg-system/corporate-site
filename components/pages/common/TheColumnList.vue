@@ -1,5 +1,5 @@
 <template>
-  <div class="column-item page-content">
+  <div class="column-item">
     <div class="columns is-multiline">
       <div v-for="(item, i) in columns" :key="i" :class="[ i <= 2 ? 'column is-one-third' : 'column is-one-quarter']" >
         <nuxt-link :to="'/column/' + item.id">
@@ -15,7 +15,7 @@
               {{ item.display_at | dayjs }}
               <br>
               <p class="column-store">{{ item.store }}</p>
-              <span class="tag is-primary">
+              <span class="tag info-color">
                 {{ item.label.label }}
               </span>
             </div>
@@ -43,6 +43,7 @@ export default {
   margin-bottom: 20px;
 }
 .column-content {
+  color: $black;
   padding: 10px 5px;
 }
 .column-title {
@@ -54,6 +55,10 @@ export default {
   color: $darksmoke;
   margin-top: 10px;
   margin-bottom: 20px;
+}
+.info-color {
+  color: $white;
+  background-color: $black;
 }
 .image img {
   width: 300px;
