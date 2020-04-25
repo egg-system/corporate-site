@@ -5,11 +5,10 @@
       <p>「まずは話だけ聞いてみたい」</p>
       <p>といった方もお気軽にご相談ください。</p>
     </div>
-    <div class="contact-btn-area">
-      <nuxt-link to="/contact">
-        <div class="btn-area">
-          <p>お問い合わせ・ご相談はこちらから<span>></span></p>
-        </div>
+    <div class="link">
+      <nuxt-link to="/contact" class="button is-dark">
+        <span class="link-message">お問い合わせ・ご相談はこちらから</span>
+        <span class="column-arrow" />
       </nuxt-link>
     </div>
   </div>
@@ -29,52 +28,24 @@
   padding-top: 30px;
 }
 .contact-content p {
-  font-size: 32px;
+  font-size: 20px;
   text-align: center;
   padding: 10px 5px;
 }
-.contact-btn-area {
+.link {
   width: 30rem;
   margin: 30px auto;
 }
-.btn-area {
-  padding: 0;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 15px;
-  font-weight: bold;
-  background: $darkblack;
-  border-radius: 4px;
-}
-.btn-area p {
-  color: $lightgray;
-  font-size: 18px;
-}
-.btn-area p span {
-  margin-left: 15px;
-}
-.lightgray-underline {
-  margin-bottom: 3rem;
-}
+
 @media screen and (max-width: 600px) {
   .contact {
     width: 90%;
   }
   .contact-content p {
-    font-size: 13px;
-    text-align: center;
-    padding: 10px 0;
+    font-size: 18px;
   }
-  .contact-btn-area {
+  .link {
     width: 100%;
-    margin: 30px auto;
-  }
-  .btn-area p {
-    font-size: 12px;
-  }
-  .btn-area p span {
-    margin-left: 10px;
   }
 }
 </style>

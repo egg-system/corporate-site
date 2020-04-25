@@ -6,16 +6,16 @@
         <img :src="img">
       </div>
       <div class="column first is-7">
-        <p class="about-column-title">わたしたちについて</p>
+        <h2 class="about-column-title">わたしたちについて</h2>
         <p class="about-column-content">
-          株式会社エッグシステムのコンサルティングエンジニア集団<br>「x-faCE（for all Consulting Engineer）」では、 <br>《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》<br>の実現のために、ITシステムを活用します。
+          株式会社エッグシステムのコンサルティングエンジニア集団<br class="sp">「x-faCE（for all Consulting Engineer）」では、 <br class="sp">《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》<br class="sp">の実現のために、ITシステムを活用します。
         </p>
-        <div class="about-btn-area">
-          <nuxt-link to="/about">
-            <div class="btn-area">
-              <p>詳しくみる<span>></span></p>
-            </div>
-          </nuxt-link>
+        <div class="btn-area">
+          <div class="Heading__cta">
+            <nuxt-link class="next-button" to="/about">
+              <the-link-button />
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </div>
@@ -25,10 +25,12 @@
 <script>
 import aboutImage from '~/assets/top/about.jpeg'
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
+import TheLinkButton from '~/components/pages/common/TheLinkButton.vue'
 
 export default {
   components: {
-    TheSubHeader
+    TheSubHeader,
+    TheLinkButton
   },
   data() {
     return {
@@ -42,66 +44,45 @@ export default {
 .about {
   width: 100%;
   min-height: 350px;
-  margin-top: 5%;
-  margin-bottom: 5%;
   background: $whitesmoke;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 5rem 0;
 }
 .columns {
   margin: auto;
   position: relative;
-  width: 90%;
+  width: 80%;
+}
+.column {
+  padding: 0;
 }
 .reverse {
   flex-direction: row-reverse;
 }
 .about-column-title {
-  font-size: 24px;
-  font-weight: normal;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
   text-align: left;
-  padding: 15px 0;
+  margin-bottom: 2rem;
 }
 .about-column-content {
   font-size: 16px;
   font-weight: normal;
-  margin-top: 35px;
   line-height: 32px;
-}
-.about-btn-area {
-  width: 40%;
-  min-width: 15rem;
-  margin-top: 30px;
-  float: right;
+  margin-bottom: 2.5rem;
 }
 .btn-area {
-  padding: 0;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 15px;
-  font-weight: bold;
-  background: $darkblack;
-  border-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
 }
-.btn-area p {
-  color: $lightgray;
-  font-size: 18px;
+.Heading__cta {
+  width: 45%;
+  text-align: right;
 }
-.btn-area p span {
-  margin-left: 15px;
-}
-.column-arrow {
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  font-size: 12px;
-  background: $black;
-  border-radius: 50%;
-  color: $white;
-  text-align: center;
-  line-height: 17px;
-  vertical-align: 2px;
+.next-button {
+  color: $black;
 }
 .about-header-sp {
   display: none;
@@ -109,11 +90,21 @@ export default {
 .about-columns-sp {
   display: none;
 }
+.is-7 {
+  padding-right: 60px;
+}
+@media screen and (max-width: 600px) {
+  .about {
+    padding: 1.5rem 0;
+  }
+  .columns {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   .about {
-    background: $white;
     height: auto;
-    margin-top: 0;
+    padding: 2.5rem 0;
   }
   .about-header-sp {
     display: block;
@@ -125,10 +116,18 @@ export default {
     font-size: 14px;
     margin-top: 10px;
   }
-  .about-btn-area {
+  .Heading__cta {
     width: 100%;
-    float: none;
-    margin-top: 20px;
+  }
+  .is-7 {
+    padding-right: 0;
+  }
+  .sp {
+    display: none;
+  }
+  .image {
+    width: 100%;
+    height: auto;
   }
 }
 </style>
