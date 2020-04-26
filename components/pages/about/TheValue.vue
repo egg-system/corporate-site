@@ -81,7 +81,7 @@ export default {
   text-align: center;
 }
 .text {
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 32px;
 }
 @media screen and (max-width: 768px) {
@@ -91,9 +91,6 @@ export default {
   .value-inner {
     width: 100%;
     padding-bottom: 30px;
-  }
-  .text {
-    font-size: 0.875rem;
   }
   .sp {
     display: none;
