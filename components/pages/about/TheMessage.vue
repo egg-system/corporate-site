@@ -110,7 +110,7 @@ export default {
   line-height: 1.2;
 }
 .about {
-  border-bottom: 2px solid $whitesmoke;
+  border-bottom: 1px solid $lightgray;
   padding-bottom: 80px;
 }
 .message-container {
@@ -150,7 +150,7 @@ export default {
   font-size: 24px;
   padding: 15px 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .message-container {
     display: block;
     padding: 30px 0;
@@ -158,6 +158,9 @@ export default {
   .message-image {
     width: 100%;
     margin: 0;
+  }
+  .text {
+    font-size: 0.875rem;
   }
   .image {
     margin: 0;
