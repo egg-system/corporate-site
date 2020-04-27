@@ -85,7 +85,7 @@ export default {
 .end {
   margin: 0 0 50px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .end {
     margin: 0;
     padding-bottom: 0;
