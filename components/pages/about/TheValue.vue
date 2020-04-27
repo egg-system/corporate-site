@@ -86,12 +86,16 @@ export default {
   line-height: 32px;
 }
 @media screen and (max-width: 768px) {
+  .about {
+    border-bottom: none;
+  }
   .value-container {
     display: block;
   }
   .value-inner {
     width: 100%;
-    padding-bottom: 30px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
   }
   .sp {
     display: none;
