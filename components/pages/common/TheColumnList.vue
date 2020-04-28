@@ -16,7 +16,7 @@
               <br>
               <p class="column-store">{{ item.store }}</p>
               <nuxt-link :to="'/column?filters=' + item.label.id">
-                <span :class="'tag ' + item.label.color_class ">
+                <span :class="`tag ${item.label.color_class}`">
                   {{ item.label.label }}
                 </span>
               </nuxt-link>
