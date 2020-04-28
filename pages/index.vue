@@ -5,8 +5,9 @@
     <div class="column-list page-content">
       <the-column-list :columns="columns" />
       <div class="btn-area">
-        <div class="more-btn">
-          <nuxt-link class="column-button" to="/column">詳しくみる　　　<p class="column-arrow">></p>
+        <div class="Heading__cta">
+          <nuxt-link class="next-button" to="/column">
+            <the-link-button />
           </nuxt-link>
         </div>
       </div>
@@ -43,6 +44,7 @@ import TheContact from '~/components/pages/top/TheContact.vue'
 import TheMember from '~/components/pages/top/TheMember.vue'
 import TheNewsList from '~/components/pages/common/TheNewsList.vue'
 import { fetchCmsListDataColumn, fetchCmsListDataNews } from '~/lib/cms'
+import TheLinkButton from '~/components/pages/common/TheLinkButton.vue'
 
 export default {
   components: {
@@ -54,7 +56,8 @@ export default {
     TheStrength,
     TheContact,
     TheMember,
-    TheNewsList
+    TheNewsList,
+    TheLinkButton
   },
   async asyncData() {
     const data = await Promise.all([
@@ -68,32 +71,18 @@ export default {
 
 <style lang="scss" scoped>
 .btn-area {
-  text-align: right;
-  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
-.more-btn {
-  width: 50%;
-  margin-left: 50%;
-  padding-top: 40px;
-  padding-bottom: 20px;
+.Heading__cta {
+  width: 45%;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid $lightgray;
+  text-align: right;
 }
-.column-button {
-  font-size: 16px;
-  display: inline-block;
+.next-button {
   color: $black;
-}
-.column-arrow {
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  font-size: 12px;
-  background: $black;
-  border-radius: 50%;
-  color: $white;
-  text-align: center;
-  line-height: 17px;
-  vertical-align: 2px;
 }
 .back a {
   display: block;
@@ -104,5 +93,10 @@ export default {
 }
 .back span {
   margin-left: 20px;
+}
+@media screen and (max-width: 769px) {
+  .Heading__cta {
+    width: 100%;
+  }
 }
 </style>

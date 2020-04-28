@@ -1,7 +1,7 @@
 <template>
   <div class="column-item">
     <div class="columns is-multiline">
-      <div v-for="(item, i) in columns" :key="i" class="column is-one-third">
+      <div v-for="(item, i) in columns" :key="i" :class="[ i <= 2 ? 'column is-one-third' : 'column is-one-quarter']" >
         <nuxt-link :to="'/column/' + item.id">
           <div class="column-inner">
             <div class="column-image">
@@ -42,8 +42,10 @@ export default {
 <style lang="scss" scoped>
 .column-inner {
   border-bottom: 1px solid $lightgray;
+  margin-bottom: 20px;
 }
 .column-content {
+  color: $black;
   padding: 10px 5px;
 }
 .column-title {
@@ -55,6 +57,17 @@ export default {
   color: $darksmoke;
   margin-top: 10px;
   margin-bottom: 20px;
+}
+.info-color {
+  color: $white;
+  background-color: $black;
+}
+.image img {
+  width: 300px;
+  height: 200px;
+  background: #e2d0b6;
+  object-fit: cover;
+  margin: 0 auto;
 }
 @media screen and (max-width: 600px) {
   .column-title {

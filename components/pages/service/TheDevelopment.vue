@@ -17,8 +17,8 @@
         </div>
         <div class="link">
           <nuxt-link v-scroll-to="'.cases'" to class="button is-dark">
-            <div class="link-message">事例紹介へ</div>
-            <div class="arrow">></div>
+            <span class="link-message">事例紹介へ</span>
+            <span class="column-arrow" />
           </nuxt-link>
         </div>
       </div>
@@ -113,11 +113,6 @@ div {
 .columns {
   margin: auto;
   margin-top: 1rem;
-}
-.link {
-  max-width: 30rem;
-  margin: auto;
-  width: 80%;
 }
 .note {
   margin-left: 1rem;

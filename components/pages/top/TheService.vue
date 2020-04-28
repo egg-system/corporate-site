@@ -1,16 +1,18 @@
 <template>
   <div class="service">
     <div class="service-columns">
-      <nuxt-link to="/service">
-        <div class="service-column">
-          <p>x-faCEのサービスへ<span>></span></p>
-        </div>
-      </nuxt-link>
-      <nuxt-link to="/request">
-        <div class="service-column">
-          <p>ご依頼の流れ<span>></span></p>
-        </div>
-      </nuxt-link>
+      <div class="link">
+        <nuxt-link to="/service" class="button is-dark">
+          <span class="link-message">x-faCEのサービスへ</span>
+          <span class="column-arrow" />
+        </nuxt-link>
+      </div>
+      <div class="link">
+        <nuxt-link to="/request" class="button is-dark">
+          <span class="link-message">ご依頼の流れ</span>
+          <span class="column-arrow" />
+        </nuxt-link>
+      </div>
     </div>
   </div>
 </template>
@@ -29,37 +31,25 @@
 .service-columns {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.service-columns a {
-  width: 40%;
+.link {
+  width: 30rem;
 }
-.service-column {
-  padding: 0;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 15px;
-  font-weight: bold;
-  background: $darkblack;
-  border-radius: 4px;
-}
-.service-column p {
-  color: $lightgray;
-  font-size: 18px;
-}
-.service-column p span {
-  margin-left: 15px;
-}
+
 @media screen and (max-width: 600px) {
   .service {
     width: 90%;
   }
+  .link {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 769px) {
   .service-columns {
     display: block;
   }
-  .service-column {
-    width: 100%;
+  .link {
     margin: 50px auto;
   }
 }

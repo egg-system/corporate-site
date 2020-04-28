@@ -67,8 +67,8 @@
         </div>
         <div class="link">
           <a class="button is-dark" href="https://media.eggsystem.co.jp/">
-            <div class="link-message">メディアサイトへ</div>
-            <div class="arrow">></div>
+            <span class="link-message">メディアサイトへ</span>
+            <span class="column-arrow" />
           </a>
         </div>
       </div>
@@ -99,11 +99,6 @@ export default {
 <style lang="scss" scoped>
 div {
   letter-spacing: 1px;
-}
-.link {
-  max-width: 30rem;
-  margin: auto;
-  width: 80%;
 }
 .note {
   margin-left: 1rem;

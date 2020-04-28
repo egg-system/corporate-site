@@ -131,21 +131,10 @@ export default {
     font-size: 28px;
   }
   /deep/ h3 {
-    padding-left: 10px;
     position: relative;
-    color: $black;
     font-size: 22px;
-  }
-  /deep/ h3::after {
-    margin-left: 7px;
-    position: absolute;
-    top: 50%;
-    left: -5px;
-    transform: translateY(-50%);
-    content: '';
-    width: 3px;
-    height: 1em;
-    background-color: $darkblue;
+    padding: 1rem 0 1rem 1rem;
+    border-left: 2px solid $lightcream;
   }
   /deep/ img {
     display: block;

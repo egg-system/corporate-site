@@ -12,16 +12,16 @@
           システムエンジニア向け勉強会を定期的に開催しています。<br><br>
           弊社の取り組みにご興味のある方だけでなく、スキルアップとしてもご参加いただければ幸いです。
         </p>
-        <div class="study-button">
-          <a href="https://connpass.com/user/eggsystem/" target="_blank">
-            <div class="study-column">
-              <p>connpas(外部サイト)へ<span>></span></p>
-            </div>
+        <div class="link">
+          <a class="button is-dark" href="https://connpass.com/user/eggsystem/">
+            <span class="link-message">connpas(外部サイト)へ</span>
+            <span class="column-arrow" />
           </a>
-          <a href="https://techplay.jp/community/egg" target="_blank">
-            <div class="study-column">
-              <p>TECH PLAY(外部サイト)へ<span>></span></p>
-            </div>
+        </div>
+        <div class="link">
+          <a class="button is-dark" href="https://techplay.jp/community/egg">
+            <span class="link-message">TECH PLAY(外部サイト)へ</span>
+            <span class="column-arrow" />
           </a>
         </div>
       </section>
@@ -30,11 +30,9 @@
 </template>
 
 <script>
-import method from '~/mixins/method'
 import recruitStudy from '~/assets/recruit/recruit-study.JPG'
 
 export default {
-  mixins: [method],
   data() {
     return {
       img: recruitStudy
@@ -59,39 +57,9 @@ export default {
   margin-bottom: 10%;
   background: $white;
 }
-.study-columns {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.study-columns a {
-  width: 60%;
-}
-.study-column {
-  padding: 0;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 15px;
-  font-weight: bold;
-  background: $darkblack;
-  border-radius: 4px;
-}
-.study-column p {
-  color: $lightgray;
-  font-size: 18px;
-  margin: 45px;
-}
-.study-column p span {
-  margin-left: 15px;
+.link {
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 600px) {
-  .study-columns {
-    display: block;
-  }
-  .study-column {
-    width: 100%;
-    margin: 15px auto;
-  }
 }
 </style>
