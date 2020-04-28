@@ -13,9 +13,9 @@ import { fetchCmsListDataColumn } from '~/lib/cms'
 export default {
   components: {
     TheHeroTitle,
-    TheColumnList,
-    watchQuery: ['filters']
+    TheColumnList
   },
+  watchQuery: ['filters'],
   head() {
     return {
       title: '最近の活動・コラム',
