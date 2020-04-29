@@ -6,7 +6,7 @@
       </figure>
       <div class="center-text">
         <p v-html="service.title" />
-        <p v-html="service.description" />
+        <p class="description" v-html="service.description" />
       </div>
     </div>
   </div>
@@ -46,5 +46,8 @@ figure {
   margin-top: 1.5rem;
   left: 10%;
   bottom: 0;
+}
+.description {
+  font-size: 13px;
 }
 </style>
