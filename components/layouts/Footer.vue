@@ -98,8 +98,11 @@ export default {
 .column a {
   color: $white;
 }
-a .navbar-item:focus {
-  background-color: $copyright;
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover,
+a.navbar-item.is-active {
+  background-color: $darkgray;
 }
 @media screen and (max-width: 769px) and (min-width: 600px) {
   .columns .image {
