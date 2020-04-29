@@ -60,12 +60,57 @@ export default {
   color: $white;
   background-color: $black;
 }
-.image img {
+.is-one-third img {
   width: 300px;
   height: 200px;
   background: #e2d0b6;
   object-fit: cover;
   margin: 0 auto;
+}
+@media screen and (min-width: 1030px) {
+  .is-one-quarter img {
+    width: 250px;
+    height: 150px;
+    background: #e2d0b6;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .column-content {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1029px) and (min-width: 769px) {
+  .is-one-third img {
+    width: 250px;
+    height: 150px;
+    background: #e2d0b6;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .is-one-quarter .column-title {
+    height: 100px;
+  }
+  .is-one-quarter img {
+    width: 150px;
+    height: 100px;
+    background: #e2d0b6;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 769px) and (min-width: 600px) {
+  .is-one-quarter img {
+    width: 600px;
+    height: 400px;
+  }
+  .is-one-third img {
+    width: 600px;
+    height: 400px;
+    background: #e2d0b6;
+    object-fit: cover;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 600px) {
   .column-title {
