@@ -105,14 +105,15 @@ a.navbar-item.is-active {
   background-color: $darkgray;
 }
 @media screen and (max-width: 769px) and (min-width: 600px) {
-  .columns .image {
-    display: none;
+  .image {
+    margin-bottom: 30px;
   }
   .column {
     display: inline-block;
   }
   .first {
-    margin-left: 30px;
+    margin-left: 20%;
+    vertical-align: top; /* 追加 */
   }
 }
 @media screen and (max-width: 600px) {
