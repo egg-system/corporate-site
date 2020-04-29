@@ -98,6 +98,9 @@ export default {
 .column a {
   color: $white;
 }
+a .navbar-item:focus {
+  background-color: $copyright;
+}
 @media screen and (max-width: 769px) and (min-width: 600px) {
   .columns .image {
     display: none;
