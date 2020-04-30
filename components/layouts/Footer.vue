@@ -91,9 +91,12 @@ export default {
 }
 .image p {
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 40px;
   color: $white;
+}
+.navbar-item {
+  font-size: 0.8em;
 }
 .column a {
   color: $white;
