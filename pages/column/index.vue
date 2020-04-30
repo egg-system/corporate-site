@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-content">
     <the-hero-title main-text="最近の活動・コラム" />
     <the-column-list :columns="listData" />
   </div>
