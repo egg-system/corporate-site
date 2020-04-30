@@ -5,7 +5,7 @@
         <img :src="service.img" class="is-square">
       </figure>
       <div class="center-text">
-        <p v-html="service.title" />
+        <h3 v-html="service.title" />
         <p v-html="service.description" />
       </div>
     </div>
