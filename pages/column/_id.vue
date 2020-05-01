@@ -215,13 +215,11 @@ export default {
   /deep/ blockquote a {
     word-break: break-all;
   }
-  /deep/ blockquote:after {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  /deep/ blockquote:before {
-    margin-right: 10px;
-    margin-left: 10px;
+  .main {
+    /deep/ blockquote {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
   }
 }
 </style>
