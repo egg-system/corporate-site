@@ -16,7 +16,7 @@
       </div>
       <p class="back">
         <nuxt-link to="/column">
-          <i class=""/>一覧を見る<span>></span>
+          <i/>一覧を見る<span>></span>
         </nuxt-link>
         <the-sub-header text="最近の活動・コラム" />
       </p>
@@ -111,6 +111,9 @@ export default {
 }
 .date {
   margin-right: 20px;
+}
+.back a {
+  color: $black;
 }
 .main {
   margin-top: 20px;
