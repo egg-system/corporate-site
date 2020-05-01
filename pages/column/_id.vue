@@ -159,7 +159,7 @@ export default {
     top: -20px;
     left: -10px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
   }
   /deep/ blockquote:after {
     position: absolute;
@@ -173,7 +173,7 @@ export default {
     bottom: -20px;
     right: -10px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
   }
   /deep/ blockquote cite {
     display: block;
@@ -214,6 +214,14 @@ export default {
   }
   /deep/ blockquote a {
     word-break: break-all;
+  }
+  /deep/ blockquote:after {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  /deep/ blockquote:before {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 </style>
