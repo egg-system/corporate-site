@@ -175,12 +175,6 @@ export default {
     padding: 10px;
     font-size: 20px;
   }
-  // /deep/ blockquote p {
-  //   padding: 0;
-  //   margin: 10px 0;
-  //   line-height: 1.7;
-  // }
-
   /deep/ blockquote cite {
     display: block;
     padding-right: 30px;
@@ -217,6 +211,9 @@ export default {
 @media screen and (max-width: 600px) {
   .page-content {
     width: 85%;
+  }
+  /deep/ blockquote a {
+    word-break: break-all;
   }
 }
 </style>
