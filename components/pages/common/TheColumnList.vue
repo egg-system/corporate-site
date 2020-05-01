@@ -75,9 +75,12 @@ export default {
     object-fit: cover;
     margin: 0 auto;
   }
+  .is-one-quarter .column-title {
+    height: 80px;
+  }
   .column-content {
     margin: 0 auto;
-    width: 300px;
+    width: 250px;
   }
 }
 @media screen and (max-width: 1029px) and (min-width: 769px) {
