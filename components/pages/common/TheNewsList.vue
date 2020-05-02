@@ -8,7 +8,8 @@
           <li class="news-inner">
             <div class="news-image">
               <figure class="image">
-                <img :src="item.img.url" :alt="item.title">
+                <!-- <img :src="item.img.url" :alt="item.title"> -->
+                <img :src="item.img" :alt="item.title">
               </figure>
             </div>
             <div class="news-title">
