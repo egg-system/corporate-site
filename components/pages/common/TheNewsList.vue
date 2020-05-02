@@ -6,6 +6,11 @@
           i <= 2 ? 'column is-one-third border'+i : 'column is-one-quarter border'+i,
         ]" >
           <li class="news-inner">
+            <div class="news-image">
+              <figure class="image">
+                <img :src="item.img.url" :alt="item.title">
+              </figure>
+            </div>
             <div class="news-title">
               <nuxt-link :to="'/news/' + item.id">
                 {{ item.title }}
@@ -53,7 +58,6 @@ export default {
 .news-date {
   text-align: right;
   font-size: 14px;
-  // color: $darksmoke;
   color: $black;
 }
 .is-one-third {

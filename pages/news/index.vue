@@ -62,7 +62,7 @@ export default {
   },
 
   asyncData() {
-    return fetchCmsListDataNews()
+    return fetchCmsListDataNews(23)
   }
 }
 </script>
