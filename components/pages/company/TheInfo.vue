@@ -9,7 +9,7 @@
           </tr>
           <tr>
             <td>所在地</td>
-            <td>〒160-0023<br>東京都新宿区西新宿8-11-10 星野ビル3階（本社）　　<br class="sp"><a href="https://goo.gl/maps/zhfJADagsfJBdxxY7" target="_blank">> GoogleMapを開く</a> <br><br>〒420-0913<br>静岡県静岡市葵区瀬名川1-1-11</td>
+            <td>〒160-0023<br>東京都新宿区西新宿8-11-10 星野ビル3階（本社）<br class="sp"><a href="https://goo.gl/maps/zhfJADagsfJBdxxY7" target="_blank">> GoogleMapを開く</a> <br><br>〒420-0913<br>静岡県静岡市葵区瀬名川1-1-11</td>
           </tr>
           <tr>
             <td>代表者</td>
@@ -48,7 +48,7 @@ export default {}
 <style lang="scss" scoped>
 .table-info {
   border-top: 1px solid $lightgray;
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
 }
 .sp {
