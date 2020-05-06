@@ -151,35 +151,45 @@ export default {
   }
   /deep/ blockquote {
     position: relative;
-    padding: 15px 15px 8px 15px;
-    box-sizing: border-box;
-    font-style: italic;
-    background: $backwhite;
-    color: $lightbrown;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    padding: 15px;
+    margin: 30px;
   }
   /deep/ blockquote:before {
-    display: inline-block;
     position: absolute;
-    top: 13px;
-    left: 15px;
-    font-family: FontAwesome;
-    color: $cream;
-    font-size: 28px;
-    line-height: 1;
+    background-color: $white;
+    color: $black;
+    font-family: 'Font Awesome 5 Free';
     font-weight: 900;
+    content: '\f10d';
+    line-height: 1;
+    text-align: center;
+    top: -20px;
+    left: -10px;
+    padding: 10px;
+    font-size: 15px;
   }
-
-  /deep/ blockquote p {
-    padding: 0;
-    margin: 10px 0;
-    line-height: 1.7;
+  /deep/ blockquote:after {
+    position: absolute;
+    background-color: $white;
+    color: $black;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f10e';
+    line-height: 1;
+    text-align: center;
+    bottom: -20px;
+    right: -10px;
+    padding: 10px;
+    font-size: 15px;
   }
-
   /deep/ blockquote cite {
     display: block;
+    padding-right: 30px;
+    font-size: 0.8rem;
     text-align: right;
-    color: $brown;
-    font-size: 0.9em;
+    color: $black;
   }
   /deep/ ol li {
     margin-left: 20px;
@@ -232,6 +242,15 @@ export default {
   }
   .page-content {
     width: 85%;
+  }
+  /deep/ blockquote a {
+    word-break: break-all;
+  }
+  .main {
+    /deep/ blockquote {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
   }
 }
 .info-color {
