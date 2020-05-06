@@ -71,7 +71,12 @@ export default {
 .is-one-third img {
   width: 300px;
   height: 200px;
-  background: #e2d0b6;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.is-one-quarter img {
+  width: 300px;
+  height: 200px;
   object-fit: cover;
   margin: 0 auto;
 }
@@ -79,7 +84,6 @@ export default {
   .is-one-quarter img {
     width: 250px;
     height: 150px;
-    background: #e2d0b6;
     object-fit: cover;
     margin: 0 auto;
   }
@@ -95,7 +99,6 @@ export default {
   .is-one-third img {
     width: 250px;
     height: 150px;
-    background: #e2d0b6;
     object-fit: cover;
     margin: 0 auto;
   }
@@ -105,20 +108,14 @@ export default {
   .is-one-quarter img {
     width: 150px;
     height: 100px;
-    background: #e2d0b6;
     object-fit: cover;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 769px) and (min-width: 600px) {
-  .is-one-quarter img {
+  .image img {
     width: 600px;
     height: 400px;
-  }
-  .is-one-third img {
-    width: 600px;
-    height: 400px;
-    background: #e2d0b6;
     object-fit: cover;
     margin: 0 auto;
   }

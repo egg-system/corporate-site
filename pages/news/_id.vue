@@ -207,7 +207,29 @@ export default {
   margin-top: 0px;
   margin-left: 0px;
 }
+.image img {
+  object-fit: cover;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1030px) {
+  .image img {
+    height: 550px;
+  }
+}
+@media screen and (max-width: 1029px) and (min-width: 769px) {
+  .image img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 769px) and (min-width: 600px) {
+  .image img {
+    height: 300px;
+  }
+}
 @media screen and (max-width: 600px) {
+  .image img {
+    height: 200px;
+  }
   .page-content {
     width: 85%;
   }
