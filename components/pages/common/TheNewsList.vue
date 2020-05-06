@@ -28,7 +28,6 @@
 </template>
 
 <script>
-import unknown from '~/assets/members/unknown.JPG'
 import noImage from '~/assets/js/no-image.js'
 
 export default {
