@@ -7,7 +7,7 @@
       <the-hero-title :main-text="data.title" />
       <div class="sub">
         <span class="date">{{ data.display_at | dayjs }}</span>
-        <span class="tag is-primary">
+        <span class="tag info-color">
           {{ data.label.label }}
         </span>
       </div>
@@ -39,11 +39,6 @@ export default {
     TheHeroTitle,
     TheNewsList,
     TheSubHeader
-  },
-  data() {
-    return {
-      noImage: noImage.noImage
-    }
   },
   head() {
     let image = this.data.img
@@ -216,5 +211,9 @@ export default {
   .page-content {
     width: 85%;
   }
+}
+.info-color {
+  color: $white;
+  background-color: $black;
 }
 </style>
