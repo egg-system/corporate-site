@@ -1,7 +1,7 @@
 <template>
   <div>
-    <the-hero-title main-text="ニュース" />
     <div class="news page-content">
+      <the-hero-title main-text="ニュース" />
       <the-news-list :news="listData"/>
     </div>
   </div>
