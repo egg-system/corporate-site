@@ -18,7 +18,7 @@
         <nuxt-link to="/news">
           <i/>一覧を見る<span>></span>
         </nuxt-link>
-        <the-sub-header text="最近の活動・コラム" />
+        <the-sub-header text="ニュース" />
       </p>
       <div class="news-list">
         <the-news-list :news="list" />
