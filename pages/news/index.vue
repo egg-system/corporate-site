@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="news page-content">
+    <div class="page-content">
       <the-hero-title main-text="ニュース" />
       <the-news-list :news="listData"/>
     </div>
@@ -68,8 +68,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.news {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
 </style>
