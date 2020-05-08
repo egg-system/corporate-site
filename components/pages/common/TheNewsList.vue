@@ -1,69 +1,128 @@
 <template>
   <div class="news-list">
-    <li>
-      <div v-for="(item, i) in news" :key="i">
-        <ul>
-          <div class="columns">
-            <div class="columns is-mobile">
-              <div class="column news-date is-4-mobile">{{ item.display_at | dayjs }}</div>
-              <div class="column is-4-mobile">
-                <span class="tag is-primary">
-                  {{ item.label.label }}
-                </span>
-              </div>
+    <div class="columns is-multiline">
+      <div v-for="(item, i) in news" :key="i" :class="[ i <= 2 ? 'column is-one-third border'+i : 'column is-one-quarter border'+i, ]" >
+        <nuxt-link :to="'/news/' + item.id">
+          <div class="news-inner">
+            <div class="news-image">
+              <figure class="image">
+                <img v-if="item.img !== undefined" :src="item.img.url" :alt="item.title">
+                <img v-if="item.img === undefined" :src="noImage">
+              </figure>
             </div>
-
-            <div class="news-title">
-              <nuxt-link :to="'/news/' + item.id">
-                {{ item.title }}
-              </nuxt-link>
+            <div class="news-content">
+              <p class="news-title">{{ item.title }}</p>
+              <br>
+              {{ item.display_at | dayjs }}
+              <br>
+              <p class="news-store">{{ item.store }}</p>
+              <span class="tag info-color">
+                {{ item.label.label }}
+              </span>
             </div>
           </div>
-        </ul>
+        </nuxt-link>
       </div>
-    </li>
+    </div>
   </div>
 </template>
 
 <script>
+import noImage from '~/assets/js/no-image.js'
+
 export default {
   props: {
     news: {
       type: Array,
       default: null
     }
+  },
+  data() {
+    return {
+      noImage: noImage.noImage
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.news-list {
-  display: flex;
-}
 .news-inner {
-  width: 90%;
-  margin: 0 auto;
+  border-bottom: 1px solid $lightgray;
+  margin-bottom: 20px;
+}
+.news-content {
+  color: $black;
+  padding: 10px 5px;
 }
 .news-title {
-  padding: 5px 10px;
+  font-size: 14px;
+  height: 40px;
 }
-.news-date {
-  text-align: right;
+.news-store {
   font-size: 14px;
   color: $darksmoke;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-li {
-  list-style: none;
+.info-color {
+  color: $white;
+  background-color: $black;
+}
+.is-one-third img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.is-one-quarter img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1030px) {
+  .is-one-quarter img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .is-one-quarter .news-title {
+    height: 80px;
+  }
+  .news-content {
+    margin: 0 auto;
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1029px) and (min-width: 769px) {
+  .is-one-third img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .is-one-quarter .news-title {
+    height: 100px;
+  }
+  .is-one-quarter img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 769px) and (min-width: 600px) {
+  .image img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 600px) {
-  .news-list {
-    display: block;
-  }
-  .news-inner {
-    margin: 10px auto;
-  }
   .news-title {
-    font-size: 14px;
+    height: auto;
   }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <the-hero-title main-text="ニュース" />
-    <div class="news page-content">
+    <div class="page-content">
+      <the-hero-title main-text="ニュース" />
       <the-news-list :news="listData"/>
     </div>
   </div>
@@ -62,14 +62,10 @@ export default {
   },
 
   asyncData() {
-    return fetchCmsListDataNews()
+    return fetchCmsListDataNews(23)
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.news {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
 </style>
