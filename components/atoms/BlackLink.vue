@@ -1,10 +1,10 @@
 <template>
   <div class="link">
-    <a v-if="external" :href="href" target="_blank" class="button is-dark">
+    <a v-if="external" :href="url" target="_blank" class="button is-dark">
       <span class="link-message">{{ label }}</span>
       <span class="column-arrow" />
     </a>
-    <nuxt-link v-if="internal" :to="to" class="button is-dark">
+    <nuxt-link v-else :to="url" class="button is-dark">
       <span class="link-message">{{ label }}</span>
       <span class="column-arrow" />
     </nuxt-link>
@@ -18,21 +18,14 @@ export default {
       type: String,
       default: ''
     },
-    href: {
-      type: String,
-      default: ''
-    },
-    to: {
+    url: {
       type: String,
       default: ''
     }
   },
   computed: {
     external() {
-      return this.href != ''
-    },
-    internal() {
-      return this.href == ''
+      return this.url.match(/http*/) != null
     }
   }
 }
