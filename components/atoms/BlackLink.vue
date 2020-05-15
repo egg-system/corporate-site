@@ -1,31 +1,34 @@
 <template>
   <div class="link">
-    <a v-if="external" :href="url" target="_blank" class="button is-dark">
+    <component
+      :is="isExternalLink(link) ? 'a' : 'nuxt-link'"
+      :href="isExternalLink(link) ? link : ''"
+      :to="isExternalLink(link) ? '' : link"
+      :target="isExternalLink(link) ? '_blank' : ''"
+      class="button is-dark"
+    >
       <span class="link-message">{{ label }}</span>
       <span class="column-arrow" />
-    </a>
-    <nuxt-link v-else :to="url" class="button is-dark">
-      <span class="link-message">{{ label }}</span>
-      <span class="column-arrow" />
-    </nuxt-link>
+    </component>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'BlackLink',
   props: {
     label: {
       type: String,
       default: ''
     },
-    url: {
+    link: {
       type: String,
       default: ''
     }
   },
-  computed: {
-    external() {
-      return this.url.match(/http*/) != null
+  methods: {
+    isExternalLink(link) {
+      return /^https?:\/\//.test(link)
     }
   }
 }
