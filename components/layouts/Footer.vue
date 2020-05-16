@@ -30,7 +30,7 @@
           最近の活動・コラム
         </nuxt-link>
         <nuxt-link class="navbar-item" to="/news">
-          ニュース
+          お知らせ
         </nuxt-link>
         <nuxt-link class="navbar-item" to="/contact">
           お問い合わせ
