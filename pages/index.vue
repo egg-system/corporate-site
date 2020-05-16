@@ -19,7 +19,6 @@
     <the-contact />
     <the-sub-header text="メンバー" />
     <the-member />
-    <!--
     <the-sub-header text="お知らせ" />
     <div class="news-list page-content">
       <p class="back">
@@ -29,7 +28,6 @@
       </p>
       <the-news-list :news="news" />
     </div>
-  -->
   </div>
 </template>
 
