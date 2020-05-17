@@ -85,6 +85,8 @@ export default {
 .back a {
   display: block;
   text-align: right;
+  font-size: 14px;
+  color: $black;
 }
 .back i {
   margin-right: 5px;
