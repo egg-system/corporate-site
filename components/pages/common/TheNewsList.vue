@@ -92,7 +92,7 @@ export default {
   }
   .news-content {
     margin: 0 auto;
-    width: 250px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 1029px) and (min-width: 769px) {
@@ -102,8 +102,11 @@ export default {
     object-fit: cover;
     margin: 0 auto;
   }
+  .is-one-third .news-title {
+    height: 80px;
+  }
   .is-one-quarter .news-title {
-    height: 100px;
+    height: 80px;
   }
   .is-one-quarter img {
     width: 150px;

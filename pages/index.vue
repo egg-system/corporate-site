@@ -92,6 +92,9 @@ export default {
 .back span {
   margin-left: 20px;
 }
+/deep/ .image img {
+  display: none;
+}
 @media screen and (max-width: 769px) {
   .Heading__cta {
     width: 100%;
