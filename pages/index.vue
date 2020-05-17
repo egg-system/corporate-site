@@ -19,7 +19,6 @@
     <the-contact />
     <the-sub-header text="メンバー" />
     <the-member />
-    <!--
     <the-sub-header text="お知らせ" />
     <div class="news-list page-content">
       <p class="back">
@@ -29,7 +28,6 @@
       </p>
       <the-news-list :news="news" />
     </div>
-  -->
   </div>
 </template>
 
@@ -87,12 +85,17 @@ export default {
 .back a {
   display: block;
   text-align: right;
+  font-size: 14px;
+  color: $black;
 }
 .back i {
   margin-right: 5px;
 }
 .back span {
   margin-left: 20px;
+}
+/deep/ .news-image img {
+  display: none;
 }
 @media screen and (max-width: 769px) {
   .Heading__cta {

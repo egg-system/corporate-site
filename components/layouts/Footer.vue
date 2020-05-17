@@ -29,6 +29,9 @@
         <nuxt-link class="navbar-item" to="/column">
           最近の活動・コラム
         </nuxt-link>
+        <nuxt-link class="navbar-item" to="/news">
+          お知らせ
+        </nuxt-link>
         <nuxt-link class="navbar-item" to="/contact">
           お問い合わせ
         </nuxt-link>
