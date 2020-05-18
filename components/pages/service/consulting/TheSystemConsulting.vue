@@ -8,7 +8,7 @@
         </figure>
       </div>
       <div class="column is-half system-consulting">
-        <div class="message">システム導入や導入後の運用を軸に、「計画」「推進」「管理」に沿った3つのサービスを提供します。</div>
+        <div class="message">システム導入や導入後の運用を軸に、「計画」「推進」「管理」に沿ったサービスを提供します。</div>
         <div class="message">
           その他にも、お客様のご要望に合わせてカスタマイズしたサービスをご提供しますので、
           <nuxt-link to="/contact">お問い合わせフォーム</nuxt-link>よりお気軽にご相談ください。
