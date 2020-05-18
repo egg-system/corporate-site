@@ -26,9 +26,9 @@
           </div>
           <div class="table-content duration-cost">
             <h6>参考期間/費用</h6>
-            <p>- 約3か月～約6か月程度</p>
+            <p>- 約3ヶ月～約6ヶ月程度</p>
             <p>- 約5万円～10万円程度/月</p>
-            <p class="note">※1か月単位でのご契約となります。</p>
+            <p class="note">※1ヶ月単位でのご契約となります。</p>
           </div>
         </div>
         <div class="column is-8">

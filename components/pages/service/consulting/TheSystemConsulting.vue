@@ -8,7 +8,7 @@
         </figure>
       </div>
       <div class="column is-half system-consulting">
-        <div class="message">システム導入や導入後の運用を軸に、「計画」「推進」「管理」の3つのサービスを提供します。</div>
+        <div class="message">システム導入や導入後の運用を軸に、「計画」「推進」「管理」に沿った3つのサービスを提供します。</div>
         <div class="message">
           その他にも、お客様のご要望に合わせてカスタマイズしたサービスをご提供しますので、
           <nuxt-link to="/contact">お問い合わせフォーム</nuxt-link>よりお気軽にご相談ください。
@@ -33,7 +33,7 @@
         </div>
         <div class="table-content duration-cost">
           <h6>参考期間/費用</h6>
-          <p>- 約2～3か月程度</p>
+          <p>- 約2～3ヶ月程度</p>
           <p>- 約100万円～500万円程度</p>
         </div>
       </div>
@@ -107,9 +107,9 @@
         </div>
         <div class="table-content duration-cost">
           <h6>参考期間/費用</h6>
-          <p>- 約3か月～1年程度</p>
+          <p>- 約3ヶ月～1年程度</p>
           <p>- 約50万円～160万円程度</p>
-          <p class="note">※1～3か月単位でのご契約となります。</p>
+          <p class="note">※1～3ヶ月単位でのご契約となります。</p>
         </div>
       </div>
       <div class="column is-8">
@@ -139,7 +139,50 @@
         </div>
       </div>
     </div>
-    <h3 class="table-title">3.&nbsp;プロジェクトマネジメントサービス</h3>
+    <h3 class="table-title">3.&nbsp;内部統制支援サービス</h3>
+    <div class="columns table">
+      <div class="column is-4 left">
+        <div class="table-content target">
+          <h6>対象者</h6>
+          <p>- 内部統制の整備・強化を行いたいが、何から始めれば良いか分からない企業様またはリソースが不足している企業様</p>
+          <p>- 今後IT監査を受ける予定の企業様</p>
+          <p>- IT監査でIT統制に関する指摘を受けている企業様</p>
+        </div>
+        <div class="table-content duration-cost">
+          <h6>参考期間/費用</h6>
+          <p>- 約1ヶ月～3ヶ月程度</p>
+          <p>- 約60万円～180万円程度</p>
+          <p class="note">※1～3ヶ月単位でのご契約となります。</p>
+        </div>
+      </div>
+      <div class="column is-8">
+        <div class="table-content service-content">
+          <h6>サービス内容</h6>
+          <p class="long">
+            IT統制には「IT全社統制」「IT全般統制」「IT業務処理統制」の3つがあります。IT統制を整備するためには、ITシステム毎にアクセス管理や変更管理等のルールを定め、統制の仕組みを構築する必要があります。
+            <br>
+            IT統制を整備するためには、内部統制に関する知識はもちろんのこと、IT技術に関する知識も必要となります。なぜなら、体裁を整えただけの文書を用意することだけが目的ではなく、ITシステム毎の具体的な仕組みの構築が重要だからです。
+            <br><br>
+            当社では過去の実績やIT技術の知識をもとに、IT統制の評価から対策実施支援まで行います。
+            <br>
+            ・現状調査<br>
+            ・IT全般統制整備<br>
+            ・IT統制に関する規程や手順書の作成<br>
+            ・IT統制の評価<br>
+            ・改善策の立案および実施支援<br>
+          </p>
+        </div>
+        <div class="table-content deliverables">
+          <h6>成果物</h6>
+          <p>- 各種方針や規程</p>
+          <p>- 運用手順書</p>
+          <p>- フローチャート、業務記述書、リスクコントロールマトリックス</p>
+          <p>- IT統制の評価結果&nbsp;&nbsp;など</p>
+          <p class="note">※その他、必要に応じて資料を作成します</p>
+        </div>
+      </div>
+    </div>
+    <h3 class="table-title">4.&nbsp;プロジェクトマネジメントサービス</h3>
     <div class="columns table">
       <div class="column is-4 left">
         <div class="table-content target">
@@ -149,9 +192,9 @@
         </div>
         <div class="table-content duration-cost">
           <h6>参考期間/費用</h6>
-          <p>- 約6か月～1年程度</p>
+          <p>- 約6ヶ月～1年程度</p>
           <p>- 約100万円～180万円程度</p>
-          <p class="note">※1～3か月単位でのご契約となります。</p>
+          <p class="note">※1～3ヶ月単位でのご契約となります。</p>
         </div>
       </div>
       <div class="column is-8">
