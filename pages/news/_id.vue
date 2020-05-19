@@ -82,7 +82,6 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          // content: this.data.img.url
           content: image
         }
       ]
@@ -218,7 +217,7 @@ export default {
   margin-left: 0px;
 }
 .image img {
-  object-fit: cover;
+  object-fit: contain;
   margin: 0 auto;
 }
 @media screen and (min-width: 1030px) {

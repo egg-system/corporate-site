@@ -71,20 +71,20 @@ export default {
 .is-one-third img {
   width: 300px;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
   margin: 0 auto;
 }
 .is-one-quarter img {
   width: 300px;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
   margin: 0 auto;
 }
 @media screen and (min-width: 1030px) {
   .is-one-quarter img {
     width: 250px;
     height: 150px;
-    object-fit: cover;
+    object-fit: contain;
     margin: 0 auto;
   }
   .is-one-quarter .news-title {
@@ -99,7 +99,7 @@ export default {
   .is-one-third img {
     width: 250px;
     height: 150px;
-    object-fit: cover;
+    object-fit: contain;
     margin: 0 auto;
   }
   .is-one-third .news-title {
@@ -111,7 +111,7 @@ export default {
   .is-one-quarter img {
     width: 150px;
     height: 100px;
-    object-fit: cover;
+    object-fit: contain;
     margin: 0 auto;
   }
 }
@@ -119,7 +119,7 @@ export default {
   .image img {
     width: 600px;
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
     margin: 0 auto;
   }
 }
