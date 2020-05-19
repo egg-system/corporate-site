@@ -18,7 +18,7 @@
         <nuxt-link to="/news">
           <i/>一覧を見る<span>></span>
         </nuxt-link>
-        <the-sub-header text="ニュース" />
+        <the-sub-header text="お知らせ" />
       </p>
       <div class="news-list">
         <the-news-list :news="list" />
@@ -193,6 +193,12 @@ export default {
   /deep/ ol li {
     margin-left: 20px;
   }
+}
+/deep/ .news-image img {
+  display: none;
+}
+/deep/ .news-title {
+  height: 80px;
 }
 .back {
   margin-top: 30px;
