@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="page-content">
-      <the-hero-title main-text="ニュース" />
+      <the-hero-title main-text="お知らせ" />
       <the-news-list :news="listData"/>
     </div>
   </div>
@@ -19,17 +19,17 @@ export default {
   },
   head() {
     return {
-      title: 'ニュース',
+      title: 'お知らせ',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: '株式会社エッグシステム ニュース'
+          content: '株式会社エッグシステム お知らせ'
         },
         {
           hid: 'keywords',
           name: 'keywords',
-          content: 'ニュース, eggsystem, 株式会社エッグシステム'
+          content: 'お知らせ, eggsystem, 株式会社エッグシステム'
         },
         {
           hid: 'twitter:card',
@@ -40,12 +40,12 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: 'ニュース'
+          content: 'お知らせ'
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: '株式会社エッグシステム ニュース'
+          content: '株式会社エッグシステム お知らせ'
         },
         {
           hid: 'og:url',
