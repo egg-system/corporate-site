@@ -63,7 +63,6 @@ export default {
 .is-one-third img {
   width: 300px;
   height: 200px;
-  background: #e2d0b6;
   object-fit: contain;
   margin: 0 auto;
 }
@@ -71,7 +70,6 @@ export default {
   .is-one-quarter img {
     width: 250px;
     height: 150px;
-    background: #e2d0b6;
     object-fit: contain;
     margin: 0 auto;
   }
@@ -87,7 +85,6 @@ export default {
   .is-one-third img {
     width: 250px;
     height: 150px;
-    background: #e2d0b6;
     object-fit: contain;
     margin: 0 auto;
   }
@@ -97,7 +94,6 @@ export default {
   .is-one-quarter img {
     width: 150px;
     height: 100px;
-    background: #e2d0b6;
     object-fit: contain;
     margin: 0 auto;
   }
@@ -110,7 +106,6 @@ export default {
   .is-one-third img {
     width: 600px;
     height: 400px;
-    background: #e2d0b6;
     object-fit: contain;
     margin: 0 auto;
   }
