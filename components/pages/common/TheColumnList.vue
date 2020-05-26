@@ -78,7 +78,7 @@ export default {
   }
   .column-content {
     margin: 0 auto;
-    width: 250px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 1029px) and (min-width: 769px) {
