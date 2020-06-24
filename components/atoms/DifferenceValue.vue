@@ -11,8 +11,8 @@ export default {
   name: 'DifferenceValue',
   props: {
     value: {
-      type: Number,
-      default: 0
+      type: String,
+      default: ''
     }
   }
 }
@@ -37,7 +37,7 @@ export default {
   font-weight: bold;
 }
 .bg-lightbabyblue {
-  background: $lightBabyBlue;
+  background: $whitesmoke;
 }
 .border-radius {
   border-radius: 5px;

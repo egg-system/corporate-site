@@ -30,6 +30,12 @@ export default {
     select(value) {
       this.$store.dispatch('simulator/commitIndustry', value)
       this.$store.dispatch('simulator/toSales')
+      this.$store.dispatch('simulator/commitSalesRequiredError', false)
+      this.$store.dispatch('simulator/commitEmployeesRequiredError', false)
+      this.$store.dispatch('simulator/commitCostRequiredError', false)
+      this.$store.dispatch('simulator/commitSalesValidationError', false)
+      this.$store.dispatch('simulator/commitEmployeesValidationError', false)
+      this.$store.dispatch('simulator/commitCostValidationError', false)
     }
   }
 }
@@ -63,7 +69,7 @@ export default {
 .cp_ipselect.cp_sl04 {
   position: relative;
   border-radius: 2px;
-  border: 6px solid rgba(25, 92, 165, 0.9);
+  border: 6px solid $black;
   border-radius: 50px;
   background: #ffffff;
   margin-top: 50px;
@@ -79,7 +85,7 @@ export default {
   content: '';
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid rgba(25, 92, 165, 0.9);
+  border-top: 6px solid $black;
   pointer-events: none;
 }
 .cp_ipselect.cp_sl04 select {

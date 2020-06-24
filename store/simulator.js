@@ -3,7 +3,8 @@ export const state = () => ({
     genre: true,
     industry: false,
     sales: false,
-    company: false
+    company: false,
+    result: false
   },
   simulationInfo: {
     genre: 'seizou',
@@ -16,21 +17,46 @@ export const state = () => ({
     companyName: '',
     userName: '',
     mailAddress: ''
+  },
+  requiredErrorFlg: {
+    sales: false,
+    employees: false,
+    cost: false,
+    companyName: false,
+    userName: false,
+    mailAdress: false
+  },
+  validationErrorFlg: {
+    sales: false,
+    employees: false,
+    cost: false,
+    companyName: false,
+    userName: false,
+    mailAdress: false
   }
 })
 
 export const actions = {
-  toGenre({ commit }) {
-    commit('activateGenreFlg')
-  },
   toIndustry({ commit }) {
-    commit('activateIndustryFlg')
+    commit('toIndustry')
   },
   toSales({ commit }) {
-    commit('activateSalesFlg')
+    commit('toSales')
   },
-  toCompany({ commit }) {
-    commit('activateCompanyFlg')
+  // toCompany({ commit }) {
+  //   commit('toCompany')
+  // },
+  toResult({ commit }) {
+    commit('toResult')
+  },
+  backGenre({ commit }) {
+    commit('backGenre')
+  },
+  backIndustry({ commit }) {
+    commit('backIndustry')
+  },
+  backSales({ commit }) {
+    commit('backSales')
   },
   commitGenre({ commit }, value) {
     commit('setGenre', value)
@@ -55,33 +81,73 @@ export const actions = {
   },
   commitMailAddress({ commit }, value) {
     commit('setMailAddress', value)
+  },
+  commitSalesRequiredError({ commit }, value) {
+    commit('setSalesRequiredError', value)
+  },
+  commitEmployeesRequiredError({ commit }, value) {
+    commit('setEmployeesRequiredError', value)
+  },
+  commitCostRequiredError({ commit }, value) {
+    commit('setCostRequiredError', value)
+  },
+  commitCompanyNameRequiredError({ commit }, value) {
+    commit('setCompanyNameRequiredError', value)
+  },
+  commitUserNameRequiredError({ commit }, value) {
+    commit('setUserNameRequiredError', value)
+  },
+  commitMailAddressRequiredError({ commit }, value) {
+    commit('setMailAddressRequiredError', value)
+  },
+  commitSalesValidationError({ commit }, value) {
+    commit('setSalesValidationError', value)
+  },
+  commitEmployeesValidationError({ commit }, value) {
+    commit('setEmployeesValidationError', value)
+  },
+  commitCostValidationError({ commit }, value) {
+    commit('setCostValidationError', value)
+  },
+  commitCompanyNameValidationError({ commit }, value) {
+    commit('setCompanyNameValidationError', value)
+  },
+  commitUserNameValidationError({ commit }, value) {
+    commit('setUserNameValidationError', value)
+  },
+  commitMailAddressValidationError({ commit }, value) {
+    commit('setMailAddressValidationError', value)
   }
 }
 
 export const mutations = {
-  activateGenreFlg(state) {
-    Object.keys(state.activeFlg).forEach(function(value) {
-      state.activeFlg[value] = false
-    })
+  backGenre(state) {
+    state.activeFlg.industry = false
     state.activeFlg.genre = true
   },
-  activateIndustryFlg(state) {
-    Object.keys(state.activeFlg).forEach(function(value) {
-      state.activeFlg[value] = false
-    })
+  backIndustry(state) {
+    state.activeFlg.sales = false
     state.activeFlg.industry = true
   },
-  activateSalesFlg(state) {
-    Object.keys(state.activeFlg).forEach(function(value) {
-      state.activeFlg[value] = false
-    })
+  // backSales(state) {
+  //   state.activeFlg.company = false
+  //   state.activeFlg.sales = true
+  // },
+  toIndustry(state) {
+    state.activeFlg.genre = false
+    state.activeFlg.industry = true
+  },
+  toSales(state) {
+    state.activeFlg.industry = false
     state.activeFlg.sales = true
   },
-  activateCompanyFlg(state) {
-    Object.keys(state.activeFlg).forEach(function(value) {
-      state.activeFlg[value] = false
-    })
-    state.activeFlg.company = true
+  // toCompany(state) {
+  //   state.activeFlg.sales = false
+  //   state.activeFlg.company = true
+  // },
+  toResult(state) {
+    state.activeFlg.sales = false
+    state.activeFlg.result = true
   },
   setGenre(state, value) {
     state.simulationInfo.genre = value
@@ -106,5 +172,41 @@ export const mutations = {
   },
   setMailAddress(state, value) {
     state.companyInfo.mailAddress = value
+  },
+  setSalesRequiredError(state, value) {
+    state.requiredErrorFlg.sales = value
+  },
+  setEmployeesRequiredError(state, value) {
+    state.requiredErrorFlg.employees = value
+  },
+  setCostRequiredError(state, value) {
+    state.requiredErrorFlg.cost = value
+  },
+  setCompanyNameRequiredError(state, value) {
+    state.requiredErrorFlg.companyName = value
+  },
+  setUserNameRequiredError(state, value) {
+    state.requiredErrorFlg.userName = value
+  },
+  setMailAddressRequiredError(state, value) {
+    state.requiredErrorFlg.mailAddress = value
+  },
+  setSalesValidationError(state, value) {
+    state.validationErrorFlg.sales = value
+  },
+  setEmployeesValidationError(state, value) {
+    state.validationErrorFlg.employees = value
+  },
+  setCostValidationError(state, value) {
+    state.validationErrorFlg.cost = value
+  },
+  setCompanyNameValidationError(state, value) {
+    state.validationErrorFlg.companyName = value
+  },
+  setUserNameValidationError(state, value) {
+    state.validationErrorFlg.userName = value
+  },
+  setMailAddressValidationError(state, value) {
+    state.validationErrorFlg.mailAddress = value
   }
 }

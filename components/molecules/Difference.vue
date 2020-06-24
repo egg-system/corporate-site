@@ -20,8 +20,8 @@ export default {
   },
   props: {
     value: {
-      type: Number,
-      default: 0
+      type: String,
+      default: ''
     },
     message: {
       type: String,

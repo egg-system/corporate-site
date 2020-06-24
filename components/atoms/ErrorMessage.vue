@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="margin-1 center color-red font-150">{{ message }}</div>
+  <div class="margin-0 margin-left-2">
+    <span class="color-red font-150">{{ message }}</span>
   </div>
 </template>
 
@@ -27,7 +27,13 @@ export default {
 .color-red {
   color: red;
 }
-.font-150 {
-  font-size: 1.5rem;
+.font-20 {
+  font-size: 20px;
+}
+.margin-1 {
+  margin: 1rem;
+}
+.margin-left-2 {
+  margin-left: 2rem;
 }
 </style>

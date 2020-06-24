@@ -2,14 +2,30 @@
   <div>
     <div class="page-content content">
       <logo />
-      <sales-result-section />
-      <employees-result-section />
+      <transition name="fade">
+        <industry-genre-submit-section v-if="genre" />
+      </transition>
+      <transition name="fade">
+        <industry-submit-section v-if="industry" />
+      </transition>
+      <transition name="fade">
+        <sales-info-submit-section v-if="sales" />
+      </transition>
+      <transition name="fade">
+        <div v-if="result">
+          <sales-result-section />
+          <employees-result-section />
+        </div>
+      </transition>
     </div>
   </div>
 </template>
 
 <script>
 import Logo from '~/components/molecules/Logo.vue'
+import IndustryGenreSubmitSection from '~/components/templates/IndustryGenreSubmitSection.vue'
+import IndustrySubmitSection from '~/components/templates/IndustrySubmitSection.vue'
+import SalesInfoSubmitSection from '~/components/templates/SalesInfoSubmitSection.vue'
 import SalesResultSection from '~/components/templates/SalesResultSection.vue'
 import EmployeesResultSection from '~/components/templates/EmployeesResultSection.vue'
 
@@ -17,6 +33,10 @@ export default {
   layout: 'SimulatorTemplate',
   components: {
     Logo,
+    IndustryGenreSubmitSection,
+    IndustrySubmitSection,
+    IndustryGenreSubmitSection,
+    SalesInfoSubmitSection,
     SalesResultSection,
     EmployeesResultSection
   },
@@ -30,35 +50,23 @@ export default {
     sales: function() {
       return this.$store.state.simulator.activeFlg.sales
     },
-    company: function() {
-      return this.$store.state.simulator.activeFlg.company
-    },
-    genreVal: function() {
-      return this.$store.state.simulator.simulationInfo.genre
-    },
-    industryVal: function() {
-      return this.$store.state.simulator.simulationInfo.industry
-    },
-    salesVal: function() {
-      return this.$store.state.simulator.simulationInfo.sales
-    },
-    employeesVal: function() {
-      return this.$store.state.simulator.simulationInfo.employees
-    },
-    costVal: function() {
-      return this.$store.state.simulator.simulationInfo.cost
-    },
-    companyNameVal: function() {
-      return this.$store.state.simulator.companyInfo.companyName
-    },
-    UserNameVal: function() {
-      return this.$store.state.simulator.companyInfo.userName
-    },
-    mailAddressVal: function() {
-      return this.$store.state.simulator.companyInfo.mailAddress
+    result: function() {
+      return this.$store.state.simulator.activeFlg.result
     }
+  },
+  transition: {
+    name: 'fade'
   }
 }
 </script>
 <style lang="scss" scoped>
+.fade-enter-active {
+  transition: opacity 1s;
+}
+.fade-leave-active {
+  transition: opacity 0s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 </style>

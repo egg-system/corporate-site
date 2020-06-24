@@ -1,7 +1,6 @@
 <template>
   <div class="flex align-center">
     <logo-image />
-    <logo-title />
   </div>
 </template>
 

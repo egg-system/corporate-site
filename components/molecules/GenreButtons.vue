@@ -1,7 +1,7 @@
 <template>
   <div class="center flex">
-    <circle-button class="margin-1" label="製造業" @genre="seizou"/>
-    <circle-button class="margin-1" label="非製造業" @genre="hiseizou"/>
+    <circle-button class="margin-3" label="製造業" @genre="seizou"/>
+    <circle-button class="margin-3" label="非製造業" @genre="hiseizou"/>
   </div>
 </template>
 
@@ -33,7 +33,7 @@ export default {
 .flex {
   display: flex;
 }
-.margin-1 {
-  margin: 1rem;
+.margin-3 {
+  margin: 3rem;
 }
 </style>

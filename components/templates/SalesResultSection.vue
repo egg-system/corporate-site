@@ -1,20 +1,20 @@
 <template>
-  <div class="margin-2 margin-top-8">
+  <div class="margin-2 margin-top-5">
     <result-section-title label="年間売上高規模別" />
     <result-section-description :range="range" label="年間売上" />
     <result-table
       :industry="industry"
       :genre="genre"
-      :client-val="clientVal"
-      :industry-val="industryVal"
-      :genre-val="genreVal"
-      :all-val="allVal"
+      :client-val="clientVal.toString()"
+      :industry-val="industryVal.toString()"
+      :genre-val="genreVal.toString()"
+      :all-val="allVal.toString()"
     />
     <div class="columns">
-      <div class="column margin-3">
+      <div class="column margin-2">
         <difference :value="value" :message="difMessage" />
       </div>
-      <div class="column margin-3">
+      <div class="column margin-2">
         <recommend :message="recMessage" />
       </div>
     </div>
@@ -39,6 +39,7 @@ export default {
     Recommend
   },
   computed: {
+    // 入力売上高から該当範囲を選出
     range: function() {
       var sales = this.$store.state.simulator.simulationInfo.sales
       if (sales <= 100000000) return '～ １億円以下'
@@ -49,56 +50,66 @@ export default {
       else if (sales <= 100000000000) return '１００億円超～ １，０００億円以下'
       else return '１，０００億円超～'
     },
+    // 差分を算出
     value: function() {
       if (this.industryVal != 'NO DATA') {
         return (
-          (Math.abs(this.clientVal - this.industryVal) / 100) *
-            this.$store.state.simulator.simulationInfo.sales +
-          '円'
+          Number(
+            (Math.abs(this.clientVal - this.industryVal) / 100) *
+              this.$store.state.simulator.simulationInfo.sales
+          ).toLocaleString() + '円'
         )
       } else {
-        return '比較差分算出不可です。'
+        return '比較対象データがないため算出不可です。'
       }
     },
+    // 多いか少ないその他かメッセージを判定
     difMessage: function() {
       if (this.industryVal != 'NO DATA') {
-        return this.clientVal - this.industryVal < 0 ? '少ない!!' : '多い!!'
+        return this.clientVal - this.industryVal < 0 ? '少ないです' : '多いです'
       } else {
         return '（' + this.industry + 'のデータがありません）'
       }
     },
+    // おすすめメッセージを判定
     recMessage: function() {
       if (this.industryVal != 'NO DATA') {
         return this.clientVal - this.industryVal < 0
           ? '新システムの導入や機能追加など、システム投資を増やす検討をおすすめします'
-          : 'コスト削減をする必要があります'
+          : 'コスト削減をおすすめします'
       } else {
         return ''
       }
     },
+    // 業種を取得
     industry: function() {
       return this.$store.state.simulator.simulationInfo.industry
     },
+    // 業種種別を算出
     genre: function() {
       var genre = this.$store.state.simulator.simulationInfo.genre
       if (genre == 'seizou') return '製造業'
       else return '非製造業'
     },
+    // 顧客コスト割合を算出
     clientVal: function() {
       var cost = this.$store.state.simulator.simulationInfo.cost
       var sales = this.$store.state.simulator.simulationInfo.sales
       return Math.round((cost / sales) * 1000) / 10
     },
+    // 同業種のコスト割合を算出
     industryVal: function() {
       var value = Number(dataForSales[this.industry][this.range])
       if (value == 0) return 'NO DATA'
       else return value
     },
+    // 業種種別のコスト割合を算出
     genreVal: function() {
       var value = Number(dataForSales[this.genre + '計'][this.range])
       if (value == 0) return 'NO DATA'
       return value
     },
+    // 全業種のコスト割合を算出
     allVal: function() {
       var value = Number(dataForSales['合計'][this.range])
       if (value == 0) return 'NO DATA'
@@ -117,7 +128,7 @@ export default {
 .margin-3 {
   margin: 3rem;
 }
-.margin-top-8 {
-  margin-top: 8rem;
+.margin-top-5 {
+  margin-top: 5rem;
 }
 </style>

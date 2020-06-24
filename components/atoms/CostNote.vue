@@ -1,14 +1,14 @@
 <template>
-  <div>
-    <div class="text-center bold font-30">{{ question }}</div>
+  <div class="text-center bold font-13">
+    <span>{{ note }}</span>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Question',
+  name: 'CostNote',
   props: {
-    question: {
+    note: {
       type: String,
       default: ''
     }
@@ -22,7 +22,7 @@ export default {
 .blod {
   font-weight: bold;
 }
-.font-30 {
-  font-size: 30px;
+.font-13 {
+  font-size: 13px;
 }
 </style>

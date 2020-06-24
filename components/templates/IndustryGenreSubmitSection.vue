@@ -1,7 +1,7 @@
 <template>
   <div class="center">
-    <question class="margin-2" question="業種の分類を選択してください" />
-    <genre-buttons @seizou="seizou" @hiseizou="hiseizou"/>
+    <question class="margin-2" question="業種の分類を選択してください。" />
+    <genre-buttons />
   </div>
 </template>
 
@@ -16,22 +16,9 @@ export default {
     GenreButtons
   },
   data: () => ({
-    genre: false
-  }),
-  methods: {
-    seizou() {
-      this.$parent.simulationInfo.genre = '製造業'
-      this.next()
-    },
-    hiseizou() {
-      this.$parent.simulationInfo.genre = '非製造業'
-      this.next()
-    },
-    next() {
-      this.$parent.activeFlg.genre = false
-      this.$parent.activeFlg.industry = true
-    }
-  }
+    genre: false,
+    result: ''
+  })
 }
 </script>
 <style lang="scss" scoped>

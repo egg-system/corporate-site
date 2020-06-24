@@ -1,45 +1,58 @@
 <template>
   <div class="center">
-    <question class="margin-2" question="情報を入力してください" />
-    <error-message v-if="error" message="未入力の項目があります。"/>
+    <sales-question class="margin-2" />
     <sales-input-form />
-    <landscape-button label="次へ" @next="next"/>
+    <landscape-button label="結果を見る" @next="next"/>
+    <previous-button class="margin-top-5 margin-left-10" @previous="previous"/>
   </div>
 </template>
 
 <script>
+import PreviousButton from '~/components/atoms/PreviousButton.vue'
 import ErrorMessage from '~/components/atoms/ErrorMessage.vue'
-import Question from '~/components/atoms/Question.vue'
+import SalesQuestion from '~/components/molecules/SalesQuestion.vue'
 import SalesInputForm from '~/components/organisms/SalesInputForm.vue'
 import LandscapeButton from '~/components/atoms/LandscapeButton.vue'
 
 export default {
   name: 'SalesInfoSubmitSection',
   components: {
+    PreviousButton,
     ErrorMessage,
-    Question,
+    SalesQuestion,
     SalesInputForm,
     LandscapeButton
   },
-  data: () => ({
-    errorFlg: false
-  }),
-  computed: {
-    error: function() {
-      return this.errorFlg
-    }
-  },
   methods: {
     next() {
+      if (this.required() | this.validation()) return
+      else this.$store.dispatch('simulator/toResult')
+    },
+    previous() {
+      this.$store.dispatch('simulator/backIndustry')
+    },
+    required() {
+      var salesFlg = this.$store.state.simulator.simulationInfo.sales == 0
+      var employeesFlg =
+        this.$store.state.simulator.simulationInfo.employees == 0
+      var costFlg = this.$store.state.simulator.simulationInfo.cost == 0
+      this.$store.dispatch('simulator/commitSalesRequiredError', salesFlg)
+      this.$store.dispatch(
+        'simulator/commitEmployeesRequiredError',
+        employeesFlg
+      )
+      this.$store.dispatch('simulator/commitCostRequiredError', costFlg)
+      if (salesFlg || employeesFlg || costFlg) return true
+      else return false
+    },
+    validation() {
       if (
-        this.$store.state.simulator.simulationInfo.sales == '' ||
-        this.$store.state.simulator.simulationInfo.employees == '' ||
-        this.$store.state.simulator.simulationInfo.cost == ''
-      ) {
-        this.errorFlg = true
-      } else {
-        this.$store.dispatch('simulator/toCompany')
-      }
+        this.$store.state.simulator.requiredErrorFlg.sales ||
+        this.$store.state.simulator.requiredErrorFlg.employees ||
+        this.$store.state.simulator.requiredErrorFlg.cost
+      )
+        return true
+      else return false
     }
   }
 }
@@ -47,5 +60,11 @@ export default {
 <style lang="scss" scoped>
 .margin-2 {
   margin: 2rem;
+}
+.margin-top-5 {
+  margin-top: 5rem;
+}
+.margin-left-10 {
+  margin-left: 10%;
 }
 </style>

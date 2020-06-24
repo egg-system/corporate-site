@@ -23,11 +23,11 @@ export default {
 <style lang="scss" scoped>
 .button {
   background: $white;
-  color: rgba(25, 92, 165, 0.9);
+  color: $black;
   height: 200px;
   width: 200px;
   border-radius: 100px;
-  border: 10px solid rgba(25, 92, 165, 0.9);
+  border: 10px solid $black;
   cursor: pointer;
   font-size: 24px;
   font-weight: 600;
@@ -35,7 +35,7 @@ export default {
   text-align: center;
   white-space: pre-wrap;
   &:hover {
-    background: rgba(25, 92, 165, 0.9);
+    background: $darkblack;
     color: $white;
   }
 }

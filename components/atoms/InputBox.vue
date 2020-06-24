@@ -4,8 +4,10 @@
       <input
         :value="text"
         :placeholder="label"
-        class="ef" type="text"
-        @input="input"
+        class="ef"
+        type="text"
+        @blur="blur"
+        @focus="focus"
       >
       <span class="focus_line" />
     </div>
@@ -26,8 +28,11 @@ export default {
     }
   },
   methods: {
-    input(e) {
-      this.$emit('input', e.target.value)
+    focus(e) {
+      this.$emit('focus', e.target.value)
+    },
+    blur(e) {
+      this.$emit('blur', e.target.value)
     }
   }
 }
@@ -61,7 +66,7 @@ export default {
   width: 0;
   height: 2px;
   transition: 0.4s;
-  background-color: rgba(25, 92, 165, 0.9);
+  background-color: $black;
 }
 .ef:focus ~ .focus_line,
 .cp_iptxt.ef ~ .focus_line {

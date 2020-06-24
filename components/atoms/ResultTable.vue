@@ -1,5 +1,5 @@
 <template>
-  <div class="margin-3 padding-3 bg-lightbabyblue border-radius-1">
+  <div class="margin-2 padding-3 bg-lightbabyblue border-radius-1">
     <div class="columns">
       <div class="column is-4" />
       <div class="column is-4" />
@@ -55,20 +55,20 @@ export default {
       default: ''
     },
     clientVal: {
-      type: Number,
-      default: 0
+      type: String,
+      default: ''
     },
     industryVal: {
-      type: Number,
-      default: 0
+      type: String,
+      default: ''
     },
     genreVal: {
-      type: Number,
-      default: 0
+      type: String,
+      default: ''
     },
     allVal: {
-      type: Number,
-      default: 0
+      type: String,
+      default: ''
     }
   }
 }
@@ -79,14 +79,14 @@ export default {
   align-items: center;
   text-align: center;
 }
-.margin-3 {
-  margin: 3rem;
+.margin-2 {
+  margin: 2rem;
 }
 .padding-3 {
   padding: 3rem;
 }
 .bg-lightbabyblue {
-  background: $lightBabyBlue;
+  background: $whitesmoke;
 }
 .border-radius-1 {
   border-radius: 1rem;
