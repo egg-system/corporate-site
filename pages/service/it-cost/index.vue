@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="content page-content">
-      <the-hero-title main-text="コストシミュレーション" />
+      <the-hero-title main-text="ITコスト シミュレーション" />
       <the-form />
     </div>
   </div>
