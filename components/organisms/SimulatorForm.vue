@@ -21,8 +21,8 @@ export default {
         {
           hid: 'company-description',
           name: 'description',
-          content:
-            'ITコスト シミュレーション利用登録フォーム'
+          content: 'ITコスト シミュレーション利用登録フォーム'
+        },
         {
           hid: 'company-keywords',
           name: 'keywords',
@@ -47,8 +47,7 @@ export default {
         {
           hid: 'company-og:description',
           property: 'og:description',
-          content:
-            'ITコスト シミュレーション利用登録フォーム'
+          content: 'ITコスト シミュレーション利用登録フォーム'
         },
         {
           hid: 'company-og:url',
