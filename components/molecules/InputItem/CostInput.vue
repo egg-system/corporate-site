@@ -11,15 +11,15 @@
       />円
     </div>
     <div class="flex center columns">
-      <div class="column is-4" />
+      <div v-if="requiredErrorFlg || validationErrorFlg" class="column is-4" />
       <div class="column align-left padding-0 relative under-textbox">
         <error-message v-if="requiredErrorFlg" message="未入力です。" />
         <error-message v-if="validationErrorFlg" message="半角数字で入力してください。" />
       </div>
     </div>
     <cost-note
-      class="width-70 center"
-      note="※システム費用には、コンピュータ・周辺機器関連費用、通信機器関連費用、ソフトウェア関連費用、システム関連の外部委託費用などを含みます。"
+      class="left"
+      note="※システム費用には、コンピュータ・周辺機器関連費用、通信機器関連費用、<br>　ソフトウェア関連費用、システム関連の外部委託費用などを含みます。"
     />
   </div>
 </template>
@@ -129,6 +129,10 @@ export default {
 .center {
   justify-content: center;
   align-items: center;
+  margin: auto;
+}
+.left {
+  text-align: left;
   margin: auto;
 }
 .padding-0 {

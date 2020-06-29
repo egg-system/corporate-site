@@ -3,7 +3,7 @@
     <sales-question class="margin-2" />
     <sales-input-form />
     <landscape-button label="結果を見る" @next="next"/>
-    <previous-button class="margin-top-5 margin-left-10" @previous="previous"/>
+    <previous-button class="margin-top-5 margin-left-10 margin-bottom-10" @previous="previous"/>
   </div>
 </template>
 
@@ -66,5 +66,8 @@ export default {
 }
 .margin-left-10 {
   margin-left: 10%;
+}
+.margin-bottom-10 {
+  margin-bottom: 10%;
 }
 </style>

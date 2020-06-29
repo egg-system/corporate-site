@@ -54,7 +54,7 @@ export default {
     value: function() {
       if (this.industryVal != 'NO DATA') {
         return (
-          Number(
+          Math.floor(
             (Math.abs(this.clientVal - this.industryVal) / 100) *
               this.$store.state.simulator.simulationInfo.sales
           ).toLocaleString() + '円'
@@ -78,7 +78,7 @@ export default {
           ? '新システムの導入や機能追加など、システム投資を増やす検討をおすすめします'
           : 'コスト削減をおすすめします'
       } else {
-        return ''
+        return 'こちらからお問い合わせいただきますと、<br>詳細なご試算が可能です。'
       }
     },
     // 業種を取得

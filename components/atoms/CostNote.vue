@@ -1,6 +1,6 @@
 <template>
-  <div class="text-center bold font-13">
-    <span>{{ note }}</span>
+  <div class="font-13">
+    <span v-html="note" />
   </div>
 </template>
 
@@ -18,9 +18,6 @@ export default {
 <style lang="scss" scoped>
 .text-center {
   text-align: center;
-}
-.blod {
-  font-weight: bold;
 }
 .font-13 {
   font-size: 13px;

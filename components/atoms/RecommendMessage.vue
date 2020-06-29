@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <div class="margin-1 center">
-      {{ message }}
-    </div>
+  <div class="margin-1 center">
+    <span class=" center" v-html="message" />
   </div>
 </template>
 

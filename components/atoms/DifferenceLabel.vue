@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="margin-1 center">
-      {{ industry }}の平均値と比べて、システムコストが年間あたり
+      {{ industry }}の平均値と比べて、<br>システムコストが年間あたり
     </div>
   </div>
 </template>
