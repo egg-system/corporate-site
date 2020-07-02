@@ -1,56 +1,65 @@
 <template>
   <div class="service">
-    <div class="service-columns">
-      <div class="link">
-        <nuxt-link to="/service" class="button is-dark">
-          <span class="link-message">x-faCEのサービスへ</span>
-          <span class="column-arrow" />
-        </nuxt-link>
+    <div class="columns">
+      <div class="column is-4 center font-size-24px bold">
+        <h2 class="">x-faCEについてもっと知る</h2>
       </div>
-      <div class="link">
-        <nuxt-link to="/request" class="button is-dark">
-          <span class="link-message">ご依頼の流れ</span>
-          <span class="column-arrow" />
-        </nuxt-link>
-      </div>
+      <black-link class="column is-4" label="x-faCEのサービスへ" link="/service" />
+      <black-link class="column is-4" label="ご依頼の流れ" link="/request" />
     </div>
   </div>
 </template>
 
 <script>
+import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
+import BlackLink from '~/components/atoms/BlackLink.vue'
+
+export default {
+  components: {
+    TheSubHeader,
+    BlackLink
+  }
+}
 </script>
 
 <style lang="scss" scoped>
+.font-size-24px {
+  font-size: 24px;
+}
+.bold {
+  font-weight: bold;
+}
 .service {
   width: 80%;
   margin: 0 auto;
   margin-top: 8%;
-  margin-bottom: 8%;
-  background: $white;
+  padding-bottom: 8%;
+  border-bottom: 1px solid $lightgray;
 }
-.service-columns {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+.columns {
+  margin: 0;
 }
-.link {
-  width: 30rem;
+.center {
+  text-align: center;
+  align-items: center;
+  margin: auto;
 }
 
 @media screen and (max-width: 600px) {
   .service {
     width: 90%;
+    padding-bottom: 0;
   }
   .link {
     width: 100%;
   }
 }
 @media screen and (max-width: 769px) {
-  .service-columns {
-    display: block;
-  }
   .link {
     margin: 50px auto;
+  }
+  .column {
+    padding: 0;
   }
 }
 </style>
