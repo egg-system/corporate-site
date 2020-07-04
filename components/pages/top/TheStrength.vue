@@ -56,7 +56,7 @@ export default {
   line-height: 17px;
   vertical-align: 2px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 769px) {
   .strength-list {
     width: 90%;
   }

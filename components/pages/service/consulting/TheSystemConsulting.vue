@@ -8,16 +8,25 @@
         </figure>
       </div>
       <div class="column is-half system-consulting">
-        <div class="message">システム導入や導入後の運用を軸に、「計画」「推進」「管理」に沿ったサービスを提供します。</div>
-        <div class="message">
-          その他にも、お客様のご要望に合わせてカスタマイズしたサービスをご提供しますので、
-          <nuxt-link to="/contact">お問い合わせフォーム</nuxt-link>よりお気軽にご相談ください。
+        <div class="margin-bottom-3">
+          <div class="message">システム導入や導入後の運用を軸に、「計画」「推進」「管理」に沿ったサービスを提供します。</div>
+          <div class="message">
+            その他にも、お客様のご要望に合わせてカスタマイズしたサービスをご提供しますので、
+            <nuxt-link to="/contact">お問い合わせフォーム</nuxt-link>よりお気軽にご相談ください。
+          </div>
+          <div class="link">
+            <nuxt-link v-scroll-to="'.system-consulting-case'" to class="button is-dark">
+              <span class="link-message">事例紹介へ</span>
+              <span class="column-arrow" />
+            </nuxt-link>
+          </div>
         </div>
-        <div class="link">
-          <nuxt-link v-scroll-to="'.system-consulting-case'" to class="button is-dark">
-            <span class="link-message">事例紹介へ</span>
-            <span class="column-arrow" />
-          </nuxt-link>
+        <div>
+          <div class="message">
+            システムにかかる総コスト（ITコスト）が妥当かどうか、5分で簡単にわかるITコストシミュレーションを無料でご利用いただけます。<br>
+            経済産業省が公表しているデータに基づき、業種、売上規模・従業員数が同程度の他社と比較しITコストが妥当かシミュレーションします。
+          </div>
+          <black-link label="ITコストシミュレーションへ" link="/service/it-cost" />
         </div>
       </div>
     </div>
@@ -237,6 +246,7 @@
 
 <script>
 import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
+import BlackLink from '~/components/atoms/BlackLink.vue'
 import TheCase from '~/components/pages/service/common/TheCase.vue'
 import consultingImage from '~/assets/service/img/service-consult01.JPG'
 import systemConsultingCases from '~/assets/service/js/SystemConsultingCases.js'
@@ -244,7 +254,8 @@ import systemConsultingCases from '~/assets/service/js/SystemConsultingCases.js'
 export default {
   components: {
     TheSubHeader,
-    TheCase
+    TheCase,
+    BlackLink
   },
   data: () => ({
     consultingImage,
@@ -271,6 +282,9 @@ div {
 .message {
   background-color: inherit;
   line-height: 1.25 !important;
+}
+.margin-bottom-3 {
+  margin-bottom: 3rem;
 }
 .columns {
   margin-bottom: 3rem;
