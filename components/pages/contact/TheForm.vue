@@ -235,7 +235,7 @@ iframe.form-frame {
 }
 @media screen and (max-width: 600px) {
   iframe.form-frame {
-    height: 2200px;
+    height: 1200px;
   }
 }
 </style>

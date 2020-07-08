@@ -28,7 +28,6 @@ import TheSubHeader from '~/components/pages/request/TheSubHeader.vue'
 import TheFlow from '~/components/pages/request/TheFlow.vue'
 import TheService from '~/components/pages/request/TheService.vue'
 import TheContact from '~/components/pages/top/TheContact.vue'
-import TheColumn from '~/components/pages/request/TheColumn.vue'
 import services from '~/assets/request/js/services.js'
 
 export default {
@@ -37,8 +36,7 @@ export default {
     TheSubHeader,
     TheFlow,
     TheService,
-    TheContact,
-    TheColumn
+    TheContact
   },
   data: () => ({
     services: services.services
