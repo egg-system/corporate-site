@@ -85,13 +85,13 @@ export default {
 .blank {
 }
 .padding-0 {
-  padding: 0;
+  padding: 0 !important;
 }
 .padding-top-0 {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 .padding-bottom-8rem {
-  padding-bottom: 8rem;
+  padding-bottom: 8rem !important;
 }
 @media screen and (max-width: 769px) {
 }
