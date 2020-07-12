@@ -65,7 +65,7 @@ $colors: map-merge($colors, $addColors);
 .center-text {
   text-align: center;
 }
-.lightgray-underline{
+.lightgray-underline {
   border-bottom: 1px solid $lightgray;
 }
 body {
@@ -107,4 +107,7 @@ body {
   padding-right: 0;
   padding-left: 0;
   padding-bottom: 0;
+}
+.word-break {
+  word-break: break-all;
 }
