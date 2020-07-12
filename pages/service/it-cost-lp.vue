@@ -34,46 +34,46 @@ export default {
   },
   head() {
     return {
-      title: 'ITコストシミュレーションLP',
+      title: 'ITコストシミュレーション',
       meta: [
         {
-          hid: 'about-description',
+          hid: 'it-cost-lp-description',
           name: 'description',
           content:
-            '株式会社エッグシステムでは、《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。'
+            'ITコストが妥当かどうか5分で簡単に診断できる「ITコストシミュレーション」を無料でご利用頂けます。貴社の業務・売上規模・従業員数・ITコストを入力することで経済産業省が公表しているデータに基づき同業他社と比較してITコストが妥当かどうか判定します。'
         },
         {
-          hid: 'about-keywords',
+          hid: 'it-cost-lp-keywords',
           name: 'keywords',
           content:
-            '献身的な人のためにITシステムを活用する, 100人のコンサルティングエンジニア集団をつくる, 圧倒的当事者意識'
+            'ITコスト, シミュレーション, ITコストシミュレーション, シミュレーター, ITコストシミュレーター, '
         },
         {
-          hid: 'about-twitter:card',
+          hid: 'it-cost-lp-twitter:card',
           property: 'twitter:card',
           content: 'summary'
         },
-        { hid: 'about-og:type', property: 'og:type', content: 'article' },
+        { hid: 'it-cost-lp-og:type', property: 'og:type', content: 'article' },
         {
-          hid: 'about-og:title',
+          hid: 'it-cost-lp-og:title',
           property: 'og:title',
-          content: 'わたしたちについて'
+          content: 'ITコストシミュレーション'
         },
         {
-          hid: 'about-og:description',
+          hid: 'it-cost-lp-og:description',
           property: 'og:description',
           content:
-            '株式会社エッグシステムでは、《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。'
+            'ITコストが妥当かどうか5分で簡単に診断できる「ITコストシミュレーション」を無料でご利用頂けます。'
         },
         {
-          hid: 'about-og:url',
+          hid: 'it-cost-lp-og:url',
           property: 'og:url',
-          content: 'https://eggsystem.co.jp/about'
+          content: 'https://eggsystem.co.jp/'
         },
         {
-          hid: 'about-og:image',
+          hid: 'it-cost-lp-og:image',
           property: 'og:image',
-          content: 'https://eggsystem.co.jp/ogp/top-about.JPG'
+          content: 'https://eggsystem.co.jp/ogp/top_pc.jpg'
         }
       ]
     }
