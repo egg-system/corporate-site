@@ -38,7 +38,11 @@ export default {
           property: 'twitter:card',
           content: 'summary'
         },
-        { hid: 'trial-calculation-og:type', property: 'og:type', content: 'article' },
+        {
+          hid: 'trial-calculation-og:type',
+          property: 'og:type',
+          content: 'article'
+        },
         {
           hid: 'trial-calculation-og:title',
           property: 'og:title',
@@ -57,7 +61,6 @@ export default {
       ]
     }
   }
-
 }
 </script>
 
