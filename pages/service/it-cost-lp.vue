@@ -1,13 +1,13 @@
 <template>
   <div class="content page-content">
     <the-hero-title main-text="【無料で簡単に診断】ITコストシミュレーション" />
-    <first-view />
-    <first-lead />
-    <experience />
-    <simulation-example />
-    <reference />
+    <first-view class="padding-0" />
+    <first-lead class="padding-top-0" />
+    <experience class="lightgray-underline" />
+    <simulation-example class="lightgray-underline" />
+    <reference class="lightgray-underline" />
     <second-lead />
-    <contact />
+    <contact class="padding-bottom-8rem" />
   </div>
 </template>
 
@@ -84,6 +84,15 @@ export default {
 <style lang="scss" scoped>
 .blank {
 }
-@media screen and (max-width: 768px) {
+.padding-0 {
+  padding: 0;
+}
+.padding-top-0 {
+  padding-top: 0;
+}
+.padding-bottom-8rem {
+  padding-bottom: 8rem;
+}
+@media screen and (max-width: 769px) {
 }
 </style>

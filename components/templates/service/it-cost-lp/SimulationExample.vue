@@ -4,8 +4,8 @@
     <div class="columns">
       <div class="column is-4 margin-left-2rem">
         <description message="・卸売業" />
-        <description message="・売上：3億円" />
-        <description message="・従業員数：15名" />
+        <description message="・売上　　　　　　：3億円" />
+        <description message="・従業員数　　　　：15名" />
         <description message="・年間システム費用：600万円" />
       </div>
       <div-image class="column is-8" />
