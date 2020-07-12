@@ -1,9 +1,12 @@
 <template>
   <div class="reference text-center">
     <message message="当ITコストシミュレーションでは、<br>経済産業省が公表している「IT関連統計」のデータに基づき計算しているため<br>安心してご利用頂けます。" />
-    <description
-      message="※出典：経済産業省　IT関連統計　<a href='https://www.meti.go.jp/policy/it_policy/statistics/index.html'>https://www.meti.go.jp/policy/it_policy/statistics/index.html</a>"
-    />
+    <div class="flex">
+      <description message="※出典：経済産業省　IT関連統計"/>
+      <description
+        message="<a href='https://www.meti.go.jp/policy/it_policy/statistics/index.html' target='_blank' class='word-break'>https://www.meti.go.jp/policy/it_policy/statistics/index.html</a>"
+      />
+    </div>
   </div>
 </template>
 
