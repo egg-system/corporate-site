@@ -41,7 +41,6 @@ export default {
 <style lang="scss" scoped>
 .experience {
   padding: 4rem 0;
-  border-bottom: 1px solid $whitesmoke;
 }
 .text-center {
   text-align: center;

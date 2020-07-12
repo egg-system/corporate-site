@@ -20,7 +20,6 @@ export default {
 <style lang="scss" scoped>
 .reference {
   padding: 4rem 0;
-  border-bottom: 1px solid $whitesmoke;
 }
 .text-center {
   text-align: center;

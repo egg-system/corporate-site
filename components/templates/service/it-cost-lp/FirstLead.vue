@@ -26,12 +26,16 @@ export default {
 </script>
 <style lang="scss" scoped>
 .first-lead {
-  padding-bottom: 4rem;
+  padding: 4rem 0;
 }
 .text-center {
   text-align: center;
 }
-.width-30rem {
-  width: 30rem;
+@media screen and (min-width: 769px) {
+  .width-30rem {
+    width: 30rem !important;
+  }
+}
+@media screen and (max-width: 769px) {
 }
 </style>

@@ -20,12 +20,15 @@ export default {
 <style lang="scss" scoped>
 .contact {
   padding: 4rem 0;
-  padding-bottom: 8rem;
 }
 .text-center {
   text-align: center;
 }
-.width-30rem {
-  width: 30rem;
+@media screen and (min-width: 769px) {
+  .width-30rem {
+    width: 30rem !important;
+  }
+}
+@media screen and (max-width: 769px) {
 }
 </style>

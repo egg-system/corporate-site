@@ -25,6 +25,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .first-view {
+  padding: 4rem 0;
 }
 .align-center {
   margin: auto 0;

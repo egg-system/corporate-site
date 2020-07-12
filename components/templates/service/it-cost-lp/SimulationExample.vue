@@ -30,7 +30,6 @@ export default {
 <style lang="scss" scoped>
 .simulation-example {
   padding: 4rem 0;
-  border-bottom: 1px solid $whitesmoke;
 }
 .margin-left-2rem {
   margin-left: 2rem;
