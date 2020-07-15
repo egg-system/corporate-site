@@ -26,7 +26,7 @@
             システムにかかる総コスト（ITコスト）が妥当かどうか、5分で簡単にわかるITコストシミュレーションを無料でご利用いただけます。<br>
             経済産業省が公表しているデータに基づき、業種、売上規模・従業員数が同程度の他社と比較しITコストが妥当かシミュレーションします。
           </div>
-          <black-link label="ITコストシミュレーションへ" link="/service/it-cost" />
+          <black-link label="ITコストシミュレーションへ" link="/service/it-cost-lp" />
         </div>
       </div>
     </div>
