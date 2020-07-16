@@ -14,7 +14,7 @@
         </p>
         <div class="btn-area">
           <div class="Heading__cta">
-            <nuxt-link class="next-button" to="/service/it-cost">
+            <nuxt-link class="next-button" to="/service/it-cost-lp">
               <the-link-button />
             </nuxt-link>
           </div>
