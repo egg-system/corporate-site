@@ -12,14 +12,14 @@
         <nuxt-link class="navbar-item" to="/service">
           サービス
         </nuxt-link>
+        <nuxt-link class="navbar-item" to="/service/it-cost-lp">
+          ITコストシミュレーション
+        </nuxt-link>
         <nuxt-link class="navbar-item" to="/member">
           メンバー
         </nuxt-link>
         <nuxt-link class="navbar-item" to="/recruit">
           採用
-        </nuxt-link>
-        <nuxt-link class="navbar-item" to="/service/it-cost-lp">
-          ITコストシミュレーション
         </nuxt-link>
       </div>
       <div class="column is-3 second">
