@@ -3,9 +3,9 @@
     <the-sub-header text="得られること" class="margin-bottom-3rem" />
     <div class="columns text-center">
       <div class="column">
-        <item-title message="(1)<br>無料でITコストの妥当性がわかる" class="margin-bottom-3rem" />
+        <item-title message="(1)<br>システムにかかる費用の妥当性がわかる" class="margin-bottom-3rem" />
         <description
-          message="現在システムにかかっているITコストが、同業他社と比べて多いのか、少ないのか、わかります。目的地へ向かうために、まず現在地を把握する必要があります。現状のITコストの妥当性を把握することが第一歩です。"
+          message="現在システムにかかっている費用（ITコスト）が、同業他社と比べて多いのか、少ないのか、わかります。地図を広げて目的地へ向かうためには、まずは現在地を把握する必要があります。現状のITコストの妥当性を把握することが第一歩です。"
         />
       </div>
       <div class="column">
