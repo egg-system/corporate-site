@@ -1,7 +1,7 @@
 <template>
   <div class="contact text-center">
     <message message="「シミュレーション結果について相談したい」<br>「コスト削減やシステム投資について相談したい」<br>「こんな相談してよいのか分からない」<br>「まずは話だけ聞いてみたい」<br>という方はこちらからお気軽にご相談ください。" />
-    <black-link label="お問い合わせへ" link="/contact" class="width-30rem" />
+    <black-link label="お問い合わせへ" link="/contact" class="width-30rem" onclick="ga('send', 'event', 'it-cost-lp-contact', 'button_click','it-cost-lp-contact_1',1);" />
   </div>
 </template>
 
