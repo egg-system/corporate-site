@@ -6,7 +6,7 @@
     <experience class="lightgray-underline" />
     <simulation-example class="lightgray-underline" />
     <reference class="lightgray-underline" />
-    <second-lead />
+    <second-lead class="lightgray-underline" />
     <contact class="padding-bottom-8rem" />
   </div>
 </template>

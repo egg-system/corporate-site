@@ -3,6 +3,8 @@
     <the-sub-header text="シミュレーション結果例" />
     <div class="columns">
       <div class="column is-4 margin-left-2rem">
+        下記の条件を入力した場合のシミュレーション結果は右図のとおりです。<br><br>
+        【入力した情報】
         <description message="・卸売業" />
         <description message="・売上　　　　　　：3億円" />
         <description message="・従業員数　　　　：15名" />
