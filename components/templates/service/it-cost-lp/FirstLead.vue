@@ -8,7 +8,7 @@
       message="貴社の業種・売上規模・従業員数・ITコストを入力することで<br>経済産業省が公表しているデータに基づき<br>同業他社と比較してITコストが妥当かどうか判定します。"
       class="text-center"
     />
-    <black-link label="無料で利用開始する" link="/service/it-cost" class="width-30rem" />
+    <black-link label="無料で利用開始する" link="/service/it-cost/trial-calculation/" class="width-30rem" />
   </div>
 </template>
 
