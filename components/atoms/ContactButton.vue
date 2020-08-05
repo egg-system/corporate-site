@@ -2,7 +2,7 @@
   <div class="width-7 center">
     <nuxt-link to="/contact" >
       <div class="center padding-1 font-150 font-bold color-white border-radius bg-lightbabyblue">
-        ご相談はこちらで承ります
+        ご相談はこちらから
       </div>
     </nuxt-link>
   </div>
