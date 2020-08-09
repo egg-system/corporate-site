@@ -104,7 +104,8 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/google-analytics',
     '@nuxtjs/style-resources',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/google-adsense'
   ],
 
   sitemap: {
@@ -123,6 +124,10 @@ export default {
 
   googleAnalytics: {
     id: 'UA-118871797-1'
+  },
+  
+  google-adsense: {
+    id: 'ca-pub-1776210800611691'
   },
   /*
    ** Build configuration
