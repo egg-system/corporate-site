@@ -125,8 +125,8 @@ export default {
   googleAnalytics: {
     id: 'UA-118871797-1'
   },
-  
-  google-adsense: {
+
+  googleAdsense: {
     id: 'ca-pub-1776210800611691'
   },
   /*
