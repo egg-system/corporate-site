@@ -7,7 +7,7 @@
           <img :src="dataconvertImage">
         </figure>
       </div>
-      <div class="column is-half system-consulting">
+      <div class="column is-half">
         <div class="message">Webブラウザ上でcsvデータを簡単に変換できるサービスです。</div>
         <div class="message">
           HTTPS通信を使っているため安全に通信を行うことができ、csv変換後1時間以内でデータを強制削除するのでアップロードした
@@ -21,13 +21,27 @@
         </div>
       </div>
     </div>
-    <h3 class="dataconvert-title">「Data Convert」サービス利用方法</h3>
-    <div class="dataconvert-use">
-      <ul>
-        <li>変換したいcsvファイルを選択する</li>
-        <li>csvの変換設定を入力する</li>
-        <li>変換したCSVファイルをダウンロードする</li>
-      </ul>
+    <div class="columns reverse">
+      <div class="column is-half">
+        <figure class="image">
+          <img :src="dataconvertUseImage">
+        </figure>
+      </div>
+      <div class="column">
+        <h3>「Data Convert」サービス利用方法</h3>
+        <ol>
+          <li>変換したいcsvファイルを選択する</li>
+          <li>csvの変換設定を入力する</li>
+          <li>変換したCSVファイルをダウンロードする</li>
+        </ol>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-half table-image">
+        <figure class="image">
+          <img :src="dataconvertTableImage">
+        </figure>
+      </div>
     </div>
     <div class="link">
       <a class="button is-dark" target="_blank" href="https://convert-service.x-face.net">
@@ -41,6 +55,8 @@
 import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
 import TheCase from '~/components/pages/service/common/TheCase.vue'
 import dataconvertImage from '~/assets/own_site/dataconvert-screen.png'
+import dataconvertUseImage from '~/assets/own_site/dataconvert-use.png'
+import dataconvertTableImage from '~/assets/own_site/dataconvert-table.png'
 import systemConsultingCases from '~/assets/service/js/SystemConsultingCases.js'
 
 export default {
@@ -50,6 +66,8 @@ export default {
   },
   data: () => ({
     dataconvertImage,
+    dataconvertUseImage,
+    dataconvertTableImage,
     cases: systemConsultingCases.cases
   })
 }
@@ -79,6 +97,9 @@ div {
       line-height: 1.75;
     }
   }
+}
+.table-image {
+  margin: auto;
 }
 .table {
   border: 1px solid $lightgray;
@@ -123,9 +144,6 @@ div {
 }
 .dataconvert-use {
   padding-top: 30px;
-}
-.dataconvert-title {
-  text-align: center;
 }
 .dataconvert-use li {
   font-size: 20px;

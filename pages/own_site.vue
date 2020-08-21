@@ -2,32 +2,6 @@
   <div>
     <div class="content page-content">
       <the-hero-title main-text="自社サービス紹介" />
-      <div class="columns">
-        <div class="consulting column is-half">
-          <figure class="image">
-            <img :src="dataconvertImage">
-          </figure>
-          <div class="is-size-5">Data Convert</div>
-          <div class="link">
-            <nuxt-link v-scroll-to="'#the-data-convert'" to class="button is-dark">
-              <span class="link-message">詳細へ</span>
-              <span class="column-arrow" />
-            </nuxt-link>
-          </div>
-        </div>
-        <div class="development column is-half">
-          <figure class="image">
-            <img :src="dataconvertImage">
-          </figure>
-          <div class="is-size-5">BorderlessGYM</div>
-          <div class="link">
-            <nuxt-link v-scroll-to="'#the-borderless-gym'" to class="button is-dark">
-              <span class="link-message">詳細へ</span>
-              <span class="column-arrow" />
-            </nuxt-link>
-          </div>
-        </div>
-      </div>
       <the-data-convert id="the-data-convert" />
       <the-borderless-gym id="the-borderless-gym" />
     </div>
@@ -124,6 +98,10 @@ figure.image {
 }
 .is-size-5 {
   margin-bottom: 1rem;
+}
+#the-data-convert {
+  border-bottom: 1px solid $lightgray;
+  padding-bottom: 80px;
 }
 @media screen and (min-width: 769px) {
   .consulting::before {
