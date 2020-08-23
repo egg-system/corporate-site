@@ -13,12 +13,6 @@
           HTTPS通信を使っているため安全に通信を行うことができ、csv変換後1時間以内でデータを強制削除するのでアップロードした
           データがサーバー上に残り続けることがなく安心にお使いいただけます。
         </div>
-        <div class="link">
-          <nuxt-link v-scroll-to="'.dataconvert-use'" to class="button is-dark">
-            <span class="link-message">利用方法へ</span>
-            <span class="column-arrow" />
-          </nuxt-link>
-        </div>
       </div>
     </div>
     <div class="columns reverse">
@@ -146,7 +140,6 @@ div {
   padding-top: 30px;
 }
 .dataconvert-use li {
-  font-size: 20px;
   text-align: center;
   padding: 10px 5px;
   list-style: none;
@@ -157,11 +150,14 @@ div {
 }
 
 @media screen and (max-width: 600px) {
-  .dataconvert-use p {
-    font-size: 18px;
-  }
   .link {
     width: 100%;
+  }
+  .columns {
+    .is-half {
+      padding: 0;
+      padding-top: 1rem;
+    }
   }
 }
 </style>
