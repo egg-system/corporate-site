@@ -2,7 +2,7 @@
   <div class="center">
     <sales-question class="margin-2" />
     <sales-input-form />
-    <landscape-button label="結果を見る" @next="next"/>
+    <landscape-button label="結果を見る" @next="next" />
     <previous-button class="margin-top-5 margin-left-10 margin-bottom-10" @previous="previous"/>
   </div>
 </template>
@@ -27,6 +27,7 @@ export default {
     next() {
       if (this.required() | this.validation()) return
       else this.$store.dispatch('simulator/toResult')
+      ga('send', 'event', 'click', 'ITコスト結果表示')
     },
     previous() {
       this.$store.dispatch('simulator/backIndustry')
