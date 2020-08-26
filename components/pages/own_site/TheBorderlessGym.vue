@@ -90,7 +90,7 @@ div {
   margin-bottom: 1rem;
 }
 .borderless {
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 .borderless-use {
   border-bottom: 1px solid $lightgray;

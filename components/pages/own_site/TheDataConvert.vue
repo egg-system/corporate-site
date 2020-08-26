@@ -45,29 +45,21 @@
         セキュリティが確保された環境で変換処理を行っており、安全に通信を行うためにHTTPS通信を行っております。
       </div>
     </div>
-    <div class="specific-use">
-      具体的な利用シーン（例）
-      <div>
-        ・ECサイト等で管理する受注データを、基幹システムへ取り込むとき
-      </div>
-      <div>
-        ・経費申請システムや勤怠/給与システムから出力した仕訳データを、会計システムへ取り込むとき
-      </div>
-      <div>
-        ・在庫の出荷指示データを外部倉庫へ渡すとき
-      </div>
-      <div>
-        ・作成した採用募集データを、掲載する採用媒体ごとへアップロードするとき
-      </div>
-      <div>
-        ・顧客リストをメルマガ配信システムへアップロードするとき
-      </div>
-    </div>
-    <div class="columns">
-      <div class="column table-image">
-        <figure class="image">
+    <div class="columns reverse">
+      <div class="column">
+        <figure class="image table">
           <img :src="dataconvertTableImage">
         </figure>
+      </div>
+      <div class="column">
+        <h3>具体的な利用シーン（例）</h3>
+        <ul>
+          <li>ECサイト等で管理する受注データを、基幹システムへ取り込むとき</li>
+          <li>経費申請システムや勤怠/給与システムから出力した仕訳データを、会計システムへ取り込むとき</li>
+          <li>在庫の出荷指示データを外部倉庫へ渡すとき</li>
+          <li>作成した採用募集データを、掲載する採用媒体ごとへアップロードするとき</li>
+          <li>顧客リストをメルマガ配信システムへアップロードするとき</li>
+        </ul>
       </div>
     </div>
     <div class="link">
@@ -111,13 +103,6 @@ div {
     padding: 2rem;
     padding-top: 1rem;
   }
-}
-.message {
-  background-color: inherit;
-  line-height: 1.25 !important;
-}
-.columns {
-  margin-bottom: 3rem;
   .column {
     position: relative;
     div {
@@ -125,16 +110,18 @@ div {
     }
   }
 }
+.message {
+  background-color: inherit;
+  line-height: 1.25 !important;
+}
 .table-image {
   margin: auto;
 }
-.table {
-  border: 1px solid $lightgray;
-  margin: 0px;
-  margin-bottom: 3rem;
-  .column {
-    padding: 0px;
-  }
+.table img {
+  width: 500px;
+  height: 300px;
+  object-fit: contain;
+  margin: 0 auto;
 }
 .table-title {
   margin-bottom: 1rem;
