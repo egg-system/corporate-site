@@ -10,8 +10,8 @@
       <div class="column is-half">
         <div class="message">Webブラウザ上でcsvデータを簡単に変換できるサービスです。</div>
         <div class="message">
-          HTTPS通信を使っているため安全に通信を行うことができ、csv変換後1時間以内でデータを強制削除するのでアップロードした
-          データがサーバー上に残り続けることがなく安心にお使いいただけます。
+          Webブラウザ上で利用できるため、事前のインストールや会員登録等は不要です。DataConvert（
+          <a href="https://convert-service.x-face.net" target="_blank">https://convert-service.x-face.net</a>）へアクセスして頂ければ、すぐに利用可能です。
         </div>
       </div>
     </div>
@@ -30,8 +30,41 @@
         </ol>
       </div>
     </div>
+    <div class="security">
+      業務で利用する企業様が多いため、セキュリティ対策を万全に講じています。
+      <div class="security-title">
+        ◯ データはすぐに削除
+      </div>
+      <div class="security-body">
+        アップロードした変換前のcsvデータ及び変換後のcsvデータは、変換処理後1時間以内に強制的に削除いたします。そのため、アップロードしたデータがサーバ上に残り続けることはありません。
+      </div>
+      <div class="security-title">
+        ◯ 処理・通信の安全性を確保
+      </div>
+      <div class="security-body">
+        セキュリティが確保された環境で変換処理を行っており、安全に通信を行うためにHTTPS通信を行っております。
+      </div>
+    </div>
+    <div class="specific-use">
+      具体的な利用シーン（例）
+      <div>
+        ・ECサイト等で管理する受注データを、基幹システムへ取り込むとき
+      </div>
+      <div>
+        ・経費申請システムや勤怠/給与システムから出力した仕訳データを、会計システムへ取り込むとき
+      </div>
+      <div>
+        ・在庫の出荷指示データを外部倉庫へ渡すとき
+      </div>
+      <div>
+        ・作成した採用募集データを、掲載する採用媒体ごとへアップロードするとき
+      </div>
+      <div>
+        ・顧客リストをメルマガ配信システムへアップロードするとき
+      </div>
+    </div>
     <div class="columns">
-      <div class="column is-half table-image">
+      <div class="column table-image">
         <figure class="image">
           <img :src="dataconvertTableImage">
         </figure>
@@ -105,6 +138,19 @@ div {
 }
 .table-title {
   margin-bottom: 1rem;
+}
+.security {
+  margin-bottom: 2rem;
+}
+.security-title {
+  margin-top: 10px;
+}
+.security-body {
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+.specific-use {
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 769px) {
   .left::before {

@@ -8,8 +8,8 @@
         </figure>
       </div>
       <div class="column borderless">
-        <div class="message">BorderlessGYMは、ジムとトレーナーが出会うための複業マッチングプラットフォームです。</div>
-        <div class="message">
+        <div class="">BorderlessGYMは、ジムとトレーナーが出会うための複業マッチングプラットフォームです。</div>
+        <div class="">
           トレーナーの複業・副業を推進し、会社・組織の境目をなくしていくことで、 より柔軟な働き方を実現し、経済的・精神的な自由を得るためのサービスです。
         </div>
       </div>
@@ -20,42 +20,6 @@
         <div>人手不足に困っているジムで複業・副業をすることにより、 今の仕事を続けながら新しい働き方へチャレンジすることができます。</div>
         <div>リスクを取らずに複業・副業することで、 ジムで働くトレーナーは 「収入を増やす」 「新しいジムで経験を積む」 ことができ、 フリーランスのトレーナーは 「自分のジムを運営しながら収入を補てんする」 「上手くいっているジムのノウハウを学ぶ」 ことができます。</div>
         <div>ジムで複業・副業をすることが、あなたの理想を叶えるための一つの手段です。</div>
-      </div>
-    </div>
-    <div class="columns">
-      <div class="borderless-use column">
-        <div class="feature">feature 1</div>
-        <div>
-          <figure class="image feature">
-            <img :src="borderlessFeature1Image" class="feature">
-          </figure>
-        </div>
-        <div>平日夜・休日 週1〜自由に勤務が可能。</div>
-        <div>いつでもどこでも、ご自身の都合に合わせて働くことができます。 週1日でも、夜だけでも、週末だけでも、空いた時間を使って自由に働くことができます。</div>
-      </div>
-    </div>
-    <div class="columns">
-      <div class="borderless-use column">
-        <div class="feature">feature 2</div>
-        <div>
-          <figure class="image feature">
-            <img :src="borderlessFeature2Image" class="feature">
-          </figure>
-        </div>
-        <div>複業・副業未経験OK。</div>
-        <div>今のジムで働きながらエントリーできます。フリーランスの方でもエントリー可能です。 マッチングしたジムで働くことで、お金を得るだけでなく、新しいジムで得た経験は今後のキャリア形成にも活かせます。</div>
-      </div>
-    </div>
-    <div class="columns">
-      <div class="borderless-use column">
-        <div class="feature">feature 3</div>
-        <div>
-          <figure class="image feature">
-            <img :src="borderlessFeature3Image" class="feature">
-          </figure>
-        </div>
-        <div>気になるジムにエントリーするだけ。</div>
-        <div>登録後は、気になるジムにエントリーするだけなので簡単に複業・副業を始められます。 ジムからメッセージが送られてきたらマッチング成立です。 ジムからオファーが届くこともあるため、待っているだけでマッチングが成立することもあります。</div>
       </div>
     </div>
     <div class="link">
@@ -98,8 +62,14 @@ div {
   margin: auto;
   margin-top: 1rem;
   .is-half {
-    padding: 4rem;
+    padding: 3rem;
     padding-top: 1rem;
+  }
+  .column {
+    position: relative;
+    div {
+      line-height: 1.75;
+    }
   }
 }
 .feature img {
@@ -107,19 +77,6 @@ div {
   height: 100px;
   object-fit: contain;
   margin: 0 auto;
-}
-.message {
-  background-color: inherit;
-  line-height: 1.25 !important;
-}
-.columns {
-  margin-bottom: 3rem;
-  .column {
-    position: relative;
-    div {
-      line-height: 1.75;
-    }
-  }
 }
 .table {
   border: 1px solid $lightgray;
@@ -131,6 +88,9 @@ div {
 }
 .table-title {
   margin-bottom: 1rem;
+}
+.borderless {
+  padding-top: 2rem;
 }
 .borderless-use {
   border-bottom: 1px solid $lightgray;
