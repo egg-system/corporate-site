@@ -1,6 +1,7 @@
 require('dotenv').config()
 import { routing } from './lib/cms'
 const { microCmsApiKey, microCmsApiDomain } = process.env
+const mierucaFunction = 'window.__fid = window.__fid || [];__fid.push([197217880]);(function() {function mieruca(){if(typeof window.__fjsld != "undefined") return; window.__fjsld = 1; var fjs = document.createElement("script"); fjs.type = "text/javascript"; fjs.async = true; fjs.id = "fjssync"; var timestamp = new Date;fjs.src = ("https:" == document.location.protocol ? "https" : "http") + "://hm.mieru-ca.com/service/js/mieruca-hm.js?v="+ timestamp.getTime(); var x = document.getElementsByTagName("script")[0]; x.parentNode.insertBefore(fjs, x); };setTimeout(mieruca, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent("onload", mieruca) : window.addEventListener("load", mieruca, false)) : mieruca();})();'
 
 export default {
   env: {
@@ -60,7 +61,17 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Quicksand'
       }
-    ]
+    ],
+    script: [
+      {
+        hid: 'mierucajs',
+        type: 'text/javascript',
+        innerHTML: mierucaFunction
+      }
+    ],
+    __dangerouslyDisableSanitizersByTagID: {
+      'mierucajs': ['innerHTML'],
+    }
   },
   /*
   ** generateオプション
@@ -93,7 +104,8 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/google-analytics',
     '@nuxtjs/style-resources',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/google-adsense'
   ],
 
   sitemap: {
@@ -112,6 +124,10 @@ export default {
 
   googleAnalytics: {
     id: 'UA-118871797-1'
+  },
+
+  googleAdsense: {
+    id: 'ca-pub-1776210800611691'
   },
   /*
    ** Build configuration

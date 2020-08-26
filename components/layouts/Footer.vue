@@ -12,6 +12,9 @@
         <nuxt-link class="navbar-item" to="/service">
           サービス
         </nuxt-link>
+        <nuxt-link class="navbar-item" to="/service/it-cost-lp">
+          ITコストシミュレーション
+        </nuxt-link>
         <nuxt-link class="navbar-item" to="/member">
           メンバー
         </nuxt-link>

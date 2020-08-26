@@ -5,16 +5,18 @@
       <p>「まずは話だけ聞いてみたい」</p>
       <p>といった方もお気軽にご相談ください。</p>
     </div>
-    <div class="link">
-      <nuxt-link to="/contact" class="button is-dark">
-        <span class="link-message">お問い合わせ・ご相談はこちらから</span>
-        <span class="column-arrow" />
-      </nuxt-link>
-    </div>
+    <black-link label="お問い合わせ・ご相談はこちらから" link="/contact" />
   </div>
 </template>
 
 <script>
+import BlackLink from '~/components/atoms/BlackLink.vue'
+
+export default {
+  components: {
+    BlackLink
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -37,7 +39,7 @@
   margin: 30px auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 769px) {
   .contact {
     width: 90%;
   }
@@ -46,6 +48,7 @@
   }
   .link {
     width: 100%;
+    margin: 50px auto;
   }
 }
 </style>

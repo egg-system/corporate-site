@@ -16,6 +16,7 @@
     <the-sub-header text="x-faCEの強み" />
     <the-strength />
     <the-service />
+    <the-cost-simulation />
     <the-contact />
     <the-sub-header text="メンバー" />
     <the-member />
@@ -36,6 +37,7 @@ import TheHeroImage from '~/components/pages/top/TheHeroImage.vue'
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
 import TheColumnList from '~/components/pages/common/TheColumnList.vue'
 import TheService from '~/components/pages/top/TheService.vue'
+import TheCostSimulation from '~/components/pages/top/TheCostSimulation.vue'
 import TheAbout from '~/components/pages/top/TheAbout.vue'
 import TheStrength from '~/components/pages/top/TheStrength.vue'
 import TheContact from '~/components/pages/top/TheContact.vue'
@@ -50,6 +52,7 @@ export default {
     TheSubHeader,
     TheColumnList,
     TheService,
+    TheCostSimulation,
     TheAbout,
     TheStrength,
     TheContact,
