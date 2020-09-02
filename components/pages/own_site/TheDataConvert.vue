@@ -46,10 +46,22 @@
       </div>
     </div>
     <div class="columns reverse">
-      <div class="column">
-        <figure class="image table">
-          <img :src="dataconvertTableImage">
+      <div class="column table-image">
+        <h3>(参考)比較表</h3>
+        <figure id="js-show-popup" class="image table">
+          <img :src="dataconvertTableImage" @click="popupImage">
         </figure>
+        <div id="js-popup" class="popup">
+          <div class="popup-inner">
+            <div id="js-close-btn" class="close-btn" >
+              <i class="fas fa-times" />
+            </div>
+            <a href="#">
+              <img :src="dataconvertTableImage">
+            </a>
+          </div>
+          <div id="js-black-bg" class="black-background" />
+        </div>
       </div>
       <div class="column">
         <h3>具体的な利用シーン（例）</h3>
@@ -88,11 +100,91 @@ export default {
     dataconvertUseImage,
     dataconvertTableImage,
     cases: systemConsultingCases.cases
-  })
+  }),
+  methods: {
+    popupImage: function(event) {
+      console.log('ろぐ')
+      const popup = document.getElementById('js-popup')
+      if (!popup) return
+
+      const blackBg = document.getElementById('js-black-bg')
+      const closeBtn = document.getElementById('js-close-btn')
+      const showBtn = document.getElementById('js-show-popup')
+
+      closePopUp(blackBg)
+      closePopUp(closeBtn)
+      closePopUp(showBtn)
+      function closePopUp(elem) {
+        if (!elem) return
+        elem.addEventListener('click', function() {
+          popup.classList.toggle('is-show')
+        })
+      }
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s;
+}
+.popup.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 1000px;
+  padding: 50px;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner img {
+  width: 100%;
+  height: 100%;
+}
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  cursor: pointer;
+}
+a img {
+  object-fit: contain;
+  width: 1000px;
+  height: 500px;
+}
 div {
   letter-spacing: 1px;
 }
@@ -109,19 +201,22 @@ div {
       line-height: 1.75;
     }
   }
+  .table-image h3 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .table {
+    margin: 0;
+  }
 }
 .message {
   background-color: inherit;
   line-height: 1.25 !important;
 }
-.table-image {
-  margin: auto;
-}
 .table img {
   width: 500px;
   height: 300px;
   object-fit: contain;
-  margin: 0 auto;
 }
 .table-title {
   margin-bottom: 1rem;

@@ -78,22 +78,10 @@ div {
   object-fit: contain;
   margin: 0 auto;
 }
-.table {
-  border: 1px solid $lightgray;
-  margin: 0px;
-  margin-bottom: 3rem;
-  .column {
-    padding: 0px;
-  }
-}
-.table-title {
-  margin-bottom: 1rem;
-}
 .borderless {
   padding-top: 4rem;
 }
 .borderless-use {
-  border-bottom: 1px solid $lightgray;
   padding-bottom: 80px;
   text-align: center;
 }
