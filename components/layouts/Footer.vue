@@ -12,6 +12,9 @@
         <nuxt-link class="navbar-item" to="/service">
           サービス
         </nuxt-link>
+        <nuxt-link class="navbar-item" to="/own_site">
+          自社サービス紹介
+        </nuxt-link>
         <nuxt-link class="navbar-item" to="/service/it-cost-lp">
           ITコストシミュレーション
         </nuxt-link>
