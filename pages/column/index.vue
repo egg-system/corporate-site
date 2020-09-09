@@ -15,6 +15,7 @@ export default {
     TheHeroTitle,
     TheColumnList
   },
+  watchQuery: ['filters'],
   head() {
     return {
       title: '最近の活動・コラム',
@@ -59,8 +60,8 @@ export default {
     }
   },
 
-  asyncData() {
-    return fetchCmsListDataColumn(23)
+  asyncData({ query }) {
+    return fetchCmsListDataColumn(null, null, query.filters)
   }
 }
 </script>
