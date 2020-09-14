@@ -2,20 +2,20 @@
   <div>
     <div class="page-content">
       <the-hero-title main-text="顧客インタビュー・事例紹介" />
-      <the-news-list :news="listData"/>
+      <the-case-list :cases="listData"/>
     </div>
   </div>
 </template>
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
-import TheNewsList from '~/components/pages/common/TheNewsList.vue'
+import TheCaseList from '~/components/pages/common/TheCaseList.vue'
 import { fetchCmsListDataCase } from '~/lib/cms'
 
 export default {
   components: {
     TheHeroTitle,
-    TheNewsList
+    TheCaseList
   },
   head() {
     return {

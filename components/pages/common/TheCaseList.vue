@@ -29,6 +29,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.case-list {
+  margin-bottom: 4rem;
+}
+
 @media screen and (min-width: 1030px) {
   .is-7 {
     padding-left: 60px;

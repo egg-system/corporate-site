@@ -15,13 +15,13 @@
         <div v-html="data.content" />
       </div>
       <p class="back">
-        <nuxt-link to="/news">
+        <nuxt-link to="/cases">
           <i/>一覧を見る<span>></span>
         </nuxt-link>
-        <the-sub-header text="お知らせ" />
+        <the-sub-header text="顧客インタビュー・事例紹介" />
       </p>
       <div class="news-list">
-        <the-news-list :news="list" />
+        <the-case-list :cases="list" />
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
-import TheNewsList from '~/components/pages/common/TheNewsList.vue'
+import TheCaseList from '~/components/pages/common/TheCaseList.vue'
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
 import noImage from '~/assets/js/no-image.js'
 import { fetchCmsDataCase, fetchCmsListDataCase } from '~/lib/cms'
@@ -37,7 +37,7 @@ import { fetchCmsDataCase, fetchCmsListDataCase } from '~/lib/cms'
 export default {
   components: {
     TheHeroTitle,
-    TheNewsList,
+    TheCaseList,
     TheSubHeader
   },
   head() {
