@@ -8,7 +8,6 @@ export default {
     microCmsApiKey,
     microCmsApiDomain
   },
-  mode: 'universal',
   /*
    ** Headers of the page
    */
