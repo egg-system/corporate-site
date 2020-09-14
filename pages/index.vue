@@ -1,23 +1,26 @@
 <template>
   <div>
     <the-hero-image />
-    <the-sub-header text="最近の活動・コラム" />
+    <the-sub-header text="顧客インタビュー・事例紹介" />
     <div class="column-list page-content">
-      <the-column-list :columns="columns" />
+      <the-case-list :cases="cases" />
       <div class="btn-area">
         <div class="Heading__cta">
-          <nuxt-link class="next-button" to="/column">
+          <nuxt-link class="next-button" to="/cases">
             <the-link-button />
           </nuxt-link>
         </div>
       </div>
     </div>
     <the-about />
-    <the-sub-header text="x-faCEの強み" />
-    <the-strength />
-    <the-service />
-    <the-cost-simulation />
+    
+    <the-main-message />
+    <the-sub-header text="顧客構成・内訳" />
+    <the-about-client />
+    <the-sub-header text="『初月無料』のコンサルティングサービスです" />
+    <the-about-consultation />
     <the-contact />
+    <the-service />
     <the-sub-header text="メンバー" />
     <the-member />
     <the-sub-header text="お知らせ" />
@@ -35,26 +38,28 @@
 <script>
 import TheHeroImage from '~/components/pages/top/TheHeroImage.vue'
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
-import TheColumnList from '~/components/pages/common/TheColumnList.vue'
+import TheCaseList from '~/components/pages/common/TheCaseList.vue'
+import TheMainMessage from '~/components/pages/top/TheMainMessage.vue'
+import TheAboutClient from '~/components/pages/top/TheAboutClient.vue'
+import TheAboutConsultation from '~/components/pages/top/TheAboutConsultation.vue'
 import TheService from '~/components/pages/top/TheService.vue'
-import TheCostSimulation from '~/components/pages/top/TheCostSimulation.vue'
 import TheAbout from '~/components/pages/top/TheAbout.vue'
-import TheStrength from '~/components/pages/top/TheStrength.vue'
 import TheContact from '~/components/pages/top/TheContact.vue'
 import TheMember from '~/components/pages/top/TheMember.vue'
 import TheNewsList from '~/components/pages/common/TheNewsList.vue'
-import { fetchCmsListDataColumn, fetchCmsListDataNews } from '~/lib/cms'
+import { fetchCmsListDataCase, fetchCmsListDataNews } from '~/lib/cms'
 import TheLinkButton from '~/components/pages/common/TheLinkButton.vue'
 
 export default {
   components: {
     TheHeroImage,
     TheSubHeader,
-    TheColumnList,
+    TheCaseList,
+    TheMainMessage,
+    TheAboutClient,
+    TheAboutConsultation,
     TheService,
-    TheCostSimulation,
     TheAbout,
-    TheStrength,
     TheContact,
     TheMember,
     TheNewsList,
@@ -62,10 +67,10 @@ export default {
   },
   async asyncData() {
     const data = await Promise.all([
-      fetchCmsListDataColumn(3),
+      fetchCmsListDataCase(3),
       fetchCmsListDataNews(3)
     ])
-    return { columns: data[0].listData, news: data[1].listData }
+    return { cases: data[0].listData, news: data[1].listData }
   }
 }
 </script>
