@@ -12,22 +12,33 @@
           コンサルティングからシステム開発まで一貫して行うコンサルティングエンジニア集団です。
         </p>
       </div>
+      <div class="case-list-wrapper">
+        <div class="sub-header-wrapper">
+          <the-sub-header text="顧客インタビュー・事例紹介" />
+        </div>
+        <the-case-list :cases="cases" />
+        <the-to-details-button to="/cases" />
+      </div>
       <the-sub-header text="特徴" />
       <the-service-feature />
       <the-sub-header text="対応範囲" />
       <the-service-scope />
       <the-sub-header text="サービスメニュー" />
       <the-service-menu-table />
-      <the-sub-header text="コンサルティングサービス　作業実績" />
+      <the-sub-header text="コンサルティングエンジニアサービス　作業実績" />
       <the-service-performance />
+      <div class="servce-image-wrapper">
+        <figure>
+          <img :src="serviceImage" alt="コミュニケーションを重視したサービス" >
+          <div>コミュニケーションを重視したサービス</div>
+        </figure>
+      </div>
       <div class="contact-area">
         <black-link label="お問い合わせ・ご相談はこちらから" link="/contact" />
       </div>
       <the-sub-header text="個別サービスメニュー" />
       <the-service-details-table />
       <the-service-details />
-      <the-sub-header text="顧客インタビュー・事例紹介" />
-      <the-case-list :cases="cases" />
     </div>
   </div>
 </template>
@@ -36,6 +47,7 @@
 import { fetchCmsListDataCase } from '~/lib/cms'
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
+import TheToDetailsButton from '~/components/pages/common/TheToDetailsButton.vue'
 import BlackLink from '~/components/atoms/BlackLink.vue'
 import TheServiceFeature from '~/components/pages/service/TheServiceFeature.vue'
 import TheServiceScope from '~/components/pages/service/TheServiceScope.vue'
@@ -44,11 +56,13 @@ import TheServicePerformance from '~/components/pages/service/TheServicePerforma
 import TheServiceDetailsTable from '~/components/pages/service/TheServiceDetailsTable.vue'
 import TheServiceDetails from '~/components/pages/service/TheServiceDetails.vue'
 import TheCaseList from '~/components/pages/common/TheCaseList.vue'
+import ServiceImage from '~/assets/service/img/service-image.jpeg'
 
 export default {
   components: {
     TheHeroTitle,
     TheSubHeader,
+    TheToDetailsButton,
     BlackLink,
     TheServiceFeature,
     TheServiceScope,
@@ -56,7 +70,8 @@ export default {
     TheServicePerformance,
     TheServiceDetailsTable,
     TheServiceDetails,
-    TheCaseList
+    TheCaseList,
+    ServiceImage
   },
   async asyncData() {
     const data = await fetchCmsListDataCase(3)
@@ -111,11 +126,36 @@ export default {
         }
       ]
     }
+  },
+  computed: {
+    serviceImage() {
+      return ServiceImage
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+.case-list-wrapper {
+  margin-bottom: 6rem;
+
+  .sub-header-wrapper {
+    margin-bottom: 3rem;
+  }
+}
+
+.servce-image-wrapper {
+  margin: 0 auto 5rem;
+
+  @media screen and (min-width: 1024px) {
+    width: 50%;
+  }
+
+  figure {
+    font-size: 0.8rem;
+  }
+}
+
 .service-message {
   text-align: center;
   margin-bottom: 4rem;

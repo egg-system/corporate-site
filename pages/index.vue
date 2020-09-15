@@ -4,16 +4,9 @@
     <the-sub-header text="顧客インタビュー・事例紹介" />
     <div class="column-list page-content">
       <the-case-list :cases="cases" />
-      <div class="btn-area">
-        <div class="Heading__cta">
-          <nuxt-link class="next-button" to="/cases">
-            <the-link-button />
-          </nuxt-link>
-        </div>
-      </div>
+      <the-to-details-button to="/cases" />
     </div>
     <the-about />
-    
     <the-main-message />
     <the-sub-header text="顧客構成・内訳" />
     <the-about-client />
@@ -47,14 +40,15 @@ import TheAbout from '~/components/pages/top/TheAbout.vue'
 import TheContact from '~/components/pages/top/TheContact.vue'
 import TheMember from '~/components/pages/top/TheMember.vue'
 import TheNewsList from '~/components/pages/common/TheNewsList.vue'
+import TheToDetailsButton from '~/components/pages/common/TheToDetailsButton.vue'
 import { fetchCmsListDataCase, fetchCmsListDataNews } from '~/lib/cms'
-import TheLinkButton from '~/components/pages/common/TheLinkButton.vue'
 
 export default {
   components: {
     TheHeroImage,
     TheSubHeader,
     TheCaseList,
+    TheToDetailsButton,
     TheMainMessage,
     TheAboutClient,
     TheAboutConsultation,
@@ -62,8 +56,7 @@ export default {
     TheAbout,
     TheContact,
     TheMember,
-    TheNewsList,
-    TheLinkButton
+    TheNewsList
   },
   async asyncData() {
     const data = await Promise.all([
@@ -76,32 +69,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.btn-area {
-  display: flex;
-  justify-content: flex-end;
-}
-.Heading__cta {
-  width: 45%;
-  margin-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid $lightgray;
-  text-align: right;
-}
-.next-button {
-  color: $black;
-}
-.back a {
-  display: block;
-  text-align: right;
-  font-size: 14px;
-  color: $black;
-}
-.back i {
-  margin-right: 5px;
-}
-.back span {
-  margin-left: 20px;
-}
 /deep/ .news-image img {
   display: none;
 }
