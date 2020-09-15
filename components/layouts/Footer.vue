@@ -64,7 +64,7 @@ export default {
 
 <style lang="scss" scoped>
 .columns {
-  margin-bottom: 5rem;
+  margin: 0 0 5rem;
 }
 .copyright {
   color: $copyright;
