@@ -47,4 +47,12 @@
 
 <style lang="scss" scoped>
 @import '~/assets/service/scss/service-table.scss';
+
+@media screen and (min-width: 1024px) {
+  .service-table {
+    th:not(:first-child) {
+      width: 240px;
+    }
+  }
+}
 </style>
