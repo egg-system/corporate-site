@@ -2,61 +2,81 @@
   <div>
     <div class="content page-content">
       <the-hero-title main-text="サービス紹介" />
-      <div class="columns">
-        <div class="consulting column is-half">
-          <figure class="image">
-            <img :src="consultingImage">
-          </figure>
-          <div class="is-size-5">システムコンサルティングサービス</div>
-          <div class="link">
-            <nuxt-link v-scroll-to="'#the-consulting'" to class="button is-dark">
-              <span class="link-message">詳細へ</span>
-              <span class="column-arrow" />
-            </nuxt-link>
-          </div>
+      <div class="service-message">
+        <div class="service-message-title">
+          『あなたじゃないと困る。』<br>
+          そう言っていただける関係を目指しています
         </div>
-        <div class="development column is-half">
-          <figure class="image">
-            <img :src="systemImage">
-          </figure>
-          <div class="is-size-5">システム開発</div>
-          <div class="link">
-            <nuxt-link v-scroll-to="'#the-development'" to class="button is-dark">
-              <span class="link-message">詳細へ</span>
-              <span class="column-arrow" />
-            </nuxt-link>
-          </div>
+        <p class="service-message-content">
+          中小企業が抱える「経験豊富な人材の不足」「システムを有効活用できない」という課題を解決する<br>
+          コンサルティングからシステム開発まで一貫して行うコンサルティングエンジニア集団です。
+        </p>
+      </div>
+      <div class="case-list-wrapper">
+        <div class="sub-header-wrapper">
+          <the-sub-header text="顧客インタビュー・事例紹介" />
         </div>
+        <the-case-list :cases="cases" />
+        <the-to-details-button to="/cases" />
       </div>
-      <the-consulting id="the-consulting" />
-      <div class="contact-area lightgray-underline">
-        <the-contact />
+      <the-sub-header text="特徴" />
+      <the-service-feature />
+      <the-sub-header text="対応範囲" />
+      <the-service-scope />
+      <the-sub-header text="サービスメニュー" />
+      <the-service-menu-table />
+      <the-sub-header text="コンサルティングエンジニアサービス　作業実績" />
+      <the-service-performance />
+      <div class="servce-image-wrapper">
+        <figure>
+          <img :src="serviceImage" alt="コミュニケーションを重視したサービス" >
+          <div>コミュニケーションを重視したサービス</div>
+        </figure>
       </div>
-      <the-development id="the-development" />
-      <the-contact />
+      <div class="contact-area">
+        <black-link label="お問い合わせ・ご相談はこちらから" link="/contact" />
+      </div>
+      <the-sub-header text="個別サービスメニュー" />
+      <the-service-details-table />
+      <the-service-details />
     </div>
   </div>
 </template>
 
 <script>
+import { fetchCmsListDataCase } from '~/lib/cms'
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
-import TheConsulting from '~/components/pages/service/TheConsulting.vue'
-import TheDevelopment from '~/components/pages/service/TheDevelopment.vue'
-import consultingImage from '~/assets/service/img/service-consult01.JPG'
-import systemImage from '~/assets/service/img/service-system01.JPG'
-import TheContact from '~/components/pages/top/TheContact.vue'
+import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
+import TheToDetailsButton from '~/components/pages/common/TheToDetailsButton.vue'
+import BlackLink from '~/components/atoms/BlackLink.vue'
+import TheServiceFeature from '~/components/pages/service/TheServiceFeature.vue'
+import TheServiceScope from '~/components/pages/service/TheServiceScope.vue'
+import TheServiceMenuTable from '~/components/pages/service/TheServiceMenuTable.vue'
+import TheServicePerformance from '~/components/pages/service/TheServicePerformance.vue'
+import TheServiceDetailsTable from '~/components/pages/service/TheServiceDetailsTable.vue'
+import TheServiceDetails from '~/components/pages/service/TheServiceDetails.vue'
+import TheCaseList from '~/components/pages/common/TheCaseList.vue'
+import ServiceImage from '~/assets/service/img/service-image.jpeg'
 
 export default {
   components: {
     TheHeroTitle,
-    TheConsulting,
-    TheDevelopment,
-    TheContact
+    TheSubHeader,
+    TheToDetailsButton,
+    BlackLink,
+    TheServiceFeature,
+    TheServiceScope,
+    TheServiceMenuTable,
+    TheServicePerformance,
+    TheServiceDetailsTable,
+    TheServiceDetails,
+    TheCaseList,
+    ServiceImage
   },
-  data: () => ({
-    consultingImage,
-    systemImage
-  }),
+  async asyncData() {
+    const data = await fetchCmsListDataCase(3)
+    return { cases: data.listData }
+  },
   head() {
     return {
       title: 'サービス',
@@ -106,55 +126,68 @@ export default {
         }
       ]
     }
+  },
+  computed: {
+    serviceImage() {
+      return ServiceImage
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-div {
-  letter-spacing: 1px;
-}
-.columns {
-  text-align: center;
-  position: relative;
-  margin: auto;
-  .column {
-    padding: 2rem;
+.case-list-wrapper {
+  margin-bottom: 6rem;
+
+  .sub-header-wrapper {
     margin-bottom: 3rem;
   }
 }
-figure.image {
-  margin-bottom: 1rem;
-}
-.is-size-5 {
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 769px) {
-  .consulting::before {
-    position: absolute;
-    content: '';
-    width: 1px;
-    height: 80%;
-    top: 5%;
-    left: 50%;
-    background: $lightgray;
+
+.servce-image-wrapper {
+  margin: 0 auto 5rem;
+
+  @media screen and (min-width: 1024px) {
+    width: 50%;
+  }
+
+  figure {
+    font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 768px) {
-  .consulting::after {
-    position: absolute;
-    content: '';
-    width: 90%;
-    height: 1px;
-    left: 5%;
-    background: $lightgray;
-    margin-top: 3rem;
-  }
-}
-.link {
-  width: auto;
-  margin-left: 2rem;
-  margin-right: 2rem;
+
+.service-message {
   text-align: center;
+  margin-bottom: 4rem;
+
+  &-title {
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-content {
+    line-height: 2rem;
+  }
+}
+
+.contact-area {
+  margin-bottom: 4rem;
+  padding: 4rem 10% 6rem;
+
+  @media screen and (min-width: 1024px) {
+    padding: 4rem 30% 6rem;
+  }
+
+  @media screen and (max-width: 769px) {
+    padding: 4rem 0 6rem;
+  }
+
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
 }
 </style>
