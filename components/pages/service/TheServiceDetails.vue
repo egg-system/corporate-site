@@ -1,37 +1,13 @@
 <template>
-  <div>
-    <the-sub-header text="システムコンサルティングサービス" class="subheader" />
-    <div class="columns reverse">
-      <div class="column is-half">
-        <figure class="image">
-          <img :src="consultingImage">
-        </figure>
-      </div>
-      <div class="column is-half system-consulting">
-        <div class="margin-bottom-3">
-          <div class="message">システム導入や導入後の運用を軸に、「計画」「推進」「管理」に沿ったサービスを提供します。</div>
-          <div class="message">
-            その他にも、お客様のご要望に合わせてカスタマイズしたサービスをご提供しますので、
-            <nuxt-link to="/contact">お問い合わせフォーム</nuxt-link>よりお気軽にご相談ください。
-          </div>
-          <div class="link">
-            <nuxt-link v-scroll-to="'.system-consulting-case'" to class="button is-dark">
-              <span class="link-message">事例紹介へ</span>
-              <span class="column-arrow" />
-            </nuxt-link>
-          </div>
-        </div>
-        <div>
-          <div class="message">
-            システムにかかる総コスト（ITコスト）が妥当かどうか、5分で簡単にわかるITコストシミュレーションを無料でご利用いただけます。<br>
-            経済産業省が公表しているデータに基づき、業種、売上規模・従業員数が同程度の他社と比較しITコストが妥当かシミュレーションします。
-          </div>
-          <black-link label="ITコストシミュレーションへ" link="/service/it-cost-lp" />
-        </div>
-      </div>
-    </div>
-    <h3 class="table-title">1.&nbsp;IT戦略/IT投資計画策定サービス</h3>
-    <div class="columns table">
+  <div class="service-details-area">
+    <h3 class="table-title">
+      IT戦略/IT投資計画策定サービス
+      <br class="sp">
+      <span @click="isOpenedStrategy = !isOpenedStrategy">
+        {{ isOpenedStrategy ? '−' : '＋' }} 詳しく見る
+      </span>
+    </h3>
+    <div v-if="isOpenedStrategy" class="columns table">
       <div class="column is-4 left">
         <div class="table-content target">
           <h6>対象者</h6>
@@ -106,8 +82,14 @@
         </div>
       </div>
     </div>
-    <h3 class="table-title">2.&nbsp;システム化支援/業務改善コンサルティングサービス</h3>
-    <div class="columns table">
+    <h3 class="table-title">
+      システム化支援/業務改善コンサルティングサービス
+      <br class="sp">
+      <span @click="isOpenedSystem = !isOpenedSystem">
+        {{ isOpenedSystem ? '−' : '＋' }} 詳しく見る
+      </span>
+    </h3>
+    <div v-if="isOpenedSystem" class="columns table">
       <div class="column is-4 left">
         <div class="table-content target">
           <h6>対象者</h6>
@@ -148,8 +130,14 @@
         </div>
       </div>
     </div>
-    <h3 class="table-title">3.&nbsp;内部統制支援サービス</h3>
-    <div class="columns table">
+    <h3 class="table-title">
+      内部統制支援サービス
+      <br class="sp">
+      <span @click="isOpenedGovernance = !isOpenedGovernance">
+        {{ isOpenedGovernance ? '−' : '＋' }} 詳しく見る
+      </span>
+    </h3>
+    <div v-if="isOpenedGovernance" class="columns table">
       <div class="column is-4 left">
         <div class="table-content target">
           <h6>対象者</h6>
@@ -191,80 +179,143 @@
         </div>
       </div>
     </div>
-    <h3 class="table-title">4.&nbsp;プロジェクトマネジメントサービス</h3>
-    <div class="columns table">
+    <h3 class="table-title">
+      RPA導入サービス
+      <br class="sp">
+      <span @click="isOpenedRpa = !isOpenedRpa">
+        {{ isOpenedRpa ? '−' : '＋' }} 詳しく見る
+      </span>
+    </h3>
+    <div v-if="isOpenedRpa" class="columns table">
       <div class="column is-4 left">
         <div class="table-content target">
           <h6>対象者</h6>
-          <p>- 新システム導入が決まっている企業様</p>
-          <p>- システム導入プロジェクトが進行中の企業様</p>
+          <p>- 手作業で行う単純作業に時間がかかっており、効率化を図りたい企業様</p>
         </div>
         <div class="table-content duration-cost">
-          <h6>参考期間/費用</h6>
-          <p>- 約6ヶ月～1年程度</p>
-          <p>- 約100万円～180万円程度</p>
-          <p class="note">※1～3ヶ月単位でのご契約となります。</p>
+          <h6>参考期間／費用</h6>
+          <p>- 3ヶ月〜</p>
+          <p>- 約10万円／月</p>
+          <p class="note">※都度お見積りさせていただきます。</p>
+          <p class="note">※別途、RPAツールのライセンス費用が発生します。</p>
         </div>
       </div>
       <div class="column is-8">
         <div class="table-content service-content">
           <h6>サービス内容</h6>
-          <p class="long">
-            QCD（品質、コスト、納期）観点で進捗や課題等を管理するだけでなく、課題解決に向けた推進や、ステークホルダー間での調整など、プロジェクトが円滑に進むようにマネジメントいたします。
+          <p>RPAを導入し、今まで手作業で対応していた業務を自動化します。</p>
+          <p>
+            世の中にはRPAソリューションがたくさんありますので、
+            まずは貴社にあったRPAを選定します。
+            導入するRPAが決まったら、自動化する業務範囲を定めてから、RPA構築を行います。
           </p>
-          <br>
-          <p>主に以下の3点を行います。</p>
-          <div class="service-content-item">
-            <div class="item1">
-              <p class="item-title">①レポーティング</p>
-              <p class="item-detail">・プロジェクトの状況やとりまとめ、経営層やマネジメント層へ報告する</p>
-              <p class="item-detail">・プロジェクト方針や戦略などをプロジェクトメンバーへ伝える</p>
-            </div>
-            <div class="item2">
-              <p class="item-title">②サポーティング</p>
-              <p class="item-detail">・プロジェクトの管理面、技術面などの支援を行う</p>
-              <p class="item-detail">・発生した課題の解決に向けた推進や調整を行う</p>
-            </div>
-            <div class="item1">
-              <p class="item-title">③ジャッジ</p>
-              <p class="item-detail">・複数のステータスホルダー間で行う各種会議において、PMが欠席となった場合に代理で一次判断を行う</p>
-            </div>
-          </div>
         </div>
         <div class="table-content deliverables">
           <h6>成果物</h6>
-          <p>- 進捗管理表</p>
-          <p>- 予算管理表</p>
-          <p>- 議題管理表&nbsp;&nbsp;など</p>
+          <p>- 構築したRPA</p>
+          <p>- 業務フロー</p>
+          <p>- 社内向け手順書またはマニュアル</p>
           <p class="note">※その他、必要に応じて資料を作成します</p>
         </div>
       </div>
     </div>
-    <the-case :cases="cases" class="system-consulting-case" />
+    <h3 class="table-title">
+      個別システム開発
+      <br class="sp">
+      <span @click="isOpenedDevelopment = !isOpenedDevelopment">
+        {{ isOpenedDevelopment ? '−' : '＋' }} 詳しく見る
+      </span>
+    </h3>
+    <div v-if="isOpenedDevelopment" class="columns table">
+      <div class="column is-4 left">
+        <div class="table-content target">
+          <h6>契約形態</h6>
+          <p>- 請負契約</p>
+          <p>
+            要件がある程度決まっている場合、事前にお見積りさせていただいた上で対応いたします。
+          </p>
+          <p>- 準委任契約</p>
+          <p>
+            要件がまだ決まっていない場合、「どういうシステムを開発すべきか」
+            という上流フェーズから対応いたします。
+          </p>
+        </div>
+        <div class="table-content duration-cost">
+          <h6>参考期間/費用</h6>
+          <p>- 約6ヶ月～1年程度</p>
+          <p class="note">
+            ※お問い合わせは<nuxt-link to="/contact">こちら</nuxt-link>
+          </p>
+        </div>
+      </div>
+      <div class="column is-8">
+        <div class="table-content development-content service-content">
+          <h6>当社がやらないこと</h6>
+          <p>○言われたことだけをやる</p>
+          <p class="long">
+            お客様から言われたことをそのまま対応するのではなく、
+            お客様の立場にたって、「何のために必要か？」「本当に必要か？」ということを考え、
+            当社から「こうした方がより良い効果が得られます」というご提案をしながら進めます。
+          </p>
+          <p>○開発したら終わり</p>
+          <p class="long">
+            システムを開発し納品することがゴールではなく、お客様にとっては納品がスタートです。
+            そのため、開発よりも「開発後」を第一に考えて運用保守まで一貫して行います。
+          </p>
+          <p>○システムのことだけを考える</p>
+          <p class="long">
+            システムは単なるツールです。どの業務でどうやってシステムを使うかということが重要ですので、
+            「業務」と「システム」の両面からサポートいたします。
+          </p>
+        </div>
+        <div class="table-content service-content">
+          <h6>対象システム</h6>
+          <p>- 業務システム（販売管理、顧客管理、予約管理、等）</p>
+          <p>- Webシステム（Webアプリケーション、ECサイト、サーバー構築支援、等）</p>
+          <p>- 業務システム連携用API&nbsp;など</p>
+          <p>- 議題管理表&nbsp;&nbsp;など</p>
+          <p class="note">
+            ※上記以外のシステム開発の対応可否については、
+            <nuxt-link to="/contact">こちら</nuxt-link>
+            からご相談ください
+          </p>
+        </div>
+        <div class="table-content">
+          <h6>成果物</h6>
+          <p>- 設計書</p>
+          <p>- 開発したプログラム</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
 import BlackLink from '~/components/atoms/BlackLink.vue'
-import TheCase from '~/components/pages/service/common/TheCase.vue'
 import consultingImage from '~/assets/service/img/service-consult01.JPG'
-import systemConsultingCases from '~/assets/service/js/SystemConsultingCases.js'
 
 export default {
   components: {
     TheSubHeader,
-    TheCase,
     BlackLink
   },
   data: () => ({
-    consultingImage,
-    cases: systemConsultingCases.cases
+    consultingImage: consultingImage,
+    isOpenedStrategy: false,
+    isOpenedSystem: false,
+    isOpenedGovernance: false,
+    isOpenedRpa: false,
+    isOpenedDevelopment: false
   })
 }
 </script>
 
 <style lang="scss" scoped>
+.service-details-area {
+  margin-bottom: 3rem;
+}
+
 div {
   letter-spacing: 1px;
 }
@@ -278,6 +329,10 @@ div {
 }
 .note {
   margin-left: 1rem;
+
+  a {
+    text-decoration: underline;
+  }
 }
 .message {
   background-color: inherit;
@@ -297,14 +352,33 @@ div {
 }
 .table {
   border: 1px solid $lightgray;
-  margin: 0px;
-  margin-bottom: 3rem;
+  @media screen and (min-width: 770px) {
+    margin: 2rem 3rem 3rem;
+  }
+
   .column {
     padding: 0px;
   }
 }
 .table-title {
   margin-bottom: 1rem;
+
+  span {
+    font-size: 1.2rem;
+    @media screen and (min-width: 770px) {
+      margin-left: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 770px) {
+    .sp {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    line-height: 3rem;
+  }
 }
 .table-content {
   margin: 1rem;
@@ -420,5 +494,13 @@ div {
 }
 .item-detail {
   margin-left: 1rem;
+}
+.development-content {
+  p {
+    margin-bottom: 1rem;
+  }
+  .long {
+    margin-left: 1rem;
+  }
 }
 </style>
