@@ -6,8 +6,9 @@
       <the-case-list :cases="cases" />
       <the-to-details-button to="/cases" />
     </div>
-    <the-about />
+    <br><br><br>
     <the-main-message />
+    <the-about />
     <the-sub-header text="顧客構成・内訳" />
     <the-about-client />
     <the-sub-header text="『初月無料』のコンサルティングサービスです" />
@@ -23,6 +24,7 @@
           <i class=""/>一覧を見る<span>></span>
         </nuxt-link>
       </p>
+      <br>
       <the-news-list :news="news" />
     </div>
   </div>
@@ -71,6 +73,13 @@ export default {
 <style lang="scss" scoped>
 /deep/ .news-image img {
   display: none;
+}
+.back {
+  text-align: right;
+
+  a {
+    color: black;
+  }
 }
 @media screen and (max-width: 769px) {
   .Heading__cta {

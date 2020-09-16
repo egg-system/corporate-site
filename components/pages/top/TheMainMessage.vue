@@ -20,7 +20,7 @@
             <div>
               <br>
               上場準備会社での内部統制支援実績あり<br>
-              <span class="font-red">監査をクリアし運用可能</span>なIT全般統制への対応へ
+              <span class="font-red">監査をクリアし運用可能</span>なIT全般統制の対応へ
             </div>
             <nuxt-link to="" class="link case-button button is-dark">
               <span class="link-message">上場準備会社の事例へ(準備中)</span>
@@ -59,15 +59,15 @@
           <div class="main-feature">
             <div>
               <br>
-              煩雑な作業を最小限にする業務・システムを構築し<br>
-              <span class="font-red">手間を増やさずに売上拡大へ</span>
+              業務を改善して煩雑な作業を最小限にすることで<br>
+              <span class="font-red">手間を増やさずにチャネル増加・売上拡大へ</span>
             </div>
           </div>
         </div>
       </div>
       <div class="main-image">
         <div class="main-feature">
-          社員採用を進めたい<br><br>
+          社員を採用したい<br><br>
         </div>
         <div>
           <img :src="triangleImage" class="triangle-img" alt="解決策">
@@ -120,6 +120,10 @@ export default {
     padding-bottom: 4%;
     border-top: 1px solid $lightgray;
     border-bottom: 1px solid $lightgray;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.4rem;
+    }
   }
 
   p {
@@ -127,6 +131,10 @@ export default {
     margin-top: 3rem;
     margin-bottom: 3rem;
     font-size: 1.5rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1rem;
+    }
   }
 
   .issue-button {
@@ -206,20 +214,19 @@ export default {
     .main-image-area {
       display: flex;
       justify-content: center;
-
-      .main-image {
-        width: 90%;
-      }
-    }
-
-    .main-image-area {
       flex-flow: column;
       align-items: center;
-    }
 
-    .main-image {
-      width: 100%;
-      margin-bottom: 3rem;
+      .main-image {
+        width: 95%;
+        margin-bottom: 3rem;
+
+        .main-feature {
+          .link-message {
+            font-size: 0.8rem;
+          }
+        }
+      }
     }
 
     .reason-button {

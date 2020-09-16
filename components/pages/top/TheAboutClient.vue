@@ -28,6 +28,10 @@ export default {
 
   .about-client-summary {
     margin: 1rem;
+    font-size: 1.4rem;
+    @media screen and (max-width: 769px) {
+      font-size: 1rem;
+    }
   }
 
   img {
@@ -37,7 +41,7 @@ export default {
     padding: 1rem;
 
     @media screen and (max-width: 769px) {
-      width: 100%;
+      width: 95%;
     }
   }
 }
