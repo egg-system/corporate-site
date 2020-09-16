@@ -1,33 +1,36 @@
 <template>
-  <div class="page-content">
-    <the-hero-title main-text="最近の活動・コラム" />
-    <the-column-list :columns="listData" />
+  <div>
+    <div class="page-content">
+      <the-hero-title main-text="顧客インタビュー・事例紹介" />
+      <the-case-list :cases="listData"/>
+    </div>
   </div>
 </template>
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
-import TheColumnList from '~/components/pages/common/TheColumnList.vue'
-import { fetchCmsListDataColumn } from '~/lib/cms'
+import TheCaseList from '~/components/pages/common/TheCaseList.vue'
+import { fetchCmsListDataCase } from '~/lib/cms'
 
 export default {
   components: {
     TheHeroTitle,
-    TheColumnList
+    TheCaseList
   },
   head() {
     return {
-      title: '最近の活動・コラム',
+      title: '顧客インタビュー・事例紹介',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: '株式会社エッグシステム コラム'
+          content: '株式会社エッグシステム 顧客インタビュー・事例紹介'
         },
         {
           hid: 'keywords',
           name: 'keywords',
-          content: '最近の活動・コラム, eggsystem, 株式会社エッグシステム'
+          content:
+            '顧客インタビュー・事例紹介, eggsystem, 株式会社エッグシステム'
         },
         {
           hid: 'twitter:card',
@@ -38,17 +41,17 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: '最近の活動・コラム'
+          content: '顧客インタビュー・事例紹介'
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: '株式会社エッグシステム コラム'
+          content: '株式会社エッグシステム 顧客インタビュー・事例紹介'
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: 'https://eggsystem.co.jp/column'
+          content: 'https://eggsystem.co.jp/cases'
         },
         {
           hid: 'og:image',
@@ -60,7 +63,7 @@ export default {
   },
 
   asyncData() {
-    return fetchCmsListDataColumn(23)
+    return fetchCmsListDataCase(23)
   }
 }
 </script>

@@ -32,8 +32,9 @@ export default {
 .service {
   width: 80%;
   margin: 0 auto;
-  margin-top: 8%;
+  padding-top: 8%;
   padding-bottom: 8%;
+  border-top: 1px solid $lightgray;
   border-bottom: 1px solid $lightgray;
 }
 .columns {
