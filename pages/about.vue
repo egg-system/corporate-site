@@ -6,15 +6,11 @@
       <the-hero-title sub-text="ロゴに込められた想い" />
       <the-logo-description class="end" />
       <the-sub-header class="blank" text="当社の強み" />
-<<<<<<< HEAD
       <the-value class="" />
       <!--
       <the-sub-header class="blank" text="最近の活動・コラム" />
       <the-column class="end" />
     -->
-=======
-      <the-value class="end" />
->>>>>>> 5a6413dd99c16fe8e8d98eaa4f9c9c2992ab66db
     </div>
   </div>
 </template>
