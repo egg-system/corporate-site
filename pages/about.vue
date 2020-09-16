@@ -3,8 +3,10 @@
     <div class="content page-content">
       <the-hero-title main-text="わたしたちについて" />
       <the-message class="end" />
+      <the-hero-title sub-text="ロゴに込められた想い" />
+      <the-logo-description class="end" />
       <the-sub-header class="blank" text="当社の強み" />
-      <the-value class="end" />
+      <the-value class="" />
       <!--
       <the-sub-header class="blank" text="最近の活動・コラム" />
       <the-column class="end" />
@@ -18,6 +20,7 @@ import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheSubHeader from '~/components/pages/common/TheSubHeader.vue'
 import TheValue from '~/components/pages/about/TheValue.vue'
 import TheMessage from '~/components/pages/about/TheMessage.vue'
+import TheLogoDescription from '~/components/pages/about/TheLogoDescription.vue'
 import TheColumn from '~/components/pages/about/TheColumn.vue'
 
 export default {
@@ -26,6 +29,7 @@ export default {
     TheSubHeader,
     TheValue,
     TheMessage,
+    TheLogoDescription,
     TheColumn
   },
   head() {
