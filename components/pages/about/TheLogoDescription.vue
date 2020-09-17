@@ -2,7 +2,7 @@
   <div class="about">
     <div class="message-container">
       <div class="logo-image">
-        <img :src="logo">
+        <img :src="xface_logo_rgb_mark">
       </div>
       <div class="message-message">
         <p class="main-message sub-title">
@@ -30,11 +30,11 @@
       </div>
     </div>
     <div class="logo-message">
-      <p class="sub-title">
+      <p class="logo-explanation-title sub-title">
         単体では完結しない
       </p>
       <div class="logo-explanation">
-        <div class="logo-explanation-body">
+        <div class="text logo-explanation-body">
           実はこのロゴは単体では完結しません。一人の力では限界があ<br>
           るため、複数のロゴが集まることで一つの形を作れるように<br>
           なっています。<br>
@@ -57,7 +57,7 @@
       </div>
       <p class="image-message">
         組み方を変えると、全く別の表現ができます。<br>
-        こちらのの方がより集中的に、より速く動くことができそうです。
+        こちらの方がより集中的に、より速く動くことができそうです。
       </p>
     </div>
     <div class="logo-pattern">
@@ -74,7 +74,7 @@
 
 <script>
 import messages from '~/assets/js/about-message.js'
-import logo from '~/static/logo_image_small.png'
+import xface_logo_rgb_mark from '~/assets/about/x-face_logo_rgb_mark.png'
 import xface_multi02 from '~/assets/about/x-face_Multi02.png'
 import xface_multi03 from '~/assets/about/x-face_Multi03.png'
 import xface_multi04 from '~/assets/about/x-face_Multi04.png'
@@ -84,7 +84,7 @@ export default {
       message1: messages.messageImage1,
       message2: messages.messageImage2,
       message3: messages.messageImage3,
-      logo: logo,
+      xface_logo_rgb_mark: xface_logo_rgb_mark,
       xface_multi02: xface_multi02,
       xface_multi03: xface_multi03,
       xface_multi04: xface_multi04
@@ -126,23 +126,28 @@ export default {
 }
 .logo-image {
   display: block;
-  max-width: 25%;
-  margin: auto 10% auto 10%;
+  width: 100%;
 }
 .logo-image img {
   display: block;
-  margin: 20px auto;
+  margin-top: 20px;
+  margin-left: 10px;
   object-fit: contain;
-  width: 500px;
-  height: 300px;
+  height: 400px;
 }
 .logo-explanation {
   text-align: left;
   margin: 0 auto;
 }
+.logo-explanation-title {
+  font-weight: normal;
+  color: $black;
+  margin-top: 0;
+}
 .logo-explanation-body {
   width: 550px;
   margin: 30px auto;
+  line-height: 32px;
 }
 .image {
   margin-left: 0;
@@ -156,7 +161,7 @@ export default {
 }
 .image-message {
   text-align: center;
-  line-height: 1.75;
+  line-height: 32px;
 }
 .message br {
   line-height: initial;
