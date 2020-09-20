@@ -194,6 +194,9 @@ export default {
   /deep/ ol li {
     margin-left: 20px;
   }
+  /deep/ iframe {
+    height: 400px;
+  }
 }
 /deep/ .news-image img {
   display: none;
