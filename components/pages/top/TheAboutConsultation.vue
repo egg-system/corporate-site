@@ -44,7 +44,7 @@
       </div>
     </div>
     <div>
-      <div>
+      <div class="service-reason">
         コンサルティング業界初の『初月無料』に取り組む理由
       </div>
       <div class="reason-button" @click="isOpened = !isOpened">
@@ -118,8 +118,12 @@ export default {
     }
   }
 
+  .service-reason {
+    font-size: 1.5rem;
+  }
+
   @media screen and (max-width: 769px) {
-    width: 100%;
+    width: 95%;
 
     .service-image-area {
       flex-flow: column;

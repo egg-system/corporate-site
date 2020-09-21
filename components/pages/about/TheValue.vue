@@ -41,6 +41,11 @@
         </p>
       </div>
     </div>
+    <div class="link">
+      <a class="button is-dark" href="https://eggsystem.co.jp/service/">
+        サービス詳細へ
+      </a>
+    </div>
   </div>
 </template>
 
@@ -85,6 +90,10 @@ export default {
   font-size: 0.875rem;
   line-height: 32px;
 }
+.link {
+  width: 30rem;
+  margin: 30px auto;
+}
 @media screen and (max-width: 768px) {
   .about {
     border-bottom: none;
@@ -99,6 +108,9 @@ export default {
   }
   .sp {
     display: none;
+  }
+  .link {
+    width: 10rem;
   }
 }
 </style>

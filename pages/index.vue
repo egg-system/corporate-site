@@ -8,6 +8,7 @@
         <the-to-details-button to="/cases" />
       </div>
     </section>
+    <br><br><br>
     <the-about />
     <the-main-message />
     <section>

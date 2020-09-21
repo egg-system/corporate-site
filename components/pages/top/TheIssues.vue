@@ -28,11 +28,11 @@
 <style lang="scss" scoped>
 .issue-box {
   border: 1px dashed #dbdbdb;
-  width: 50%;
+  width: 70%;
   text-align: left;
   margin: 1rem auto 0;
   padding: 1rem 2rem 2rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 
   .issue-message {
     margin: 2rem 0 2rem;
