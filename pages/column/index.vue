@@ -1,7 +1,7 @@
 <template>
   <div class="page-content">
     <the-hero-title main-text="最近の活動・コラム" />
-    <the-column-list :columns="listData" />
+    <the-column-list :columns="listData" is-h2-tag />
   </div>
 </template>
 

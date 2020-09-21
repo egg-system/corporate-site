@@ -1,20 +1,24 @@
 <template>
-  <div class="case-list">
-    <div v-for="item in cases" :key="item.id" class="columns">
-      <div class="column second is-5">
-        <figure>
-          <img :src="item.img.url" :alt="item.title">
-        </figure>
+  <article class="case-list">
+    <client-only>
+      <div v-for="item in cases" :key="item.id" class="columns">
+        <div class="column second is-5">
+          <figure>
+            <img :src="item.img.url" :alt="item.title">
+          </figure>
+        </div>
+        <div class="column first is-7">
+          <component :is="isH2Tag ? 'h2' : 'h3'" class="case-title">
+            {{ item.title }}
+          </component>
+          <p class="case-summary">{{ item.summary }}</p>
+          <nuxt-link :to="'/cases/' + item.id" class="case-button button is-dark">
+            <span class="link-message">インタビュー詳細へ</span>
+          </nuxt-link>
+        </div>
       </div>
-      <div class="column first is-7">
-        <p class="case-title">{{ item.title }}</p>
-        <p class="case-summary">{{ item.summary }}</p>
-        <nuxt-link :to="'/cases/' + item.id" class="case-button button is-dark">
-          <span class="link-message">インタビュー詳細へ</span>
-        </nuxt-link>
-      </div>
-    </div>
-  </div>
+    </client-only>
+  </article>
 </template>
 
 <script>
@@ -23,6 +27,10 @@ export default {
     cases: {
       type: Array,
       required: true
+    },
+    isH2Tag: {
+      type: Boolean,
+      default: false
     }
   }
 }

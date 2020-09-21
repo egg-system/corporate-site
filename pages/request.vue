@@ -11,13 +11,15 @@
         <br>
         <p>など、どんな内容もまずはお気軽にご相談ください。</p>
       </div>
-      <the-sub-header :is-line="true" text="ご依頼の流れ" class="subheader" />
-      <the-flow class="lightgray-underline" />
-      <the-sub-header :is-line="true" text="当社サービスについて" class="subheader" />
-      <the-service :services="services" class="service lightgray-underline"/>
+      <section>
+        <the-sub-header :is-line="true" text="ご依頼の流れ" class="subheader" />
+        <the-flow class="lightgray-underline" />
+      </section>
+      <section>
+        <the-sub-header :is-line="true" text="当社サービスについて" class="subheader" />
+        <the-service :services="services" class="service lightgray-underline"/>
+      </section>
       <the-contact />
-      <!-- <the-sub-header :is-line="true" text="最近の活動・コラム" class="subheader" />
-      <the-column /> -->
     </div>
   </div>
 </template>

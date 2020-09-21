@@ -1,12 +1,16 @@
 <template>
-  <div class="contact">
+  <section class="contact">
     <div class="contact-content">
-      <p>「こんな相談してよいのか分からない」</p>
-      <p>「まずは話だけ聞いてみたい」</p>
-      <p>といった方もお気軽にご相談ください。</p>
+      <p>
+        「こんな相談してよいのか分からない」<br>
+        「まずは話だけ聞いてみたい」<br>
+        といった方もお気軽にご相談ください。
+      </p>
     </div>
-    <black-link label="お問い合わせ・ご相談はこちらから" link="/contact" />
-  </div>
+    <h2>
+      <black-link label="お問い合わせ・ご相談はこちらから" link="/contact" />
+    </h2>
+  </section>
 </template>
 
 <script>
@@ -33,6 +37,7 @@ export default {
   font-size: 20px;
   text-align: center;
   padding: 10px 5px;
+  line-height: 2.5rem;
 }
 .link {
   width: 30rem;

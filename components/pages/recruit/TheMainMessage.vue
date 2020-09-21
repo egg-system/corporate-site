@@ -1,8 +1,8 @@
 <template>
   <div>
-    <p class="top-message">
+    <h2 class="top-message">
       コンサルティングエンジニア集団「x-faCE」の一員を募集しています
-    </p>
+    </h2>
     <p class="sub-message">
       どこへ行っても通用するスキルを身につけたい『コンサルティングエンジニア(＝システムコンサルタント兼システムエンジニア)』を希望する方を募集しています。<br><br>
 

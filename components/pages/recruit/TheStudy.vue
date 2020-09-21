@@ -1,8 +1,8 @@
 <template>
   <div class="study">
-    <p class="top-message is-size-3">
+    <h2 class="top-message is-size-3">
       システムエンジニア向け勉強会
-    </p>
+    </h2>
     <div class="columns is-marginless">
       <figure class="column image">
         <img :src="img">
@@ -42,6 +42,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.top-message {
+  font-weight: inherit;
+}
 .sub-message {
   margin-top: 3%;
 }

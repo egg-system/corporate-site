@@ -2,7 +2,7 @@
   <div>
     <div class="page-content">
       <the-hero-title main-text="顧客インタビュー・事例紹介" />
-      <the-case-list :cases="listData"/>
+      <the-case-list :cases="listData" is-h2-tag />
     </div>
   </div>
 </template>

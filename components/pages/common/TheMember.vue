@@ -1,16 +1,16 @@
 <template>
-  <div class="columns is-multiline">
+  <article class="columns is-multiline">
     <div v-for="(member, i) in members" :key="i" class="column is-3">
       <figure class="image">
         <img :src="member.img">
       </figure>
-      <div class="has-text-centered">
+      <h2 class="has-text-centered">
         {{ member.role }}<br>
         {{ member.nameJP }}<br>
         {{ member.nameEN }}<br>
-      </div>
+      </h2>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>
