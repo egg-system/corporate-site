@@ -1,18 +1,20 @@
 <template>
   <div class="member">
-    <slick-slide ref="slick" :options="slickOptions">
-      <div v-for="(value, key) in members" :key="key">
-        <div class="member-list">
-          <div class="member-image">
-            <img :src="value.image">
-          </div>
-          <div class="member-name">
-            <p>{{ value.name }}</p>
-            <p class="member-romajiName">{{ value.romajiName }}</p>
+    <client-only>
+      <slick-slide ref="slick" :options="slickOptions">
+        <div v-for="(value, key) in members" :key="key">
+          <div class="member-list">
+            <div class="member-image">
+              <img :src="value.image">
+            </div>
+            <div class="member-name">
+              <p>{{ value.name }}</p>
+              <p class="member-romajiName">{{ value.romajiName }}</p>
+            </div>
           </div>
         </div>
-      </div>
-    </slick-slide>
+      </slick-slide>
+    </client-only>
     <div class="btn-area">
       <div class="Heading__cta">
         <nuxt-link class="next-button" to="/member">

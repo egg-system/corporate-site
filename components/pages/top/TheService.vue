@@ -1,5 +1,5 @@
 <template>
-  <div class="service">
+  <section class="service">
     <div class="columns">
       <div class="column is-4 center font-size-24px bold">
         <h2 class="">x-faCEについてもっと知る</h2>
@@ -7,7 +7,7 @@
       <black-link class="column is-4" label="x-faCEのサービスへ" link="/service" />
       <black-link class="column is-4" label="ご依頼の流れ" link="/request" />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

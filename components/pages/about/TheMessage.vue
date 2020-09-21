@@ -1,29 +1,29 @@
 <template>
   <div class="about">
-    <div class="message-container">
+    <section class="message-container">
       <div class="message-image">
         <figure class="image">
           <img :src="message1">
         </figure>
       </div>
       <div class="message-message">
-        <p class="main-message">Mission - 存在理由 - </p>
-        <p class="main-message sub-title">
+        <h2 class="main-message">Mission - 存在理由 - </h2>
+        <h3 class="main-message sub-title">
           献身的な人のためにITシステムを活用する
-        </p>
+        </h3>
         <p class="text web-message">
           株式会社エッグシステムでは、<br>
           《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。<br>現代社会では「自分の保身のために行動する人」が評価され、「献身的に行動する人」が正しく評価を得られない現状があります。しかし我々は、保身に走らず他人の利益のために献身的に行動することこそ、より良い社会を実現する一歩だと考えています。<br>目の前の人、顧客、家族が「喜ぶこと」を自分の喜びと感じ、献身的に頑張る人たちが、正しく喜ばれる（＝成果を得る）ことをMISSIONとしています。
           <br>
         </p>
       </div>
-    </div>
-    <div class="message-container message-pc">
+    </section>
+    <section class="message-container message-pc">
       <div class="message-message">
-        <p class="main-message">Vision - 目標 - </p>
-        <p class="main-message sub-title">
+        <h2 class="main-message">Vision - 目標 - </h2>
+        <h3 class="main-message sub-title">
           100人のコンサルティングエンジニア集団<br>をつくる
-        </p>
+        </h3>
         <p class="text">
           会社という枠組みを超え、「チーム」として共に働くシステムエンジニアを増やすことで、立場を気にすることなくフラットに意見を言い合える環境を作ります。目の前の人の利益を考えて「良いものは良い、悪いものは悪い」と話し合えることが、真の貢献であると考えています。
           <br>
@@ -36,18 +36,18 @@
           <img :src="message2">
         </figure>
       </div>
-    </div>
-    <div class="message-container message-sp">
+    </section>
+    <section class="message-container message-sp">
       <div class="message-image">
         <figure class="image">
           <img :src="message2">
         </figure>
       </div>
       <div class="message-message">
-        <p class="main-message">Vision - 目標 - </p>
-        <p class="main-message sub-title">
+        <h2 class="main-message">Vision - 目標 - </h2>
+        <h3 class="main-message sub-title">
           100人のコンサルティングエンジニア集団をつくる
-        </p>
+        </h3>
         <p class="text">
           会社という枠組みを超え、「チーム」として共に働くシステムエンジニアを増やすことで、立場を気にすることなくフラットに意見を言い合える環境を作ります。目の前の人の利益を考えて「良いものは良い、悪いものは悪い」と話し合えることが、真の貢献であると考えています。<br>
           <br>
@@ -56,35 +56,35 @@
           会社に依存や迎合することなく、自立したエンジニア同士が短所を補完しつつ協働する事で、より本質へと向かい、クライアントの期待値を超えていきます。
         </p>
       </div>
-    </div>
-    <div class="message-container">
+    </section>
+    <section class="message-container">
       <div class="message-image">
         <figure class="image">
           <img :src="message3">
         </figure>
       </div>
       <div class="message-message">
-        <p class="main-message">Value - 価値観 - </p>
-        <p class="main-message sub-title">
+        <h2 class="main-message">Value - 価値観 - </h2>
+        <h3 class="main-message sub-title">
           圧倒的当事者意識
-        </p>
+        </h3>
         <p class="text">
           何事も常に自分ごととして捉え、圧倒的な当事者意識で「どうやったらできるか」を考えて行動する。まずは気持ちが大事、次に行動。「そこまでやってくれたんだ！」を目指す。
         </p>
-        <p class="main-message sub-title">
+        <h3 class="main-message sub-title">
           目の前の人を大事に
-        </p>
+        </h3>
         <p class="text">
           まだ見ぬ1万人よりも、目の前の10人を大事にする。目の前の相手を大事にできずして、その先の人は大事にできない。目の前で一緒に仕事をする相手に対して感謝の気持ちは言葉で示す、相手の立場になって考えて行動するなど、当たり前のことは当たり前に行う。
         </p>
-        <p class="main-message sub-title">
+        <h3 class="main-message sub-title">
           和衷協同
-        </p>
+        </h3>
         <p class="text">
           心を同じくして共に力を合わせ、仕事や作業に当たる。人には得意・不得意があって当たり前。自分のスキルを最大限に活かし、不得意なところは相互で補完する。
         </p>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -137,6 +137,9 @@ export default {
 .content p {
   margin-bottom: 0;
 }
+h2.main-message {
+  font-size: 1rem;
+}
 .main-message {
   font-weight: normal;
   text-align: left;
@@ -145,6 +148,9 @@ export default {
 }
 .text {
   line-height: 32px;
+}
+h3.sub-title {
+  margin: 0;
 }
 .sub-title {
   font-size: 24px;

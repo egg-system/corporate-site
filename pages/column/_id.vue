@@ -14,15 +14,17 @@
       <div class="main">
         <div v-html="data.content" />
       </div>
-      <p class="back">
-        <nuxt-link to="/column">
-          <i/>一覧を見る<span>></span>
-        </nuxt-link>
-        <the-sub-header text="最近の活動・コラム" />
-      </p>
-      <div class="column-list">
-        <the-column-list :columns="list" />
-      </div>
+      <section>
+        <p class="back">
+          <nuxt-link to="/column">
+            <i/>一覧を見る<span>></span>
+          </nuxt-link>
+          <the-sub-header text="最近の活動・コラム" />
+        </p>
+        <div class="column-list">
+          <the-column-list :columns="list" />
+        </div>
+      </section>
     </div>
   </div>
 </template>

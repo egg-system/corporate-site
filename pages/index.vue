@@ -1,30 +1,40 @@
 <template>
   <div>
     <the-hero-image />
-    <the-sub-header text="顧客インタビュー・事例紹介" />
-    <div class="column-list page-content">
-      <the-case-list :cases="cases" />
-      <the-to-details-button to="/cases" />
-    </div>
+    <section>
+      <the-sub-header text="顧客インタビュー・事例紹介" />
+      <div class="column-list page-content">
+        <the-case-list :cases="cases" />
+        <the-to-details-button to="/cases" />
+      </div>
+    </section>
     <the-about />
     <the-main-message />
-    <the-sub-header text="顧客構成・内訳" />
-    <the-about-client />
-    <the-sub-header text="『初月無料』のコンサルティングサービスです" />
-    <the-about-consultation />
+    <section>
+      <the-sub-header text="顧客構成・内訳" />
+      <the-about-client />
+    </section>
+    <section>
+      <the-sub-header text="『初月無料』のコンサルティングサービスです" />
+      <the-about-consultation />
+    </section>
     <the-contact />
     <the-service />
-    <the-sub-header text="メンバー" />
-    <the-member />
-    <the-sub-header text="お知らせ" />
-    <div class="news-list page-content">
-      <p class="back">
-        <nuxt-link to="/news">
-          <i class=""/>一覧を見る<span>></span>
-        </nuxt-link>
-      </p>
-      <the-news-list :news="news" />
-    </div>
+    <section>
+      <the-sub-header text="メンバー" />
+      <the-member />
+    </section>
+    <section class="news-section">
+      <the-sub-header text="お知らせ" />
+      <div class="news-list page-content">
+        <p class="back">
+          <nuxt-link to="/news">
+            <i class=""/>一覧を見る<span>></span>
+          </nuxt-link>
+        </p>
+        <the-news-list :news="news" />
+      </div>
+    </section>
   </div>
 </template>
 
@@ -72,9 +82,23 @@ export default {
 /deep/ .news-image img {
   display: none;
 }
+
 @media screen and (max-width: 769px) {
   .Heading__cta {
     width: 100%;
+  }
+}
+
+.news-section {
+  margin-bottom: 3rem;
+
+  .back {
+    text-align: right;
+    margin-bottom: 1rem;
+
+    a {
+      color: #0a0716;
+    }
   }
 }
 </style>

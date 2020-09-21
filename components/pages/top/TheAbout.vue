@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <section class="about">
     <the-sub-header text="わたしたちについて" class="about-header-sp" />
     <div class="columns reverse">
       <div class="column second is-5">
@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

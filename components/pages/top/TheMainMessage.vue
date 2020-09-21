@@ -1,9 +1,9 @@
 <template>
-  <div class="main-message-area">
-    <div class="main-message">
+  <section class="main-message-area">
+    <h2 class="main-message">
       『あなたじゃないと困る。』<br>
       そう言っていただける関係を目指しています
-    </div>
+    </h2>
     <p>
       中小企業が抱える「経験豊富なIT人材の不足」「システムを有効活用できない」という課題を解決する<br>
       コンサルティングからシステム開発まで一貫して行うコンサルティングエンジニア集団です。
@@ -15,7 +15,7 @@
     <nuxt-link to="/service" class="link service-button button is-dark">
       <span class="link-message">サービス詳細へ</span>
     </nuxt-link>
-  </div>
+  </section>
 </template>
 
 <script>

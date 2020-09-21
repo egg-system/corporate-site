@@ -1,8 +1,10 @@
 <template>
-  <div class="bg-image">
-    <img :src="imgPC" class="pc">
-    <img :src="imgSP" class="sp">
-  </div>
+  <header class="bg-image">
+    <h1>
+      <img :src="imgPC" class="pc" alt="x-faCEはコンサルティングエンジニア集団です。">
+      <img :src="imgSP" class="sp" alt="x-faCEはコンサルティングエンジニア集団です。">
+    </h1>
+  </header>
 </template>
 
 <script>

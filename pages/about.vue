@@ -3,8 +3,10 @@
     <div class="content page-content">
       <the-hero-title main-text="わたしたちについて" />
       <the-message class="end" />
-      <the-sub-header class="blank" text="当社の強み" />
-      <the-value class="end" />
+      <section>
+        <the-sub-header class="blank" text="当社の強み" />
+        <the-value class="end" />
+      </section>
     </div>
   </div>
 </template>

@@ -6,12 +6,12 @@
       <the-main-message />
       <the-entry />
     </div>
-    <the-about />
-    <div class="content page-content">
+    <section>
+      <the-about />
+    </section>
+    <section class="content page-content">
       <the-study />
-      <!-- <the-sub-header class="blank" text="最近の活動・コラム" />
-      <the-column class="end" /> -->
-    </div>
+    </section>
   </div>
 </template>
 

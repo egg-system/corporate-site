@@ -1,7 +1,11 @@
 <template>
   <div class="column-item">
     <div class="columns is-multiline">
-      <div v-for="(item, i) in columns" :key="i" :class="[ i <= 2 ? 'column is-one-third' : 'column is-one-quarter']" >
+      <article
+        v-for="(item, i) in columns"
+        :key="i"
+        :class="[ i <= 2 ? 'column is-one-third' : 'column is-one-quarter']"
+      >
         <nuxt-link :to="'/column/' + item.id">
           <div class="column-inner">
             <div class="column-image">
@@ -10,7 +14,10 @@
               </figure>
             </div>
             <div class="column-content">
-              <p class="column-title">{{ item.title }}</p>
+              <component
+                :is="isH2Tag ? 'h2' : 'h3'"
+                class="column-title"
+              >{{ item.title }}</component>
               <br>
               {{ item.display_at | dayjs }}
               <br>
@@ -21,7 +28,7 @@
             </div>
           </div>
         </nuxt-link>
-      </div>
+      </article>
     </div>
   </div>
 </template>
@@ -32,6 +39,10 @@ export default {
     columns: {
       type: Array,
       default: null
+    },
+    isH2Tag: {
+      type: Boolean,
+      default: false
     }
   }
 }
