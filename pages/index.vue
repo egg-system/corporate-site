@@ -1,14 +1,13 @@
 <template>
   <div>
     <the-hero-image />
-    <section>
+    <section class="case-section">
       <the-sub-header text="顧客インタビュー・事例紹介" />
       <div class="column-list page-content">
         <the-case-list :cases="cases" />
         <the-to-details-button to="/cases" />
       </div>
     </section>
-    <br><br><br>
     <the-about />
     <the-main-message />
     <section>
@@ -88,6 +87,10 @@ export default {
   .Heading__cta {
     width: 100%;
   }
+}
+
+.case-section {
+  margin-bottom: 9rem;
 }
 
 .news-section {
