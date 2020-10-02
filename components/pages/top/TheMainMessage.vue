@@ -19,11 +19,11 @@
           <div class="main-feature">
             <div>
               <br>
-              上場準備会社での内部統制支援実績あり<br>
+              監査法人の指摘ゼロを達成した実績あり<br>
               <span class="font-red">監査をクリアし運用可能</span>なIT全般統制の対応へ
             </div>
             <nuxt-link to="" class="link case-button button is-dark">
-              <span class="link-message">上場準備会社の事例へ(準備中)</span>
+              <span class="link-message">ベンチャー企業の内部統制事例へ<br>(準備中)</span>
             </nuxt-link>
           </div>
         </div>
