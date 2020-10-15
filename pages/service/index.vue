@@ -20,21 +20,25 @@
           （システムコンサルティング + エンジニアリング）
         </p>
       </div>
-      <div class="case-list-wrapper">
+      <section class="case-list-wrapper">
         <div class="sub-header-wrapper">
           <the-sub-header text="顧客インタビュー・事例紹介" />
         </div>
         <the-case-list :cases="cases" />
         <the-to-details-button to="/cases" />
-      </div>
-      <div class="service-details">
+      </section>
+      <section class="service-details">
         <the-sub-header text="コンサルティングエンジニアサービス" />
         <the-consulting-engneer-detail />
+      </section>
+      <section>
         <the-sub-header text="内部統制支援サービス" />
         <the-it-controll-detail />
+      </section>
+      <section>
         <the-sub-header text="個別サービス" />
         <the-other-service-detail />
-      </div>
+      </section>
       <div class="contact-area">
         <the-contact />
       </div>
@@ -133,6 +137,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/service/scss/service-footer.scss';
+
 .case-list-wrapper {
   margin-bottom: 6rem;
 
@@ -175,33 +181,5 @@ export default {
 
 .service-details {
   margin-top: 8rem;
-}
-
-.contact-area {
-  margin-bottom: 4rem;
-  padding: 4rem 10% 6rem;
-
-  @media screen and (min-width: 1024px) {
-    padding: 4rem 30% 6rem;
-  }
-
-  @media screen and (max-width: 769px) {
-    padding: 4rem 0 6rem;
-  }
-
-  border-top: 1px solid #dbdbdb;
-  border-bottom: 1px solid #dbdbdb;
-
-  .contact {
-    width: 100%;
-
-    .contact-content p {
-      line-height: 4rem;
-    }
-  }
-}
-
-.link-area {
-  margin: 12rem 0 8rem;
 }
 </style>
