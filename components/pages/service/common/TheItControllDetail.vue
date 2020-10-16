@@ -37,7 +37,7 @@
           </ul>
         </div>
         <div class="service-detail-btn">
-          <nuxt-link to="/service/consulting-engineer" class="case-button button is-dark">
+          <nuxt-link to="/service/it-controll" class="case-button button is-dark">
             <span class="link-message">詳しく見る</span>
           </nuxt-link>
         </div>
