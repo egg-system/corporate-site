@@ -4,7 +4,7 @@
       <the-hero-title main-text="サービス紹介" />
       <section class="service-detail-section">
         <the-sub-header text="コンサルティングエンジニアサービス" />
-        <h3>
+        <h3 class="service-description">
           売上拡大・業務効率化を目的としてITシステムを活用するために<br>
           システム化の企画から開発・運用まで<br>
           徹底的にベンチャー・中小企業様へ寄り添って対応します。
@@ -17,7 +17,7 @@
         <the-sub-header text="こういった課題を抱える企業様向け" />
         <div class="columns">
           <div class="column second is-5">
-            <img>
+            <img :src="consultingEngineerImage">
           </div>
           <div class="column first is-7">
             <ul>
@@ -50,7 +50,9 @@
           text="なぜ、中小企業・ベンチャー企業にコンサルティングエンジニアサービスが必要なのか"
         />
         <div>
-          <h4>○ベンチャー・中小企業では「業務」「システム」に関する幅広い知識と経験が必要</h4>
+          <h3 class="service-reason">
+            ○ベンチャー・中小企業では「業務」「システム」に関する幅広い知識と経験が必要
+          </h3>
           <div>
             <p>
               ベンチャー・中小企業では多岐にわたる課題へ対応する必要があります。<br>
@@ -71,7 +73,9 @@
           </div>
         </div>
         <div>
-          <h4>○システムありきではなく、客観的な判断が必要</h4>
+          <h3 class="service-reason">
+            ○システムありきではなく、客観的な判断が必要
+          </h3>
           <div>
             <p>
               システムベンダーやパッケージやクラウドサービスを提供する会社では、
@@ -114,6 +118,7 @@
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
 import TheServiceLinks from '~/components/pages/service/common/TheServiceLinks.vue'
+import consultingEngineerImage from '~/assets/service/img/consulting-engineer-image.jpg'
 import TheServiceScope from '~/components/pages/service/TheServiceScope.vue'
 import TheServiceMenuTable from '~/components/pages/service/TheServiceMenuTable.vue'
 import TheServicePerformance from '~/components/pages/service/TheServicePerformance.vue'
@@ -128,6 +133,11 @@ export default {
     TheServiceMenuTable,
     TheServicePerformance,
     TheContact
+  },
+  computed: {
+    consultingEngineerImage() {
+      return consultingEngineerImage
+    }
   }
 }
 </script>
@@ -138,7 +148,7 @@ export default {
 .service-detail-section {
   text-align: center;
 
-  h3 {
+  .service-description {
     margin: 3rem;
     line-height: 2rem;
   }
@@ -146,5 +156,11 @@ export default {
   .top-link-area {
     margin: 6rem 0 4rem;
   }
+}
+
+.service-reason {
+  font-size: 1rem;
+  margin: 1rem 0 0;
+  text-decoration: underline;
 }
 </style>
