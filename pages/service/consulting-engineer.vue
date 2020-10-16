@@ -120,8 +120,8 @@ import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
 import TheServiceLinks from '~/components/pages/service/common/TheServiceLinks.vue'
 import consultingEngineerImage from '~/assets/service/img/consulting-engineer-image.jpg'
 import TheServiceScope from '~/components/pages/service/TheServiceScope.vue'
-import TheServiceMenuTable from '~/components/pages/service/TheServiceMenuTable.vue'
-import TheServicePerformance from '~/components/pages/service/TheServicePerformance.vue'
+import TheServiceMenuTable from '~/components/pages/service/consulting-engineer/TheServiceMenuTable.vue'
+import TheServicePerformance from '~/components/pages/service/consulting-engineer/TheServicePerformance.vue'
 import TheContact from '~/components/pages/top/TheContact.vue'
 
 export default {
