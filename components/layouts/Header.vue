@@ -32,12 +32,8 @@
           メンバー
         </nuxt-link>
 
-        <nuxt-link class="navbar-item" to="/company">
-          会社概要
-        </nuxt-link>
-
-        <nuxt-link class="navbar-item" to="/request">
-          ご依頼について
+        <nuxt-link class="navbar-item" to="/cases">
+          事例紹介
         </nuxt-link>
 
         <nuxt-link class="navbar-item" to="/column">
@@ -46,6 +42,10 @@
 
         <nuxt-link class="navbar-item" to="/recruit">
           採用
+        </nuxt-link>
+
+        <nuxt-link class="navbar-item" to="/company">
+          会社概要
         </nuxt-link>
 
         <nuxt-link class="navbar-item" to="/contact">

@@ -4,8 +4,8 @@
       <div class="column is-4 center font-size-24px bold">
         <h2 class="">x-faCEについてもっと知る</h2>
       </div>
-      <black-link class="column is-4" label="x-faCEのサービスへ" link="/service" />
-      <black-link class="column is-4" label="ご依頼の流れ" link="/request" />
+      <black-link class="column is-4" label="コンサルティングエンジニアサービスへ" link="/service" />
+      <black-link class="column is-4" label="自社サービス紹介へ" link="/own_site" />
     </div>
   </section>
 </template>

@@ -83,54 +83,6 @@
       </div>
     </div>
     <h3 class="table-title">
-      システム化支援/業務改善コンサルティングサービス
-      <br class="sp">
-      <span @click="isOpenedSystem = !isOpenedSystem">
-        {{ isOpenedSystem ? '−' : '＋' }} 詳しく見る
-      </span>
-    </h3>
-    <div v-if="isOpenedSystem" class="columns table">
-      <div class="column is-4 left">
-        <div class="table-content target">
-          <h6>対象者</h6>
-          <p>- IT戦略/IT投資計画サービスをお受け頂いた企業様</p>
-          <p>- 既存システムのコスト削減や業務運用の効率化を図りたい企業様</p>
-        </div>
-        <div class="table-content duration-cost">
-          <h6>参考期間/費用</h6>
-          <p>- 約3ヶ月～1年程度</p>
-          <p>- 約50万円～160万円程度</p>
-          <p class="note">※1～3ヶ月単位でのご契約となります。</p>
-        </div>
-      </div>
-      <div class="column is-8">
-        <div class="table-content service-content">
-          <h6>サービス内容</h6>
-          <p class="long">
-            現場業務の問題点を明らかにしたうえで、改善に向けた対策案を策定し、実行します。<br>
-            必要に応じて、新しいシステムの導入やツール開発を検討しながら、改善を行います。<br>
-            既にシステムを導入することが決まっているお客様の場合は、上流工程（要求定義や要件定義）から担当させて頂き、お客様とシステムベンダーの間に入り、プロジェクト推進します。
-          </p>
-        </div>
-        <div class="table-content service-process">
-          <h6>サービスの進め方</h6>
-          <div>
-            <p>Step 1&nbsp;&nbsp;現状分析</p>
-            <p>Step 2&nbsp;&nbsp;あるべき業務フロー（ToBeモデル）の策定</p>
-            <p>Step 3&nbsp;&nbsp;改善計画の策定</p>
-            <p>Step 4&nbsp;&nbsp;改善策の実行、要求定義・要件定義</p>
-          </div>
-        </div>
-        <div class="table-content deliverables">
-          <h6>成果物</h6>
-          <p>- 現状分析結果資料</p>
-          <p>- ToBe業務フロー</p>
-          <p>- 打ち合わせ議事録&nbsp;&nbsp;など</p>
-          <p class="note">※その他、必要に応じて資料を作成します</p>
-        </div>
-      </div>
-    </div>
-    <h3 class="table-title">
       内部統制支援サービス
       <br class="sp">
       <span @click="isOpenedGovernance = !isOpenedGovernance">

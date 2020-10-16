@@ -8,8 +8,8 @@
         <the-to-details-button to="/cases" />
       </div>
     </section>
-    <the-about />
     <the-main-message />
+    <the-about />
     <section>
       <the-sub-header text="顧客構成・内訳" />
       <the-about-client />
