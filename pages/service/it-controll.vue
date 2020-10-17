@@ -13,19 +13,19 @@
           <div class="service-links">
             <div class="link-wrapper">
               <nuxt-link
-                to="/service/consulting-engineer"
+                to="#it-controll-service-menu"
                 class="case-button button is-dark"
               >
                 <span class="link-message">サービスメニュー・料金プラン</span>
               </nuxt-link>
             </div>
             <div class="link-wrapper">
-              <nuxt-link to="/cases" class="case-button button is-dark">
+              <nuxt-link to="#it-controll-performance" class="case-button button is-dark">
                 <span class="link-message">作業実績・成果物</span>
               </nuxt-link>
             </div>
             <div class="link-wrapper">
-              <nuxt-link to="/about" class="case-button button is-dark">
+              <nuxt-link to="#it-controll-examlpe" class="case-button button is-dark">
                 <span class="link-message">上場準備会社の対応例</span>
               </nuxt-link>
             </div>
@@ -93,7 +93,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="it-controll-service-menu">
         <the-sub-header text="サービスメニュー・料金プラン" />
         <div class="columns">
           <div class="column second is-7">
@@ -118,11 +118,11 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="it-controll-performance">
         <the-sub-header text="内部統制サービス 作業実績・成果物" />
         <the-service-performance />
       </section>
-      <section>
+      <section id="it-controll-examlpe">
         <the-sub-header text="上場準備会社の対応例" />
         <img :src="itControllExampleImage" >
       </section>
