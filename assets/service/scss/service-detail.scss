@@ -1,5 +1,8 @@
 .service-detail-section {
-  text-align: center;
+  @media screen and (min-width: 1024px) {
+    margin: 2rem 4rem;
+  }
+
   border-bottom: 1px solid #dbdbdb;
   padding-bottom: 3rem;
 

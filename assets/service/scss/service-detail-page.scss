@@ -1,0 +1,51 @@
+.service-reason-section {
+  margin-bottom: 6rem;
+
+  h3 {
+    font-size: 1rem;
+    margin: 1rem 0 0;
+    text-decoration: underline;
+  }
+
+  .service-reason-detail {
+    @media screen and (min-width: 1024px) {
+      margin: 4rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    .service-reason-content {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.contact-area {
+  margin-bottom: 4rem;
+  padding: 4rem 10% 6rem;
+
+  @media screen and (min-width: 1024px) {
+    padding: 4rem 30% 6rem;
+  }
+
+  @media screen and (max-width: 769px) {
+    padding: 4rem 0 6rem;
+  }
+
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+
+  .contact {
+    width: 100%;
+
+    .contact-content p {
+      line-height: 4rem;
+    }
+  }
+}
+
+.link-area {
+  margin: 12rem 0 8rem;
+}
