@@ -62,4 +62,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '~/assets/service/scss/service-detail.scss';
+.service-detail-section {
+  border: none;
+}
 </style>
