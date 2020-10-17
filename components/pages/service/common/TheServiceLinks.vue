@@ -20,9 +20,12 @@
 
 <style lang="scss" scoped>
 .service-links {
-  @media screen and (min-width: 1024px) {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
+
+  @media screen and (max-width: 768px) {
+    flex-flow: column;
+    align-items: center;
   }
 
   .link-wrapper {
