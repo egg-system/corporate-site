@@ -145,6 +145,10 @@ export default {
   .sub-header-wrapper {
     margin-bottom: 3rem;
   }
+
+  .cast-list {
+    margin: 2rem;
+  }
 }
 
 .servce-image-wrapper {

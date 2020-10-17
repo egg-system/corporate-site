@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="consuling-engineer-page">
     <div class="content page-content">
       <the-hero-title main-text="サービス紹介" />
       <section class="service-detail-section">
@@ -13,10 +13,10 @@
           <the-service-links />
         </div>
       </section>
-      <section>
+      <section class="service-target-section">
         <the-sub-header text="こういった課題を抱える企業様向け" />
         <div class="columns">
-          <div class="column second is-5">
+          <div class="service-image-wrapper column second is-5">
             <img :src="consultingEngineerImage">
           </div>
           <div class="column first is-7">
@@ -45,50 +45,52 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="service-reason-section">
         <the-sub-header
-          text="なぜ、中小企業・ベンチャー企業にコンサルティングエンジニアサービスが必要なのか"
+          text="なぜ、中小企業・ベンチャー企業にコンサルティングエンジニアサービスが必要なのか？"
         />
-        <div>
-          <h3 class="service-reason">
-            ○ベンチャー・中小企業では「業務」「システム」に関する幅広い知識と経験が必要
-          </h3>
+        <div class="service-reason-detail">
           <div>
-            <p>
-              ベンチャー・中小企業では多岐にわたる課題へ対応する必要があります。<br>
-              ECサイトを立ち上げて販路を拡大していきたいという攻めのIT活用もあれば、
-              経理業務を効率化して残業時間を減らしたいという守りのIT活用もありますし、
-              リモートワークをするためにネットワーク環境やPC環境を整備したいというケースもあります。
-            </p>
-            <p>
-              販売／購買、会計／経理、経営管理、在庫管理、生産管理といった業務から、
-              ERP、ECサイト、ソフトウェア、ハードウェア、ネットワークといった
-              広汎なIT知識と経験を有している人材は多くありません。
-            </p>
-            <p>
-              弊社には、システムエンジニアとして開発経験を積み、
-              システムコンサルタントとして課題解決の経験を積んだ人材がいますので、
-              最低限のコストで最大限のパフォーマンスを発揮することができます。
-            </p>
+            <h3>
+              ○ベンチャー・中小企業では「業務」「システム」に関する幅広い知識と経験が必要
+            </h3>
+            <div class="service-reason-content">
+              <p>
+                ベンチャー・中小企業では多岐にわたる課題へ対応する必要があります。<br>
+                ECサイトを立ち上げて販路を拡大していきたいという攻めのIT活用もあれば、
+                経理業務を効率化して残業時間を減らしたいという守りのIT活用もありますし、
+                リモートワークをするためにネットワーク環境やPC環境を整備したいというケースもあります。
+              </p>
+              <p>
+                販売／購買、会計／経理、経営管理、在庫管理、生産管理といった業務から、
+                ERP、ECサイト、ソフトウェア、ハードウェア、ネットワークといった
+                広汎なIT知識と経験を有している人材は多くありません。
+              </p>
+              <p>
+                弊社には、システムエンジニアとして開発経験を積み、
+                システムコンサルタントとして課題解決の経験を積んだ人材がいますので、
+                最低限のコストで最大限のパフォーマンスを発揮することができます。
+              </p>
+            </div>
           </div>
-        </div>
-        <div>
-          <h3 class="service-reason">
-            ○システムありきではなく、客観的な判断が必要
-          </h3>
           <div>
-            <p>
-              システムベンダーやパッケージやクラウドサービスを提供する会社では、
-              システム導入が前提となっており、中小企業・ベンチャー企業様にとって
-              本当に必要な課題解決になっていないケースが少なくありません。
-              コンサルティング会社でも、特定のソリューションを前提としたケースも多いのが実情です。
-            </p>
-            <p>
-              弊社は大手企業や特定の製品・サービスを有する企業と資本関係がなく、独立した組織です。
-              また、代理店ビジネスは行わず、システム導入時にメーカーや販売代理店からの紹介料を受け取っておりません。
-              そのため、特定の商品・サービスに依存せず、中立的な立場から客観的な判断により
-              システムコンサルティングやシステム開発を行います。
-            </p>
+            <h3 class="service-reason">
+              ○システムありきではなく、客観的な判断が必要
+            </h3>
+            <div class="service-reason-content">
+              <p>
+                システムベンダーやパッケージやクラウドサービスを提供する会社では、
+                システム導入が前提となっており、中小企業・ベンチャー企業様にとって
+                本当に必要な課題解決になっていないケースが少なくありません。
+                コンサルティング会社でも、特定のソリューションを前提としたケースも多いのが実情です。
+              </p>
+              <p>
+                弊社は大手企業や特定の製品・サービスを有する企業と資本関係がなく、独立した組織です。
+                また、代理店ビジネスは行わず、システム導入時にメーカーや販売代理店からの紹介料を受け取っておりません。
+                そのため、特定の商品・サービスに依存せず、中立的な立場から客観的な判断により
+                システムコンサルティングやシステム開発を行います。
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -103,6 +105,10 @@
       <section>
         <the-sub-header text="コンサルティングエンジニアサービス　作業実績" />
         <the-service-performance />
+      </section>
+      <section class="about-consultaion-wrapper">
+        <the-sub-header text="『初月無料』のコンサルティングサービスです" />
+        <the-about-consultation is-service-details />
       </section>
       <div class="contact-area">
         <the-contact />
@@ -122,6 +128,7 @@ import consultingEngineerImage from '~/assets/service/img/consulting-engineer-im
 import TheServiceScope from '~/components/pages/service/TheServiceScope.vue'
 import TheServiceMenuTable from '~/components/pages/service/consulting-engineer/TheServiceMenuTable.vue'
 import TheServicePerformance from '~/components/pages/service/consulting-engineer/TheServicePerformance.vue'
+import TheAboutConsultation from '~/components/pages/top/TheAboutConsultation.vue'
 import TheContact from '~/components/pages/top/TheContact.vue'
 
 export default {
@@ -132,6 +139,7 @@ export default {
     TheServiceScope,
     TheServiceMenuTable,
     TheServicePerformance,
+    TheAboutConsultation,
     TheContact
   },
   computed: {
@@ -143,7 +151,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/service/scss/service-detail-page.scss';
 @import '~/assets/service/scss/service-footer.scss';
+
+.main {
+  font-size: 0.9rem;
+}
 
 .service-detail-section {
   text-align: center;
@@ -158,9 +171,28 @@ export default {
   }
 }
 
-.service-reason {
-  font-size: 1rem;
-  margin: 1rem 0 0;
-  text-decoration: underline;
+.service-target-section {
+  @media screen and (min-width: 1024px) {
+    .columns {
+      margin: 2rem;
+    }
+  }
+
+  .service-image-wrapper {
+    display: flex;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  li {
+    list-style: '✔';
+    margin: 2rem 0px;
+  }
+}
+
+.contact-area {
+  margin: 4rem 2rem;
 }
 </style>
