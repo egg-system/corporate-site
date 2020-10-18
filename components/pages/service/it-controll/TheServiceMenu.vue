@@ -12,7 +12,7 @@
         <td data-label="内部統制支援サービス">60〜180万円</td>
       </tr>
       <tr class="service-table-content">
-        <td>対応時間</td>
+        <td>対応期間</td>
         <td data-label="お試しサービス">
           1ヶ月<br class="pc"><br>（約4日間･･･約32時間）
         </td>
