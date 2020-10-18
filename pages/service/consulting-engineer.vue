@@ -9,8 +9,25 @@
           システム化の企画から開発・運用まで<br>
           徹底的にベンチャー・中小企業様へ寄り添って対応します。
         </h3>
-        <div class="top-link-area">
-          <the-service-links />
+        <div class="service-links">
+          <div class="link-wrapper">
+            <nuxt-link
+              to="#service-scope"
+              class="case-button button is-dark"
+            >
+              <span class="link-message">対応範囲</span>
+            </nuxt-link>
+          </div>
+          <div class="link-wrapper">
+            <nuxt-link to="#service-menu" class="case-button button is-dark">
+              <span class="link-message">サービスメニュー・料金プラン</span>
+            </nuxt-link>
+          </div>
+          <div class="link-wrapper">
+            <nuxt-link to="#service-performance" class="case-button button is-dark">
+              <span class="link-message">作業実績</span>
+            </nuxt-link>
+          </div>
         </div>
       </section>
       <section class="service-target-section">
@@ -94,15 +111,15 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="service-scope">
         <the-sub-header text="対応範囲" />
         <the-service-scope />
       </section>
-      <section>
+      <section id="service-menu">
         <the-sub-header text="サービスメニュー・料金プラン" />
         <the-service-menu-table />
       </section>
-      <section>
+      <section id="service-performance">
         <the-sub-header text="コンサルティングエンジニアサービス　作業実績" />
         <the-service-performance />
       </section>
@@ -164,10 +181,6 @@ export default {
   .service-description {
     margin: 3rem;
     line-height: 2rem;
-  }
-
-  .top-link-area {
-    margin: 6rem 0 4rem;
   }
 }
 

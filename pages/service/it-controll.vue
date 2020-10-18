@@ -186,23 +186,6 @@ export default {
     text-align: center;
     line-height: 2rem;
   }
-
-  .service-links {
-    @media screen and (min-width: 1024px) {
-      display: flex;
-      justify-content: space-around;
-      margin: 6rem 0 8rem;
-    }
-
-    .link-wrapper {
-      display: flex;
-
-      a {
-        width: 18rem;
-        margin: 1rem auto;
-      }
-    }
-  }
 }
 
 .service-target {
