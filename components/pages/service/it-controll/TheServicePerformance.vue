@@ -23,20 +23,40 @@
         <li>情報セキュリティ方針</li>
         <li>
           各種規定
-          <ul>
-            <li>人的管理規定</li>
-            <li>外部委託先管理規定</li>
-            <li>監査規程</li>
-            <li>物理的管理規定</li>
-            <li>システム変更管理規定</li>
-            <li>システム開発規定</li>
-            <li>システム管理規定</li>
-            <li>システム利用規定</li>
-            <li>スマートデバイス利用規定</li>
-            <li>SNS利用規定</li>
-            <li>セキュリティインシデント報告規定</li>
-            <li>コンプライアンス規定</li>
-          </ul>
+          <div class="service-regulations is-pc">
+            <ul>
+              <li>人的管理規定</li>
+              <li>監査規程</li>
+              <li>システム変更管理規定</li>
+              <li>システム管理規定</li>
+              <li>スマートデバイス利用規定</li>
+              <li>セキュリティインシデント報告規定</li>
+              <li>コンプライアンス規定</li>
+            </ul>
+            <ul>
+              <li>外部委託先管理規定</li>
+              <li>物理的管理規定</li>
+              <li>システム開発規定</li>
+              <li>システム利用規定</li>
+              <li>SNS利用規定</li>
+            </ul>
+          </div>
+          <div class="service-regulations is-sp">
+            <ul>
+              <li>人的管理規定</li>
+              <li>外部委託先管理規定</li>
+              <li>監査規程</li>
+              <li>物理的管理規定</li>
+              <li>システム変更管理規定</li>
+              <li>システム開発規定</li>
+              <li>システム管理規定</li>
+              <li>システム利用規定</li>
+              <li>スマートデバイス利用規定</li>
+              <li>SNS利用規定</li>
+              <li>セキュリティインシデント報告規定</li>
+              <li>コンプライアンス規定</li>
+            </ul>
+          </div>
         </li>
         <li>上記規定に基づく各種運用手順書</li>
         <li>3点セット（フローチャート、業務記述書、RCM）</li>
@@ -52,4 +72,29 @@
 
 <style lang="scss" scoped>
 @import '~/assets/service/scss/service-performance.scss';
+
+.service-performance {
+  @media screen and (min-width: 1024px) {
+    .is-sp {
+      display: none;
+    }
+
+    .is-pc {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .is-pc {
+      display: none;
+    }
+  }
+
+  .service-regulations {
+    ul {
+      list-style: '-';
+      margin: 0;
+    }
+  }
+}
 </style>
