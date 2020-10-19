@@ -1,0 +1,54 @@
+.service-performance-area {
+  margin: 3rem 0;
+  display: flex;
+  flex-flow: column wrap;
+  @media screen and (min-width: 1024px) {
+    margin: 3rem;
+    height: 48rem;
+  }
+}
+
+.service-performance {
+  margin-bottom: 3rem;
+
+  &-title {
+    font-weight: normal;
+    font-size: 1rem;
+    width: fit-content;
+    border-bottom: 1px solid;
+    margin-bottom: 2rem;
+  }
+
+  ol {
+    list-style: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    &-content {
+      display: flex;
+    }
+  
+    &-notice {
+      margin-left: 3rem;
+    }
+
+    ul {
+      margin-left: 4rem;
+    }
+
+    li {
+      div {
+        width: 25rem;
+      }
+    }
+
+    ol {
+      margin-top: 0.5rem;
+      list-style: none;
+    }
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+}

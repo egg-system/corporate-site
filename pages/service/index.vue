@@ -7,38 +7,44 @@
           『あなたじゃないと困る。』<br>
           そう言っていただける関係を目指しています
         </div>
+      </div>
+      <div class="service-message">
+        <div class="service-message-title">
+          「どこから手をつければよいか分からない・・・」<br>
+          売上拡大のためのITシステム活用を企画段階から対応できることが強みです
+        </div>
         <p class="service-message-content">
-          中小企業が抱える「経験豊富な人材の不足」「システムを有効活用できない」という課題を解決する<br>
-          コンサルティングからシステム開発まで一貫して行うコンサルティングエンジニア集団です。
+          100名以下のベンチャー中小企業が抱える課題を解決するために<br>
+          戦略や計画策定といった企画段階から開発・運用まで一貫して行うことができる<br>
+          コンサルティングエンジニア集団です。<br>
+          （システムコンサルティング + エンジニアリング）
         </p>
       </div>
-      <div class="case-list-wrapper">
+      <section class="case-list-wrapper">
         <div class="sub-header-wrapper">
           <the-sub-header text="顧客インタビュー・事例紹介" />
         </div>
         <the-case-list :cases="cases" />
         <the-to-details-button to="/cases" />
-      </div>
-      <the-sub-header text="特徴" />
-      <the-service-feature />
-      <the-sub-header text="対応範囲" />
-      <the-service-scope />
-      <the-sub-header text="サービスメニュー" />
-      <the-service-menu-table />
-      <the-sub-header text="コンサルティングエンジニアサービス　作業実績" />
-      <the-service-performance />
-      <div class="servce-image-wrapper">
-        <figure>
-          <img :src="serviceImage" alt="コミュニケーションを重視したサービス" >
-          <div>コミュニケーションを重視したサービスをご提供</div>
-        </figure>
-      </div>
+      </section>
+      <section class="service-details">
+        <the-sub-header text="コンサルティングエンジニアサービス" />
+        <the-consulting-engneer-detail />
+      </section>
+      <section>
+        <the-sub-header text="内部統制支援サービス" />
+        <the-it-control-detail />
+      </section>
+      <section>
+        <the-sub-header text="個別サービス" />
+        <the-other-service-detail />
+      </section>
       <div class="contact-area">
-        <black-link label="お問い合わせ・ご相談はこちらから" link="/contact" />
+        <the-contact />
       </div>
-      <the-sub-header text="個別サービスメニュー" />
-      <the-service-details-table />
-      <the-service-details />
+      <div class="link-area">
+        <the-service-links />
+      </div>
     </div>
   </div>
 </template>
@@ -48,30 +54,25 @@ import { fetchCmsListDataCase } from '~/lib/cms'
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
 import TheToDetailsButton from '~/components/pages/common/TheToDetailsButton.vue'
-import BlackLink from '~/components/atoms/BlackLink.vue'
-import TheServiceFeature from '~/components/pages/service/TheServiceFeature.vue'
-import TheServiceScope from '~/components/pages/service/TheServiceScope.vue'
-import TheServiceMenuTable from '~/components/pages/service/TheServiceMenuTable.vue'
-import TheServicePerformance from '~/components/pages/service/TheServicePerformance.vue'
-import TheServiceDetailsTable from '~/components/pages/service/TheServiceDetailsTable.vue'
-import TheServiceDetails from '~/components/pages/service/TheServiceDetails.vue'
 import TheCaseList from '~/components/pages/common/TheCaseList.vue'
-import ServiceImage from '~/assets/service/img/service-image.jpeg'
+import TheConsultingEngneerDetail from '~/components/pages/service/common/TheConsultingEngneerDetail.vue'
+import TheItControlDetail from '~/components/pages/service/common/TheItControlDetail.vue'
+import TheOtherServiceDetail from '~/components/pages/service/common/TheOtherServiceDetail.vue'
+import TheContact from '~/components/pages/top/TheContact.vue'
+import BlackLink from '~/components/atoms/BlackLink.vue'
+import TheServiceLinks from '~/components/pages/service/common/TheServiceLinks.vue'
 
 export default {
   components: {
     TheHeroTitle,
     TheSubHeader,
     TheToDetailsButton,
-    BlackLink,
-    TheServiceFeature,
-    TheServiceScope,
-    TheServiceMenuTable,
-    TheServicePerformance,
-    TheServiceDetailsTable,
-    TheServiceDetails,
     TheCaseList,
-    ServiceImage
+    TheConsultingEngneerDetail,
+    TheItControlDetail,
+    TheOtherServiceDetail,
+    TheContact,
+    TheServiceLinks
   },
   async asyncData() {
     const data = await fetchCmsListDataCase(3)
@@ -136,11 +137,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/service/scss/service-footer.scss';
+
 .case-list-wrapper {
   margin-bottom: 6rem;
 
   .sub-header-wrapper {
     margin-bottom: 3rem;
+  }
+
+  .cast-list {
+    margin: 2rem;
   }
 }
 
@@ -159,10 +166,11 @@ export default {
 .service-message {
   text-align: center;
   margin-bottom: 4rem;
+  border-top: 1px solid #dbdbdb;
 
   &-title {
     line-height: 3rem;
-    margin-bottom: 2rem;
+    margin: 2rem;
     font-size: 1.2rem;
 
     @media screen and (min-width: 1024px) {
@@ -175,19 +183,7 @@ export default {
   }
 }
 
-.contact-area {
-  margin-bottom: 4rem;
-  padding: 4rem 10% 6rem;
-
-  @media screen and (min-width: 1024px) {
-    padding: 4rem 30% 6rem;
-  }
-
-  @media screen and (max-width: 769px) {
-    padding: 4rem 0 6rem;
-  }
-
-  border-top: 1px solid #dbdbdb;
-  border-bottom: 1px solid #dbdbdb;
+.service-details {
+  margin-top: 8rem;
 }
 </style>

@@ -71,37 +71,5 @@
 </template>
 
 <style lang="scss" scoped>
-.service-performance-area {
-  margin: 3rem 0;
-  display: flex;
-  flex-flow: column wrap;
-  @media screen and (min-width: 1030px) {
-    margin: 3rem;
-    height: 48rem;
-  }
-}
-
-.service-performance {
-  margin-bottom: 3rem;
-
-  &-title {
-    width: fit-content;
-    border-bottom: 1px solid;
-    margin-bottom: 2rem;
-  }
-
-  @media screen and (min-width: 1030px) {
-    &-notice {
-      margin-left: 3rem;
-    }
-
-    ul {
-      margin-left: 4rem;
-    }
-  }
-
-  span {
-    font-size: 0.8rem;
-  }
-}
+@import '~/assets/service/scss/service-performance.scss';
 </style>

@@ -1,5 +1,8 @@
 <template>
-  <div class="service-area">
+  <div
+    :class="isServiceDetails ? 'service-detail-page' : ''"
+    class="service-area"
+  >
     <div class="service-image-area">
       <div class="service-image">
         <div class="service-feature">
@@ -62,6 +65,12 @@ import TheFirstMouthFreeReason from './TheFirstMouthFreeReason.vue'
 
 export default {
   components: { TheFirstMouthFreeReason },
+  props: {
+    isServiceDetails: {
+      type: Boolean,
+      default: false
+    }
+  },
   data: () => ({ isOpened: false }),
   computed: {
     firstMountFreeImage() {
@@ -139,6 +148,19 @@ export default {
   .reason-button {
     margin: 1rem 0 1rem;
     cursor: pointer;
+  }
+}
+
+.service-detail-page {
+  width: 100%;
+  margin-top: 2rem;
+
+  @media screen and (min-width: 1024px) {
+    .service-image-area {
+      .service-image {
+        width: 40%;
+      }
+    }
   }
 }
 </style>

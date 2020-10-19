@@ -1,0 +1,47 @@
+.service-detail-section {
+  @media screen and (min-width: 1024px) {
+    margin: 2rem 4rem;
+  }
+
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 3rem;
+
+  h3 {
+    margin: 3rem 0 2.5rem;
+  }
+
+  .service-detail {
+    text-align: left;
+
+    .target-title {
+      font-size: 2rem;
+      margin: 2rem 0 1rem;
+    }
+
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      list-style: none;
+      margin: 1rem 0 3rem;
+
+      li {
+        @media screen and (min-width: 1024px) {
+          white-space: nowrap;
+        }
+        margin-top: 0.2rem;
+        margin-right: 2rem;
+      }
+
+      li:before {
+        content: '✔';
+      }
+    }
+
+    .service-detail-btn {
+      a {
+        width: 50%;
+        height: 49px;
+      }
+    }
+  }
+}

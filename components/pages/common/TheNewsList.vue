@@ -1,13 +1,21 @@
 <template>
   <div class="news-list">
     <div class="columns is-multiline">
-      <div v-for="(item, i) in news" :key="i" :class="[ i <= 2 ? 'column is-one-third border'+i : 'column is-one-quarter border'+i, ]" >
-        <nuxt-link :to="'/news/' + item.id">
+      <div
+        v-for="(item, index) in news"
+        :key="index"
+        :class="[
+          index <= 2
+            ? `column is-one-third border${index}`
+            : `column is-one-quarter border${index}`,
+        ]"
+      >
+        <nuxt-link :to="`/news/${item.id}`">
           <div class="news-inner">
             <div class="news-image">
               <figure class="image">
-                <img v-if="item.img !== undefined" :src="item.img.url" :alt="item.title">
                 <img v-if="item.img === undefined" :src="noImage">
+                <img v-else :src="item.img.url" :alt="item.title">
               </figure>
             </div>
             <div class="news-content">
