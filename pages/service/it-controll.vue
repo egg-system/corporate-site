@@ -181,13 +181,6 @@ export default {
 @import '~/assets/service/scss/service-detail-page.scss';
 @import '~/assets/service/scss/service-footer.scss';
 
-.service-detail-section {
-  h3 {
-    text-align: center;
-    line-height: 2rem;
-  }
-}
-
 .service-target {
   @media screen and (min-width: 1024px) {
     margin: 2rem 2rem 6rem;

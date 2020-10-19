@@ -175,15 +175,6 @@ export default {
   font-size: 0.9rem;
 }
 
-.service-detail-section {
-  text-align: center;
-
-  .service-description {
-    margin: 3rem;
-    line-height: 2rem;
-  }
-}
-
 .service-target-section {
   @media screen and (min-width: 1024px) {
     .columns {
