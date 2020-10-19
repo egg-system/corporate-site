@@ -115,7 +115,7 @@
       </section>
       <section id="it-control-examlpe">
         <the-sub-header text="対応例" />
-        <a href="../_nuxt/assets/service/img/it-control-example2.png" target="blank" alt="内部統制支援サービスの対応例"><img :src="itControllExampleImage" ></a>
+        <a href="../_nuxt/assets/service/img/it-control-example2.png" target="blank" alt="内部統制支援サービスの対応例"><img :src="itControllExampleImage" class="it-control-examlpe-img" ></a>
       </section>
       <!-- <section>
         <the-sub-header text="内部統制支援実績" />
@@ -195,5 +195,12 @@ export default {
 
 #it-control-examlpe {
   margin-bottom: 6rem;
+}
+
+.it-control-examlpe-img {
+  @media screen and (min-width: 1024px) {
+    max-width: 80%;
+    margin-left: 10%;
+  }
 }
 </style>

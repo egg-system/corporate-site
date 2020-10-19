@@ -26,7 +26,7 @@
         <li>情報システムおよびセキュリティ基本方針</li>
         <li>情報セキュリティ方針</li>
         <li>
-          各種規定
+          各種規程
           <div class="service-regulations is-pc">
             <ul>
               <li>人的管理規定</li>
