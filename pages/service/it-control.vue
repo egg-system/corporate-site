@@ -126,10 +126,10 @@
         <the-sub-header text="上場準備会社の対応例" />
         <img :src="itControllExampleImage" >
       </section>
-      <section>
+      <!-- <section>
         <the-sub-header text="内部統制支援実績" />
         <the-case-list :cases="cases" />
-      </section>
+      </section> -->
       <div class="contact-area">
         <the-contact />
       </div>
@@ -200,5 +200,9 @@ export default {
   p {
     margin-bottom: 2rem;
   }
+}
+
+#it-control-examlpe {
+  margin-bottom: 6rem;
 }
 </style>
