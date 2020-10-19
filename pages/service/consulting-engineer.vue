@@ -195,8 +195,4 @@ export default {
     margin: 2rem 0px;
   }
 }
-
-.contact-area {
-  margin: 4rem 2rem;
-}
 </style>
