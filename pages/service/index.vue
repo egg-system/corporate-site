@@ -2,7 +2,7 @@
   <div>
     <div class="content page-content">
       <the-hero-title main-text="サービス紹介" />
-      <div class="service-message">
+      <div class="service-message service-message-main">
         <div class="service-message-title">
           『あなたじゃないと困る。』<br>
           そう言っていただける関係を目指しています
@@ -11,12 +11,10 @@
       <div class="service-message">
         <div class="service-message-title">
           「どこから手をつければよいか分からない・・・」<br>
-          売上拡大のためのITシステム活用を企画段階から対応できることが強みです
+          売上拡大・業務効率化のためのITシステム活用を企画段階から対応できることが強みです
         </div>
         <p class="service-message-content">
-          100名以下のベンチャー中小企業が抱える課題を解決するために<br>
-          戦略や計画策定といった企画段階から開発・運用まで一貫して行うことができる<br>
-          コンサルティングエンジニア集団です。<br>
+          社員数100名以下のベンチャー中小企業が抱える課題を解決するために<br class="pc-br">戦略や計画策定といった企画段階から開発・運用まで一貫して行うことができる<br class="pc-br">コンサルティングエンジニア集団です。<br>
           （システムコンサルティング + エンジニアリング）
         </p>
       </div>
@@ -181,6 +179,10 @@ export default {
   &-content {
     line-height: 2rem;
   }
+}
+
+.service-message-main {
+  margin-bottom: 0 !important;
 }
 
 .service-details {

@@ -2,9 +2,9 @@
   <div class="develop-performance-area">
     <section class="de">
       <div class="develop-perfomance-header">
-        <h3>弊社のシステム開発の特徴</h3>
+        <h3>当社システム開発の特徴</h3>
       </div>
-      <p>下記3点の「やらないこと」を提唱してります。</p>
+      <p>下記3点の「やらないこと」を提唱しております。</p>
       <div class="develop-perfomance-content">
         <section>
           <h4>○言われたことだけをやる</h4>
@@ -32,7 +32,7 @@
     </section>
     <section>
       <div class="develop-perfomance-header">
-        <h3>開発実績</h3>
+        <h3>システム開発実績</h3>
       </div>
       <div>
         <div class="develop-feature">

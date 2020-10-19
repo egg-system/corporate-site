@@ -34,3 +34,13 @@ $navbar-height: 4rem;
     margin: 0 auto;
   }
 }
+
+// 改行調整用
+@media screen and (min-width: 768px){
+  .pc-br { display:block; }
+  .sp-br { display:none; }
+}
+@media screen and (max-width: 768px){   
+  .pc-br { display:none; }
+  .sp-br { display:block; }
+}

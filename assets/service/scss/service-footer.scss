@@ -3,11 +3,11 @@
   padding: 4rem 10% 6rem;
 
   @media screen and (min-width: 1024px) {
-    padding: 4rem 30% 6rem;
+    padding: 2rem 30% 6rem;
   }
 
   @media screen and (max-width: 769px) {
-    padding: 4rem 0 6rem;
+    padding: 4rem 0 4rem;
   }
 
   border-top: 1px solid #dbdbdb;
@@ -24,4 +24,8 @@
 
 .link-area {
   margin: 12rem 0 8rem;
+
+  @media screen and (max-width: 769px) {
+    margin: 5rem 0 5rem;
+  }
 }
