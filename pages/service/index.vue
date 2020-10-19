@@ -33,7 +33,7 @@
       </section>
       <section>
         <the-sub-header text="内部統制支援サービス" />
-        <the-it-controll-detail />
+        <the-it-control-detail />
       </section>
       <section>
         <the-sub-header text="個別サービス" />
@@ -56,7 +56,7 @@ import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
 import TheToDetailsButton from '~/components/pages/common/TheToDetailsButton.vue'
 import TheCaseList from '~/components/pages/common/TheCaseList.vue'
 import TheConsultingEngneerDetail from '~/components/pages/service/common/TheConsultingEngneerDetail.vue'
-import TheItControllDetail from '~/components/pages/service/common/TheItControllDetail.vue'
+import TheItControlDetail from '~/components/pages/service/common/TheItControlDetail.vue'
 import TheOtherServiceDetail from '~/components/pages/service/common/TheOtherServiceDetail.vue'
 import TheContact from '~/components/pages/top/TheContact.vue'
 import BlackLink from '~/components/atoms/BlackLink.vue'
@@ -69,7 +69,7 @@ export default {
     TheToDetailsButton,
     TheCaseList,
     TheConsultingEngneerDetail,
-    TheItControllDetail,
+    TheItControlDetail,
     TheOtherServiceDetail,
     TheContact,
     TheServiceLinks
