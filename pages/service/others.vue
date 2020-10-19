@@ -13,20 +13,20 @@
           <div class="service-links">
             <div class="link-wrapper">
               <nuxt-link
-                to="#it-controll-service-menu"
+                to="#other-service-menu"
                 class="case-button button is-dark"
               >
                 <span class="link-message">サービスメニュー・料金プラン</span>
               </nuxt-link>
             </div>
             <div class="link-wrapper">
-              <nuxt-link to="#it-controll-performance" class="case-button button is-dark">
-                <span class="link-message">作業実績・成果物</span>
+              <nuxt-link to="#other-performance" class="case-button button is-dark">
+                <span class="link-message">作業実績・成果物例</span>
               </nuxt-link>
             </div>
             <div class="link-wrapper">
-              <nuxt-link to="#it-controll-examlpe" class="case-button button is-dark">
-                <span class="link-message">上場準備会社の対応例</span>
+              <nuxt-link to="#other-develop-performance" class="case-button button is-dark">
+                <span class="link-message">システム開発実績</span>
               </nuxt-link>
             </div>
           </div>
@@ -36,7 +36,7 @@
         <the-sub-header text="こういった課題を抱える企業様向け" />
         <div class="columns">
           <div class="service-image-wrapper column second is-5">
-            <img :src="serviceImage">
+            <img :src="otherSrviceImage">
           </div>
           <div class="column first is-7">
             <ul>
@@ -85,15 +85,15 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="other-service-menu">
         <the-sub-header text="サービスメニュー・料金プラン" />
         <the-service-menu />
       </section>
-      <section>
+      <section id="other-performance">
         <the-sub-header text="作業実績・成果物" />
         <the-service-performance />
       </section>
-      <section>
+      <section id="other-develop-performance">
         <the-sub-header text="システム開発実績" />
         <the-development-performance />
       </section>
@@ -110,7 +110,7 @@
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
-import serviceImage from '~/assets/service/img/service-image.jpeg'
+import otherSrviceImage from '~/assets/service/img/other-service.JPG'
 import TheServiceMenu from '~/components/pages/service/others/TheServiceMenu.vue'
 import TheServicePerformance from '~/components/pages/service/others/TheServicePerformance.vue'
 import TheDevelopmentPerformance from '~/components/pages/service/others/TheDevelopmentPerformance.vue'
@@ -128,8 +128,8 @@ export default {
     TheServiceLinks
   },
   computed: {
-    serviceImage() {
-      return serviceImage
+    otherSrviceImage() {
+      return otherSrviceImage
     }
   }
 }
@@ -138,4 +138,13 @@ export default {
 <style lang="scss" scoped>
 @import '~/assets/service/scss/service-detail-page.scss';
 @import '~/assets/service/scss/service-footer.scss';
+
+.service-target-section {
+  margin-bottom: 6rem;
+
+  li {
+    list-style: '✔';
+    margin: 1.5rem;
+  }
+}
 </style>
