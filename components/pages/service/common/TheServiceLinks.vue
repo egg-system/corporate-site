@@ -32,6 +32,7 @@
     a {
       margin-bottom: 2rem;
       width: 20rem;
+      height: 49px;
     }
   }
 }
