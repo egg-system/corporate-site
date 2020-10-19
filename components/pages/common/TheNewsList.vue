@@ -4,7 +4,11 @@
       <div
         v-for="(item, index) in news"
         :key="index"
-        :class="[ index <= 2 ? 'column is-one-third border'+i : 'column is-one-quarter border'+i, ]"
+        :class="[
+          index <= 2
+            ? `column is-one-third border${index}`
+            : `column is-one-quarter border${index}`,
+        ]"
       >
         <nuxt-link :to="`/news/${item.id}`">
           <div class="news-inner">
