@@ -11,7 +11,7 @@
     <div class="main-image-area">
       <div class="main-image">
         <div class="main-feature">
-          上場準備会社では内部統制への対応が必須<br>
+          資金調達後のベンチャー企業では内部統制への対応が必須だが<br>
           ITシステム環境構築や規程類の作成には時間がかかる
         </div>
         <div>
