@@ -91,6 +91,8 @@
   }
 
   .service-regulations {
+    font-size: 0.8rem;
+
     ul {
       list-style: '-';
       margin: 0;

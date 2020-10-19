@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="it-controll-service content page-content">
+    <div class="it-control-service content page-content">
       <the-hero-title main-text="サービス紹介" />
       <section class="service-detail-section">
         <the-sub-header text="内部統制支援サービス" />
@@ -13,19 +13,19 @@
           <div class="service-links">
             <div class="link-wrapper">
               <nuxt-link
-                to="#it-controll-service-menu"
+                to="#it-control-service-menu"
                 class="case-button button is-dark"
               >
                 <span class="link-message">サービスメニュー・料金プラン</span>
               </nuxt-link>
             </div>
             <div class="link-wrapper">
-              <nuxt-link to="#it-controll-performance" class="case-button button is-dark">
+              <nuxt-link to="#it-control-performance" class="case-button button is-dark">
                 <span class="link-message">作業実績・成果物</span>
               </nuxt-link>
             </div>
             <div class="link-wrapper">
-              <nuxt-link to="#it-controll-examlpe" class="case-button button is-dark">
+              <nuxt-link to="#it-control-examlpe" class="case-button button is-dark">
                 <span class="link-message">上場準備会社の対応例</span>
               </nuxt-link>
             </div>
@@ -93,7 +93,7 @@
           </div>
         </div>
       </section>
-      <section id="it-controll-service-menu">
+      <section id="it-control-service-menu">
         <the-sub-header text="サービスメニュー・料金プラン" />
         <div class="columns">
           <div class="column second is-7">
@@ -118,11 +118,11 @@
           </div>
         </div>
       </section>
-      <section id="it-controll-performance">
+      <section id="it-control-performance">
         <the-sub-header text="内部統制サービス 作業実績・成果物" />
         <the-service-performance />
       </section>
-      <section id="it-controll-examlpe">
+      <section id="it-control-examlpe">
         <the-sub-header text="上場準備会社の対応例" />
         <img :src="itControllExampleImage" >
       </section>
@@ -145,8 +145,8 @@ import { fetchCmsListDataCase } from '~/lib/cms'
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
 import itControllImage from '~/assets/service/img/it-control.JPG'
-import TheServiceMenu from '~/components/pages/service/it-controll/TheServiceMenu.vue'
-import TheServicePerformance from '~/components/pages/service/it-controll/TheServicePerformance.vue'
+import TheServiceMenu from '~/components/pages/service/it-control/TheServiceMenu.vue'
+import TheServicePerformance from '~/components/pages/service/it-control/TheServicePerformance.vue'
 import itControllExampleImage from '~/assets/service/img/it-control-example.png'
 import TheCaseList from '~/components/pages/common/TheCaseList.vue'
 import TheContact from '~/components/pages/top/TheContact.vue'
