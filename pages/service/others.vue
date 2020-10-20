@@ -136,7 +136,7 @@ export default {
 
   li {
     list-style: '✔';
-    margin: 1.5rem;
+    margin: 1.5rem 0px;
   }
 }
 </style>

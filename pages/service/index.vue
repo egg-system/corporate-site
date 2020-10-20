@@ -13,6 +13,7 @@
           「どこから手をつければよいか分からない・・・」<br>
           売上拡大・業務効率化のためのITシステム活用を企画段階から対応できることが強みです
         </div>
+        <br class="sp-br">
         <p class="service-message-content">
           社員数100名以下のベンチャー中小企業が抱える課題を解決するために<br class="pc-br">戦略や計画策定といった企画段階から開発・運用まで一貫して行うことができる<br class="pc-br">コンサルティングエンジニア集団です。<br>
           （システムコンサルティング + エンジニアリング）
@@ -29,11 +30,11 @@
         <the-sub-header text="コンサルティングエンジニアサービス" />
         <the-consulting-engneer-detail />
       </section>
-      <section>
+      <section class="it-control-details">
         <the-sub-header text="内部統制支援サービス" />
         <the-it-control-detail />
       </section>
-      <section>
+      <section class="other-details">
         <the-sub-header text="個別サービス" />
         <the-other-service-detail />
       </section>
@@ -187,5 +188,17 @@ export default {
 
 .service-details {
   margin-top: 8rem;
+}
+
+.service-details,
+.it-control-details,
+.other-details {
+  line-height: 2rem;
+}
+
+.service-message-title {
+  @media screen and (max-width: 768px) {
+    margin: 1rem;
+  }
 }
 </style>

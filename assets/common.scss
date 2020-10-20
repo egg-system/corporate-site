@@ -36,11 +36,23 @@ $navbar-height: 4rem;
 }
 
 // 改行調整用
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px){ //pc
   .pc-br { display:block; }
   .sp-br { display:none; }
 }
-@media screen and (max-width: 768px){   
+@media screen and (max-width: 768px){ //sp
   .pc-br { display:none; }
   .sp-br { display:block; }
+
+// お問い合わせ欄、文字が改行されないように調整
+  .contact-content {
+    letter-spacing: 0rem;
+  }
+}
+
+.span,
+.content h2,
+.content h3,
+.page-content {
+  line-height: 2rem;
 }
