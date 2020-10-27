@@ -12,6 +12,23 @@
         <nuxt-link class="navbar-item" to="/service">
           サービス
         </nuxt-link>
+        <ul class="navbar-sub-item-list">
+          <li>
+            <nuxt-link class="navbar-item" to="/service/consulting-engineer">
+              コンサルティングエンジニアサービス
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link class="navbar-item" to="/service/it-control">
+              内部統制支援サービス
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link class="navbar-item" to="/service/others">
+              個別サービス
+            </nuxt-link>
+          </li>
+        </ul>
         <nuxt-link class="navbar-item" to="/own_site">
           自社サービス紹介
         </nuxt-link>
@@ -132,5 +149,9 @@ a.navbar-item.is-active {
   .navbar-item {
     margin-left: 7.5%;
   }
+}
+
+.navbar-sub-item-list {
+  margin-left: 1rem;
 }
 </style>
