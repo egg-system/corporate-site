@@ -99,10 +99,10 @@
       <section id="it-control-service-menu">
         <the-sub-header text="サービスメニュー・料金プラン" />
         <div class="columns">
-          <div class="column second is-7">
-            <the-service-menu />
+          <div class="column second is-8">
+            <the-service-menu-table />
           </div>
-          <div class="service-menu-description column first is-5">
+          <div class="service-menu-description column first is-4">
             <p>
               整備状況の評価、各種規程・運用手順書・業務記述書・業務フロー図・RCMの作成、監査法人からの質問対応、社員への教育など、IT統制（IT全社統制、IT全般統制、IT業務処理統制）に関する業務は全て対応します。
             </p>
@@ -115,7 +115,13 @@
       </section>
       <section id="it-control-examlpe">
         <the-sub-header text="対応例" />
-        <a href="../_nuxt/assets/service/img/it-control-example2.png" target="blank" alt="内部統制支援サービスの対応例"><img :src="itControllExampleImage" class="it-control-examlpe-img" ></a>
+        <a
+          href="../_nuxt/assets/service/img/it-control-example2.png"
+          target="blank"
+          alt="内部統制支援サービスの対応例"
+        >
+          <img :src="itControllExampleImage" class="it-control-examlpe-img" >
+        </a>
       </section>
       <!-- <section>
         <the-sub-header text="内部統制支援実績" />
@@ -136,7 +142,7 @@ import { fetchCmsListDataCase } from '~/lib/cms'
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
 import itControllImage from '~/assets/service/img/it-control.JPG'
-import TheServiceMenu from '~/components/pages/service/it-control/TheServiceMenu.vue'
+import TheServiceMenuTable from '~/components/pages/service/it-control/TheServiceMenuTable.vue'
 import TheServicePerformance from '~/components/pages/service/it-control/TheServicePerformance.vue'
 import itControllExampleImage from '~/assets/service/img/it-control-example2.png'
 import TheCaseList from '~/components/pages/common/TheCaseList.vue'
@@ -147,7 +153,7 @@ export default {
   components: {
     TheHeroTitle,
     TheSubHeader,
-    TheServiceMenu,
+    TheServiceMenuTable,
     TheServicePerformance,
     TheCaseList,
     TheContact,
