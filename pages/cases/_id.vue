@@ -14,11 +14,11 @@
           公開日：{{ data.display_at | dayjs }}
         </time>
         <time
-          :datetime="data.updated_at"
+          :datetime="data.updatedAt"
           class="date"
           itemprop="datemodified"
         >
-          更新日：{{ data.updated_at | dayjs }}
+          更新日：{{ data.updatedAt | dayjs }}
         </time>
         <span class="tag info-color">
           {{ data.label.label }}
