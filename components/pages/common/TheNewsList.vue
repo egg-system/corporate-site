@@ -64,7 +64,8 @@ export default {
 }
 .news-title {
   font-size: 14px;
-  height: 40px;
+  height: 4rem;
+  overflow: hidden;
 }
 .news-store {
   font-size: 14px;
@@ -96,7 +97,7 @@ export default {
     margin: 0 auto;
   }
   .is-one-quarter .news-title {
-    height: 80px;
+    height: 6rem;
   }
   .news-content {
     margin: 0 auto;
@@ -111,10 +112,10 @@ export default {
     margin: 0 auto;
   }
   .is-one-third .news-title {
-    height: 80px;
+    height: 6rem;
   }
   .is-one-quarter .news-title {
-    height: 80px;
+    height: 6rem;
   }
   .is-one-quarter img {
     width: 150px;

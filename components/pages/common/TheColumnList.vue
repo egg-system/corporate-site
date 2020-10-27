@@ -59,7 +59,8 @@ export default {
 }
 .column-title {
   font-size: 14px;
-  height: 40px;
+  height: 4rem;
+  overflow: hidden;
 }
 .column-store {
   font-size: 14px;
@@ -85,7 +86,7 @@ export default {
     margin: 0 auto;
   }
   .is-one-quarter .column-title {
-    height: 80px;
+    height: 6rem;
   }
   .column-content {
     margin: 0 auto;
@@ -100,7 +101,7 @@ export default {
     margin: 0 auto;
   }
   .is-one-quarter .column-title {
-    height: 100px;
+    height: 8rem;
   }
   .is-one-quarter img {
     width: 150px;
