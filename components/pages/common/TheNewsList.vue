@@ -21,7 +21,8 @@
             <div class="news-content">
               <p class="news-title">{{ item.title }}</p>
               <br>
-              {{ item.display_at | dayjs }}
+              公開日：{{ item.display_at | dayjs }}<br>
+              更新日：{{ item.updatedAt | dayjs }}
               <br>
               <p class="news-store">{{ item.store }}</p>
               <span class="tag info-color">
