@@ -128,10 +128,6 @@ export default {
   display: none;
 }
 
-/deep/ .news-title {
-  height: 80px;
-}
-
 .image img {
   object-fit: contain;
   margin: 0 auto;
