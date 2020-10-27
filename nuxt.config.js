@@ -101,6 +101,7 @@ export default {
    */
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/device',
     '@nuxtjs/google-analytics',
     '@nuxtjs/style-resources',
     '@nuxtjs/sitemap',
