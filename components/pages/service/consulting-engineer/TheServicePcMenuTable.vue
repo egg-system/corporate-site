@@ -19,26 +19,17 @@
       </tr>
       <tr class="service-table-content">
         <td>料金</td>
-        <td data-label="お試しサービス">
-          無料<br><br>※初月のみ
-        </td>
-        <td data-label="アドバイザリーサービス">5〜10万円</td>
-        <td data-label="顧問サービス（コンサルティングエンジニアサービス）">
-          60〜80万円
-        </td>
-        <td data-label="社員代行サービス（コンサルティングエンジニアサービス）">
-          100〜150万円
-        </td>
+        <td>無料<br><br>※初月のみ</td>
+        <td>5万円</td>
+        <td>50〜60万円</td>
+        <td>100〜150万円</td>
       </tr>
       <tr class="service-table-content">
         <td>稼働時間</td>
-        <td data-label="お試しサービス">4日／月<br>（約32時間）</td>
-        <td data-label="アドバイザリーサービス">1〜2日／月<br>（約8〜20時間）</td>
-        <td data-label="顧問サービス（コンサルティングエンジニアサービス）">
-          約8〜10日／月<br>（約64〜80時間）
-        </td>
-        <td data-label="社員代行サービス（コンサルティングエンジニアサービス）">
-          約15〜20日／月<br>（120〜160時間）
+        <td>4日/月<br>（約32時間）</td>
+        <td>1〜2日/月<br>（約10時間）</td>
+        <td>4〜5日/月<br>（約32〜50時間）</td>
+        <td>10〜15日/月<br>（80〜150時間）
         </td>
       </tr>
       <tr class="service-table-content">
