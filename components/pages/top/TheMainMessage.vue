@@ -1,13 +1,13 @@
 <template>
   <section class="main-message-area">
-    <h2 class="main-message">
+    <p class="main-message">
       『あなたじゃないと困る。』<br>
       そう言っていただける関係を目指しています
-    </h2>
-    <p>
+    </p>
+    <h2 class="main-description">
       わたしたちは100名以下のベンチャー・中小企業へ徹底的に寄り添う<br>
       システムコンサルティング集団です。
-    </p>
+    </h2>
     <div class="main-image-area">
       <div class="main-image">
         <div class="main-feature">
@@ -126,7 +126,7 @@ export default {
     }
   }
 
-  p {
+  .main-description {
     line-height: 3rem;
     margin-top: 3rem;
     margin-bottom: 3rem;

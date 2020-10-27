@@ -15,7 +15,7 @@
       <the-about-client />
     </section>
     <section>
-      <the-sub-header text="『初月無料』のコンサルティングサービスです" />
+      <the-sub-header text="『初月無料』のシステムコンサルティングサービスです" />
       <the-about-consultation />
     </section>
     <the-contact />

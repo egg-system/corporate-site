@@ -31,7 +31,7 @@
         <the-consulting-engneer-detail />
       </section>
       <section class="it-control-details">
-        <the-sub-header text="内部統制支援サービス" />
+        <the-sub-header text="内部統制（ガバナンス）支援サービス" />
         <the-it-control-detail />
       </section>
       <section class="other-details">
