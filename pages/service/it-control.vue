@@ -3,7 +3,7 @@
     <div class="it-control-service content page-content">
       <the-hero-title main-text="サービス紹介" />
       <section class="service-detail-section">
-        <the-sub-header text="内部統制支援サービス" />
+        <the-sub-header text="内部統制（ガバナンス）支援サービス" />
         <h3>
           監査法人からの指摘ゼロを実現した実績から、<br class="pc-br">資金調達後のベンチャー企業におけるIT統制を中心に<br class="pc-br">業務効率性を踏まえて実現可能な対応を行います。
         </h3>
@@ -55,7 +55,7 @@
       </section>
       <br class="br-sp">
       <section class="service-reason-section">
-        <the-sub-header text="なぜ内部統制支援サービスを外注すべきなのか？" />
+        <the-sub-header text="なぜ内部統制（ガバナンス）支援サービスを外注すべきなのか？" />
         <div class="service-reason-detail">
           <div>
             <h3>○柔軟な稼働により最小限コストで対応が可能</h3>
@@ -110,7 +110,7 @@
         </div>
       </section>
       <section id="it-control-performance">
-        <the-sub-header text="内部統制サービス 作業実績・成果物" />
+        <the-sub-header text="内部統制（ガバナンス）サービス 作業実績・成果物" />
         <the-service-performance />
       </section>
       <section id="it-control-examlpe">

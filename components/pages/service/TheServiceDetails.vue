@@ -83,7 +83,7 @@
       </div>
     </div>
     <h3 class="table-title">
-      内部統制支援サービス
+      内部統制（ガバナンス）支援サービス
       <br class="sp">
       <span @click="isOpenedGovernance = !isOpenedGovernance">
         {{ isOpenedGovernance ? '−' : '＋' }} 詳しく見る
