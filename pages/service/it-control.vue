@@ -193,6 +193,10 @@ export default {
   }
 }
 
+#it-control-performance {
+  margin-bottom: 6rem;
+}
+
 #it-control-examlpe {
   margin-bottom: 6rem;
 }
