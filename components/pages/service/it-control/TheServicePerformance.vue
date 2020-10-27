@@ -27,7 +27,7 @@
         <li>情報セキュリティ方針</li>
         <li>
           各種規程
-          <div class="service-regulations is-pc">
+          <div v-if="$device.isDesktop" class="service-regulations">
             <ul>
               <li>人的管理規定</li>
               <li>監査規程</li>
@@ -45,7 +45,7 @@
               <li>SNS利用規定</li>
             </ul>
           </div>
-          <div class="service-regulations is-sp">
+          <div v-else class="service-regulations">
             <ul>
               <li>人的管理規定</li>
               <li>外部委託先管理規定</li>
@@ -78,24 +78,12 @@
 @import '~/assets/service/scss/service-performance.scss';
 
 .service-performance {
-  @media screen and (min-width: 1024px) {
-    .is-sp {
-      display: none;
-    }
-
-    .is-pc {
-      display: flex;
-    }
-  }
-
-  @media screen and (max-width: 1023px) {
-    .is-pc {
-      display: none;
-    }
-  }
-
   .service-regulations {
     font-size: 0.8rem;
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+    }
 
     ul {
       list-style: '-';

@@ -8,13 +8,13 @@
       </tr>
       <tr class="service-table-content">
         <td>料金</td>
-        <td data-label="お試しサービス">無料<br class="pc"><br>※初月のみ</td>
+        <td data-label="お試しサービス">無料<br><br>※初月のみ</td>
         <td data-label="内部統制支援サービス">60〜180万円</td>
       </tr>
       <tr class="service-table-content">
         <td>対応期間</td>
         <td data-label="お試しサービス">
-          1ヶ月<br class="pc"><br>（約32時間）
+          1ヶ月<br>（約32時間）
         </td>
         <td data-label="内部統制支援サービス">
           3ヶ月〜

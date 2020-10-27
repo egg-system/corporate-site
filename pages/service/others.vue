@@ -79,7 +79,7 @@
       </section>
       <section id="other-service-menu">
         <the-sub-header text="サービスメニュー・料金プラン" />
-        <the-service-menu />
+        <the-service-menu-table />
       </section>
       <section id="other-performance">
         <the-sub-header text="作業実績・成果物" />
@@ -103,7 +103,7 @@
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
 import otherSrviceImage from '~/assets/service/img/other-service.JPG'
-import TheServiceMenu from '~/components/pages/service/others/TheServiceMenu.vue'
+import TheServiceMenuTable from '~/components/pages/service/others/TheServiceMenuTable.vue'
 import TheServicePerformance from '~/components/pages/service/others/TheServicePerformance.vue'
 import TheDevelopmentPerformance from '~/components/pages/service/others/TheDevelopmentPerformance.vue'
 import TheContact from '~/components/pages/top/TheContact.vue'
@@ -113,7 +113,7 @@ export default {
   components: {
     TheHeroTitle,
     TheSubHeader,
-    TheServiceMenu,
+    TheServiceMenuTable,
     TheServicePerformance,
     TheDevelopmentPerformance,
     TheContact,
