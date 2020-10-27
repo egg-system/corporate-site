@@ -62,6 +62,7 @@ export default {
 .news-content {
   color: $black;
   padding: 10px 5px;
+  font-size: 12px;
 }
 .news-title {
   font-size: 14px;
