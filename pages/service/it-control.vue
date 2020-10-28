@@ -5,7 +5,7 @@
       <section class="service-detail-section">
         <the-sub-header text="内部統制（ガバナンス）支援サービス" />
         <h3>
-          監査法人からの指摘ゼロを実現した実績から、<br class="pc-br">資金調達後のベンチャー企業におけるIT統制を中心に<br class="pc-br">業務効率性を踏まえて実現可能な対応を行います。
+          監査法人からの指摘ゼロを実現した実績から、<br class="pc-br">資金調達後のベンチャー企業向けに安全面と運用面を考慮した<br class="pc-br">IT統制の対応を全て引き受けます。
         </h3>
         <div>
           <div class="service-links">

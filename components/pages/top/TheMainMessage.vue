@@ -12,7 +12,7 @@
       <div class="main-image">
         <div class="main-feature">
           資金調達後のベンチャー企業では内部統制への対応が必須だが<br>
-          ITシステム環境構築や規程類の作成には時間がかかる
+          ITシステム環境構築や規程書類の作成に時間がかかる
         </div>
         <div>
           <img :src="triangleImage" class="triangle-img" alt="解決策">
@@ -20,10 +20,10 @@
             <div>
               <br>
               監査法人の指摘ゼロを達成した実績あり<br>
-              <span class="font-red">監査をクリアし運用可能</span>なIT全般統制の対応へ
+              <span class="font-red">監査をクリアし運用可能</span>なIT統制環境を整備
             </div>
-            <nuxt-link to="" class="link case-button button is-dark">
-              <span class="link-message">ベンチャー企業の内部統制事例へ<br>(準備中)</span>
+            <nuxt-link to="/cases/innophys" class="link case-button button is-dark">
+              <span class="link-message">ベンチャー企業の内部統制事例へ</span>
             </nuxt-link>
           </div>
         </div>

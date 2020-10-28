@@ -29,6 +29,9 @@
             </nuxt-link>
           </li>
         </ul>
+        <nuxt-link class="navbar-item" to="/cases">
+          事例紹介
+        </nuxt-link>
         <nuxt-link class="navbar-item" to="/own_site">
           自社サービス紹介
         </nuxt-link>
@@ -38,9 +41,6 @@
         <nuxt-link class="navbar-item" to="/member">
           メンバー
         </nuxt-link>
-        <nuxt-link class="navbar-item" to="/recruit">
-          採用
-        </nuxt-link>
       </div>
       <div class="column is-3 second">
         <nuxt-link class="navbar-item" to="/company">
@@ -48,6 +48,9 @@
         </nuxt-link>
         <nuxt-link class="navbar-item" to="/request">
           ご依頼について
+        </nuxt-link>
+        <nuxt-link class="navbar-item" to="/recruit">
+          採用
         </nuxt-link>
         <nuxt-link class="navbar-item" to="/column">
           最近の活動・コラム
