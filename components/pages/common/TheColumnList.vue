@@ -19,8 +19,7 @@
                 class="column-title"
               >{{ item.title }}</component>
               <br>
-              公開日：{{ item.display_at | dayjs }}<br>
-              更新日：{{ item.updatedAt | dayjs }}
+              公開日：{{ item.display_at | dayjs }}
               <br>
               <p class="column-store">{{ item.store }}</p>
               <span class="tag info-color">
