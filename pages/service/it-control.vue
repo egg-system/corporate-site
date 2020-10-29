@@ -123,10 +123,12 @@
           <img :src="itControllExampleImage" class="it-control-examlpe-img" >
         </a>
       </section>
-      <!-- <section>
-        <the-sub-header text="内部統制支援実績" />
-        <the-case-list :cases="cases" />
-      </section> -->
+      <section>
+        <the-sub-header text="内部統制（ガバナンス）支援実績" />
+        <div class="case-list-wrapper">
+          <the-case-list :cases="cases" />
+        </div>
+      </section>
       <div class="contact-area">
         <the-contact />
       </div>
@@ -138,7 +140,7 @@
 </template>
 
 <script>
-import { fetchCmsListDataCase } from '~/lib/cms'
+import { fetchCmsListDataCaseByIds } from '~/lib/cms'
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheSubHeader from '~/components/pages/service/common/TheSubHeader.vue'
 import itControllImage from '~/assets/service/img/it-control.JPG'
@@ -160,7 +162,7 @@ export default {
     TheServiceLinks
   },
   async asyncData() {
-    const data = await fetchCmsListDataCase(3)
+    const data = await fetchCmsListDataCaseByIds(['innophys'])
     return { cases: data.listData }
   },
   computed: {
@@ -212,5 +214,9 @@ export default {
     max-width: 80%;
     margin-left: 10%;
   }
+}
+
+.case-list-wrapper {
+  margin-top: 2rem;
 }
 </style>
