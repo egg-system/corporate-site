@@ -19,7 +19,7 @@
                 class="column-title"
               >{{ item.title }}</component>
               <br>
-              {{ item.display_at | dayjs }}
+              公開日：{{ item.display_at | dayjs }}
               <br>
               <p class="column-store">{{ item.store }}</p>
               <span class="tag info-color">
@@ -56,10 +56,12 @@ export default {
 .column-content {
   color: $black;
   padding: 10px 5px;
+  font-size: 12px;
 }
 .column-title {
   font-size: 14px;
-  height: 40px;
+  height: 4rem;
+  overflow: hidden;
 }
 .column-store {
   font-size: 14px;
@@ -85,7 +87,7 @@ export default {
     margin: 0 auto;
   }
   .is-one-quarter .column-title {
-    height: 80px;
+    height: 6rem;
   }
   .column-content {
     margin: 0 auto;
@@ -100,7 +102,7 @@ export default {
     margin: 0 auto;
   }
   .is-one-quarter .column-title {
-    height: 100px;
+    height: 8rem;
   }
   .is-one-quarter img {
     width: 150px;
