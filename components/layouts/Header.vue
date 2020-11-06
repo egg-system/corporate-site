@@ -48,8 +48,8 @@
           会社概要
         </nuxt-link>
 
-        <nuxt-link class="navbar-item" to="/contact">
-          お問い合わせ
+        <nuxt-link class="navbar-item" to="/free-contact">
+          無料相談
         </nuxt-link>
 
       </div>

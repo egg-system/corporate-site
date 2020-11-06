@@ -8,7 +8,7 @@
       </p>
     </div>
     <h2>
-      <black-link label="お問い合わせ・ご相談はこちらから" link="/contact" />
+      <black-link label="無料相談はこちらから" link="/free-contact" />
     </h2>
   </section>
 </template>
