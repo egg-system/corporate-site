@@ -20,18 +20,18 @@ export default {
   },
   head() {
     return {
-      title: 'ITコストシミュレーション | コスト削減のため、参考となる情報を提供させていただきます。',
+      title: 'ITコストシミュレーション入力フォーム',
       meta: [
         {
           hid: 'trial-calculation-description',
           name: 'description',
-          content: '株式会社エッグシステム ITコストシミュレーション。コスト削減のため、参考となる情報を提供させていただきます。'
+          content: '株式会社エッグシステム ITコストシミュレーション入力フォーム'
         },
         {
           hid: 'trial-calculation-keywords',
           name: 'keywords',
           content:
-            'コスト削減, ITコスト, シミュレーション, ITコストシミュレーション, シミュレーター, ITコストシミュレーター, '
+            'ITコスト, シミュレーション, ITコストシミュレーション, シミュレーター, ITコストシミュレーター, '
         },
         {
           hid: 'trial-calculation-twitter:card',
@@ -46,12 +46,12 @@ export default {
         {
           hid: 'trial-calculation-og:title',
           property: 'og:title',
-          content: 'ITコストシミュレーション | コスト削減のため、参考となる情報を提供させていただきます。'
+          content: 'ITコストシミュレーション入力フォーム'
         },
         {
           hid: 'trial-calculation-og:description',
           property: 'og:description',
-          content: '株式会社エッグシステム ITコストシミュレーション | コスト削減のため、参考となる情報を提供させていただきます。'
+          content: '株式会社エッグシステム ITコストシミュレーション入力フォーム'
         },
         {
           hid: 'trial-calculation-og:url',
