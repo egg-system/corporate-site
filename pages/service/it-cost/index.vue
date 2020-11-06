@@ -20,12 +20,14 @@ export default {
   },
   head() {
     return {
-      title: 'ITコストシミュレーション | コスト削減のため、参考となる情報を提供させていただきます。',
+      title:
+        'ITコストシミュレーション | コスト削減のため、参考となる情報を提供させていただきます。',
       meta: [
         {
           hid: 'trial-calculation-description',
           name: 'description',
-          content: '株式会社エッグシステム ITコストシミュレーション。コスト削減のため、参考となる情報を提供させていただきます。'
+          content:
+            '株式会社エッグシステム ITコストシミュレーション。コスト削減のため、参考となる情報を提供させていただきます。'
         },
         {
           hid: 'trial-calculation-keywords',
@@ -46,12 +48,14 @@ export default {
         {
           hid: 'trial-calculation-og:title',
           property: 'og:title',
-          content: 'ITコストシミュレーション | コスト削減のため、参考となる情報を提供させていただきます。'
+          content:
+            'ITコストシミュレーション | コスト削減のため、参考となる情報を提供させていただきます。'
         },
         {
           hid: 'trial-calculation-og:description',
           property: 'og:description',
-          content: '株式会社エッグシステム ITコストシミュレーション | コスト削減のため、参考となる情報を提供させていただきます。'
+          content:
+            '株式会社エッグシステム ITコストシミュレーション | コスト削減のため、参考となる情報を提供させていただきます。'
         },
         {
           hid: 'trial-calculation-og:url',
