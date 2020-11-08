@@ -21,7 +21,7 @@
             <div class="news-content">
               <p class="news-title">{{ item.title }}</p>
               <br>
-              {{ item.display_at | dayjs }}
+              公開日：{{ item.display_at | dayjs }}
               <br>
               <p class="news-store">{{ item.store }}</p>
               <span class="tag info-color">
@@ -61,10 +61,12 @@ export default {
 .news-content {
   color: $black;
   padding: 10px 5px;
+  font-size: 12px;
 }
 .news-title {
   font-size: 14px;
-  height: 40px;
+  height: 4rem;
+  overflow: hidden;
 }
 .news-store {
   font-size: 14px;
@@ -96,7 +98,7 @@ export default {
     margin: 0 auto;
   }
   .is-one-quarter .news-title {
-    height: 80px;
+    height: 6rem;
   }
   .news-content {
     margin: 0 auto;
@@ -111,10 +113,10 @@ export default {
     margin: 0 auto;
   }
   .is-one-third .news-title {
-    height: 80px;
+    height: 6rem;
   }
   .is-one-quarter .news-title {
-    height: 80px;
+    height: 6rem;
   }
   .is-one-quarter img {
     width: 150px;

@@ -26,15 +26,15 @@
               地方でのIT活用事例について<br>
               noteで平日毎日更新中
             </p>
-            <nuxt-link
-              to="https://note.com/x_face"
+            <a
+              href="https://note.com/x_face"
               class="link about-button button is-dark"
             >
               <span class="link-message">
                 <span class="column-arrow" />
                 noteへ
               </span>
-            </nuxt-link>
+            </a>
           </div>
           <div class="column is-4">
             <img :src="kinChuImage">
@@ -44,7 +44,7 @@
               高橋翼が執筆した記事が掲載
             </p>
             <nuxt-link
-              to="https://www.kinchu.jp/"
+              to="/news/20190403-magazine"
               class="link about-button button is-dark"
             >
               <span class="link-message">
@@ -65,15 +65,15 @@
               Webブラウザ上でcsvデータを<br>
               簡単に変換できるサービスです。
             </p>
-            <nuxt-link
-              to="https://convert-service.x-face.net/"
+            <a
+              href="https://convert-service.x-face.net/"
               class="link about-button button is-dark"
             >
               <span class="link-message">
                 <span class="column-arrow" />
                 サービス詳細へ
               </span>
-            </nuxt-link>
+            </a>
           </div>
           <div class="column is-6">
             <img :src="serviceCostSimulationImage">
@@ -84,7 +84,7 @@
               （登録不要、無料で利用可能）
             </p>
             <nuxt-link
-              to="https://eggsystem.co.jp/service/it-cost-lp/"
+              to="/service/it-cost-lp/"
               class="link about-button button is-dark"
             >
               <span class="link-message">
@@ -106,9 +106,9 @@
               >
             </h4>
             <p>
-              「IPA 独立行政法人 情報処理推進機構」<br>
-              によるSECURITY ACTIONへ取り組んでいること<br>
-              を宣言しています
+              独立行政法人情報処理推進機構（IPA）が実施する<br>
+              『SECURITY ACTION』の普及賛同企業として<br>
+              情報セキュリティ対策に取り組んでいます
             </p>
           </div>
         </div>
@@ -160,10 +160,11 @@ export default {
   padding-top: 8%;
   border-top: 1px solid $lightgray;
   border-bottom: 1px solid $lightgray;
+  margin: 0 5%;
 
   .service {
-    width: 80%;
     margin: 0 auto;
+    width: 80%;
 
     @media screen and (max-width: 600px) {
       width: 90%;
@@ -179,8 +180,6 @@ export default {
     }
 
     .columns {
-      margin: 0.5rem;
-
       .column {
         @media screen and (max-width: 769px) {
           margin-top: 3rem;
