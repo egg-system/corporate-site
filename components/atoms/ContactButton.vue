@@ -1,6 +1,6 @@
 <template>
   <div class="width-7 center">
-    <nuxt-link to="/contact" >
+    <nuxt-link to="/free-contact" >
       <div class="center padding-1 font-150 font-bold color-white border-radius bg-lightbabyblue">
         ご相談はこちらから
       </div>
