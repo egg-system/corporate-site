@@ -18,7 +18,7 @@
       </a>
     </div>
 
-    <div id="navbarBasicExample" :class="[isOpen ? 'is-active' : '']" class="navbar-menu" @click="menu()">
+    <div :class="[isOpen ? 'is-active' : '']" class="navbar-menu" @click="menu()">
       <div class="navbar-end">
         <nuxt-link class="navbar-item" to="/about">
           わたしたちについて
@@ -47,13 +47,25 @@
         <nuxt-link class="navbar-item" to="/company">
           会社概要
         </nuxt-link>
-
-        <nuxt-link class="navbar-item" to="/free-contact">
-          無料相談
-        </nuxt-link>
-
       </div>
 
+      <div class="convertion-area">
+        <nuxt-link
+          id="download-button"
+          class="conversion-button button is-dark"
+          to="/download"
+        >
+          <span class="link-message">資料ダウンロード</span>
+        </nuxt-link>
+
+        <nuxt-link
+          id="free-contact-button"
+          class="conversion-button button is-dark is-outlined"
+          to="/free-contact"
+        >
+          <span class="link-message">無料相談</span>
+        </nuxt-link>
+      </div>
     </div>
   </nav>
 </template>
@@ -78,34 +90,58 @@ a:hover,
 a:active {
   color: inherit;
 }
+
 .navbar-brand {
   a {
     padding: 0px;
   }
+
   img {
     max-height: 2.5rem;
     height: 2.5rem;
   }
 }
+
 .large-burger {
   width: 24px;
   left: calc(50% - 12px);
 }
+
+#download-button {
+  color: whitesmoke;
+}
+
+.convertion-area {
+  display: flex;
+}
+
 @media screen and (max-width: $navbar-breakpoint) {
   .navbar-brand {
     margin-left: 2%;
   }
-  .navbar-end .navbar-item {
-    border-right: none;
-    margin: 0.3rem;
+
+  .navbar-end {
+    .navbar-item {
+      border-right: none;
+      margin: 0.3rem;
+    }
+  }
+
+  .convertion-area {
+    display: flex;
+    flex-flow: column;
+
+    .conversion-button {
+      margin: 0.5rem 1rem;
+    }
   }
 }
 @media screen and (min-width: $navbar-breakpoint) {
   .navbar-brand {
     margin-left: 7.5%;
   }
+
   .navbar-end {
-    padding-right: 6%;
     .navbar-item {
       border-right: solid 0.5px;
       height: 35%;
@@ -116,6 +152,11 @@ a:active {
         border-right: none;
       }
     }
+  }
+
+  .conversion-button {
+    margin: auto 0.5rem;
+    height: 3rem;
   }
 }
 </style>
