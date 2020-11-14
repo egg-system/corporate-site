@@ -33,7 +33,7 @@ export default {
           hid: 'trial-calculation-keywords',
           name: 'keywords',
           content:
-            'コスト削減, ITコスト, シミュレーション, ITコストシミュレーション, シミュレーター, ITコストシミュレーター, '
+            'ITコスト, シミュレーション, ITコストシミュレーション, シミュレーター, ITコストシミュレーター, '
         },
         {
           hid: 'trial-calculation-twitter:card',
@@ -67,6 +67,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-</style>

@@ -12,6 +12,59 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: 'ITコストシミュレーション',
+      meta: [
+        {
+          hid: 'company-description',
+          name: 'description',
+          content: 'ITコスト シミュレーション利用登録フォーム'
+        },
+        {
+          hid: 'company-keywords',
+          name: 'keywords',
+          content:
+            '株式会社エッグシステム, エッグシステム, EGG SYSTEM, ITコスト, シミュレーション, システム費用'
+        },
+        {
+          hid: 'company-twitter:card',
+          property: 'twitter:card',
+          content: 'summary'
+        },
+        {
+          hid: 'company-og:type',
+          property: 'og:type',
+          content: 'article'
+        },
+        {
+          hid: 'company-og:title',
+          property: 'og:title',
+          content: 'ITコストシミュレーション'
+        },
+        {
+          hid: 'company-og:description',
+          property: 'og:description',
+          content: 'ITコスト シミュレーション利用登録フォーム'
+        },
+        {
+          hid: 'company-og:url',
+          property: 'og:url',
+          content: 'https://eggsystem.co.jp/'
+        },
+        {
+          hid: 'company-og:image',
+          property: 'og:image',
+          content: 'https://eggsystem.co.jp/ogp/top00.jpg'
+        }
+      ]
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 iframe.form-frame {
   height: 1200px;

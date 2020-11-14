@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="content page-content">
-      <the-hero-title main-text="お問い合わせ" />
+      <the-hero-title main-text="資料ダウンロード" />
       <the-form />
     </div>
   </div>
@@ -9,7 +9,7 @@
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
-import TheForm from '~/components/pages/contact/TheForm.vue'
+import TheForm from '~/components/pages/download/TheForm.vue'
 
 export default {
   components: {
@@ -18,17 +18,17 @@ export default {
   },
   head() {
     return {
-      title: 'お問い合わせ',
+      title: '資料ダウンロード',
       meta: [
         {
           hid: 'contact-description',
           name: 'description',
-          content: '株式会社エッグシステム お問い合わせ'
+          content: '株式会社エッグシステム 資料ダウンロード'
         },
         {
           hid: 'contact-keywords',
           name: 'keywords',
-          content: 'お問い合わせ, eggsystem, 株式会社エッグシステム'
+          content: '資料ダウンロード, eggsystem, 株式会社エッグシステム'
         },
         {
           hid: 'contact-twitter:card',
@@ -39,12 +39,12 @@ export default {
         {
           hid: 'contact-og:title',
           property: 'og:title',
-          content: 'お問い合わせ'
+          content: '資料ダウンロード'
         },
         {
           hid: 'contact-og:description',
           property: 'og:description',
-          content: '株式会社エッグシステム お問い合わせ'
+          content: '株式会社エッグシステム 資料ダウンロード'
         },
         {
           hid: 'contact-og:url',
