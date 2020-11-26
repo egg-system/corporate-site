@@ -55,7 +55,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="service-sections">
         <h3>サービス</h3>
         <div class="columns">
           <div class="column is-4">
@@ -214,10 +214,6 @@ export default {
           object-fit: contain;
         }
 
-        h4 {
-          height: 2rem;
-        }
-
         p {
           @media screen and (min-width: 1024px) {
             height: 7rem;
@@ -230,6 +226,12 @@ export default {
           height: 2.5rem;
         }
       }
+    }
+  }
+
+  .service-sections {
+    h4 {
+      height: 2rem;
     }
   }
 }
