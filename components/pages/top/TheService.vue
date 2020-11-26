@@ -58,7 +58,7 @@
       <section>
         <h3>サービス</h3>
         <div class="columns">
-          <div class="column is-6">
+          <div class="column is-4">
             <img :src="dataConvertImage">
             <h4>『Data Convert』</h4>
             <p>
@@ -75,12 +75,12 @@
               </span>
             </a>
           </div>
-          <div class="column is-6">
+          <div class="column is-4">
             <img :src="serviceCostSimulationImage">
             <h4>『ITコストシミュレーション』</h4>
             <p>
-              システムにかかる費用が妥当かどうか<br>
-              5分で簡単に診断できるサービスです。<br>
+              システムの費用が妥当かどうか<br>
+              5分で簡単に診断するサービスです。<br>
               （登録不要、無料で利用可能）
             </p>
             <nuxt-link
@@ -92,6 +92,23 @@
                 サービス詳細へ
               </span>
             </nuxt-link>
+          </div>
+          <div class="column is-4">
+            <img :src="serviceItControlImage">
+            <h4>『IT統制サポート』</h4>
+            <p>
+              ベンチャー企業に特化<br>
+              低価格でIT統制を整備するサービスです。
+            </p>
+            <a
+              href="https://it-control.eggsystem.co.jp/"
+              class="link about-button button is-dark"
+            >
+              <span class="link-message">
+                <span class="column-arrow" />
+                サービス詳細へ
+              </span>
+            </a>
           </div>
         </div>
       </section>
@@ -125,6 +142,7 @@ import noteLogoImage from '~/assets/top/note-logo.png'
 import kinChuImage from '~/assets/top/kinchu.jpg'
 import dataConvertImage from '~/assets/top/data-convert.png'
 import serviceCostSimulationImage from '~/assets/top/service-cost-simulation.png'
+import serviceItControlImage from '~/assets/top/it-control-service.png'
 import securityActionImage from '~/assets/top/security-action.png'
 
 export default {
@@ -150,6 +168,9 @@ export default {
     },
     securityActionImage() {
       return securityActionImage
+    },
+    serviceItControlImage() {
+      return serviceItControlImage
     }
   }
 }
@@ -184,7 +205,8 @@ export default {
         @media screen and (max-width: 769px) {
           margin-top: 3rem;
         }
-        padding: 1rem 2rem;
+
+        padding: 1rem 1.5rem;
         text-align: center;
 
         img {
@@ -192,18 +214,20 @@ export default {
           object-fit: contain;
         }
 
+        h4 {
+          height: 2rem;
+        }
+
         p {
           @media screen and (min-width: 1024px) {
-            height: 5rem;
+            height: 7rem;
           }
+
           margin: 3rem auto;
         }
 
         .about-button {
           height: 2.5rem;
-          @media screen and (min-width: 1024px) {
-            width: 20rem;
-          }
         }
       }
     }
