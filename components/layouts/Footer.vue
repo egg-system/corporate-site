@@ -69,6 +69,7 @@
         </nuxt-link>
       </div>
     </div>
+    <the-conversion />
     <div class="copyright">
       <div class="centered">
         <p>
@@ -80,8 +81,10 @@
 </template>
 
 <script>
+import TheConversion from './TheConversion.vue'
+
 export default {
-  components: {}
+  components: { TheConversion }
 }
 </script>
 
