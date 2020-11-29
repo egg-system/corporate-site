@@ -58,6 +58,9 @@
         <nuxt-link class="navbar-item" to="/news">
           お知らせ
         </nuxt-link>
+        <nuxt-link class="navbar-item" to="/download">
+          資料ダウンロード
+        </nuxt-link>
         <nuxt-link class="navbar-item" to="/free-contact">
           無料相談
         </nuxt-link>
