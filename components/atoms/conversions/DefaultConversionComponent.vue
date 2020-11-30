@@ -1,6 +1,9 @@
 <template>
   <div class="conversion">
-    <nuxt-link to="/download">
+    <nuxt-link
+      id="download-conversion-lik"
+      to="/download"
+    >
       『IT投資を成功に導く方法』の<br>ダウンロードはこちら
     </nuxt-link>
   </div>  
@@ -9,7 +12,7 @@
 <style lang="scss" scoped>
 .conversion {
   position: fixed;
-  bottom: 5rem;
+  bottom: 4rem;
   background-color: #333;
   padding: 1rem 2rem;
   border: 1px solid #fff;
@@ -22,10 +25,6 @@
 
   @media screen and (min-width: 770px) {
     right: 3rem;
-
-    br {
-      display: none;
-    }
   }
 
   a {
