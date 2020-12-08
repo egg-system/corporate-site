@@ -39,12 +39,15 @@ export default {
 .about-consulting-engineer-descripsion {
   margin-bottom: 6rem;
 
-  &-image {
-    padding-right: 4rem;
-  }
+  @media screen and (min-width: 1024px) {
+    &-image {
+      padding-right: 4rem;
+    }
 
-  p {
-    margin-bottom: 2rem;
+    p {
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+    }
   }
 
   .is-red {
