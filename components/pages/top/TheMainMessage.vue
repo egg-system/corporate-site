@@ -6,12 +6,26 @@
     </p>
     <h2 class="main-description">
       わたしたちは100名以下のベンチャー・中小企業へ徹底的に寄り添う<br>
-      システムコンサルティング集団です。
+      コンサルティングエンジニア集団です。<br>
+      <span>
+        ※ コンサルティングエンジニアとは、「システムコンサルタント」「システムエンジニア」を組み合わせた造語です
+      </span>
     </h2>
     <div class="sub-description">
-      ITシステムを活用し生産性を向上することで、人口減少・働き方改革など社会の変化へ対応します。<br class="pc-br">中小企業のDX（デジタルトランスフォーメーション）を推進し、生産性を向上します。
+      コンサルティングとエンジニアリングの両軸から価値を提供し、<br class="pc-br">
+      ITシステムを活用し生産性を向上することで、人口減少・働き方改革など社会の変化へ対応します。<br class="pc-br">
+      中小企業のDX（デジタルトランスフォーメーション）を推進し、生産性を向上します。
     </div>
-    <br><br>
+    <div class="consulting-engineer-btn-wrapper">
+      <nuxt-link
+        to="/about/consulting-engineer"
+        class="link button is-dark"
+      >
+        <span class="link-message">
+          コンサルティングエンジニアの詳細へ
+        </span>
+      </nuxt-link>
+    </div>
     <div class="main-image-area">
       <div class="main-image">
         <div class="main-feature">
@@ -145,6 +159,21 @@ export default {
     @media screen and (max-width: 600px) {
       font-size: 1rem;
     }
+
+    span {
+      font-size: 0.8rem;
+    }
+  }
+
+  .consulting-engineer-btn-wrapper {
+    margin: 2rem 0 6rem;
+
+    a {
+      @media screen and (min-width: 770px) {
+        width: 40%;
+      }
+      height: 49px;
+    }
   }
 
   .issue-button {
@@ -172,6 +201,10 @@ export default {
       border: 1px solid #dbdbdb;
       margin: 0 1rem 3rem;
       padding: 1rem 2rem;
+
+      @media screen and (max-width: 1023px) {
+        padding: 1rem;
+      }
 
       .triangle-img {
         width: 20%;

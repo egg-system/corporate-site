@@ -64,7 +64,7 @@
           text="なぜ、ベンチャー・中小企業にコンサルティングエンジニアサービスが必要なのか？"
         />
         <div class="service-reason-detail">
-          <div>
+          <section>
             <h3>
               ○ベンチャー・中小企業では「業務」「システム」に関する幅広い知識と経験が必要
             </h3>
@@ -81,8 +81,8 @@
                 当社メンバーは、全員がシステムエンジニアとして開発経験を積み、システムコンサルタントとして課題解決の経験を積んでいます。広汎な知識と経験で最大限のパフォーマンスを発揮することができます。
               </p>
             </div>
-          </div>
-          <div>
+          </section>
+          <section>
             <h3 class="service-reason">
               ○システムありきではなく客観的な判断が必要
             </h3>
@@ -97,8 +97,15 @@
                 また、代理店ビジネスは行わず、システム導入時にメーカーや販売代理店からの紹介料を受け取っておりません。そのため、特定の商品・サービスに依存せず、中立的な立場から客観的な判断により、システムコンサルティングやシステム開発を行うことが可能です。
               </p>
             </div>
-          </div>
+          </section>
         </div>
+        <section class="about-consulting-enginner-area">
+          <div class="link-wrapper">
+            <nuxt-link to="/about/consulting-engineer">
+              <the-link-button />
+            </nuxt-link>
+          </div>
+        </section>
       </section>
       <section id="service-scope">
         <the-sub-header text="対応範囲" />
@@ -137,6 +144,7 @@ import TheServiceMenuTable from '~/components/pages/service/consulting-engineer/
 import TheServicePerformance from '~/components/pages/service/consulting-engineer/TheServicePerformance.vue'
 import TheAboutConsultation from '~/components/pages/top/TheAboutConsultation.vue'
 import TheContact from '~/components/pages/top/TheContact.vue'
+import TheLinkButton from '~/components/pages/common/TheLinkButton.vue'
 
 export default {
   components: {
@@ -147,7 +155,8 @@ export default {
     TheServiceMenuTable,
     TheServicePerformance,
     TheAboutConsultation,
-    TheContact
+    TheContact,
+    TheLinkButton
   },
   computed: {
     consultingEngineerImage() {
@@ -163,6 +172,24 @@ export default {
 
 .main {
   font-size: 0.9rem;
+}
+
+.about-consulting-enginner-area {
+  text-align: right;
+
+  .link-wrapper {
+    @media screen and (min-width: 1024px) {
+      width: 50%;
+    }
+    margin-left: auto;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 1rem;
+    text-align: right;
+
+    a {
+      color: #0a0716;
+    }
+  }
 }
 
 .service-target-section {

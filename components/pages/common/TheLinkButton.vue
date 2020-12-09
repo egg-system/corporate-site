@@ -12,9 +12,6 @@
   </div>
 </template>
 
-<script>
-</script>
-
 <style lang="scss" scoped>
 .ReadMore {
   color: inherit;
