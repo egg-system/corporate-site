@@ -24,6 +24,10 @@
           わたしたちについて
         </nuxt-link>
 
+        <nuxt-link class="navbar-item" to="/about/consulting-engineer">
+          コンサルティングエンジニアとは
+        </nuxt-link>
+
         <nuxt-link class="navbar-item" to="/service">
           サービス
         </nuxt-link>
@@ -50,14 +54,6 @@
       </div>
 
       <div class="convertion-area">
-        <nuxt-link
-          id="download-button"
-          class="conversion-button button is-dark"
-          to="/download"
-        >
-          <span class="link-message">資料ダウンロード</span>
-        </nuxt-link>
-
         <nuxt-link
           id="free-contact-button"
           class="conversion-button button is-dark is-outlined"
@@ -113,6 +109,9 @@ a:active {
 
 .convertion-area {
   display: flex;
+  @media screen and (min-width: $navbar-breakpoint) {
+    margin-right: 1rem;
+  }
 }
 
 @media screen and (max-width: $navbar-breakpoint) {

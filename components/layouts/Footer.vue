@@ -9,6 +9,9 @@
         <nuxt-link class="navbar-item" to="/about">
           わたしたちについて
         </nuxt-link>
+        <nuxt-link class="navbar-item" to="/about/consulting-engineer">
+          コンサルティングエンジニアとは
+        </nuxt-link>
         <nuxt-link class="navbar-item" to="/service">
           サービス
         </nuxt-link>
