@@ -1,7 +1,7 @@
 require('dotenv').config()
 import { routing } from './lib/cms'
 const { microCmsApiKey, microCmsApiDomain } = process.env
-const mierucaFunction = 'window.__fid = window.__fid || [];__fid.push([197217880]);(function() {function mieruca(){if(typeof window.__fjsld != "undefined") return; window.__fjsld = 1; var fjs = document.createElement("script"); fjs.type = "text/javascript"; fjs.async = true; fjs.id = "fjssync"; var timestamp = new Date;fjs.src = ("https:" == document.location.protocol ? "https" : "http") + "://hm.mieru-ca.com/service/js/mieruca-hm.js?v="+ timestamp.getTime(); var x = document.getElementsByTagName("script")[0]; x.parentNode.insertBefore(fjs, x); };setTimeout(mieruca, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent("onload", mieruca) : window.addEventListener("load", mieruca, false)) : mieruca();})();'
+const userHeatFunction = "(function(add, cla){window['UserHeatTag']=cla;window[cla]=window[cla]||function(){(window[cla].q=window[cla].q||[]).push(arguments)},window[cla].l=1*new Date();var ul=document.createElement('script');var tag = document.getElementsByTagName('script')[0];ul.async=1;ul.src=add;tag.parentNode.insertBefore(ul,tag);})('//uh.nakanohito.jp/uhj2/uh.js', '_uhtracker');_uhtracker({id:'uhOc9JVJnA'});"
 
 export default {
   env: {
@@ -63,13 +63,13 @@ export default {
     ],
     script: [
       {
-        hid: 'mierucajs',
+        hid: 'userHeatFunction',
         type: 'text/javascript',
-        innerHTML: mierucaFunction
+        innerHTML: userHeatFunction
       }
     ],
     __dangerouslyDisableSanitizersByTagID: {
-      'mierucajs': ['innerHTML'],
+      'userHeatFunction': ['innerHTML'],
     }
   },
   /*
