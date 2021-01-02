@@ -94,6 +94,9 @@
   /deep/ ol li {
     margin-left: 20px;
   }
+  /deep/ a {
+    word-wrap: break-word;
+  }
 }
 /deep/ .news-image img {
   display: none;
