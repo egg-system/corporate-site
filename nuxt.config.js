@@ -1,7 +1,7 @@
 require('dotenv').config()
 import { routing } from './lib/cms'
 const { microCmsApiKey, microCmsApiDomain } = process.env
-const mierucaFunction = 'window.__fid = window.__fid || [];__fid.push([197217880]);(function() {function mieruca(){if(typeof window.__fjsld != "undefined") return; window.__fjsld = 1; var fjs = document.createElement("script"); fjs.type = "text/javascript"; fjs.async = true; fjs.id = "fjssync"; var timestamp = new Date;fjs.src = ("https:" == document.location.protocol ? "https" : "http") + "://hm.mieru-ca.com/service/js/mieruca-hm.js?v="+ timestamp.getTime(); var x = document.getElementsByTagName("script")[0]; x.parentNode.insertBefore(fjs, x); };setTimeout(mieruca, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent("onload", mieruca) : window.addEventListener("load", mieruca, false)) : mieruca();})();'
+const hotJarFunction = "(function(h,o,t,j,a,r){h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};h._hjSettings={hjid:2178076,hjsv:6};a=o.getElementsByTagName('head')[0];r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;a.appendChild(r);})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');"
 
 export default {
   env: {
@@ -63,13 +63,13 @@ export default {
     ],
     script: [
       {
-        hid: 'mierucajs',
+        hid: 'hotJarFunction',
         type: 'text/javascript',
-        innerHTML: mierucaFunction
+        innerHTML: hotJarFunction
       }
     ],
     __dangerouslyDisableSanitizersByTagID: {
-      'mierucajs': ['innerHTML'],
+      'hotJarFunction': ['innerHTML'],
     }
   },
   /*
