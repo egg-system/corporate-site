@@ -63,7 +63,7 @@ export default {
   },
 
   asyncData() {
-    return fetchCmsListDataCase(23)
+    return fetchCmsListDataCase(100)
   }
 }
 </script>

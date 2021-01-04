@@ -64,7 +64,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: '株式会社エッグシステム コラム'
+          content: this.data.description
         },
         {
           hid: 'keywords',
@@ -85,7 +85,7 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: '株式会社エッグシステム コラム'
+          content: this.data.description
         },
         {
           hid: 'og:url',

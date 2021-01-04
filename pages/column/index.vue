@@ -60,7 +60,7 @@ export default {
   },
 
   asyncData() {
-    return fetchCmsListDataColumn(23)
+    return fetchCmsListDataColumn(100)
   }
 }
 </script>
