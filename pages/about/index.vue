@@ -34,7 +34,7 @@ export default {
   },
   head() {
     return {
-      title: 'わたしたちについて',
+      title: '企業理念',
       meta: [
         {
           hid: 'about-description',
