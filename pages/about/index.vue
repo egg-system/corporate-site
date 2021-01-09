@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="content page-content">
-      <the-hero-title main-text="わたしたちについて" />
+      <the-hero-title main-text="企業理念" />
       <the-message class="end" />
       <section>
         <the-sub-header text="ロゴに込められた想い" />
