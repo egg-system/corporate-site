@@ -21,7 +21,7 @@
     <div :class="[isOpen ? 'is-active' : '']" class="navbar-menu" @click="menu()">
       <div class="navbar-end">
         <nuxt-link class="navbar-item" to="/about">
-          企業理念
+          経営理念
         </nuxt-link>
 
         <nuxt-link class="navbar-item" to="/service">
