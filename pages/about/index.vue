@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="content page-content">
-      <the-hero-title main-text="わたしたちについて" />
+      <the-hero-title main-text="経営理念" />
       <the-message class="end" />
       <section>
         <the-sub-header text="ロゴに込められた想い" />
@@ -34,7 +34,7 @@ export default {
   },
   head() {
     return {
-      title: 'わたしたちについて',
+      title: '経営理念',
       meta: [
         {
           hid: 'about-description',
