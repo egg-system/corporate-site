@@ -130,7 +130,11 @@
         </div>
       </section>
       <div class="contact-area">
-        <the-contact />
+        <the-contact>
+          資金調達後のベンチャー企業様に対し、<br>
+          IT統制の対応を全て引き受けます。<br>
+          お気軽にご相談ください。
+        </the-contact>
       </div>
       <div class="link-area">
         <the-service-links />

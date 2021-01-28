@@ -125,7 +125,11 @@
       </section>
       <br>
       <div class="contact-area">
-        <the-contact />
+        <the-contact>
+          ベンチャー・中小企業様のIT活用に対し<br>
+          徹底的に寄り添って対応します。<br>
+          お気軽にご相談ください。
+        </the-contact>
       </div>
       <div class="link-area">
         <the-service-links />
