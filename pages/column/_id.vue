@@ -38,7 +38,7 @@
           <nuxt-link to="/cases">
             <i/>一覧を見る<span>></span>
           </nuxt-link>
-          <the-sub-header :text="`${caseList.name}の事例`" />
+          <the-sub-header :text="`${caseList.name}の事例紹介`" />
         </p>
         <div class="column-list">
           <the-case-list :cases="caseList.list" />
