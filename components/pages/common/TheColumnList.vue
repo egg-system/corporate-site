@@ -19,12 +19,17 @@
                 class="column-title"
               >{{ item.title }}</component>
               <br>
+              <div class="categorires-wrapper">
+                <span
+                  v-for="category in item.categories.slice(0, 2)"
+                  :key="category.id"
+                  class="tag info-color"
+                >
+                  {{ category.name }}
+                </span>
+              </div>
               公開日：{{ item.display_at | dayjs }}
               <br>
-              <p class="column-store">{{ item.store }}</p>
-              <span class="tag info-color">
-                {{ item.label.label }}
-              </span>
             </div>
           </div>
         </nuxt-link>
@@ -79,7 +84,21 @@ export default {
   object-fit: contain;
   margin: 0 auto;
 }
+.categorires-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  span:not(:last-child) {
+    margin-right: 0.5rem;
+    margin-bottom: 0.1rem;
+  }
+}
+
 @media screen and (min-width: 1030px) {
+  .categorires-wrapper {
+    min-height: 49px;
+  }
   .is-one-quarter img {
     width: 250px;
     height: 150px;

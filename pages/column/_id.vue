@@ -5,6 +5,15 @@
         <img :src="data.img.url">
       </figure>
       <the-hero-title :main-text="data.title" />
+      <div class="categories-wrapper">
+        <span
+          v-for="category in data.categories"
+          :key="category.id"
+          class="tag info-color"
+        >
+          {{ category.name }}
+        </span>
+      </div>
       <div class="sub">
         <time
           :datetime="data.display_at"
@@ -20,13 +29,21 @@
         >
           更新日：{{ data.updatedAt | dayjs }}
         </time>
-        <span class="tag info-color">
-          {{ data.label.label }}
-        </span>
       </div>
       <div class="main">
         <div v-html="data.content" />
       </div>
+      <section v-for="caseList in caseLists" :key="caseList.name">
+        <p class="back">
+          <nuxt-link to="/cases">
+            <i/>一覧を見る<span>></span>
+          </nuxt-link>
+          <the-sub-header :text="`${caseList.name}の事例紹介`" />
+        </p>
+        <div class="column-list">
+          <the-case-list :cases="caseList.list" />
+        </div>
+      </section>
       <section>
         <p class="back">
           <nuxt-link to="/column">
@@ -44,13 +61,19 @@
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
+import TheCaseList from '~/components/pages/common/TheCaseList.vue'
 import TheColumnList from '~/components/pages/common/TheColumnList.vue'
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
-import { fetchCmsDataColumn, fetchCmsListDataColumn } from '~/lib/cms'
+import {
+  fetchCmsDataColumn,
+  fetchCmsListDataColumn,
+  fetchCmsListDataCaseByCategoryId
+} from '~/lib/cms'
 
 export default {
   components: {
     TheHeroTitle,
+    TheCaseList,
     TheColumnList,
     TheSubHeader
   },
@@ -102,7 +125,22 @@ export default {
       fetchCmsDataColumn(params.id),
       fetchCmsListDataColumn(3)
     ])
-    return { data: data[0].data, list: data[1].listData }
+
+    const columnData = data[0].data
+    const casePromises = columnData.categories.map(async category => {
+      const { listData } = await fetchCmsListDataCaseByCategoryId(
+        category.id,
+        3
+      )
+      return {
+        name: category.name,
+        list: listData
+      }
+    })
+
+    const caseListsData = await Promise.all(casePromises)
+    const caseLists = caseListsData.filter(caseList => caseList.list.length > 0)
+    return { data: columnData, list: data[1].listData, caseLists }
   }
 }
 </script>

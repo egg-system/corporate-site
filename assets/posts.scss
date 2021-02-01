@@ -144,3 +144,13 @@
   color: $white;
   background-color: $black;
 }
+.categories-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  span:not(:last-child) {
+    margin-bottom: 0.1rem;
+    margin-right: 1rem;
+  }
+}
