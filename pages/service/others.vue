@@ -90,7 +90,11 @@
         <the-development-performance />
       </section>
       <div class="contact-area">
-        <the-contact />
+        <the-contact>
+          100名以下のベンチャー・中小企業に向けて、<br>
+          あらゆる課題に対応しております。<br>
+          お気軽にご相談ください。
+        </the-contact>
       </div>
       <div class="link-area">
         <the-service-links />
