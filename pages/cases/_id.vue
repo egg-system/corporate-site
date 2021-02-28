@@ -33,7 +33,7 @@
           <h3>{{ conversion.name }}</h3>
           <p>{{ conversion.description }}</p>
           <div class="link-wrapper">
-            <a :ref="conversion.link" class="conversion-button button is-dark">詳しくはこちらから</a>
+            <a :href="conversion.link" class="conversion-button button is-dark">詳しくはこちらから</a>
           </div>
         </section>
       </section>
