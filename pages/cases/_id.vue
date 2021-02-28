@@ -27,6 +27,16 @@
       <div class="main">
         <div v-html="data.content" />
       </div>
+      <section v-if="data.conversions.length > 0" class="service-conversions">
+        <the-sub-header text="弊社の提供するサービス" />
+        <section v-for="conversion in data.conversions" :key="conversion.id">
+          <h3>{{ conversion.name }}</h3>
+          <p>{{ conversion.description }}</p>
+          <div class="link-wrapper">
+            <a :href="conversion.link" class="conversion-button button is-dark">詳しくはこちらから</a>
+          </div>
+        </section>
+      </section>
       <p class="back">
         <nuxt-link to="/cases">
           <i/>一覧を見る<span>></span>
@@ -44,6 +54,7 @@
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheCaseList from '~/components/pages/common/TheCaseList.vue'
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
+import TheServiceConversion from '~/components/pages/cases/TheServiceConversion.vue'
 import noImage from '~/assets/js/no-image.js'
 import { fetchCmsDataCase, fetchCmsListDataCase } from '~/lib/cms'
 
@@ -51,7 +62,8 @@ export default {
   components: {
     TheHeroTitle,
     TheCaseList,
-    TheSubHeader
+    TheSubHeader,
+    TheServiceConversion
   },
   head() {
     let image = this.data.img
@@ -113,6 +125,38 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/posts.scss';
+
+.service-conversions {
+  margin: 3rem 0 4rem;
+  padding-top: 3rem;
+  border-top: solid 2px #efefef;
+
+  section {
+    font-size: 1.1rem;
+    margin-bottom: 6rem;
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      text-align: center;
+      white-space: pre-wrap;
+      margin: 3rem 0;
+    }
+
+    .link-wrapper {
+      text-align: center;
+      margin: 2rem auto 3rem;
+
+      .conversion-button {
+        padding: 1.5rem 5rem;
+      }
+    }
+  }
+}
 
 .news-item {
   margin-top: 5%;
