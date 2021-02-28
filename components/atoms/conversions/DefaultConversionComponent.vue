@@ -4,9 +4,9 @@
       id="download-conversion-lik"
       to="/download"
     >
-      『IT投資を成功に導く方法』の<br>ダウンロードはこちら
+      無料資料『IT投資の成功事例と補助金を紹介』ダウンロードはこちら
     </nuxt-link>
-  </div>  
+  </div>
 </template>
 
 <style lang="scss" scoped>
