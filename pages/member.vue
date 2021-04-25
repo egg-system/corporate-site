@@ -34,7 +34,8 @@ export default {
         {
           hid: 'member-keywords',
           name: 'keywords',
-          content: '高橋 翼, 高橋 光, 布村 武大, 横田 峻, 小川, 加藤, 坂'
+          content:
+            '高橋 翼, 高橋 光, 布村 武大, 横田 峻, 小川, 望月, 花田, 三浦, 多田, 高橋, 粂, 坂'
         },
         {
           hid: 'recruit-twitter:card',

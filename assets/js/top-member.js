@@ -38,8 +38,33 @@ const members = [
   },
   {
     image: unknown,
-    name: '加藤',
-    romajiName: 'Kato'
+    name: '望月',
+    romajiName: 'Mochizuki'
+  },
+  {
+    image: unknown,
+    name: '花田',
+    romajiName: 'Hanada'
+  },
+  {
+    image: unknown,
+    name: '三浦',
+    romajiName: 'Miura'
+  },
+  {
+    image: unknown,
+    name: '多田',
+    romajiName: 'Tada'
+  },
+  {
+    image: unknown,
+    name: '高橋',
+    romajiName: 'Takahashi'
+  },
+  {
+    image: unknown,
+    name: '粂',
+    romajiName: 'Qume'
   },
   {
     image: unknown,

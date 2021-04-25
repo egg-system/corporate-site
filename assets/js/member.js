@@ -36,8 +36,33 @@ const members = [
     img: unknown
   },
   {
-    nameJP: '加藤',
-    nameEN: 'Kato',
+    nameJP: '望月',
+    nameEN: 'Mochizuki',
+    img: unknown
+  },
+  {
+    nameJP: '花田',
+    nameEN: 'Hanada',
+    img: unknown
+  },
+  {
+    nameJP: '三浦',
+    nameEN: 'Miura',
+    img: unknown
+  },
+  {
+    nameJP: '多田',
+    nameEN: 'Tada',
+    img: unknown
+  },
+  {
+    nameJP: '高橋',
+    nameEN: 'Takahashi',
+    img: unknown
+  },
+  {
+    nameJP: '粂',
+    nameEN: 'Qume',
     img: unknown
   },
   {

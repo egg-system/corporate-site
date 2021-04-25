@@ -22,9 +22,9 @@
           <div class="column is-4">
             <img :src="noteLogoImage">
             <p>
-              『地方×IT』というテーマで<br>
-              地方でのIT活用事例について<br>
-              noteで平日毎日更新中
+              『地方×IT』をテーマに<br>
+              地方でのICT活用事例について<br>
+              noteで発信中
             </p>
             <a
               href="https://note.com/x_face"
@@ -40,11 +40,11 @@
             <img :src="kinChuImage">
             <p>
               近代中小企業（KinChu）<br>
-              2019年4月号に<br>
+              2021年2月号・2019年4月号に<br>
               高橋翼が執筆した記事が掲載
             </p>
             <nuxt-link
-              to="/news/20190403-magazine"
+              to="/news/20210201-magazine"
               class="link about-button button is-dark"
             >
               <span class="link-message">
@@ -139,7 +139,7 @@ import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
 import BlackLink from '~/components/atoms/BlackLink.vue'
 import columnImage from '~/assets/top/top-strong1.jpeg'
 import noteLogoImage from '~/assets/top/note-logo.png'
-import kinChuImage from '~/assets/top/kinchu.jpg'
+import kinChuImage from '~/assets/top/kinchu-202102.png'
 import dataConvertImage from '~/assets/top/data-convert.png'
 import serviceCostSimulationImage from '~/assets/top/service-cost-simulation.png'
 import serviceItControlImage from '~/assets/top/it-control-service.png'
