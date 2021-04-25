@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="link">
-      <a class="button is-dark" target="_blank" href="https://borderless-gym.com/">
+      <a class="button is-dark" target="_blank" href="">
         「Borderless GYM」サービスはこちらから
       </a>
     </div>
