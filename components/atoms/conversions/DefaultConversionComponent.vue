@@ -4,7 +4,7 @@
       id="download-conversion-lik"
       to="/download"
     >
-      『IT投資の成功事例と補助金を紹介』<br>無料ダウンロードはこちら
+      『IT導入成功事例/補助金解説』<br>無料ダウンロードはこちら
     </nuxt-link>
   </div>
 </template>
@@ -12,11 +12,12 @@
 <style lang="scss" scoped>
 .conversion {
   position: fixed;
-  bottom: 4rem;
+  bottom: 3rem;
   background-color: #333;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1rem;
   border: 1px solid #fff;
   border-radius: 4px;
+  text-align: center;
 
   @media screen and (max-width: 769px) {
     width: 90%;
@@ -24,7 +25,7 @@
   }
 
   @media screen and (min-width: 770px) {
-    right: 3rem;
+    right: 2rem;
   }
 
   a {

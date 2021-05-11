@@ -14,11 +14,15 @@
       <the-sub-header text="顧客構成・内訳" />
       <the-about-client />
     </section>
+    <!--
     <section>
       <the-sub-header text="『初月無料』のシステムコンサルティングサービスです" />
       <the-about-consultation />
     </section>
-    <the-contact />
+  -->
+    <section class="contact-section">
+      <the-contact />
+    </section>
     <the-service />
     <section>
       <the-sub-header text="メンバー" />

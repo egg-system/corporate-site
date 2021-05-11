@@ -26,11 +26,19 @@
         </span>
       </nuxt-link>
     </div>
+    月額制のシステム担当チーム「コンサルティングエンジニアサービス」
+    <div class="consulting-engineer-btn-wrapper">
+      <a href="https://eggsystem-ce.studio.site/" class="link button is-dark" target="blank">
+        <span class="link-message">
+          サービスサイトへ
+        </span>
+      </a>
+    </div>
     <div class="main-image-area">
       <div class="main-image">
         <div class="main-feature">
           【資金調達後のベンチャー企業向け】<br>
-          内部統制（IT統制）への対応には手間がかかる<br class="pc-br">ITシステムの環境構築・評価、規程書類の作成を全て任せたい
+          内部統制（IT統制）への対応には手間がかかる<br class="pc-br">ITシステムの環境構築・評価、規程書類の作成を全て任せたい<br><br>
         </div>
         <div>
           <img :src="triangleImage" class="triangle-img" alt="解決策">
@@ -46,6 +54,26 @@
           </div>
         </div>
       </div>
+      <div class="main-image">
+        <div class="main-feature">
+          【製造業向け】<br class="pc-br">利益率確保に向けた適正在庫を管理するために、<br class="pc-br">リアルタイムに在庫を把握したい<br>
+          社外やスマホから簡単に受注や在庫の状況を把握したい<br>
+        </div>
+        <div>
+          <img :src="triangleImage" class="triangle-img" alt="解決策">
+          <div class="main-feature">
+            <div>
+              <br>
+              クラウドシステムの導入やシステム同士を連携し、煩雑な業務を自動化することで<span class="font-red">手間を増やさずに受注・在庫管理を実現</span>
+            </div>
+            <nuxt-link to="/service/consulting-engineer" class="link case-button button is-dark">
+              <span class="link-message">クラウド活用・業務効率化の詳細へ</span>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-image-area">
       <div class="main-image">
         <div class="main-feature">
           【サービス業向け】<br class="pc-br">（整体・パーソナルトレーニングジム・エステなど）<br>
@@ -65,41 +93,20 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="main-image-area">
-      <div class="main-image">
-        <div class="main-feature">
-          【製造・卸売・小売業向け】<br class="pc-br">集客に苦戦するオンライン販売での売上を拡大したい<br>
-          余剰在庫を解消し適正な数の在庫を管理したい
-        </div>
-        <div>
-          <img :src="triangleImage" class="triangle-img" alt="解決策">
-          <div class="main-feature">
-            <div>
-              <br>
-              システム同士を連携、煩雑な業務を自動化することで<br class="pc-br"><span class="font-red">手間を増やさずに販路拡大、在庫管理の適正化へ</span>
-            </div>
-            <nuxt-link to="/service/consulting-engineer" class="link case-button button is-dark">
-              <span class="link-message">売上拡大・業務効率化の詳細へ</span>
-            </nuxt-link>
-          </div>
-        </div>
-      </div>
       <div class="main-image">
         <div class="main-feature">
           【全業種向け】<br class="pc-br">
-          働き方改革やコロナ対策としてテレワークを本格導入したい<br class="pc-br">セキュリティを確保した仕組みと社員教育も行いたい<br>
+          働き方改革やコロナ対策としてテレワークや社内ファイルサーバーのクラウド化を進めたい<br>
         </div>
         <div>
           <img :src="triangleImage" class="triangle-img" alt="解決策">
           <div class="main-feature">
             <div>
               <br>
-              セキュリティを担保したテレワークの仕組みの導入から<br class="pc-br">
-              社員への教育まで行い<span class="font-red">テレワークを社内で定着</span>
+              セキュリティを確保したテレワーク・ファイル管理のツール導入から運用ルール策定や社員教育まで行い<span class="font-red">社内で運用を定着</span>
             </div>
             <nuxt-link to="/service/others" class="link case-button button is-dark">
-              <span class="link-message">リモートワーク導入の詳細へ</span>
+              <span class="link-message">詳細へ</span>
             </nuxt-link>
           </div>
         </div>
@@ -135,6 +142,7 @@ export default {
   width: 90%;
   margin: 0 auto 10rem;
   text-align: center;
+  line-height: 2rem;
 
   .main-message {
     font-size: 1.8rem;
@@ -166,7 +174,7 @@ export default {
   }
 
   .consulting-engineer-btn-wrapper {
-    margin: 2rem 0 6rem;
+    margin: 2rem 0 5rem;
 
     a {
       @media screen and (min-width: 770px) {
@@ -211,7 +219,6 @@ export default {
       }
 
       .main-feature {
-        font-weight: bold;
         margin-bottom: 2rem;
 
         .font-red {
@@ -220,6 +227,7 @@ export default {
 
         .link-message {
           font-weight: normal;
+          font-size: 0.9rem;
         }
       }
 

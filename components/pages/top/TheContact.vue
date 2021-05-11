@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 .contact {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 5%;

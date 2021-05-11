@@ -119,11 +119,12 @@
         <the-sub-header text="コンサルティングエンジニアサービス　作業実績" />
         <the-service-performance />
       </section>
+      <!--
       <section class="about-consultaion-wrapper">
         <the-sub-header text="『初月無料』のコンサルティングサービスです" />
         <the-about-consultation is-service-details />
       </section>
-      <br>
+    -->
       <div class="contact-area">
         <the-contact>
           ベンチャー・中小企業様のIT活用に対し<br>
