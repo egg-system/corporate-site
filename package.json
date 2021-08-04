@@ -77,12 +77,17 @@
     ]
   },
   "babel": {
-    "env": {
-      "test": {
-        "presets": [
-          "@babel/preset-env"
-        ]
-      }
-    }
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "usage"
+        }
+      ]
+    ]
+  },
+  "browserslist": {
+    "ie": "11",
+    "node": "current"
   }
 }
