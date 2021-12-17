@@ -33,33 +33,23 @@ const members = [
   },
   {
     image: unknown,
+    name: '渡辺 千亜希',
+    romajiName: 'Chiaki Watanabe'
+  },
+  {
+    image: unknown,
+    name: '望月　康彦',
+    romajiName: 'Yasuhiko Mochizuki'
+  },
+  {
+    image: unknown,
+    name: '三浦 健太郎',
+    romajiName: 'Kentarou Miura'
+  },
+  {
+    image: unknown,
     name: '小川',
     romajiName: 'Ogawa'
-  },
-  {
-    image: unknown,
-    name: '望月',
-    romajiName: 'Mochizuki'
-  },
-  {
-    image: unknown,
-    name: '花田',
-    romajiName: 'Hanada'
-  },
-  {
-    image: unknown,
-    name: '三浦',
-    romajiName: 'Miura'
-  },
-  {
-    image: unknown,
-    name: '多田',
-    romajiName: 'Tada'
-  },
-  {
-    image: unknown,
-    name: '高橋',
-    romajiName: 'Takahashi'
   },
   {
     image: unknown,
@@ -68,8 +58,8 @@ const members = [
   },
   {
     image: unknown,
-    name: '坂',
-    romajiName: 'Zaka'
+    name: '川島',
+    romajiName: 'Kawashima'
   }
 ]
 export default { members }
