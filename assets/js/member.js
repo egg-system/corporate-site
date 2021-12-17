@@ -31,33 +31,23 @@ const members = [
     img: shingo
   },
   {
+    nameJP: '渡辺 千亜希',
+    nameEN: 'Chiaki Watanabe',
+    img: shingo
+  },
+  {
+    nameJP: '望月　康彦',
+    nameEN: 'Yasuhiko Mochizuki',
+    img: unknown
+  },
+  {
+    nameJP: '三浦 健太郎',
+    nameEN: 'Kentarou Miura',
+    img: unknown
+  },
+  {
     nameJP: '小川',
     nameEN: 'Ogawa',
-    img: unknown
-  },
-  {
-    nameJP: '望月',
-    nameEN: 'Mochizuki',
-    img: unknown
-  },
-  {
-    nameJP: '花田',
-    nameEN: 'Hanada',
-    img: unknown
-  },
-  {
-    nameJP: '三浦',
-    nameEN: 'Miura',
-    img: unknown
-  },
-  {
-    nameJP: '多田',
-    nameEN: 'Tada',
-    img: unknown
-  },
-  {
-    nameJP: '高橋',
-    nameEN: 'Takahashi',
     img: unknown
   },
   {
@@ -66,8 +56,8 @@ const members = [
     img: unknown
   },
   {
-    nameJP: '坂',
-    nameEN: 'Zaka',
+    nameJP: '川島',
+    nameEN: 'Kawashima',
     img: unknown
   }
 ]
