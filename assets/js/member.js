@@ -33,7 +33,7 @@ const members = [
   {
     nameJP: '渡辺 千亜希',
     nameEN: 'Chiaki Watanabe',
-    img: shingo
+    img: unknown
   },
   {
     nameJP: '望月　康彦',
