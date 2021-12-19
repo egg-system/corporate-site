@@ -2,7 +2,7 @@
   <section class="main-message-area">
     <p class="main-message">
       『あなたじゃないと困る。』<br>
-      そう言っていただける関係を目指しています
+      そう言っていただける関係を御社と築きます
     </p>
     <h2 class="main-description">
       わたしたちは100名以下のベンチャー・中小企業が抱える課題を解決する<br>
