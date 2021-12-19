@@ -28,7 +28,7 @@
     </div>
     月額制のシステム担当チーム「コンサルティングエンジニアサービス」
     <div class="consulting-engineer-btn-wrapper">
-      <a href="https://eggsystem-ce.studio.site/" class="link button is-dark" target="blank">
+      <a href="https://consul-engineer.studio.site/" class="link button is-dark" target="blank">
         <span class="link-message">
           サービスサイトへ
         </span>
