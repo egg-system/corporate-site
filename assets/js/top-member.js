@@ -5,6 +5,14 @@ import Shun from '~/assets/top/shun.jpeg'
 import Shingo from '~/assets/top/shingo.jpeg'
 import unknown from '~/assets/top/unknown.jpeg'
 import unknownpc from '~/assets/top/member-pc.jpg'
+import logo1 from '~/assets/top/01-min.jpg'
+import logo2 from '~/assets/top/02-min.jpg'
+import logo3 from '~/assets/top/03-min.jpg'
+import logo4 from '~/assets/top/04-min.jpg'
+import logo5 from '~/assets/top/05-min.jpg'
+import logo6 from '~/assets/top/06-min.jpg'
+import logo7 from '~/assets/top/07-min.jpg'
+import logo8 from '~/assets/top/08-min.jpg'
 
 const members = [
   {
@@ -33,32 +41,32 @@ const members = [
     romajiName: 'Hiromi'
   },
   {
-    image: unknownpc,
+    image: logo1,
     name: '渡辺 千亜希',
     romajiName: 'Chiaki Watanabe'
   },
   {
-    image: unknown,
+    image: logo2,
     name: '望月　康彦',
     romajiName: 'Yasuhiko Mochizuki'
   },
   {
-    image: unknown,
+    image: logo3,
     name: '三浦 健太郎',
     romajiName: 'Kentarou Miura'
   },
   {
-    image: unknown,
+    image: logo4,
     name: '小川',
     romajiName: 'Ogawa'
   },
   {
-    image: unknown,
+    image: logo5,
     name: '粂',
     romajiName: 'Qume'
   },
   {
-    image: unknown,
+    image: logo6,
     name: '川島',
     romajiName: 'Kawashima'
   }
