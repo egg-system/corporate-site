@@ -4,6 +4,7 @@ import nuno from '~/assets/members/nuno.JPG'
 import shun from '~/assets/members/shun.JPG'
 import shingo from '~/assets/members/shingo.JPG'
 import unknown from '~/assets/members/unknown.JPG'
+import unknownpc from '~/assets/members/member-pc.jpg'
 const members = [
   {
     nameJP: '高橋 翼',
@@ -33,7 +34,7 @@ const members = [
   {
     nameJP: '渡辺 千亜希',
     nameEN: 'Chiaki Watanabe',
-    img: unknown
+    img: unknownpc
   },
   {
     nameJP: '望月　康彦',
