@@ -4,6 +4,7 @@ import Nuno from '~/assets/top/nuno.jpeg'
 import Shun from '~/assets/top/shun.jpeg'
 import Shingo from '~/assets/top/shingo.jpeg'
 import unknown from '~/assets/top/unknown.jpeg'
+import unknownpc from '~/assets/top/member-pc.jpg'
 
 const members = [
   {
@@ -32,7 +33,7 @@ const members = [
     romajiName: 'Hiromi'
   },
   {
-    image: unknown,
+    image: unknownpc,
     name: '渡辺 千亜希',
     romajiName: 'Chiaki Watanabe'
   },
