@@ -5,6 +5,15 @@ import shun from '~/assets/members/shun.JPG'
 import shingo from '~/assets/members/shingo.JPG'
 import unknown from '~/assets/members/unknown.JPG'
 import unknownpc from '~/assets/members/member-pc.jpg'
+import logo1 from '~/assets/members/01-min.jpg'
+import logo2 from '~/assets/members/02-min.jpg'
+import logo3 from '~/assets/members/03-min.jpg'
+import logo4 from '~/assets/members/04-min.jpg'
+import logo5 from '~/assets/members/05-min.jpg'
+import logo6 from '~/assets/members/06-min.jpg'
+import logo7 from '~/assets/members/07-min.jpg'
+import logo8 from '~/assets/members/08-min.jpg'
+
 const members = [
   {
     nameJP: '高橋 翼',
@@ -34,32 +43,32 @@ const members = [
   {
     nameJP: '渡辺 千亜希',
     nameEN: 'Chiaki Watanabe',
-    img: unknownpc
+    img: logo1
   },
   {
     nameJP: '望月　康彦',
     nameEN: 'Yasuhiko Mochizuki',
-    img: unknown
+    img: logo2
   },
   {
     nameJP: '三浦 健太郎',
     nameEN: 'Kentarou Miura',
-    img: unknown
+    img: logo3
   },
   {
     nameJP: '小川',
     nameEN: 'Ogawa',
-    img: unknown
+    img: logo4
   },
   {
     nameJP: '粂',
     nameEN: 'Qume',
-    img: unknown
+    img: logo5
   },
   {
     nameJP: '川島',
     nameEN: 'Kawashima',
-    img: unknown
+    img: logo6
   }
 ]
 export default { members }
