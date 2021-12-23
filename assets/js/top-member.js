@@ -3,6 +3,7 @@ import Hikaru from '~/assets/top/hikaru.jpg'
 import Nuno from '~/assets/top/nuno.jpeg'
 import Shun from '~/assets/top/shun.jpeg'
 import Shingo from '~/assets/top/shingo.jpeg'
+import Mochizuki from '~/assets/top/mochizuki.png'
 import unknown from '~/assets/top/unknown.jpeg'
 import unknownpc from '~/assets/top/member-pc.jpg'
 import logo1 from '~/assets/top/01-min.jpg'
@@ -41,14 +42,14 @@ const members = [
     romajiName: 'Hiromi'
   },
   {
+    image: Mochizuki,
+    name: '望月　康彦',
+    romajiName: 'Yasuhiko Mochizuki'
+  },
+  {
     image: logo1,
     name: '渡辺 千亜希',
     romajiName: 'Chiaki Watanabe'
-  },
-  {
-    image: logo2,
-    name: '望月　康彦',
-    romajiName: 'Yasuhiko Mochizuki'
   },
   {
     image: logo3,
