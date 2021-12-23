@@ -3,6 +3,7 @@ import hikaru from '~/assets/members/hikaru.jpg'
 import nuno from '~/assets/members/nuno.JPG'
 import shun from '~/assets/members/shun.JPG'
 import shingo from '~/assets/members/shingo.JPG'
+import mochizuki from '~/assets/members/mochizuki.png'
 import unknown from '~/assets/members/unknown.JPG'
 import unknownpc from '~/assets/members/member-pc.jpg'
 import logo1 from '~/assets/members/01-min.jpg'
@@ -41,14 +42,14 @@ const members = [
     img: shingo
   },
   {
+    nameJP: '望月　康彦',
+    nameEN: 'Yasuhiko Mochizuki',
+    img: mochizuki
+  },
+  {
     nameJP: '渡辺 千亜希',
     nameEN: 'Chiaki Watanabe',
     img: logo1
-  },
-  {
-    nameJP: '望月　康彦',
-    nameEN: 'Yasuhiko Mochizuki',
-    img: logo2
   },
   {
     nameJP: '三浦 健太郎',
