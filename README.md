@@ -26,6 +26,15 @@ microCmsApiKey = ''
 microCmsApiDomain = ''
 ```
 
+## nodeバージョン
+```
+node v14.19.1
+vue 4.3.1
+```
+だとうまくいきます。
+
+「vue　2.6.14」ではエラーになるので要注意を。
+
 ## Document
 ### UI
 * [Bulma](https://bulma.io/documentation/)
