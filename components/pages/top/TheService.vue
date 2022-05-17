@@ -55,6 +55,7 @@
           </div>
         </div>
       </section>
+      <!--
       <section class="service-sections">
         <h3>サービス</h3>
         <div class="columns">
@@ -112,6 +113,7 @@
           </div>
         </div>
       </section>
+      -->
       <section>
         <h3>情報セキュリティへの取り組み</h3>
         <div class="columns">
