@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="columns">
       <div class="column is-4 image">
-        <img src="/footer_white.png">
+        <img src="/white-footer-logo-new2.png">
         <p>株式会社エッグシステム</p>
       </div>
       <div class="column is-3 first ">
@@ -35,9 +35,11 @@
         <nuxt-link class="navbar-item" to="/cases">
           事例紹介
         </nuxt-link>
+        <!--
         <nuxt-link class="navbar-item" to="/own_site">
           自社サービス紹介
         </nuxt-link>
+        -->
         <nuxt-link class="navbar-item" to="/service/it-cost-lp">
           ITコストシミュレーション
         </nuxt-link>
