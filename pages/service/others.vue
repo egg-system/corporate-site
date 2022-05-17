@@ -5,7 +5,7 @@
       <section class="service-detail-section">
         <the-sub-header text="個別サービス" />
         <h3>
-          100名以下のベンチャー・中小企業が抱える問題を解決するために、<br class="pc-br">
+          ベンチャー・中小企業が抱える問題を解決するために、<br class="pc-br">
           システム化の企画・導入支援・開発・運用支援など<br class="pc-br">
           システムコンサルティングとシステム開発のどちらも対応しています。
         </h3>
@@ -91,7 +91,7 @@
       </section>
       <div class="contact-area">
         <the-contact>
-          100名以下のベンチャー・中小企業に向けて、<br>
+          ベンチャー・中小企業に向けて、<br>
           あらゆる課題に対応しております。<br>
           お気軽にご相談ください。
         </the-contact>

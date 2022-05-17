@@ -1,7 +1,7 @@
 <template>
   <div class="about-client-area">
     <div class="about-client-summary">
-      業種・業界問わず<br>従業員100名以下の中小企業様への支援実績が約90%です
+      業種・業界問わず<br>中小企業様への支援実績が約90%です
     </div>
     <figure>
       <img :src="image" alt="顧客内訳・構成">
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import aboutImage from '~/assets/top/client-breakdown.png'
+import aboutImage from '~/assets/top/client-breakdown_new.jpg'
 
 export default {
   computed: {
