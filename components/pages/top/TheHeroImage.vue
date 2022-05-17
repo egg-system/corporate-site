@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import heroImage4PC from '~/assets/top/top_pc.jpg'
-import heroImage4SP from '~/assets/top/top_sp.jpg'
+import heroImage4PC from '~/assets/top/top_new_pc.jpg'
+import heroImage4SP from '~/assets/top/top_new_sp.jpg'
 export default {
   data() {
     return {
