@@ -10,8 +10,6 @@
         <p class="about-column-content">
           株式会社エッグシステムのコンサルティングエンジニア集団
           <br class="sp">
-          「x-faCE（for all Consulting Engineer）」では、 
-          <br class="sp">
           《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》
           <br class="sp">
           の実現のために、ITシステムを活用します。
