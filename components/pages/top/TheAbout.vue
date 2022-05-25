@@ -8,11 +8,10 @@
       <div class="column first is-7">
         <h2 class="about-column-title">わたしたちについて</h2>
         <p class="about-column-content">
-          株式会社エッグシステムのコンサルティングエンジニア集団
+          株式会社エッグシステムのコンサルティングエンジニア集団では
           <br class="sp">
-          《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》
+          《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。
           <br class="sp">
-          の実現のために、ITシステムを活用します。
         </p>
         <div class="btn-area">
           <div class="Heading__cta">
