@@ -4,6 +4,8 @@ import nuno from '~/assets/members/nuno.JPG'
 import shun from '~/assets/members/shun.JPG'
 import shingo from '~/assets/members/shingo.JPG'
 import mochizuki from '~/assets/members/mochizuki-after.jpg'
+import sawada from '~/assets/members/sawada.jpg'
+import kuroda from '~/assets/members/kuroda.jpg'
 import unknown from '~/assets/members/unknown.JPG'
 import unknownpc from '~/assets/members/member-pc.jpg'
 import logo1 from '~/assets/members/01-min.jpg'
@@ -45,6 +47,16 @@ const members = [
     nameJP: '望月　康彦',
     nameEN: 'Yasuhiko Mochizuki',
     img: mochizuki
+  },
+  {
+    nameJP: '澤田　隆史',
+    nameEN: 'Takashi Sawada',
+    img: sawada
+  },
+  {
+    nameJP: '黒田　麻衣子',
+    nameEN: 'Maiko Kuroda',
+    img: kuroda
   },
   {
     nameJP: '渡辺 千亜希',
