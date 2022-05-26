@@ -23,7 +23,7 @@
           </li>
           <li>
             <nuxt-link class="navbar-item" to="/service/it-control">
-              内部統制支援サービス
+              IT統制サポート
             </nuxt-link>
           </li>
           <li>
