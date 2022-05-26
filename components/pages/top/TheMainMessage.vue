@@ -26,48 +26,59 @@
         </span>
       </nuxt-link>
     </div>
-    月額制のシステム担当チーム「コンサルティングエンジニアサービス」
+    貴社のITコストが妥当かどうか簡単に診断できる「ITコストシミュレーション」
     <div class="consulting-engineer-btn-wrapper">
-      <a href="https://consul-engineer.studio.site/" class="link button is-dark" target="blank">
+      <a href="https://eggsystem.co.jp/service/it-cost-lp/" class="link button is-dark" target="blank">
         <span class="link-message">
-          サービスサイトへ
+          シミュレーションを行う（登録不要・無料）
         </span>
       </a>
     </div>
     <div class="main-image-area">
       <div class="main-image">
         <div class="main-feature">
-          【資金調達後のベンチャー企業向け】<br>
-          内部統制（IT統制）への対応には手間がかかる<br class="pc-br">ITシステムの環境構築・評価、規程書類の作成を全て任せたい<br><br>
+          <u>
+            情報システム部門のない中小企業向け<br>
+          </u>
+          紙や手作業が多く残っており社内のデジタル化が進んでいない
+          <br class="pc-br">電子帳簿保存法やインボイス制度などの法対応が進められていない
+          <br>テレワーク時のセキュリティに懸念がある
+          <br>
         </div>
         <div>
           <img :src="triangleImage" class="triangle-img" alt="解決策">
           <div class="main-feature">
             <div>
               <br>
-              監査法人の指摘ゼロの実績を元に<br>
-              <span class="font-red">安全面と運用面を考慮した</span>IT統制環境を整備
+              コンサルと開発のスキルを持つ「ITプロ人材」が<br>
+              貴社の「中の人」として手を動かしながら伴奏支援し課題を解決
             </div>
-            <nuxt-link to="/cases/innophys" class="link case-button button is-dark">
-              <span class="link-message">ベンチャー企業の内部統制支援事例へ</span>
+            <nuxt-link to="/service/consulting-engineer" class="link case-button button is-dark">
+              <span class="link-message">コンサルティングエンジニアサービス詳細へ</span>
             </nuxt-link>
           </div>
         </div>
       </div>
       <div class="main-image">
         <div class="main-feature">
-          【製造業向け】<br class="pc-br">利益率確保に向けた適正在庫を管理するために、<br class="pc-br">リアルタイムに在庫を把握したい<br>
-          社外やスマホから簡単に受注や在庫の状況を把握したい<br>
+        <u>
+          情報システム部門がある企業向け
+        </u>
+          <br class="pc-br">超上流工程の経験やノウハウがなく基幹システムの刷新を進められない
+          <br>システム導入プロジェクトが遅延しており上手くいっていない
+          <br>手を動かせる人材が不足している
+          <br>
         </div>
         <div>
           <img :src="triangleImage" class="triangle-img" alt="解決策">
           <div class="main-feature">
             <div>
               <br>
-              クラウドシステムの導入やシステム同士を連携し、煩雑な業務を自動化することで<span class="font-red">手間を増やさずに受注・在庫管理を実現</span>
+              企画フェーズ（現状分析やソリューション選定など）から参画し
+              情報システム部門のリソースも補完
             </div>
-            <nuxt-link to="/service/consulting-engineer" class="link case-button button is-dark">
-              <span class="link-message">クラウド活用・業務効率化の詳細へ</span>
+            <nuxt-link to="/cases/hirata" class="link case-button button is-dark">
+              <span class="link-message">コンサルティングエンジニアサービス事例紹介へ</span>
             </nuxt-link>
           </div>
         </div>
@@ -76,37 +87,44 @@
     <div class="main-image-area">
       <div class="main-image">
         <div class="main-feature">
-          【サービス業向け】<br class="pc-br">（整体・パーソナルトレーニングジム・エステなど）<br>
-          　人手不足を解消したい、店舗の売上を上げたい
+        <u>
+          上場準備中の企業・上場企業向け
+        </u>  
+          <br class="pc-br">規程や運用ルールなどの内部統制（IT統制）が構築できていない
+          <br>何をやるべきか、どこまでやるべきか分からない
+          <br>規程の内容が古く最近の技術動向が反映されておらずリスクがある
         </div>
         <div>
           <img :src="triangleImage" class="triangle-img" alt="解決策">
           <div class="main-feature">
             <div>
               <br>
-              システムでオペレーションを自動化し<span class="font-red">人手不足を解消</span><br>
-              売上に直結するサービス提供へ時間を割くことで<span class="font-red">売上を拡大</span>
+              IT統制を手間なく安全に対応する
+              <br>
             </div>
-            <nuxt-link to="/cases/olive-japan" class="link case-button button is-dark">
-              <span class="link-message">整体店舗の売上拡大の事例へ</span>
+            <nuxt-link to="/service/it-control" class="link case-button button is-dark">
+              <span class="link-message">IT統制サポート詳細へ</span>
             </nuxt-link>
           </div>
         </div>
       </div>
       <div class="main-image">
         <div class="main-feature">
-          【全業種向け】<br class="pc-br">
-          働き方改革やコロナ対策としてテレワークや社内ファイルサーバーのクラウド化を進めたい<br>
+        <u>
+          会計・経理担当者向け
+        </u>
+          <br class="pc-br">月次の原価管理業務に手間と時間がかかる
+          <br>作業が属人化している
+          <br>原価管理システムは高額で導入しにくい
         </div>
         <div>
           <img :src="triangleImage" class="triangle-img" alt="解決策">
           <div class="main-feature">
             <div>
-              <br>
-              セキュリティを確保したテレワーク・ファイル管理のツール導入から運用ルール策定や社員教育まで行い<span class="font-red">社内で運用を定着</span>
+              <br>安価なツールを使って原価計算から仕訳データ生成まで自動で作成する
             </div>
-            <nuxt-link to="/service/others" class="link case-button button is-dark">
-              <span class="link-message">詳細へ</span>
+            <nuxt-link to="" class="link case-button button is-dark">
+              <span class="link-message">原価管理サポート詳細へ（準備中）</span>
             </nuxt-link>
           </div>
         </div>

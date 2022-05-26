@@ -1,6 +1,6 @@
 <template>
   <section class="service-wrapper">
-    <the-sub-header text="x-faCEについてもっと知る" />
+    <the-sub-header text="エッグシステムについてもっと知る" />
     <div class="service">
       <section>
         <h3>メディア</h3>
@@ -37,19 +37,19 @@
             </a>
           </div>
           <div class="column is-4">
-            <img :src="kinChuImage">
+            <img :src="mediaSeminarImage">
             <p>
-              近代中小企業（KinChu）<br>
-              2021年2月号・2019年4月号に<br>
-              高橋翼が執筆した記事が掲載
+              数多くのメディアへの掲載や<br>
+              セミナー・講演会への登壇など<br>
+              適宜お知らせ情報を発信
             </p>
             <nuxt-link
-              to="/news/20210201-magazine"
+              to="/news"
               class="link about-button button is-dark"
             >
               <span class="link-message">
                 <span class="column-arrow" />
-                詳細へ
+                お知らせへ
               </span>
             </nuxt-link>
           </div>
@@ -115,9 +115,9 @@
       </section>
       -->
       <section>
-        <h3>情報セキュリティへの取り組み</h3>
+        <h3>当社の取り組み</h3>
         <div class="columns">
-          <div class="column is-12">
+          <div class="column is-6">
             <h4>
               <img
                 :src="securityActionImage"
@@ -128,6 +128,19 @@
               独立行政法人情報処理推進機構（IPA）が実施する<br>
               『SECURITY ACTION』の普及賛同企業として<br>
               情報セキュリティ対策に取り組んでいます
+            </p>
+          </div>
+          <div class="column is-6">
+            <h4>
+              <img
+                :src="smartSMESupporterImage"
+                alt="情報処理支援機関スマートSMEサポーター"
+              >
+            </h4>
+            <p>
+              経済産業省が認定する<br>
+              情報処理支援機関スマートSMEサポーター（第12号−20120039）<br>
+              に登録しています
             </p>
           </div>
         </div>
@@ -141,11 +154,12 @@ import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
 import BlackLink from '~/components/atoms/BlackLink.vue'
 import columnImage from '~/assets/top/top-strong1.jpeg'
 import noteLogoImage from '~/assets/top/note-logo.png'
-import kinChuImage from '~/assets/top/kinchu-202102.png'
+import mediaSeminarImage from '~/assets/top/mediaSeminar.jpg'
 import dataConvertImage from '~/assets/top/data-convert.png'
 import serviceCostSimulationImage from '~/assets/top/service-cost-simulation.png'
 import serviceItControlImage from '~/assets/top/it-control-service.png'
 import securityActionImage from '~/assets/top/security-action.png'
+import smartSMESupporterImage from '~/assets/top/smart_sme_supporter.jpg'
 
 export default {
   components: {
@@ -159,8 +173,8 @@ export default {
     noteLogoImage() {
       return noteLogoImage
     },
-    kinChuImage() {
-      return kinChuImage
+    mediaSeminarImage() {
+      return mediaSeminarImage
     },
     dataConvertImage() {
       return dataConvertImage
@@ -173,6 +187,9 @@ export default {
     },
     serviceItControlImage() {
       return serviceItControlImage
+    },
+    smartSMESupporterImage() {
+      return smartSMESupporterImage
     }
   }
 }
