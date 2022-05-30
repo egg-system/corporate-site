@@ -62,7 +62,7 @@
       <div class="main-image">
         <div class="main-feature">
         <u>
-          情報システム部門がある企業向け
+          情報システム部門がある企業向け<br class="sp-br">
         </u>
           <br class="pc-br">超上流工程のノウハウがなく基幹システムの刷新を進められない
           <br>システム導入プロジェクトが遅延しており上手くいっていない
@@ -88,7 +88,7 @@
       <div class="main-image">
         <div class="main-feature">
         <u>
-          上場準備中の企業・上場企業向け
+          上場準備中の企業・上場企業向け<br class="sp-br">
         </u>  
           <br class="pc-br">規程や運用ルールなどの内部統制（IT統制）が構築できていない
           <br>何をやるべきか、どこまでやるべきか分からない
@@ -111,7 +111,7 @@
       <div class="main-image">
         <div class="main-feature">
         <u>
-          会計・経理担当者向け<br>
+          会計・経理担当者向け<br class="sp-br">
         </u>
           <br class="pc-br">月次の原価管理業務に手間と時間がかかる
           <br>作業が属人化している
