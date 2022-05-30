@@ -245,7 +245,7 @@ export default {
 
         .link-message {
           font-weight: normal;
-          font-size: 0.9rem;
+          font-size: 0.8rem;
         }
       }
 
@@ -292,7 +292,7 @@ export default {
 
         .main-feature {
           .link-message {
-            font-size: 0.8rem;
+            font-size: 0.6rem;
           }
         }
       }
