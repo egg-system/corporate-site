@@ -245,7 +245,7 @@ export default {
 
         .link-message {
           font-weight: normal;
-          font-size: 0.8rem;
+          font-size: 0.7rem;
         }
       }
 
