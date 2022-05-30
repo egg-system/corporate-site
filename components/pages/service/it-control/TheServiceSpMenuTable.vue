@@ -45,13 +45,13 @@
       </tr>
       <tr class="service-table-content">
         <td>サポート内容</td>
-        <td>◎現状分析<br></td>
-        <td><br></td>
-        <td>◎文書作成<br>（IT関連規程、手順書）<br></td>
-        <td><br></td>
-        <td>◎全社的なIT統制/IT全般統制/IT業務処理統制の評価・整備<br></td>
-        <td><br></td>
-        <td>◎監査法人との協議支援<br>（質問書への回答作成）</td>
+          ◎現状分析<br>
+          <br>
+          ◎文書作成<br>（IT関連規程、手順書）<br>
+          <br>
+          ◎全社的なIT統制/IT全般統制/IT業務処理統制の評価・整備<br>
+          <br>
+          ◎監査法人との協議支援<br>（質問書への回答作成）
       </tr>
       <tr class="service-table-content">
         <td>専任サポート</td>
@@ -76,15 +76,15 @@
       </tr>
       <tr class="service-table-content">
         <td>サポート内容</td>
-        <td>◎現状分析<br></td>
-        <td><br></td>
-        <td>◎文書作成<br>（IT関連規程、手順書、3点セット）<br></td>
-        <td><br></td>
-        <td>◎全社的なIT統制/IT全般統制/IT業務処理統制の評価・整備<br></td>
-        <td><br></td>
-        <td>◎監査法人との協議支援<br>（質問書への回答作成、打ち合わせ同席など）<br></td>
-        <td><br></td>
-         <td>◎規程で定めた運用ルールの策定支援・運用支援</td>
+          ◎現状分析<br>
+          <br>
+          ◎文書作成<br>（IT関連規程、手順書、3点セット）<br>
+          <br>
+          ◎全社的なIT統制/IT全般統制/IT業務処理統制の評価・整備<br>
+          <br>
+          ◎監査法人との協議支援<br>（質問書への回答作成、打ち合わせ同席など）<br>
+          <br>
+          ◎規程で定めた運用ルールの策定支援・運用支援
       </tr>
       <tr class="service-table-content">
         <td>専任サポート</td>
