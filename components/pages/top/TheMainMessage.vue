@@ -200,9 +200,6 @@ export default {
       }
       height: 49px;
     }
-    @media screen and (max-width: 770px) {
-      font-size: 0.6rem;
-    }
   }
 
   .issue-button {
@@ -281,6 +278,18 @@ export default {
     }
     .case-button {
       width: 100%;
+    }
+
+    .consulting-engineer-btn-wrapper {
+      margin: 2rem 0 5rem;
+
+      a {
+        @media screen and (min-width: 770px) {
+          width: 40%;
+          font-size: 0.6rem;
+        }
+        height: 49px;
+      }
     }
 
     .main-image-area {
