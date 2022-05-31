@@ -200,6 +200,9 @@ export default {
       }
       height: 49px;
     }
+    @media screen and (max-width: 770px) {
+      font-size: 0.6rem;
+    }
   }
 
   .issue-button {
@@ -245,7 +248,7 @@ export default {
 
         .link-message {
           font-weight: normal;
-          font-size: 0.6rem;
+          font-size: 0.8rem;
         }
       }
 
