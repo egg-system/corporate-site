@@ -281,14 +281,8 @@ export default {
     }
 
     .consulting-engineer-btn-wrapper {
-      margin: 2rem 0 5rem;
-
-      a {
-        @media screen and (min-width: 770px) {
-          width: 40%;
-          font-size: 0.6rem;
-        }
-        height: 49px;
+      .link-message {
+        font-size: 0.6rem;
       }
     }
 
