@@ -3,46 +3,65 @@
     <table class="service-table">
       <tr class="service-table-header">
         <th />
-        <th>お試しサービス</th>
-        <th>内部統制支援サービス</th>
+        <th>ミニマムプラン</th>
+        <th>ベーシックプラン</th>
+        <th>ハイスペックプラン</th>
       </tr>
       <tr class="service-table-content">
-        <td>料金</td>
-        <td data-label="お試しサービス">無料<br><br>※初月のみ</td>
-        <td data-label="内部統制支援サービス">60〜180万円</td>
+        <td>初期料金</td>
+        <td data-label="ミニマムプラン">100,000円</td>
+        <td data-label="ベーシックプラン">0円</td>
+        <td data-label="ハイスペックプラン">0円</td>
       </tr>
       <tr class="service-table-content">
-        <td>対応期間</td>
-        <td data-label="お試しサービス">
-          1ヶ月<br>（約32時間）
+        <td>月額料金</td>
+        <td data-label="ミニマムプラン">0円</td>
+        <td data-label="ベーシックプラン">300,000円</td>
+        <td data-label="ハイスペックプラン">600,000円</td>
+      </tr>
+      <tr class="service-table-content">
+        <td>契約期間</td>
+        <td data-label="ミニマムプラン">
+          なし<br>（買い切り）
         </td>
-        <td data-label="内部統制支援サービス">
+        <td data-label="ベーシックプラン">
           3ヶ月〜
         </td>
-      </tr>
-      <tr class="service-table-content">
-        <td>ご訪問</td>
-        <td data-label="お試しサービス">週1日</td>
-        <td data-label="内部統制支援サービス">週1日</td>
-      </tr>
-      <tr class="service-table-content">
-        <td>現地での作業<br>（常駐）</td>
-        <td data-label="お試しサービス">○</td>
-        <td data-label="内部統制支援サービス">○</td>
-      </tr>
-      <tr class="service-table-content">
-        <td>連絡手段</td>
-        <td data-label="お試しサービス">
-          Web会議（zoom）<br>
-          Chatwork<br>
-          slack
+        <td data-label="ハイスペックプラン">
+          1ヶ月〜
         </td>
-        <td data-label="内部統制支援サービス">
-          Web会議（zoom）<br>
-          Chatwork<br>
-          slack<br>
-          またはお客様の社内ツール
+      </tr>
+      <tr class="service-table-content">
+        <td>サポート内容</td>
+        <td data-label="ミニマムプラン">
+          ◎IT関連規程および手順書のフォーマットを提供
         </td>
+        <td data-label="ベーシックプラン">
+          ◎現状分析<br>
+          <br>
+          ◎文書作成<br>（IT関連規程、手順書）<br>
+          <br>
+          ◎全社的なIT統制/IT全般統制/IT業務処理統制の評価・整備<br>
+          <br>
+          ◎監査法人との協議支援<br>（質問書への回答作成）
+        </td>
+        <td data-label="ハイスペックプラン">
+          ◎現状分析<br>
+          <br>
+          ◎文書作成<br>（IT関連規程、手順書、3点セット）<br>
+          <br>
+          ◎全社的なIT統制/IT全般統制/IT業務処理統制の評価・整備<br>
+          <br>
+          ◎監査法人との協議支援<br>（質問書への回答作成、打ち合わせ同席など）<br>
+          <br>
+          ◎規程で定めた運用ルールの策定支援・運用支援
+        </td>
+      </tr>
+      <tr class="service-table-content">
+        <td>専任サポート</td>
+        <td data-label="ミニマムプラン">なし</td>
+        <td data-label="ベーシックプラン">あり</td>
+        <td data-label="ハイスペックプラン">あり</td>
       </tr>
     </table>
   </div>

@@ -1,13 +1,13 @@
 <template>
   <div class="service-links">
     <div class="link-wrapper">
-      <nuxt-link to="/service/consulting-engineer" class="case-button button is-dark">
-        <span class="link-message">料金プラン</span>
+      <nuxt-link to="/cases" class="case-button button is-dark">
+        <span class="link-message">顧客インタビュー・事例紹介</span>
       </nuxt-link>
     </div>
     <div class="link-wrapper">
-      <nuxt-link to="/cases" class="case-button button is-dark">
-        <span class="link-message">顧客インタビュー・事例紹介</span>
+      <nuxt-link to="/company" class="case-button button is-dark">
+        <span class="link-message">会社概要</span>
       </nuxt-link>
     </div>
     <div class="link-wrapper">

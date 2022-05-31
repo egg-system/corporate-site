@@ -3,9 +3,9 @@
     <div class="it-control-service content page-content">
       <the-hero-title main-text="サービス紹介" />
       <section class="service-detail-section">
-        <the-sub-header text="内部統制（ガバナンス）支援サービス" />
+        <the-sub-header text="IT統制サポート" />
         <h3>
-          監査法人からの指摘ゼロを実現した実績から、<br class="pc-br">資金調達後のベンチャー企業向けに安全面と運用面を考慮した<br class="pc-br">IT統制の対応を全て引き受けます。
+          上場監査をクリアし監査法人からの指摘ゼロを実現した実績から、<br class="pc-br">資金調達後のベンチャー企業向けに安全面と運用面を考慮した<br class="pc-br">IT統制の対応を全て引き受けます。
         </h3>
         <div>
           <div class="service-links">
@@ -32,7 +32,7 @@
       </section>
       <br class="br-sp">
       <section>
-        <the-sub-header text="こういった課題を抱える企業様向け" />
+        <the-sub-header text="以下の課題を抱える上場準備会社様向け" />
         <div class="service-target columns">
           <div class="column second is-5">
             <img :src="itControllImage">
@@ -55,7 +55,7 @@
       </section>
       <br class="br-sp">
       <section class="service-reason-section">
-        <the-sub-header text="なぜ内部統制（ガバナンス）支援サービスを外注すべきなのか？" />
+        <the-sub-header text="なぜIT統制サポートを外注すべきなのか？" />
         <div class="service-reason-detail">
           <div>
             <h3>○柔軟な稼働により最小限コストで対応が可能</h3>
@@ -110,7 +110,7 @@
         </div>
       </section>
       <section id="it-control-performance">
-        <the-sub-header text="内部統制（ガバナンス）サービス 作業実績・成果物" />
+        <the-sub-header text="IT統制サポート 作業実績・成果物" />
         <the-service-performance />
       </section>
       <section id="it-control-examlpe">
@@ -118,13 +118,13 @@
         <a
           href="../_nuxt/assets/service/img/it-control-example2.png"
           target="blank"
-          alt="内部統制支援サービスの対応例"
+          alt="IT統制サポートの対応例"
         >
           <img :src="itControllExampleImage" class="it-control-examlpe-img" >
         </a>
       </section>
       <section>
-        <the-sub-header text="内部統制（ガバナンス）支援実績" />
+        <the-sub-header text="IT統制サポート実績" />
         <div class="case-list-wrapper">
           <the-case-list :cases="cases" />
         </div>
@@ -166,7 +166,7 @@ export default {
     TheServiceLinks
   },
   async asyncData() {
-    const data = await fetchCmsListDataCaseByIds(['innophys'])
+    const data = await fetchCmsListDataCaseByIds(['innophys','internet-ipo'])
     return { cases: data.listData }
   },
   computed: {
