@@ -104,6 +104,8 @@
         <p>
           整備状況の評価、各種規程・運用手順書・業務記述書・業務フロー図・RCMの作成、監査法人からの質問対応、社員への教育など、IT統制（IT全社統制、IT全般統制、IT業務処理統制）に関する業務は全て対応します。
         </p>
+        <br>
+        <br>
       </section>
       <section id="it-control-performance">
         <the-sub-header text="IT統制サポート 作業実績・成果物" />
