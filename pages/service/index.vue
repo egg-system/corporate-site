@@ -10,8 +10,10 @@
       </div>
       <div class="service-message">
         <div class="service-message-title">
-          「どこから手をつければよいか分からない・・・」<br>
-          売上拡大・業務効率化のためのITシステム活用を企画段階から対応できることが強みです
+          ３つの強み<br>
+          （１）コンサルと開発の豊富な経験とスキルを持つ<br>
+          （２）大手コンサル会社の約50%以下という報酬額で圧倒的なパフォーマンス<br>
+          （３）アドバイスで終わらない
         </div>
         <br class="sp-br">
         <p class="service-message-content">
