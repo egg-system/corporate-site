@@ -282,7 +282,8 @@ export default {
 
     .consulting-engineer-btn-wrapper {
       .link-message {
-        word-break: break-word;
+        // word-break: break-word;
+        word-break: normal;
       }
     }
 
@@ -299,7 +300,8 @@ export default {
         .main-feature {
           .link-message {
             font-size: 0.8rem;
-            word-break: break-word;
+            // word-break: break-word;
+            word-break: normal;
           }
         }
       }
