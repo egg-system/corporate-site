@@ -22,7 +22,7 @@
         class="link button is-dark"
       >
         <span class="link-message">
-          コンサルティングエンジニア<br class="sp-br">の詳細へ
+          コンサルティングエンジニアの詳細へ
         </span>
       </nuxt-link>
     </div>
@@ -30,7 +30,7 @@
     <div class="consulting-engineer-btn-wrapper">
       <a href="https://eggsystem.co.jp/service/it-cost-lp/" class="link button is-dark" target="blank">
         <span class="link-message">
-          シミュレーションを行う<br class="sp-br">（登録不要・無料）
+          シミュレーションを行う（登録不要・無料）
         </span>
       </a>
     </div>
@@ -54,7 +54,7 @@
               貴社の「中の人」として手を動かしながら伴奏支援し課題を解決
             </div>
             <nuxt-link to="/service/consulting-engineer" class="link case-button button is-dark">
-              <span class="link-message">コンサルティングエンジニア<br class="sp-br">サービス詳細へ</span>
+              <span class="link-message">コンサルティングエンジニアサービス詳細へ</span>
             </nuxt-link>
           </div>
         </div>
@@ -78,7 +78,7 @@
               情報システム部門のリソースも補完
             </div>
             <nuxt-link to="/cases/hirata" class="link case-button button is-dark">
-              <span class="link-message">コンサルティングエンジニア<br class="sp-br">サービス事例紹介へ</span>
+              <span class="link-message">コンサルティングエンジニアサービス事例紹介へ</span>
             </nuxt-link>
           </div>
         </div>
@@ -124,7 +124,7 @@
               <br>安価なツールを使って原価計算から仕訳データ生成まで自動で作成する
             </div>
             <nuxt-link to="" class="link case-button button is-dark">
-              <span class="link-message">原価管理サポート<br class="sp-br">詳細へ（準備中）</span>
+              <span class="link-message">原価管理サポート詳細へ（準備中）</span>
             </nuxt-link>
           </div>
         </div>
@@ -280,13 +280,11 @@ export default {
       width: 100%;
     }
 
-    <!--
     .consulting-engineer-btn-wrapper {
       .link-message {
-        font-size: 0.6rem;
+        word-break: break-word;
       }
     }
-    -->
 
     .main-image-area {
       display: flex;
@@ -301,6 +299,7 @@ export default {
         .main-feature {
           .link-message {
             font-size: 0.8rem;
+            word-break: break-word;
           }
         }
       }
