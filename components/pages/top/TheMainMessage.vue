@@ -289,6 +289,7 @@ export default {
     .consulting-engineer-btn-wrapper {
       .link-message {
         display: inline-block;
+        overflow-wrap: break-word;
       }
     }
 
@@ -306,9 +307,7 @@ export default {
           .link-message {
             font-size: 0.8rem;
             display: inline-block;
-          }
-          .break-word {
-            word-break: break-word;
+            overflow-wrap: break-word;
           }
         }
       }
