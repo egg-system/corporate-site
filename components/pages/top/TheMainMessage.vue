@@ -277,7 +277,6 @@ export default {
     .sim-button {
       width: 100%;
       height: auto;
-      word-break: break-word;
     }
     .case-button {
       width: 100%;
@@ -289,6 +288,10 @@ export default {
       justify-content: center;
       flex-flow: column;
       align-items: center;
+
+      .link-message {
+        word-break: break-word;
+      }
 
       .main-image {
         width: 95%;
