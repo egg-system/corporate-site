@@ -28,7 +28,7 @@
     </div>
     貴社のITコストが妥当かどうか簡単に診断できる「ITコストシミュレーション」
     <div class="consulting-engineer-btn-wrapper">
-      <a href="https://eggsystem.co.jp/service/it-cost-lp/" class="link button is-dark" target="blank">
+      <a href="https://eggsystem.co.jp/service/it-cost-lp/" class="link sim-button button is-dark" target="blank">
         <span class="link-message">シミュレーションを行う</span>
         <span class="link-message">（登録不要・無料）</span>
       </a>
@@ -277,8 +277,13 @@ export default {
     .service-button {
       width: 100%;
     }
+    .sim-button {
+      width: 100%;
+      height: auto;
+    }
     .case-button {
       width: 100%;
+      height: auto;
     }
 
     .consulting-engineer-btn-wrapper {
