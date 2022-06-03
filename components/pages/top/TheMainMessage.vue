@@ -196,7 +196,6 @@ export default {
     a {
       @media screen and (min-width: 1023px) {
         width: 40%;
-        word-break: break-word;
       }
       height: 49px;
     }
@@ -279,7 +278,9 @@ export default {
     .sim-button {
       width: 100%;
       height: auto;
-      word-break: break-word;
+      p {
+        word-break: break-word;
+      }
     }
     .case-button {
       width: 100%;
@@ -299,8 +300,9 @@ export default {
         .main-feature {
           .link-message {
             font-size: 0.8rem;
-            // display: inline-block;
-            word-break: break-word;
+            p {
+              word-break: break-word;
+            }
           }
         }
       }
