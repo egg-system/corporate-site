@@ -196,6 +196,7 @@ export default {
     a {
       @media screen and (min-width: 1023px) {
         width: 40%;
+        word-break: break-word;
       }
       height: 49px;
     }
@@ -278,17 +279,11 @@ export default {
     .sim-button {
       width: 100%;
       height: auto;
+      word-break: break-word;
     }
     .case-button {
       width: 100%;
       height: auto;
-    }
-
-    .consulting-engineer-btn-wrapper {
-      .link-message {
-        // display: inline-block;
-        // overflow-wrap: break-word;
-      }
     }
 
     .main-image-area {
@@ -305,7 +300,7 @@ export default {
           .link-message {
             font-size: 0.8rem;
             // display: inline-block;
-            // overflow-wrap: break-word;
+            word-break: break-word;
           }
         }
       }
