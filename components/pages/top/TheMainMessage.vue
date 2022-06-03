@@ -29,7 +29,7 @@
     貴社のITコストが妥当かどうか簡単に診断できる「ITコストシミュレーション」
     <div class="consulting-engineer-btn-wrapper">
       <a href="https://eggsystem.co.jp/service/it-cost-lp/" class="link sim-button button is-dark" target="blank">
-        <div class="link-message indent" >シミュレーションを行う（登録不要・無料）</div>
+        <div class="link-message" >シミュレーションを行う<br class="sp-br">（登録不要・無料）</div>
       </a>
     </div>
     <div class="main-image-area">
@@ -52,7 +52,7 @@
               貴社の「中の人」として手を動かしながら伴奏支援し課題を解決
             </div>
             <nuxt-link to="/service/consulting-engineer" class="link case-button button is-dark">
-              <div class="link-message indent">コンサルティングエンジニアサービス詳細へ</div>
+              <div class="link-message">コンサルティングエンジニア<br class="sp-br">サービス詳細へ</div>
             </nuxt-link>
           </div>
         </div>
@@ -76,7 +76,7 @@
               情報システム部門のリソースも補完
             </div>
             <nuxt-link to="/cases/hirata" class="link case-button button is-dark">
-              <div class="link-message indent">コンサルティングエンジニアサービス事例紹介へ</div>
+              <div class="link-message">コンサルティングエンジニア<br class="sp-br">サービス事例紹介へ</div>
             </nuxt-link>
           </div>
         </div>
@@ -196,7 +196,7 @@ export default {
       @media screen and (min-width: 1023px) {
         width: 40%;
       }
-      height: 49px;
+      // height: 49px;
     }
   }
 
@@ -283,10 +283,6 @@ export default {
       height: auto;
     }
 
-    .indent {
-      word-break: break-word;
-    }
-
     .main-image-area {
       display: flex;
       justify-content: center;
@@ -300,7 +296,6 @@ export default {
         .main-feature {
           .link-message {
             font-size: 0.8rem;
-            word-break: break-word;
           }
         }
       }
