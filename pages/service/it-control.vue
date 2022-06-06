@@ -164,7 +164,7 @@ export default {
     TheServiceLinks
   },
   async asyncData() {
-    const data = await fetchCmsListDataCaseByIds(['innophys','internet-ipo'])
+    const data = await fetchCmsListDataCaseByIds(['innophys', 'internet-ipo'])
     return { cases: data.listData }
   },
   computed: {
