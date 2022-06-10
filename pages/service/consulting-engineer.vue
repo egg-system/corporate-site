@@ -5,7 +5,7 @@
       <section class="service-detail-section">
         <the-sub-header text="コンサルティングエンジニアサービス" />
         <h3 class="service-description">
-          売上拡大・業務効率化を目的としてITシステムを活用するために、<br class="pc-br">システム化の企画から開発・運用まで<br class="br-pc">徹底的にベンチャー・中小企業様へ寄り添って対応します。
+          売上拡大・利益率向上を目的としてITシステムを活用するために<br class="pc-br">システム化の企画から開発・運用まで<br class="br-pc">徹底的にベンチャー・中小企業様へ寄り添って対応します。
         </h3>
         <div class="service-links">
           <div class="link-wrapper">
@@ -37,22 +37,24 @@
           </div>
           <div class="column first is-7">
             <ul>
-              <li>整体・エステ・パーソナルトレーニングジムなど実店舗での売上を上げたい</li>
+              <li>紙や手作業が多く残っており社内のデジタル化が進んでいない</li>
               <li>
-                競合の参入やコロナ禍により、オンラインの販売を始めたいが、どれぐらいの予算が必要で、何から始めればよいか分からない
+                電子帳簿保存法やインボイス制度などの法対応が進められていない
               </li>
               <li>
-                Amazon・楽天・Yahooなどオンラインの売り場を増やしたいが、サイト毎に個別業務が発生し、管理する手間が増えてしまうためチャネル拡大へ踏み出せない
+                テレワークを進めたいが、セキュリティに懸念があり進められていない
               </li>
               <li>
-                リモートワークへの切り替えに伴い、紙やFAXの業務を廃止したい<br>
-                （電子帳簿法を進めたい）
+                業務分析やソリューション選定などの超上流工程の経験やノウハウがなく基幹システムの刷新を進められない
               </li>
               <li>
-                単純作業を自動化して、従業員満足度を向上させたい
+                システム導入プロジェクトが遅延しており上手くいっていない
               </li>
               <li>
-                リモートワークを導入し、働き方改革を推進して社員採用のアピールへ繋げたい
+                売上が拡大しているため、増加する受注に耐えられるようにバックヤード業務を効率化したい
+              </li>
+              <li>
+                手を動かせる人材が不足している
               </li>
             </ul>
           </div>
@@ -119,12 +121,24 @@
         <the-sub-header text="コンサルティングエンジニアサービス　作業実績" />
         <the-service-performance />
       </section>
+      <section>
+        <div>
+          <div class="cost-compare">
+            コストの比較
+          </div>
+          <br>
+          <img :src="costCompare1Image">
+          <br>
+          <br>
+          <img :src="costCompare2Image">
+        </div>
+      </section>
       <!--
       <section class="about-consultaion-wrapper">
         <the-sub-header text="『初月無料』のコンサルティングサービスです" />
         <the-about-consultation is-service-details />
       </section>
-    -->
+      -->
       <div class="contact-area">
         <the-contact>
           ベンチャー・中小企業様のIT活用に対し<br>
@@ -150,6 +164,8 @@ import TheServicePerformance from '~/components/pages/service/consulting-enginee
 import TheAboutConsultation from '~/components/pages/top/TheAboutConsultation.vue'
 import TheContact from '~/components/pages/top/TheContact.vue'
 import TheLinkButton from '~/components/pages/common/TheLinkButton.vue'
+import costCompare1Image from '~/assets/service/img/ce-cost1.png'
+import costCompare2Image from '~/assets/service/img/ce-cost2.png'
 
 export default {
   components: {
@@ -166,6 +182,12 @@ export default {
   computed: {
     consultingEngineerImage() {
       return consultingEngineerImage
+    },
+    costCompare1Image() {
+      return costCompare1Image
+    },
+    costCompare2Image() {
+      return costCompare2Image
     }
   }
 }
@@ -216,5 +238,8 @@ export default {
     list-style: '✔';
     margin: 2rem 0px;
   }
+}
+.cost-compare {
+  font-size: 1.5rem;
 }
 </style>
