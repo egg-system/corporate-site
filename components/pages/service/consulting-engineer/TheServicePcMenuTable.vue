@@ -78,7 +78,7 @@
     </p>
     <table class="service-table">
       <tr class="service-table-header">
-        <th class="service-menu" colspan="2"/>
+        <th class="service-menu"/>
         <th>
           ライトプラン
         </th>
@@ -90,7 +90,7 @@
         </th>
       </tr>
       <tr class="service-table-content">
-        <td colspan="2">稼働時間</td>
+        <td class="menu-line">稼働時間</td>
         <td>
           約40時間／月
         </td>
@@ -102,67 +102,67 @@
         </td>
       </tr>
       <tr class="service-table-content">
-        <td colspan="5" align="left" class="menu-line">サポート範囲</td>
+        <td colspan="4">サポート範囲</td>
       </tr>
       <tr class="service-table-content">
-        <td colspan="2" align="right">現状分析</td>
+        <td class="menu-line">現状分析</td>
         <td data-label="ライトプラン">◯</td>
         <td data-label="スタンダードプラン">◯</td>
         <td data-label="プレミアムプラン">◯</td>
       </tr>
       <tr class="service-table-content">
-        <td colspan="2" align="right">業務設計</td>
+        <td class="menu-line">業務設計</td>
         <td data-label="ライトプラン">◯</td>
         <td data-label="スタンダードプラン">◯</td>
         <td data-label="プレミアムプラン">◯</td>
       </tr>
       <tr class="service-table-content">
-        <td colspan="2" align="right">システム選定</td>
+        <td class="menu-line">システム選定</td>
         <td data-label="ライトプラン">◯</td>
         <td data-label="スタンダードプラン">◯</td>
         <td data-label="プレミアムプラン">◯</td>
       </tr>
       <tr class="service-table-content">
-        <td colspan="2" align="right">システム導入</td>
+        <td class="menu-line">システム導入</td>
         <td data-label="ライトプラン">△</td>
         <td data-label="スタンダードプラン">◯</td>
         <td data-label="プレミアムプラン">◯</td>
       </tr>
       <tr class="service-table-content">
-        <td colspan="2" align="right">開発作業</td>
+        <td class="menu-line">開発作業</td>
         <td data-label="ライトプラン">✕</td>
         <td data-label="スタンダードプラン">◯</td>
         <td data-label="プレミアムプラン">◯</td>
       </tr>
       <tr class="service-table-content">
-        <td colspan="2" align="right">運用支援</td>
+        <td class="menu-line">運用支援</td>
         <td data-label="ライトプラン">◯</td>
         <td data-label="スタンダードプラン">◯</td>
         <td data-label="プレミアムプラン">◯</td>
       </tr>
       <tr class="service-table-content">
-        <td colspan="5" align="left" class="menu-line">対象領域</td>
+        <td colspan="4">対象領域</td>
       </tr>
       <tr class="service-table-content">
-        <td colspan="2" align="right">業務改善</td>
+        <td class="menu-line">業務改善</td>
         <td data-label="ライトプラン">◯</td>
         <td data-label="スタンダードプラン">◯</td>
         <td data-label="プレミアムプラン">◯</td>
       </tr>
       <tr class="service-table-content">
-        <td colspan="2" align="right">インフラ</td>
+        <td class="menu-line">インフラ</td>
         <td data-label="ライトプラン">△</td>
         <td data-label="スタンダードプラン">◯</td>
         <td data-label="プレミアムプラン">◯</td>
       </tr>
       <tr class="service-table-content">
-        <td colspan="2" align="right">ネットワーク</td>
+        <td class="menu-line">ネットワーク</td>
         <td data-label="ライトプラン">△</td>
         <td data-label="スタンダードプラン">◯</td>
         <td data-label="プレミアムプラン">◯</td>
       </tr>
       <tr class="service-table-content">
-        <td colspan="2" align="right">セキュリティ</td>
+        <td class="menu-line">セキュリティ</td>
         <td data-label="ライトプラン">△</td>
         <td data-label="スタンダードプラン">◯</td>
         <td data-label="プレミアムプラン">◯</td>
@@ -197,6 +197,6 @@
 }
 
 .menu-line {
-  height: 50px;
+  text-indent: 2em;
 }
 </style>

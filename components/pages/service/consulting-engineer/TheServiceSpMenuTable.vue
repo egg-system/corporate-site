@@ -7,7 +7,7 @@
     </ul>
     <table class="service-table">
       <tr class="service-table-header">
-        <th>
+        <th colspan="2">
           ライトプラン
         </th>
       </tr>
@@ -34,7 +34,7 @@
     </table>
     <table class="service-table">
       <tr class="service-table-header">
-        <th>
+        <th colspan="2">
           スタンダードプラン
         </th>
       </tr>
@@ -61,7 +61,7 @@
     </table>
     <table class="service-table">
       <tr class="service-table-header">
-        <th>
+        <th colspan="2">
           プレミアムプラン
         </th>
       </tr>
@@ -93,7 +93,7 @@
     </p>
     <table class="service-table">
       <tr class="service-table-header">
-        <th>
+        <th colspan="2">
           ライトプラン
         </th>
       </tr>
@@ -159,7 +159,7 @@
     </p>
     <table class="service-table">
       <tr class="service-table-header">
-        <th>
+        <th colspan="2">
           スタンダードプラン
         </th>
       </tr>
@@ -171,103 +171,103 @@
         <td colspan="2">サポート範囲</td>
       </tr>
       <tr class="service-table-content">
-        <td>現状分析</td>
+        <td class="menu-line">現状分析</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>業務設計</td>
+        <td class="menu-line">業務設計</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>システム選定</td>
+        <td class="menu-line">システム選定</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>システム導入</td>
+        <td class="menu-line">システム導入</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>開発作業</td>
+        <td class="menu-line">開発作業</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>運用支援</td>
+        <td class="menu-line">運用支援</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
         <td colspan="2">対象領域</td>
       </tr>
       <tr class="service-table-content">
-        <td>業務改善</td>
+        <td class="menu-line">業務改善</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>インフラ</td>
+        <td class="menu-line">インフラ</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>ネットワーク</td>
+        <td class="menu-line">ネットワーク</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>セキュリティ</td>
+        <td class="menu-line">セキュリティ</td>
         <td>◯</td>
       </tr>
     </table>
     <table class="service-table">
       <tr class="service-table-header">
-        <th>
+        <th colspan="2">
           プレミアムプラン
         </th>
       </tr>
       <tr class="service-table-content">
-        <td>稼働時間</td>
+        <td class="menu-line">稼働時間</td>
         <td>約80時間〜／月</td>
       </tr>
       <tr class="service-table-content">
         <td colspan="2">サポート範囲</td>
       </tr>
       <tr class="service-table-content">
-        <td>現状分析</td>
+        <td class="menu-line">現状分析</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>業務設計</td>
+        <td class="menu-line">業務設計</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>システム選定</td>
+        <td class="menu-line">システム選定</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>システム導入</td>
+        <td class="menu-line">システム導入</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>開発作業</td>
+        <td class="menu-line">開発作業</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>運用支援</td>
+        <td class="menu-line">運用支援</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
         <td colspan="2">対象領域</td>
       </tr>
       <tr class="service-table-content">
-        <td>業務改善</td>
+        <td class="menu-line">業務改善</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>インフラ</td>
+        <td class="menu-line">インフラ</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>ネットワーク</td>
+        <td class="menu-line">ネットワーク</td>
         <td>◯</td>
       </tr>
       <tr class="service-table-content">
-        <td>セキュリティ</td>
+        <td class="menu-line">セキュリティ</td>
         <td>◯</td>
       </tr>
     </table>
@@ -276,4 +276,8 @@
 
 <style lang="scss" scoped>
 @import '~/assets/service/scss/service-table.scss';
+
+.menu-line {
+  text-indent: 2em;
+}
 </style>
