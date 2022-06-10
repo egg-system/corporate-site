@@ -88,6 +88,10 @@
     </table>
     <br>
     <br>
+    <div class="menu-compare">
+      メニュー毎の比較
+    </div>
+    <br>
     <p>
       【凡例】◯：対応、△：実作業を除くアドバイスのみ対応、✕：非対応
     </p>
@@ -157,7 +161,7 @@
         </th>
       </tr>
       <tr class="service-table-content">
-        <td>稼働時間</td>
+        <td class="menu-line">稼働時間</td>
         <td>約80時間／月</td>
       </tr>
       <tr class="service-table-content">
@@ -271,6 +275,10 @@
 
 <style lang="scss" scoped>
 @import '~/assets/service/scss/service-table.scss';
+
+.menu-compare {
+  font-size: 1.5rem;
+}
 
 .menu-line {
   text-indent: 2em;
