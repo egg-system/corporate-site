@@ -86,8 +86,6 @@
         <td>2〜3名体制</td>
       </tr>
     </table>
-    <br>
-    <br>
     <div class="menu-compare">
       メニュー毎の比較
     </div>
@@ -152,8 +150,6 @@
         <td>△</td>
       </tr>
     </table>
-    <br>
-    <br>
     <table class="service-table">
       <tr class="service-table-header">
         <th colspan="2">
@@ -211,8 +207,6 @@
         <td>◯</td>
       </tr>
     </table>
-    <br>
-    <br>
     <table class="service-table">
       <tr class="service-table-header">
         <th colspan="2">
