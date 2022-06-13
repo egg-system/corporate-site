@@ -121,16 +121,12 @@
         <the-sub-header text="コンサルティングエンジニアサービス　作業実績" />
         <the-service-performance />
       </section>
-      <section>
-        <div>
-          <div class="cost-compare">
-            コストの比較
-          </div>
-          <br>
-          <img :src="costCompare1Image" class="cost_image">
-          <img :src="costCompare2Image" class="cost_image">
-        </div>
-      </section>
+      <div class="cost-compare">
+        コストの比較
+      </div>
+      <br>
+      <img :src="costCompare1Image" class="cost_image">
+      <img :src="costCompare2Image" class="cost_image">
       <!--
       <section class="about-consultaion-wrapper">
         <the-sub-header text="『初月無料』のコンサルティングサービスです" />
@@ -222,13 +218,6 @@ export default {
     .columns {
       margin: 2rem;
     }
-    .cost_image {
-      width: 80%;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
   }
 
   .service-image-wrapper {
@@ -246,5 +235,14 @@ export default {
 }
 .cost-compare {
   font-size: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .cost_image {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 </style>
