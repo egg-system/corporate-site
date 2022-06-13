@@ -86,6 +86,8 @@
         <td>2〜3名体制</td>
       </tr>
     </table>
+    <br>
+    <br>
     <div class="menu-compare">
       メニュー毎の比較
     </div>
