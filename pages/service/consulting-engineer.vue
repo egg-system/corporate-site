@@ -126,6 +126,8 @@
       </div>
       <br>
       <img :src="costCompare1Image" class="cost_image">
+      <br>
+      <br>
       <img :src="costCompare2Image" class="cost_image">
       <!--
       <section class="about-consultaion-wrapper">
