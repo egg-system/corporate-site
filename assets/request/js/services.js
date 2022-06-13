@@ -1,7 +1,6 @@
 import serviceImage1 from '~/assets/request/img/top-strong1.JPG'
 import serviceImage2 from '~/assets/request/img/service-consult01.JPG'
 import serviceImage3 from '~/assets/request/img/request-service3.JPG'
-// import serviceImage4 from '~/assets/request/img/request-service4.png'
 import serviceImage5 from '~/assets/request/img/request-service5.JPG'
 
 const services = [

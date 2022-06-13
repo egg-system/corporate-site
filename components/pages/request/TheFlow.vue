@@ -3,7 +3,7 @@
     <div class="columns">
       <div class="column is-third-fifths">
         <div class="column">
-          <p class="message">Step&nbsp;1&nbsp;&nbsp;&nbsp;<nuxt-link to="/contact">お問い合わせフォーム</nuxt-link>からお問い合わせ</p>
+          <p class="message">Step&nbsp;1&nbsp;&nbsp;&nbsp;<nuxt-link to="/free-contact">無料相談フォーム</nuxt-link>からお問い合わせ</p>
           <p>Step&nbsp;2&nbsp;&nbsp;&nbsp;弊社よりご連絡</p>
           <p>Step&nbsp;3&nbsp;&nbsp;&nbsp;初回お打ち合わせ</p>
           <p>Step&nbsp;4&nbsp;&nbsp;&nbsp;ご提案書およびお見積書のご提示</p>
