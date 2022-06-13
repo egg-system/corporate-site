@@ -19,6 +19,13 @@
         <the-sub-header :is-line="true" text="当社サービスについて" class="subheader" />
         <the-service :services="services" class="service lightgray-underline"/>
       </section>
+      <section>
+        <div class="link">
+          <a class="button is-dark" href="https://eggsystem.co.jp/service/">
+            サービス詳細へ
+          </a>
+        </div>
+      </section>
       <the-contact />
     </div>
   </div>
@@ -107,7 +114,8 @@ export default {
   margin-top: 1rem;
 }
 .link {
-  text-align: right;
+  width: 30rem;
+  margin: 30px auto;
 }
 /* スマホの場合は幅を広くする */
 @media screen and (max-width: 400px) {
@@ -122,5 +130,10 @@ export default {
 }
 .end {
   margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .link {
+    width: 10rem;
+  }
 }
 </style>

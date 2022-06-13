@@ -19,7 +19,7 @@
       <the-sub-header text="『初月無料』のシステムコンサルティングサービスです" />
       <the-about-consultation />
     </section>
-  -->
+    -->
     <section class="contact-section">
       <the-contact />
     </section>
