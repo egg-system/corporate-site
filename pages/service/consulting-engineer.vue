@@ -126,9 +126,7 @@
       </div>
       <br>
       <img :src="costCompare1Image" class="cost_image">
-      <br>
-      <br>
-      <img :src="costCompare2Image" class="cost_image">
+      <img :src="costCompare2Image" class="cost_image" vspace="50">
       <!--
       <section class="about-consultaion-wrapper">
         <the-sub-header text="『初月無料』のコンサルティングサービスです" />
