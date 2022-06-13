@@ -127,10 +127,8 @@
             コストの比較
           </div>
           <br>
-          <img :src="costCompare1Image">
-          <br>
-          <br>
-          <img :src="costCompare2Image">
+          <img :src="costCompare1Image" class="cost_image">
+          <img :src="costCompare2Image" class="cost_image">
         </div>
       </section>
       <!--
@@ -241,5 +239,12 @@ export default {
 }
 .cost-compare {
   font-size: 1.5rem;
+}
+.cost_image {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 </style>

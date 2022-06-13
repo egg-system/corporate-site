@@ -34,7 +34,7 @@
         <td>料金</td>
         <td>月額300,000円</td>
         <td>月額600,000円</td>
-        <td>月額600,000円</td>
+        <td>※都度お見積り</td>
       </tr>
       <tr class="service-table-content">
         <td>稼働時間<br>(目安)</td>
