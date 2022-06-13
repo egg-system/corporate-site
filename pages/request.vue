@@ -134,7 +134,7 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .link {
-    width: 20rem;
+    width: 15rem;
   }
 }
 </style>
