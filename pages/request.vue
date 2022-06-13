@@ -17,7 +17,7 @@
       </section>
       <section>
         <the-sub-header :is-line="true" text="当社サービスについて" class="subheader" />
-        <the-service :services="services" class="service lightgray-underline"/>
+        <the-service :services="services" class="service"/>
       </section>
       <section>
         <div class="link">
@@ -25,6 +25,7 @@
             サービス詳細へ
           </a>
         </div>
+        <div class="lightgray-underline"/>
       </section>
       <the-contact />
     </div>
@@ -130,10 +131,5 @@ export default {
 }
 .end {
   margin-bottom: 50px;
-}
-@media screen and (max-width: 768px) {
-  .link {
-    width: 10rem;
-  }
 }
 </style>
