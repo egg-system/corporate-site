@@ -67,9 +67,9 @@
         </td>
       </tr>
     </table>
-    <br>
-    <br>
     <div class="menu-compare">
+      <br>
+      <br>
       メニュー毎の比較
     </div>
     <br>
