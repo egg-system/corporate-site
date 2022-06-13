@@ -132,4 +132,9 @@ export default {
 .end {
   margin-bottom: 50px;
 }
+@media screen and (max-width: 768px) {
+  .link {
+    width: 10rem;
+  }
+}
 </style>
