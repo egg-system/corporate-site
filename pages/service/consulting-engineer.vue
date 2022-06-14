@@ -238,7 +238,7 @@ export default {
 }
 @media screen and (min-width: 1024px) {
   .cost_image {
-    width: 80%;
+    width: 60%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
