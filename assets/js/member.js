@@ -1,7 +1,7 @@
 import tsubasa from '~/assets/members/tsubasa.jpg'
 import hikaru from '~/assets/members/hikaru.jpg'
-import nuno from '~/assets/members/nuno.JPG'
-import shun from '~/assets/members/shun.JPG'
+// import nuno from '~/assets/members/nuno.JPG'
+// import shun from '~/assets/members/shun.JPG'
 import shingo from '~/assets/members/shingo.JPG'
 import mochizuki from '~/assets/members/mochizuki-after.jpg'
 import sawada from '~/assets/members/sawada.jpg'
@@ -28,6 +28,7 @@ const members = [
     nameEN: 'Hikaru Takahashi',
     img: hikaru
   },
+  /*
   {
     nameJP: '布村 武大',
     nameEN: 'Takehiro Nunomura',
@@ -38,6 +39,7 @@ const members = [
     nameEN: 'Shun Yokota',
     img: shun
   },
+  */
   {
     nameJP: '廣海',
     nameEN: 'Hiromi',

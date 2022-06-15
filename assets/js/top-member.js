@@ -1,7 +1,7 @@
 import Tsubasa from '~/assets/top/tsubasa.jpg'
 import Hikaru from '~/assets/top/hikaru.jpg'
-import Nuno from '~/assets/top/nuno.jpeg'
-import Shun from '~/assets/top/shun.jpeg'
+// import Nuno from '~/assets/top/nuno.jpeg'
+// import Shun from '~/assets/top/shun.jpeg'
 import Shingo from '~/assets/top/shingo.jpeg'
 import Mochizuki from '~/assets/top/mochizuki-after.jpg'
 import Sawada from '~/assets/top/sawada.jpg'
@@ -28,6 +28,7 @@ const members = [
     name: '高橋 光',
     romajiName: 'Hikaru Takahashi'
   },
+  /*  
   {
     image: Nuno,
     name: '布村 武大',
@@ -38,6 +39,7 @@ const members = [
     name: '横田 峻',
     romajiName: 'Shun Yokota'
   },
+  */
   {
     image: Shingo,
     name: '廣海',
