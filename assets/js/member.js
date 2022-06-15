@@ -76,14 +76,19 @@ const members = [
     img: logo4
   },
   {
-    nameJP: '粂',
-    nameEN: 'Qume',
-    img: logo5
-  },
-  {
     nameJP: '川島',
     nameEN: 'Kawashima',
     img: logo6
+  },
+  {
+    nameJP: '布村',
+    nameEN: 'Nunomura',
+    img: logo2
+  },
+  {
+    nameJP: '横田',
+    nameEN: 'Yokota',
+    img: logo7
   }
 ]
 export default { members }
