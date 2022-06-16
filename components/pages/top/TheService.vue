@@ -37,11 +37,11 @@
             </nuxt-link>
           </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <br class="pc-br">
+        <br class="pc-br">
+        <br class="pc-br">
+        <br class="pc-br">
+        <br class="pc-br">
         <div class="columns">
           <div class="column is-6">
             <img :src="noteIctImage" class="media_image">
