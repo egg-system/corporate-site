@@ -5,8 +5,8 @@
       <section>
         <h3>メディア</h3>
         <div class="columns">
-          <div class="column is-4">
-            <img :src="columnImage">
+          <div class="column is-6">
+            <img :src="columnImage" class="media_image">
             <p>
               最新の業界動向や<br>
               当社の取り組みなどについて<br>
@@ -19,25 +19,8 @@
               </span>
             </nuxt-link>
           </div>
-          <div class="column is-4">
-            <img :src="noteLogoImage">
-            <p>
-              『地方×IT』をテーマに<br>
-              地方でのICT活用事例について<br>
-              noteで発信中
-            </p>
-            <a
-              href="https://note.com/x_face"
-              class="link about-button button is-dark"
-            >
-              <span class="link-message">
-                <span class="column-arrow" />
-                noteへ
-              </span>
-            </a>
-          </div>
-          <div class="column is-4">
-            <img :src="mediaSeminarImage">
+          <div class="column is-6">
+            <img :src="mediaSeminarImage" class="media_image">
             <p>
               数多くのメディアへの掲載や<br>
               セミナー・講演会への登壇など<br>
@@ -54,12 +37,53 @@
             </nuxt-link>
           </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="columns">
+          <div class="column is-6">
+            <img :src="noteIctImage" class="media_image">
+            <p>
+              『地方×IT』をテーマに<br>
+              地方でのICT活用事例について<br>
+              noteで発信中
+            </p>
+            <a
+              href="https://note.com/x_face"
+              class="link about-button button is-dark"
+            >
+              <span class="link-message">
+                <span class="column-arrow" />
+                noteへ
+              </span>
+            </a>
+          </div>
+          <div class="column is-6">
+            <img :src="noteItcontrolImage" class="media_image">
+            <p>
+              「とにかく分かりやすく！」を方針に、<br>
+              難しい内部統制・IT統制の解説や<br>
+              役立つ情報をnoteで発信中
+            </p>
+            <a
+              href="https://note.com/it_control/"
+              class="link about-button button is-dark"
+            >
+              <span class="link-message">
+                <span class="column-arrow" />
+                noteへ
+              </span>
+            </a>
+          </div>
+        </div>
       </section>
       <!--
       <section class="service-sections">
         <h3>サービス</h3>
         <div class="columns">
-          <div class="column is-4">
+          <div class="column is-3">
             <img :src="dataConvertImage">
             <h4>『Data Convert』</h4>
             <p>
@@ -76,7 +100,7 @@
               </span>
             </a>
           </div>
-          <div class="column is-4">
+          <div class="column is-3">
             <img :src="serviceCostSimulationImage">
             <h4>『ITコストシミュレーション』</h4>
             <p>
@@ -94,7 +118,7 @@
               </span>
             </nuxt-link>
           </div>
-          <div class="column is-4">
+          <div class="column is-3">
             <img :src="serviceItControlImage">
             <h4>『IT統制サポート』</h4>
             <p>
@@ -153,7 +177,9 @@
 import TheSubHeader from '~/components/pages/top/TheSubHeader.vue'
 import BlackLink from '~/components/atoms/BlackLink.vue'
 import columnImage from '~/assets/top/top-strong1.jpeg'
-import noteLogoImage from '~/assets/top/note-logo.png'
+// import noteLogoImage from '~/assets/top/note-logo.png'
+import noteIctImage from '~/assets/top/note-ict.png'
+import noteItcontrolImage from '~/assets/top/note-itcontrol.png'
 import mediaSeminarImage from '~/assets/top/mediaSeminar.jpg'
 import dataConvertImage from '~/assets/top/data-convert.png'
 import serviceCostSimulationImage from '~/assets/top/service-cost-simulation.png'
@@ -170,8 +196,16 @@ export default {
     columnImage() {
       return columnImage
     },
+    /*
     noteLogoImage() {
       return noteLogoImage
+    },
+    */
+    noteIctImage() {
+      return noteIctImage
+    },
+    noteItcontrolImage() {
+      return noteItcontrolImage
     },
     mediaSeminarImage() {
       return mediaSeminarImage
@@ -221,7 +255,7 @@ export default {
 
     .columns {
       .column {
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 600px) {
           margin-top: 3rem;
         }
 
@@ -251,6 +285,16 @@ export default {
   .service-sections {
     h4 {
       height: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .media_image {
+      width: 80%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
     }
   }
 }
