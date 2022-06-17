@@ -2,18 +2,23 @@
   <div class="page-content">
     <the-hero-title main-text="最近の活動・コラム" />
     <the-column-list :columns="listData" is-h2-tag />
+    <div class="secline">
+      <the-contact />
+    </div>
   </div>
 </template>
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheColumnList from '~/components/pages/common/TheColumnList.vue'
+import TheContact from '~/components/pages/top/TheContact.vue'
 import { fetchCmsListDataColumn } from '~/lib/cms'
 
 export default {
   components: {
     TheHeroTitle,
-    TheColumnList
+    TheColumnList,
+    TheContact
   },
   head() {
     return {
@@ -64,3 +69,8 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.secline {
+  border-top: 1px solid $lightgray;
+}
+</style>

@@ -4,18 +4,23 @@
       <the-hero-title main-text="顧客インタビュー・事例紹介" />
       <the-case-list :cases="listData" is-h2-tag />
     </div>
+    <div class="secline">
+      <the-contact />
+    </div>
   </div>
 </template>
 
 <script>
 import TheHeroTitle from '~/components/pages/common/TheHeroTitle.vue'
 import TheCaseList from '~/components/pages/common/TheCaseList.vue'
+import TheContact from '~/components/pages/top/TheContact.vue'
 import { fetchCmsListDataCase } from '~/lib/cms'
 
 export default {
   components: {
     TheHeroTitle,
-    TheCaseList
+    TheCaseList,
+    TheContact
   },
   head() {
     return {
@@ -67,3 +72,8 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.secline {
+  border-top: 1px solid $lightgray;
+}
+</style>

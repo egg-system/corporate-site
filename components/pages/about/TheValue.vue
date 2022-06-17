@@ -44,16 +44,26 @@
       </div>
     </div>
     <div class="link">
+      <br class="pc-br">
       <a class="button is-dark" href="https://eggsystem.co.jp/service/">
         サービス詳細へ
       </a>
+      <br class="pc-br">
+      <br class="pc-br">
+    </div>
+    <div class="secline">
+      <the-contact />
     </div>
   </div>
 </template>
 
 <script>
 import strongImages from '~/assets/js/about-value.js'
+import TheContact from '~/components/pages/top/TheContact.vue'
 export default {
+  components: {
+    TheContact
+  },
   data() {
     return {
       image1: strongImages.strongImage1,
@@ -95,6 +105,9 @@ export default {
 .link {
   width: 30rem;
   margin: 30px auto;
+}
+.secline {
+  border-top: 1px solid $lightgray;
 }
 @media screen and (max-width: 768px) {
   .about {
