@@ -71,6 +71,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .secline {
-  border-top: 1px solid $lightgray;
+  @media screen and (min-width: 1024px) {
+    border-top: 1px solid $lightgray;
+  }
 }
 </style>
