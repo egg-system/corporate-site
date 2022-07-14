@@ -87,8 +87,6 @@
       </tr>
     </table>
     <br>
-    <br>
-    <br>
     <table class="service-table">
       <tr class="service-table-header">
         <th colspan="2">
@@ -116,7 +114,6 @@
         <td>1〜2名体制</td>
       </tr>
     </table>
-    <br>
     <br>
     <br>
     <div class="menu-compare">

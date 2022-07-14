@@ -73,29 +73,29 @@
     <div class="service-table-itpro">
       <table class="service-table">
         <tr class="service-table-header">
-          <th colspan="3">
+          <th colspan="4">
             ITプロ人材のシェアリング
           </th>
         </tr>
         <tr class="service-table-content">
           <td colspan="1">概要</td>
-          <td colspan="2">スポット対応やトライアルで試験的に導入したい企業様向け</td>
+          <td colspan="3">スポット対応やトライアルで試験的に導入したい企業様向け</td>
         </tr>
         <tr class="service-table-content">
           <td colspan="1">料金</td>
-          <td colspan="2">60,000円／日</td>
+          <td colspan="3">60,000円／日</td>
         </tr>
         <tr class="service-table-content">
           <td colspan="1">稼働時間<br>(目安)</td>
-          <td colspan="2">稼働実績に応じた精算</td>
+          <td colspan="3">稼働実績に応じた精算</td>
         </tr>
         <tr class="service-table-content">
           <td colspan="1">契約期間</td>
-          <td colspan="2">1ヶ月単位</td>
+          <td colspan="3">1ヶ月単位</td>
         </tr>
         <tr class="service-table-content">
           <td colspan="1">弊社体制</td>
-          <td colspan="2">1〜2名体制</td>
+          <td colspan="3">1〜2名体制</td>
         </tr>
       </table>      
     </div>
