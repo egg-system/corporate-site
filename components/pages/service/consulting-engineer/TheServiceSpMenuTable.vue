@@ -13,15 +13,15 @@
       </tr>
       <tr class="service-table-content">
         <td>概要</td>
-        <td>課題を1つずつ着実に対応します</td>
+        <td>課題を1つずつ着実に解決します</td>
       </tr>
       <tr class="service-table-content">
         <td>料金</td>
-        <td>月額300,000円</td>
+        <td>月額600,000円</td>
       </tr>
       <tr class="service-table-content">
         <td>稼働時間<br>(目安)</td>
-        <td>4〜5人日/月<br>※隔週で定例会議を実施</td>
+        <td>約8人日/月<br>※隔週で定例会議を実施</td>
       </tr>
       <tr class="service-table-content">
         <td>契約期間</td>
@@ -40,11 +40,11 @@
       </tr>
       <tr class="service-table-content">
         <td>概要</td>
-        <td>業務改善に限らずシステム全体やネットワーク、セキュリティなど幅広い課題へ対応します</td>
+        <td>DX、業務改善、ネットワーク、セキュリティなど幅広い課題に対応します</td>
       </tr>
       <tr class="service-table-content">
         <td>料金</td>
-        <td>月額600,000円</td>
+        <td>月額800,000円</td>
       </tr>
       <tr class="service-table-content">
         <td>稼働時間<br>(目安)</td>
@@ -52,11 +52,11 @@
       </tr>
       <tr class="service-table-content">
         <td>契約期間</td>
-        <td>1ヶ月単位</td>
+        <td>3ヶ月単位</td>
       </tr>
       <tr class="service-table-content">
         <td>弊社体制</td>
-        <td>2名体制</td>
+        <td>1〜2名体制</td>
       </tr>
     </table>
     <table class="service-table">
@@ -86,6 +86,37 @@
         <td>2〜3名体制</td>
       </tr>
     </table>
+    <br>
+    <br>
+    <br>
+    <table class="service-table">
+      <tr class="service-table-header">
+        <th colspan="2">
+          ITプロ人材のシェアリング
+        </th>
+      </tr>
+      <tr class="service-table-content">
+        <td>概要</td>
+        <td>スポット対応やトライアルで試験的に導入したい企業様向け</td>
+      </tr>
+      <tr class="service-table-content">
+        <td>料金</td>
+        <td>60,000円／日</td>
+      </tr>
+      <tr class="service-table-content">
+        <td>稼働時間<br>(目安)</td>
+        <td>稼働実績に応じた精算</td>
+      </tr>
+      <tr class="service-table-content">
+        <td>契約期間</td>
+        <td>1ヶ月単位</td>
+      </tr>
+      <tr class="service-table-content">
+        <td>弊社体制</td>
+        <td>1〜2名体制</td>
+      </tr>
+    </table>
+    <br>
     <br>
     <br>
     <div class="menu-compare">

@@ -21,10 +21,10 @@
       <tr class="service-table-content">
         <td>概要</td>
         <td>
-          課題を1つずつ着実に対応します
+          課題を1つずつ着実に解決します
         </td>
         <td>
-          業務改善に限らずシステム全体やネットワーク、セキュリティなど幅広い課題へ対応します
+          DX、業務改善、ネットワーク、セキュリティなど幅広い課題に対応します
         </td>
         <td>
           貴社の社員代行として現場へ入り込んでリソースを補完します
@@ -32,14 +32,14 @@
       </tr>
       <tr class="service-table-content">
         <td>料金</td>
-        <td>月額300,000円</td>
         <td>月額600,000円</td>
+        <td>月額800,000円</td>
         <td>※都度お見積り</td>
       </tr>
       <tr class="service-table-content">
         <td>稼働時間<br>(目安)</td>
         <td data-label="ライトプラン">
-          4〜5人日/月<br>※隔週で定例会議を実施
+          約8人日/月<br>※隔週で定例会議を実施
         </td>
         <td data-label="スタンダードプラン">
           約10人日/月<br>※週1回の定例会議を実施
@@ -51,7 +51,7 @@
       <tr class="service-table-content">
         <td>契約期間</td>
         <td data-label="ライトプラン">3ヶ月単位</td>
-        <td data-label="スタンダードプラン">1ヶ月単位</td>
+        <td data-label="スタンダードプラン">3ヶ月単位</td>
         <td data-label="プレミアムプラン">1ヶ月単位</td>
       </tr>
       <tr class="service-table-content">
@@ -60,13 +60,46 @@
           1〜2名体制
         </td>
         <td data-label="スタンダードプラン">
-          2名体制
+          1〜2名体制
         </td>
         <td data-label="プレミアムプラン">
           2〜3名体制
         </td>
       </tr>
     </table>
+    <br>
+    <br>
+    <br>
+    <div class="service-table-itpro">
+      <table class="service-table">
+        <tr class="service-table-header">
+          <th colspan="3">
+            ITプロ人材のシェアリング
+          </th>
+        </tr>
+        <tr class="service-table-content">
+          <td colspan="1">概要</td>
+          <td colspan="2">スポット対応やトライアルで試験的に導入したい企業様向け</td>
+        </tr>
+        <tr class="service-table-content">
+          <td colspan="1">料金</td>
+          <td colspan="2">60,000円／日</td>
+        </tr>
+        <tr class="service-table-content">
+          <td colspan="1">稼働時間<br>(目安)</td>
+          <td colspan="2">稼働実績に応じた精算</td>
+        </tr>
+        <tr class="service-table-content">
+          <td colspan="1">契約期間</td>
+          <td colspan="2">1ヶ月単位</td>
+        </tr>
+        <tr class="service-table-content">
+          <td colspan="1">弊社体制</td>
+          <td colspan="2">1〜2名体制</td>
+        </tr>
+      </table>      
+    </div>
+    <br>
     <br>
     <br>
     <div class="menu-compare">
@@ -177,6 +210,12 @@
 .service-table {
   table-layout: fixed;
   width: 100%;
+  word-break: break-word;
+}
+
+.service-table-itpro {
+  table-layout: fixed;
+  width: 40%;
   word-break: break-word;
 }
 
