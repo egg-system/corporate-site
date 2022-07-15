@@ -122,7 +122,7 @@
         <the-service-performance />
       </section>
       <div class="cost-compare">
-        コストの比較
+        サービスの効果
       </div>
       <br>
       <img :src="costCompare1Image" class="cost_image">
@@ -158,8 +158,8 @@ import TheServicePerformance from '~/components/pages/service/consulting-enginee
 import TheAboutConsultation from '~/components/pages/top/TheAboutConsultation.vue'
 import TheContact from '~/components/pages/top/TheContact.vue'
 import TheLinkButton from '~/components/pages/common/TheLinkButton.vue'
-import costCompare1Image from '~/assets/service/img/ce-cost1.png'
-import costCompare2Image from '~/assets/service/img/ce-cost2.png'
+import costCompare1Image from '~/assets/service/img/ce-effect1.png'
+import costCompare2Image from '~/assets/service/img/ce-effect2.png'
 
 export default {
   components: {
