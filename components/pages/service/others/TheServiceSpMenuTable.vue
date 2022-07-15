@@ -35,7 +35,7 @@
         <th colspan="2">RPA導入サービス</th>
       </tr>
       <tr class="service-table-content">
-        <td>料金</td>
+        <td>料金（目安）</td>
         <td>10〜50万円/月</td>
       </tr>
       <tr class="service-table-content">
@@ -47,7 +47,7 @@
         <td rowspan="2">要相談</td>
       </tr>
       <tr class="service-table-content">
-        <td>現地での作業<br>（常駐）</td>
+        <td>現地での作業</td>
       </tr>
       <tr class="service-table-content">
         <td>連絡手段</td>
@@ -64,7 +64,7 @@
         <th colspan="2">リモートワーク導入支援サービス</th>
       </tr>
       <tr class="service-table-content">
-        <td>料金</td>
+        <td>料金（目安）</td>
         <td>10〜50万円/月</td>
       </tr>
       <tr class="service-table-content">
@@ -76,7 +76,7 @@
         <td>週1日</td>
       </tr>
       <tr class="service-table-content">
-        <td>現地での作業<br>（常駐）</td>
+        <td>現地での作業</td>
         <td>○</td>
       </tr>
       <tr class="service-table-content">
@@ -94,7 +94,7 @@
         <th colspan="2">システム開発</th>
       </tr>
       <tr class="service-table-content">
-        <td>料金</td>
+        <td>料金（目安）</td>
         <td rowspan="2">都度お見積り</td>
       </tr>
       <tr class="service-table-content">
@@ -105,7 +105,7 @@
         <td>原則リモート</td>
       </tr>
       <tr class="service-table-content">
-        <td>現地での作業<br>（常駐）</td>
+        <td>現地での作業</td>
         <td>☓</td>
       </tr>
       <tr class="service-table-content">
