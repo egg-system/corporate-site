@@ -33,10 +33,10 @@
       </tr>
       <tr class="service-table-content">
         <td>サポート内容</td>
-        <td data-label="ミニマムプラン">
+        <td data-label="ミニマムプラン" style="text-align:left;">
           ◎IT関連規程および手順書のフォーマットを提供
         </td>
-        <td data-label="ベーシックプラン">
+        <td data-label="ベーシックプラン" style="text-align:left;">
           ◎現状分析<br>
           <br>
           ◎文書作成<br>（IT関連規程、手順書）<br>
@@ -45,7 +45,7 @@
           <br>
           ◎監査法人との協議支援<br>（質問書への回答作成）
         </td>
-        <td data-label="ハイスペックプラン">
+        <td data-label="ハイスペックプラン" style="text-align:left;">
           ◎現状分析<br>
           <br>
           ◎文書作成<br>（IT関連規程、手順書、3点セット）<br>
@@ -69,4 +69,8 @@
 
 <style lang="scss" scoped>
 @import '~/assets/service/scss/service-table.scss';
+
+.support-content {
+  text-align: left;
+}
 </style>

@@ -20,7 +20,7 @@
       </tr>
       <tr class="service-table-content">
         <td>サポート内容</td>
-        <td>◎IT関連規程および手順書のフォーマットを提供</td>
+        <td style="text-align:left;">◎IT関連規程および手順書のフォーマットを提供</td>
       </tr>
       <tr class="service-table-content">
         <td>専任サポート</td>
@@ -45,7 +45,7 @@
       </tr>
       <tr class="service-table-content">
         <td>サポート内容</td>
-        <td>
+        <td style="text-align:left;">
           ◎現状分析<br>
           <br>
           ◎文書作成<br>（IT関連規程、手順書）<br>
@@ -78,7 +78,7 @@
       </tr>
       <tr class="service-table-content">
         <td>サポート内容</td>
-        <td>
+        <td style="text-align:left;">
           ◎現状分析<br>
           <br>
           ◎文書作成<br>（IT関連規程、手順書、3点セット）<br>
