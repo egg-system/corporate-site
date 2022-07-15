@@ -5,7 +5,7 @@
         <th colspan="2">IT戦略/システム化計画策定サービス</th>
       </tr>
       <tr class="service-table-content">
-        <td>料金</td>
+        <td>料金（目安）</td>
         <td>150〜300万円</td>
       </tr>
       <tr class="service-table-content">
@@ -17,7 +17,7 @@
         <td>週1〜2日</td>
       </tr>
       <tr class="service-table-content">
-        <td>現地での作業<br>（常駐）</td>
+        <td>現地での作業</td>
         <td>○</td>
       </tr>
       <tr class="service-table-content">
