@@ -65,7 +65,7 @@ const members = [
   {
     nameJP: '小谷　征司',
     nameEN: 'Seiji Kotani',
-    img: kuroda
+    img: logo1
   },
   {
     nameJP: '渡辺 千亜希',
