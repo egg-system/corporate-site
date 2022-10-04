@@ -63,7 +63,7 @@ const members = [
     romajiName: 'Maiko Kuroda'
   },
   {
-    image: Kotani,
+    image: logo1,
     name: '小谷　征司',
     romajiName: 'Seiji Kotani'
   },
