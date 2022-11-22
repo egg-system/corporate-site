@@ -35,7 +35,7 @@ export default {
           hid: 'member-keywords',
           name: 'keywords',
           content:
-            '高橋 翼, 高橋 光, 布村 武大, 横田 峻, 廣海, 望月　康彦, 澤田 隆史, 黒田 麻衣子, 渡辺 千亜希, 三浦 健太郎, 小川, 粂, 川島'
+            '高橋 翼, 高橋 光, 布村 武大, 横田 峻, 廣海, 望月　康彦, 黒田 麻衣子, 小谷 征司, 渡辺 千亜希, 三浦 健太郎, 小川, 粂, 川島'
         },
         {
           hid: 'recruit-twitter:card',
