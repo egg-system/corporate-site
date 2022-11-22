@@ -1,7 +1,8 @@
 require('dotenv').config()
 import { routing } from './lib/cms'
 const { microCmsApiKey, microCmsApiDomain } = process.env
-const hotJarFunction = "(function(h,o,t,j,a,r){h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};h._hjSettings={hjid:2178076,hjsv:6};a=o.getElementsByTagName('head')[0];r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;a.appendChild(r);})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');"
+const hotJarFunction =
+  "(function(h,o,t,j,a,r){h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};h._hjSettings={hjid:2178076,hjsv:6};a=o.getElementsByTagName('head')[0];r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;a.appendChild(r);})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');"
 
 export default {
   env: {
@@ -23,7 +24,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          '中小企業向けに、事業成長を目的としたシステムコンサルティングから開発・運用まで行います。株式会社エッグシステムのコンサルティングエンジニア集団「x-faCE（for all Consulting Engineer）」では《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。'
+          'エッグシステムでは【中小企業向けにバックヤード業務のDX推進・IT統制】のシステムコンサルティングを行います。コンサルと開発のスキルを持ったITプロ人材が、大手コンサル会社の50%以下の単価でアドバイスから実務まで対応します。'
       },
       {
         hid: 'twitter:card',
@@ -42,7 +43,7 @@ export default {
         hid: 'og:description',
         property: 'og:description',
         content:
-          '中小企業向けに、事業成長を目的としたシステムコンサルティングから開発・運用まで行います。株式会社エッグシステムのコンサルティングエンジニア集団「x-faCE（for all Consulting Engineer）」では《「目の前の人に喜んでもらうこと」を目的とし行動する人が報われる社会》の実現のために、ITシステムを活用します。'
+          'エッグシステムでは【中小企業向けにバックヤード業務のDX推進・IT統制】のシステムコンサルティングを行います。コンサルと開発のスキルを持ったITプロ人材が、大手コンサル会社の50%以下の単価でアドバイスから実務まで対応します。'
       },
       {
         hid: 'og:image',
@@ -69,7 +70,7 @@ export default {
       }
     ],
     __dangerouslyDisableSanitizersByTagID: {
-      'hotJarFunction': ['innerHTML'],
+      hotJarFunction: ['innerHTML']
     }
   },
   /*

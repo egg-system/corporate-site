@@ -174,6 +174,47 @@ export default {
     itControllExampleImage() {
       return itControllExampleImage
     }
+  },
+  head() {
+    return {
+      title: 'IT統制サポート',
+      meta: [
+        {
+          hid: 'contact-description',
+          name: 'description',
+          content:
+            '【上場企業・上場準備企業向け】IT統制環境の構築から整備・改善までまるっと対応します。上場監査やIT監査の実績をもとに対応するから安心・安全に対応します。'
+        },
+        {
+          hid: 'contact-keywords',
+          name: 'keywords',
+          content: 'IT統制, eggsystem, 株式会社エッグシステム'
+        },
+        {
+          hid: 'contact-twitter:card',
+          property: 'twitter:card',
+          content: 'summary'
+        },
+        { hid: 'contact-og:type', property: 'og:type', content: 'article' },
+        {
+          hid: 'contact-og:title',
+          property: 'og:title',
+          content:
+            '【上場企業・上場準備企業向け】IT統制環境の構築から整備・改善までまるっと対応します。上場監査やIT監査の実績をもとに対応するから安心・安全に対応します。'
+        },
+        {
+          hid: 'contact-og:description',
+          property: 'og:description',
+          content:
+            '【上場企業・上場準備企業向け】IT統制環境の構築から整備・改善までまるっと対応します。上場監査やIT監査の実績をもとに対応するから安心・安全に対応します。'
+        },
+        {
+          hid: 'contact-og:url',
+          property: 'og:url',
+          content: 'https://eggsystem.co.jp/service/it-control'
+        }
+      ]
+    }
   }
 }
 </script>
