@@ -29,7 +29,7 @@
         <the-to-details-button to="/cases" />
       </section>
       <section class="service-details">
-        <the-sub-header text="コンサルティングエンジニアサービス" />
+        <the-sub-header text="ITプロシェアサービス" />
         <the-consulting-engneer-detail />
       </section>
       <section class="it-control-details">
@@ -87,7 +87,7 @@ export default {
           hid: 'service-description',
           name: 'description',
           content:
-            '中小企業が抱える「経験豊富な人材の不足」「システムを有効活用できない」という課題を解決するコンサルティングからシステム開発まで一貫して行うコンサルティングエンジニア集団です。初月無料・月額定額のコンサルティングエンジニアサービス、IT戦略/IT投資計画策定サービス 、IT統制サポート、RPA導入サービス、システム開発を行っています。'
+            '中小企業が抱える「経験豊富な人材の不足」「システムを有効活用できない」という課題を解決するコンサルティングからシステム開発まで一貫して行うコンサルティングエンジニア集団です。月額定額のITプロシェアサービス、IT戦略/IT投資計画策定サービス 、IT統制サポート、RPA導入サービス、システム開発を行っています。'
         },
         {
           hid: 'service-keywords',
@@ -114,7 +114,7 @@ export default {
           hid: 'service-og:description',
           property: 'og:description',
           content:
-            '中小企業が抱える「経験豊富な人材の不足」「システムを有効活用できない」という課題を解決するコンサルティングからシステム開発まで一貫して行うコンサルティングエンジニア集団です。初月無料・月額定額のコンサルティングエンジニアサービス、IT戦略/IT投資計画策定サービス 、IT統制サポート、RPA導入サービス、システム開発を行っています。'
+            '中小企業が抱える「経験豊富な人材の不足」「システムを有効活用できない」という課題を解決するコンサルティングからシステム開発まで一貫して行うコンサルティングエンジニア集団です。月額定額のITプロシェアサービス、IT戦略/IT投資計画策定サービス 、IT統制サポート、RPA導入サービス、システム開発を行っています。'
         },
         {
           hid: 'service-og:url',

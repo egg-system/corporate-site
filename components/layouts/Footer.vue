@@ -18,7 +18,7 @@
         <ul class="navbar-sub-item-list">
           <li>
             <nuxt-link class="navbar-item" to="/service/consulting-engineer">
-              コンサルティングエンジニアサービス
+              ITプロシェアサービス
             </nuxt-link>
           </li>
           <li>

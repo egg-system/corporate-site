@@ -3,7 +3,7 @@
     <div class="content page-content">
       <the-hero-title main-text="サービス紹介" />
       <section class="service-detail-section">
-        <the-sub-header text="コンサルティングエンジニアサービス" />
+        <the-sub-header text="ITプロシェアサービス" />
         <h3 class="service-description">
           売上拡大・利益率向上を目的としてITシステムを活用するために<br class="pc-br">システム化の企画から開発・運用まで<br class="br-pc">徹底的にベンチャー・中小企業様へ寄り添って対応します。
         </h3>
@@ -63,7 +63,7 @@
       <br>
       <section class="service-reason-section">
         <the-sub-header
-          text="なぜ、ベンチャー・中小企業にコンサルティングエンジニアサービスが必要なのか？"
+          text="なぜ、ベンチャー・中小企業にITプロシェアサービスが必要なのか？"
         />
         <div class="service-reason-detail">
           <section>
@@ -118,7 +118,7 @@
         <the-service-menu-table />
       </section>
       <section id="service-performance">
-        <the-sub-header text="コンサルティングエンジニアサービス　作業実績" />
+        <the-sub-header text="ITプロシェアサービス　作業実績" />
         <the-service-performance />
       </section>
       <div class="cost-compare">
