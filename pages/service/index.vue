@@ -11,8 +11,8 @@
       <div class="service-message">
         <div class="service-message-title">
           ３つの強み<br>
-          （１）コンサルと開発の豊富な経験とスキルを持つ<br>
-          （２）大手コンサル会社の約50%以下という報酬額で圧倒的なパフォーマンス<br>
+          （１）システムを売らない中立的な立場<br>
+          （２）コンサルと開発の豊富な経験とノウハウ<br>
           （３）アドバイスで終わらない
         </div>
         <br class="sp-br">
