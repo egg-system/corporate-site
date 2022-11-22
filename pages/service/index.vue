@@ -11,9 +11,9 @@
       <div class="service-message">
         <div class="service-message-title">
           ３つの強み<br>
-          （１）システムを売らない中立的な立場<br>
-          （２）コンサルと開発の豊富な経験とノウハウ<br>
-          （３）アドバイスで終わらない
+          （１）システムを売らない中立的な立場a<br>
+          （２）コンサルと開発の豊富な経験とノウハウa<br>
+          （３）アドバイスで終わらないa
         </div>
         <br class="sp-br">
         <p class="service-message-content">
