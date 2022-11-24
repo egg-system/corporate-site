@@ -1,7 +1,7 @@
 <template>
   <div class="entry">
     <div class="link">
-      <a class="button is-dark" href="https://www.green-japan.com/company/6999">
+      <a class="button is-dark" href="https://tenshoku.mynavi.jp/company/299628/archive/">
         <span class="link-message">エントリー</span>
         <span class="column-arrow" />
       </a>
