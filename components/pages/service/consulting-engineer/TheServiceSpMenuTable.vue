@@ -8,7 +8,7 @@
     <table class="service-table">
       <tr class="service-table-header">
         <th colspan="2">
-          ライトプラン
+          ミニマム
         </th>
       </tr>
       <tr class="service-table-content">
@@ -35,7 +35,7 @@
     <table class="service-table">
       <tr class="service-table-header">
         <th colspan="2">
-          スタンダードプラン
+          ベーシック
         </th>
       </tr>
       <tr class="service-table-content">
@@ -62,7 +62,7 @@
     <table class="service-table">
       <tr class="service-table-header">
         <th colspan="2">
-          プレミアムプラン
+          カスタマイズ
         </th>
       </tr>
       <tr class="service-table-content">
@@ -87,35 +87,8 @@
       </tr>
     </table>
     <br>
-    <table class="service-table">
-      <tr class="service-table-header">
-        <th colspan="2">
-          ITプロ人材のシェアリング
-        </th>
-      </tr>
-      <tr class="service-table-content">
-        <td>概要</td>
-        <td>スポット対応やトライアルで試験的に導入したい企業様向け</td>
-      </tr>
-      <tr class="service-table-content">
-        <td>料金</td>
-        <td>60,000円／日</td>
-      </tr>
-      <tr class="service-table-content">
-        <td>稼働時間<br>(目安)</td>
-        <td>稼働実績に応じた精算</td>
-      </tr>
-      <tr class="service-table-content">
-        <td>契約期間</td>
-        <td>1ヶ月単位</td>
-      </tr>
-      <tr class="service-table-content">
-        <td>弊社体制</td>
-        <td>1〜2名体制</td>
-      </tr>
-    </table>
     <br>
-    <br>
+    
     <div class="menu-compare">
       メニュー毎の比較
     </div>
@@ -126,12 +99,12 @@
     <table class="service-table">
       <tr class="service-table-header">
         <th colspan="2">
-          ライトプラン
+          ミニマム
         </th>
       </tr>
       <tr class="service-table-content">
         <td class="menu-line">稼働時間</td>
-        <td>約40時間／月</td>
+        <td>約60時間／月</td>
       </tr>
       <tr class="service-table-content">
         <td colspan="2">サポート範囲</td>
@@ -183,7 +156,7 @@
     <table class="service-table">
       <tr class="service-table-header">
         <th colspan="2">
-          スタンダードプラン
+          ベーシック
         </th>
       </tr>
       <tr class="service-table-content">
@@ -240,7 +213,7 @@
     <table class="service-table">
       <tr class="service-table-header">
         <th colspan="2">
-          プレミアムプラン
+          カスタマイズ
         </th>
       </tr>
       <tr class="service-table-content">

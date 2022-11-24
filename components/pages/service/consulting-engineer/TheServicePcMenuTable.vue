@@ -9,13 +9,13 @@
       <tr class="service-table-header">
         <th class="service-table-menu"/>
         <th>
-          ライトプラン
+          ミニマム
         </th>
         <th>
-          スタンダードプラン
+          ベーシック
         </th>
         <th>
-          プレミアムプラン
+          カスタマイズ
         </th>
       </tr>
       <tr class="service-table-content">
@@ -38,70 +38,38 @@
       </tr>
       <tr class="service-table-content">
         <td>稼働時間<br>(目安)</td>
-        <td data-label="ライトプラン">
+        <td data-label="ミニマム">
           約8人日/月<br>※隔週で定例会議を実施
         </td>
-        <td data-label="スタンダードプラン">
+        <td data-label="ベーシック">
           約10人日/月<br>※週1回の定例会議を実施
         </td>
-        <td data-label="プレミアムプラン">
+        <td data-label="カスタマイズ">
           約10〜20人日/月
         </td>
       </tr>
       <tr class="service-table-content">
         <td>契約期間</td>
-        <td data-label="ライトプラン">3ヶ月単位</td>
-        <td data-label="スタンダードプラン">3ヶ月単位</td>
-        <td data-label="プレミアムプラン">1ヶ月単位</td>
+        <td data-label="ミニマム">3ヶ月単位</td>
+        <td data-label="ベーシック">3ヶ月単位</td>
+        <td data-label="カスタマイズ">1ヶ月単位</td>
       </tr>
       <tr class="service-table-content">
         <td>弊社体制</td>
-        <td data-label="ライトプラン">
+        <td data-label="ミニマム">
           1〜2名体制
         </td>
-        <td data-label="スタンダードプラン">
+        <td data-label="ベーシック">
           1〜2名体制
         </td>
-        <td data-label="プレミアムプラン">
+        <td data-label="カスタマイズ">
           2〜3名体制
         </td>
       </tr>
     </table>
     <br>
     <br>
-    <br>
-    <div class="service-table-itpro">
-      <table class="service-table">
-        <tr class="service-table-header">
-          <th colspan="4">
-            ITプロ人材のシェアリング
-          </th>
-        </tr>
-        <tr class="service-table-content">
-          <td colspan="1">概要</td>
-          <td colspan="3">スポット対応やトライアルで試験的に導入したい企業様向け</td>
-        </tr>
-        <tr class="service-table-content">
-          <td colspan="1">料金</td>
-          <td colspan="3">60,000円／日</td>
-        </tr>
-        <tr class="service-table-content">
-          <td colspan="1">稼働時間<br>(目安)</td>
-          <td colspan="3">稼働実績に応じた精算</td>
-        </tr>
-        <tr class="service-table-content">
-          <td colspan="1">契約期間</td>
-          <td colspan="3">1ヶ月単位</td>
-        </tr>
-        <tr class="service-table-content">
-          <td colspan="1">弊社体制</td>
-          <td colspan="3">1〜2名体制</td>
-        </tr>
-      </table>      
-    </div>
-    <br>
-    <br>
-    <br>
+    
     <div class="menu-compare">
       メニュー毎の比較
     </div>
@@ -113,19 +81,19 @@
       <tr class="service-table-header">
         <th class="service-menu"/>
         <th>
-          ライトプラン
+          ミニマム
         </th>
         <th>
-          スタンダードプラン
+          ベーシック
         </th>
         <th>
-          プレミアムプラン
+          カスタマイズ
         </th>
       </tr>
       <tr class="service-table-content">
         <td class="menu-line">稼働時間</td>
         <td>
-          約40時間／月
+          約60時間／月
         </td>
         <td>
           約80時間／月
@@ -139,66 +107,66 @@
       </tr>
       <tr class="service-table-content">
         <td class="menu-line">現状分析</td>
-        <td data-label="ライトプラン">◯</td>
-        <td data-label="スタンダードプラン">◯</td>
-        <td data-label="プレミアムプラン">◯</td>
+        <td data-label="ミニマム">◯</td>
+        <td data-label="ベーシック">◯</td>
+        <td data-label="カスタマイズ">◯</td>
       </tr>
       <tr class="service-table-content">
         <td class="menu-line">業務設計</td>
-        <td data-label="ライトプラン">◯</td>
-        <td data-label="スタンダードプラン">◯</td>
-        <td data-label="プレミアムプラン">◯</td>
+        <td data-label="ミニマム">◯</td>
+        <td data-label="ベーシック">◯</td>
+        <td data-label="カスタマイズ">◯</td>
       </tr>
       <tr class="service-table-content">
         <td class="menu-line">システム選定</td>
-        <td data-label="ライトプラン">◯</td>
-        <td data-label="スタンダードプラン">◯</td>
-        <td data-label="プレミアムプラン">◯</td>
+        <td data-label="ミニマム">◯</td>
+        <td data-label="ベーシック">◯</td>
+        <td data-label="カスタマイズ">◯</td>
       </tr>
       <tr class="service-table-content">
         <td class="menu-line">システム導入</td>
-        <td data-label="ライトプラン">△</td>
-        <td data-label="スタンダードプラン">◯</td>
-        <td data-label="プレミアムプラン">◯</td>
+        <td data-label="ミニマム">△</td>
+        <td data-label="ベーシック">◯</td>
+        <td data-label="カスタマイズ">◯</td>
       </tr>
       <tr class="service-table-content">
         <td class="menu-line">開発作業</td>
-        <td data-label="ライトプラン">✕</td>
-        <td data-label="スタンダードプラン">◯</td>
-        <td data-label="プレミアムプラン">◯</td>
+        <td data-label="ミニマム">✕</td>
+        <td data-label="ベーシック">◯</td>
+        <td data-label="カスタマイズ">◯</td>
       </tr>
       <tr class="service-table-content">
         <td class="menu-line">運用支援</td>
-        <td data-label="ライトプラン">◯</td>
-        <td data-label="スタンダードプラン">◯</td>
-        <td data-label="プレミアムプラン">◯</td>
+        <td data-label="ミニマム">◯</td>
+        <td data-label="ベーシック">◯</td>
+        <td data-label="カスタマイズ">◯</td>
       </tr>
       <tr class="service-table-content">
         <td colspan="4">対象領域</td>
       </tr>
       <tr class="service-table-content">
         <td class="menu-line">業務改善</td>
-        <td data-label="ライトプラン">◯</td>
-        <td data-label="スタンダードプラン">◯</td>
-        <td data-label="プレミアムプラン">◯</td>
+        <td data-label="ミニマム">◯</td>
+        <td data-label="ベーシック">◯</td>
+        <td data-label="カスタマイズ">◯</td>
       </tr>
       <tr class="service-table-content">
         <td class="menu-line">インフラ</td>
-        <td data-label="ライトプラン">△</td>
-        <td data-label="スタンダードプラン">◯</td>
-        <td data-label="プレミアムプラン">◯</td>
+        <td data-label="ミニマム">△</td>
+        <td data-label="ベーシック">◯</td>
+        <td data-label="カスタマイズ">◯</td>
       </tr>
       <tr class="service-table-content">
         <td class="menu-line">ネットワーク</td>
-        <td data-label="ライトプラン">△</td>
-        <td data-label="スタンダードプラン">◯</td>
-        <td data-label="プレミアムプラン">◯</td>
+        <td data-label="ミニマム">△</td>
+        <td data-label="ベーシック">◯</td>
+        <td data-label="カスタマイズ">◯</td>
       </tr>
       <tr class="service-table-content">
         <td class="menu-line">セキュリティ</td>
-        <td data-label="ライトプラン">△</td>
-        <td data-label="スタンダードプラン">◯</td>
-        <td data-label="プレミアムプラン">◯</td>
+        <td data-label="ミニマム">△</td>
+        <td data-label="ベーシック">◯</td>
+        <td data-label="カスタマイズ">◯</td>
       </tr>
     </table>
   </div>
