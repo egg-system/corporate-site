@@ -4,7 +4,7 @@
       id="download-conversion-lik"
       to="/download"
     >
-      『IT導入成功事例/補助金解説』<br>無料ダウンロードはこちら
+      『業務自動化・デジタル化事例紹介』<br>無料ダウンロードはこちら
     </nuxt-link>
   </div>
 </template>
