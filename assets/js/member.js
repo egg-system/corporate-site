@@ -68,6 +68,11 @@ const members = [
     img: logo1
   },
   {
+    nameJP: '関根　直也',
+    nameEN: 'Sekine',
+    img: logo6
+  },
+  {
     nameJP: '渡辺 千亜希',
     nameEN: 'Chiaki Watanabe',
     img: logo1
@@ -82,11 +87,13 @@ const members = [
     nameEN: 'Ogawa',
     img: logo4
   },
+  /*
   {
     nameJP: '川島',
     nameEN: 'Kawashima',
     img: logo6
   },
+  */
   {
     nameJP: '布村',
     nameEN: 'Nunomura',
