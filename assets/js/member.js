@@ -69,7 +69,7 @@ const members = [
   },
   {
     nameJP: '関根　直也',
-    nameEN: 'Sekine',
+    nameEN: 'Naoya Sekine',
     img: logo6
   },
   {
