@@ -1,8 +1,8 @@
 <template>
-  <div class="google-form">
+  <div class="hubspot-form">
     <iframe
       class="form-frame"
-      src="https://docs.google.com/forms/d/e/1FAIpQLScllCCc55S5gW7RHJyKJgU5VR5XOLv3nVmtlaFjWnh6SZh7NQ/viewform?embedded=true"
+      src="https://contents.eggsystem.co.jp/free-contact"
       width="100%"
       height="1000"
       frameborder="0"
