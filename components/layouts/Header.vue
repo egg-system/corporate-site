@@ -2,7 +2,7 @@
   <nav class="navbar darksmoke-underline" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <nuxt-link to="/" class="navbar-item">
-        <img src="/logo_image_small.png">
+        <img src="/logo_image_small_new.png">
       </nuxt-link>
       <a :class="[isOpen ? 'is-active' : '']"
          class="navbar-burger burger"

@@ -28,7 +28,7 @@ const members = [
     name: '高橋 光',
     romajiName: 'Hikaru Takahashi'
   },
-  /*  
+  /*
   {
     image: Nuno,
     name: '布村 武大',
@@ -68,6 +68,11 @@ const members = [
     romajiName: 'Seiji Kotani'
   },
   {
+    image: logo6,
+    name: '関根　直也',
+    romajiName: 'Naoya Sekine'
+  },
+  {
     image: logo1,
     name: '渡辺 千亜希',
     romajiName: 'Chiaki Watanabe'
@@ -82,11 +87,13 @@ const members = [
     name: '小川',
     romajiName: 'Ogawa'
   },
+  /*
   {
     image: logo6,
     name: '川島',
     romajiName: 'Kawashima'
   },
+  */
   {
     image: logo2,
     name: '布村',

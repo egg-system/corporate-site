@@ -18,6 +18,7 @@
         </p>
       </div>
     </section>
+    <!--
     <section class="message-container message-pc">
       <div class="message-message">
         <h2 class="main-message">Vision - 目標 - </h2>
@@ -30,7 +31,7 @@
           <br>
           コンサルティングエンジニア集団をつくることは、個人の力を高め会社に依存しない「自立したエンジニア」をつくることでもあります。会社に依存や迎合することなく、自立したエンジニア同士が短所を補完しつつ協働する事で、より本質へと向かい、クライアントの期待値を超えていきます。
         </p>
-      </div>   
+      </div>
       <div class="message-image">
         <figure class="image">
           <img :src="message2">
@@ -57,12 +58,8 @@
         </p>
       </div>
     </section>
+-->
     <section class="message-container">
-      <div class="message-image">
-        <figure class="image">
-          <img :src="message3">
-        </figure>
-      </div>
       <div class="message-message">
         <h2 class="main-message">Value - 価値観 - </h2>
         <h3 class="main-message sub-title">
@@ -83,6 +80,11 @@
         <p class="text">
           心を同じくして共に力を合わせ、仕事や作業に当たる。人には得意・不得意があって当たり前。自分のスキルを最大限に活かし、不得意なところは相互で補完する。
         </p>
+      </div>
+      <div class="message-image">
+        <figure class="image">
+          <img :src="message3">
+        </figure>
       </div>
     </section>
   </div>

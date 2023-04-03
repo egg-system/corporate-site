@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="columns">
       <div class="column is-4 image">
-        <img src="/white-footer-logo-new2.png">
+        <img src="/white-footer-logo-new3.png">
         <p>株式会社エッグシステム</p>
       </div>
       <div class="column is-3 first ">
