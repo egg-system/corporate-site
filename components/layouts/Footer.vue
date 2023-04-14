@@ -63,8 +63,8 @@
         <nuxt-link class="navbar-item" to="/news">
           お知らせ
         </nuxt-link>
-        <nuxt-link class="navbar-item" to="/download">
-          資料ダウンロード
+        <nuxt-link class="navbar-item" to="https://contents.eggsystem.co.jp/documents">
+          お役立ち資料
         </nuxt-link>
         <nuxt-link class="navbar-item" to="/free-contact">
           無料相談
