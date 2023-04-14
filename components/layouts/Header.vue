@@ -24,6 +24,10 @@
           経営理念
         </nuxt-link>
 
+        <nuxt-link class="navbar-item" to="/company">
+          会社概要
+        </nuxt-link>
+        
         <nuxt-link class="navbar-item" to="/service">
           サービス
         </nuxt-link>
@@ -32,17 +36,14 @@
           事例紹介
         </nuxt-link>
 
-        <nuxt-link class="navbar-item" to="/column">
-          最近の活動・コラム
+        <nuxt-link class="navbar-item" to="https://contents.eggsystem.co.jp/documents">
+          お役立ち資料
         </nuxt-link>
 
-        <nuxt-link class="navbar-item" to="/recruit">
-          採用
+        <nuxt-link class="navbar-item" to="https://contents.eggsystem.co.jp/seminar">
+          セミナー
         </nuxt-link>
 
-        <nuxt-link class="navbar-item" to="/company">
-          会社概要
-        </nuxt-link>
       </div>
 
       <div class="convertion-area">
