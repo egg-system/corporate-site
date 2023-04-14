@@ -36,13 +36,13 @@
           事例紹介
         </nuxt-link>
 
-        <nuxt-link class="navbar-item" to="https://contents.eggsystem.co.jp/documents">
+        <a href="https://contents.eggsystem.co.jp/documents" class="navbar-item" rel="noopener noreferrer">
           お役立ち資料
-        </nuxt-link>
+        </a>
 
-        <nuxt-link class="navbar-item" to="https://contents.eggsystem.co.jp/seminar">
+        <a href="https://contents.eggsystem.co.jp/seminar" class="navbar-item" rel="noopener noreferrer">
           セミナー
-        </nuxt-link>
+        </a>
 
       </div>
 
