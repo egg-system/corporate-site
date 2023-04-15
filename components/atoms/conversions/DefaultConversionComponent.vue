@@ -1,11 +1,14 @@
 <template>
   <div class="conversion">
-    <nuxt-link
+<!--
+<nuxt-link
       id="download-conversion-lik"
       to="/download"
     >
-      『業務自動化・デジタル化事例紹介』<br>無料ダウンロードはこちら
-    </nuxt-link>
+-->
+<a href="https://contents.eggsystem.co.jp/dencho-flow-document">
+電子帳簿保存法対応業務フロー解説<br>無料ダウンロード →
+    </a>
   </div>
 </template>
 
