@@ -7,7 +7,7 @@
     >
 -->
 <a href="https://contents.eggsystem.co.jp/dencho-flow-document">
-電子帳簿保存法対応業務フロー解説<br>無料ダウンロード →
+電子帳簿保存法に対応した業務フロー<br>無料ダウンロードはこちら
     </a>
   </div>
 </template>
