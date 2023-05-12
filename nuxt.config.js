@@ -4,6 +4,13 @@ const { microCmsApiKey, microCmsApiDomain } = process.env
 const hotJarFunction =
   "(function(h,o,t,j,a,r){h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};h._hjSettings={hjid:2178076,hjsv:6};a=o.getElementsByTagName('head')[0];r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;a.appendChild(r);})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');"
 
+const { gtag } = require('google-gtag');
+
+gtag('js', new Date());
+gtag('config', '6001627947', {
+  'measurementId': 'G-9LX6NE1NH7',
+});
+
 export default {
   env: {
     microCmsApiKey,
@@ -122,7 +129,7 @@ export default {
   styleResources: {
     scss: ['~/assets/common.scss']
   },
-
+  /*
   googleAnalytics: {
     id: 'UA-118871797-1'
   },
@@ -130,6 +137,7 @@ export default {
   googleAdsense: {
     id: 'ca-pub-1776210800611691'
   },
+  */
   /*
    ** Build configuration
    */
