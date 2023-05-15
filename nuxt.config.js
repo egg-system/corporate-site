@@ -17,6 +17,16 @@ export default {
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns#'
     },
+    script: [
+    {
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-9LX6NE1NH7',
+      async: true,
+    },
+    {
+      src: '/assets/js/gtag.js',
+      async: true,
+    },
+    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
