@@ -6,7 +6,7 @@
         <th>IT戦略/システム化<br>計画策定サービス</th>
         <th>RPA導入サービス</th>
         <th>リモートワーク<br>導入支援サービス</th>
-        <th>システム開発</th>
+        <th>システム開発/ECサイト構築</th>
       </tr>
       <tr class="service-table-content">
         <td>料金（目安）</td>
