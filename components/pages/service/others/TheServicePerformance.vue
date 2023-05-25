@@ -122,6 +122,34 @@
       </div>
     </div>
   </div>
+    <div class="service-performance-area">
+      <div class="service-performance">
+        <h3 class="service-performance-title">
+          ECサイト構築
+        </h3>
+        <div class="service-performance-content">
+          <div class="service-performance-example">
+            <div>【実績】</div>
+            <ul>
+              <li>
+                ECサイト構築（WordPress＋Welcart）
+                <div>
+                  →クライアント側でも運用できるようWordPressをベースに、プラグイン（Welcart）を使ったECサイトを構築。
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="service-performance-example">
+            <div>【納品物例】</div>
+            <ul>
+              <li>ECサイト</li>
+              <li>マニュアル</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
