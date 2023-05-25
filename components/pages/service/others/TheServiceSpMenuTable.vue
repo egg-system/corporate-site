@@ -91,7 +91,7 @@
     </table>
     <table class="service-table">
       <tr class="service-table-header">
-        <th colspan="2">システム開発</th>
+        <th colspan="2">システム開発/ECサイト構築</th>
       </tr>
       <tr class="service-table-content">
         <td>料金（目安）</td>
