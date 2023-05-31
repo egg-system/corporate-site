@@ -122,9 +122,15 @@ export default {
     '@nuxtjs/google-analytics',
     '@nuxtjs/style-resources',
     '@nuxtjs/sitemap',
-    '@nuxtjs/google-adsense'
+    '@nuxtjs/google-adsense',
+    '@nuxtjs/google-gtag'
   ],
 
+  'google-gtag': {
+  id: 'G-9LX6NE1NH7', // Google AnalyticsのIDを設定します
+  debug: true, // 開発環境ではデバッグモードを有効にします
+  },
+  
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://eggsystem.co.jp/',
