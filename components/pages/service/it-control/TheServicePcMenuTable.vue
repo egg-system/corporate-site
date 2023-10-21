@@ -16,7 +16,7 @@
       <tr class="service-table-content">
         <td>月額料金</td>
         <td data-label="ミニマムプラン">0円</td>
-        <td data-label="ベーシックプラン">00,000円</td>
+        <td data-label="ベーシックプラン">600,000円</td>
         <td data-label="ハイスペックプラン">800,000円</td>
       </tr>
       <tr class="service-table-content">
