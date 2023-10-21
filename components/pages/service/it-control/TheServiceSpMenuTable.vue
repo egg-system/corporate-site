@@ -37,7 +37,7 @@
       </tr>
       <tr class="service-table-content">
         <td>月額料金</td>
-        <td>500,000円</td>
+        <td>600,000円</td>
       </tr>
       <tr class="service-table-content">
         <td>契約期間</td>
