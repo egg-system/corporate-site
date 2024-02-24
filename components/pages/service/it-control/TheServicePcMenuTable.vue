@@ -16,8 +16,8 @@
       <tr class="service-table-content">
         <td>月額料金</td>
         <td data-label="ミニマムプラン">0円</td>
-        <td data-label="ベーシックプラン">600,000円</td>
-        <td data-label="ハイスペックプラン">800,000円</td>
+        <td data-label="ベーシックプラン">800,000円</td>
+        <td data-label="ハイスペックプラン">1,000,000円</td>
       </tr>
       <tr class="service-table-content">
         <td>契約期間</td>
@@ -25,10 +25,10 @@
           なし<br>（買い切り）
         </td>
         <td data-label="ベーシックプラン">
-          3ヶ月〜
+          最低3ヶ月
         </td>
         <td data-label="ハイスペックプラン">
-          1ヶ月〜
+          最低1ヶ月
         </td>
       </tr>
       <tr class="service-table-content">
